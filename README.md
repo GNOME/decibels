@@ -53,4 +53,4 @@ Decibels follows the [GNOME Code of Conduct](https://conduct.gnome.org/).
 - [Audio Player app: issue by Allan Day](https://gitlab.gnome.org/Teams/Design/app-mockups/-/issues/96)
 - [Audio Player mockups](https://gitlab.gnome.org/Teams/Design/app-mockups/-/blob/master/audio-player/audio-player.png?ref_type=heads)
 
-[artifact]: https://github.com/vixalien/decibels/actions/workflows/build-nightly.yml
+[artifact]: https://gitlab.gnome.org/vixalien/decibels/-/pipelines?page=1&scope=all&ref=main&status=success
