@@ -9,13 +9,13 @@ variables:
 flatpak:
   variables:
     MANIFEST_PATH: "build-aux/flatpak/com.vixalien.decibels.json"
-    BUNDLE: "com.vixalien.decibels.flatpak"
+    BUNDLE: "com.vixalien.decibelsDevel.flatpak"
     FLATPAK_MODULE: "decibels"
     RUNTIME_REPO: "https://nightly.gnome.org/gnome-nightly.flatpakrepo"
-    APP_ID: "com.vixalien.decibels"
+    APP_ID: com.vixalien.decibelsDevel"
   extends: .flatpak
   before_script:
-    - flatpak --user install -y org.freedesktop.Sdk.Extension.node18//23.08beta org.freedesktop.Sdk.Extension.typescript//23.08beta
+    - flatpak --user install -y org.freedesktop.Sdk.Extension.node18//23.08 org.freedesktop.Sdk.Extension.typescript//23.08
 
 eslint:
   image: quay.io/fedora/fedora:latest
