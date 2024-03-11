@@ -134,12 +134,6 @@ export class APWaveForm extends Gtk.Widget {
 
     const leftColor = this.safeLookupColor("accent_color");
 
-    // Clip the snapshot to the widget area.
-    // Turns out the DrawingArea was automatically doing that for us
-    snapshot.push_clip(
-      new Graphene.Rect({ size: new Graphene.Size({ width, height }) }),
-    );
-
     const indicator = new Graphene.Rect({
       origin: new Graphene.Point({ x: horizCenter, y: 0 }),
       size: new Graphene.Size({ width: LINE_WIDTH, height }),
@@ -186,8 +180,6 @@ export class APWaveForm extends Gtk.Widget {
 
       pointer += GUTTER;
     }
-
-    snapshot.pop();
   }
 
   set position(pos: number) {
