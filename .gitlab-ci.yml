@@ -6,7 +6,7 @@ variables:
     GIT_SUBMODULE_STRATEGY: recursive
     GIT_SUBMODULE_DEPTH: 1
 
-flatpak:
+.flatpak-local:
   variables:
     MANIFEST_PATH: "build-aux/flatpak/com.vixalien.decibels.json"
     BUNDLE: "com.vixalien.decibelsDevel.flatpak"
@@ -16,6 +16,16 @@ flatpak:
   extends: .flatpak
   before_script:
     - flatpak --user install -y org.freedesktop.Sdk.Extension.node18//23.08 org.freedesktop.Sdk.Extension.typescript//23.08
+
+flatpak@x86_64:
+    extends:
+        - .flatpak@x86_64
+        - .flatpak-local
+
+flatpak@aarch64:
+    extends:
+        - .flatpak@aarch64
+        - .flatpak-local
 
 eslint:
   image: quay.io/fedora/fedora:latest
