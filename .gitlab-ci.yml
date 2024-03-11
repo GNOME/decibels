@@ -3,8 +3,8 @@ include:
     file: "flatpak/flatpak_ci_initiative.yml"
 
 variables:
-    GIT_SUBMODULE_STRATEGY: recursive
-    GIT_SUBMODULE_DEPTH: 1
+  GIT_SUBMODULE_STRATEGY: recursive
+  GIT_SUBMODULE_DEPTH: 1
 
 .flatpak-local:
   variables:
@@ -17,14 +17,14 @@ variables:
     - flatpak --user install -y org.freedesktop.Sdk.Extension.node18//23.08 org.freedesktop.Sdk.Extension.typescript//23.08
 
 flatpak@x86_64:
-    extends:
-        - .flatpak@x86_64
-        - .flatpak-local
+  extends:
+    - .flatpak@x86_64
+    - .flatpak-local
 
 flatpak@aarch64:
-    extends:
-        - .flatpak@aarch64
-        - .flatpak-local
+  extends:
+    - .flatpak@aarch64
+    - .flatpak-local
 
 eslint:
   image: quay.io/fedora/fedora:latest
