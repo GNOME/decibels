@@ -8,7 +8,7 @@
   <project_license>GPL-3.0</project_license>
   <!-- developer_name tag deprecated with Appstream 1.0 -->
   <developer_name translatable="no">Angelo Verlain</developer_name>
-  <developer id="io.github.vixalien">
+  <developer id="com.vixalien">
     <name translatable="no">Angelo Verlain</name>
   </developer>
   <update_contact>hey@vixalien.com</update_contact>
@@ -22,10 +22,10 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://github.com/vixalien/decibels/raw/HEAD/data/screenshots/screenshot-1.png</image>
+      <image>https://gitlab.gnome.org/vixalien/decibels/-/raw/main/data/screenshots/screenshot-1.png?ref_type=heads</image>
     </screenshot>
     <screenshot>
-      <image>https://github.com/vixalien/decibels/raw/HEAD/data/screenshots/screenshot-2.png</image>
+      <image>https://gitlab.gnome.org/vixalien/decibels/-/raw/main/data/screenshots/screenshot-2.png?ref_type=heads</image>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1" />
@@ -104,11 +104,11 @@
     </release>
   </releases>
   <launchable type="desktop-id">@app-id@.desktop</launchable>
-  <url type="homepage">https://github.com/vixalien/decibels</url>
-  <url type="bugtracker">https://github.com/vixalien/decibels/issues</url>
+  <url type="homepage">https://gitlab.gnome.org/vixalien/decibels</url>
+  <url type="bugtracker">https://gitlab.gnome.org/vixalien/decibels/-/issues</url>
   <url type="donation">https://www.buymeacoffee.com/vixalien</url>
-  <url type="translate">https://github.com/vixalien/decibels/tree/main/po</url>
-  <url type="vcs-browser">https://github.com/vixalien/decibels</url>
+  <url type="translate">https://gitlab.gnome.org/vixalien/decibels/-/tree/main/po?ref_type=heads</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/vixalien/decibels</url>
   <translation type="gettext">@gettext-package@</translation>
   <custom>
     <value key="Purism::form_factor">mobile</value>
