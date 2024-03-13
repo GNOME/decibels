@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.vixalien.decibels package.
+# This file is distributed under the same license as the org.gnome.Decibels package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # Angelo Verlain SHEMA <hey@vixalien.com>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: com.vixalien.decibels\n"
+"Project-Id-Version: org.gnome.Decibels\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-10 19:43+0200\n"
 "PO-Revision-Date: 2023-10-15 00:25+0200\n"
@@ -19,34 +19,34 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "X-Generator: Gtranslator 45.2\n"
 
-#: data/com.vixalien.decibels.desktop.in.in:3
-#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.ui:9
 msgid "Decibels"
 msgstr "Amajwi"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.vixalien.decibels.desktop.in.in:11
+#: data/org.gnome.Decibels.desktop.in.in:11
 msgid "music;player;media;audio;"
 msgstr "muzika;umuziki;kina;media;audio;"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:6
-#: data/com.vixalien.decibels.metainfo.xml.in.in:12
+#: data/org.gnome.Decibels.metainfo.xml.in.in:6
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Play audio files"
 msgstr "Kina amadosiye y'amajwi"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:13
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Current features:"
 msgstr "Ubushobozi:"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:15
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Shows the waveform of the track"
 msgstr "Kwerekana isanisha ry'indirimbo"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Adjust playback speed"
 msgstr "Hindura umuvuduko w'amajwi"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Jya imbere n'inyuma mu buryo bworoheje"
 

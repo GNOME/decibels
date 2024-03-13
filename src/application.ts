@@ -34,7 +34,7 @@ export class Application extends Adw.Application {
     const show_about_action = new Gio.SimpleAction({ name: "about" });
     show_about_action.connect("activate", () => {
       const aboutWindow = Adw.AboutWindow.new_from_appdata(
-        "/com/vixalien/decibels/com.vixalien.decibels.metainfo.xml",
+        "/com/vixalien/decibels/org.gnome.Decibels.metainfo.xml",
         // remove commit tag
         pkg.version.split("-")[0],
       );

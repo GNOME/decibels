@@ -1,11 +1,11 @@
 # Occitan translation file.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.vixalien.decibels package.
+# This file is distributed under the same license as the org.gnome.Decibels package.
 # Quentin PAGÈS, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: com.vixalien.decibels\n"
+"Project-Id-Version: org.gnome.Decibels\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-19 17:52+0200\n"
 "PO-Revision-Date: 2023-11-25 12:14+0100\n"
@@ -17,38 +17,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.1\n"
 
-#: data/com.vixalien.decibels.desktop.in.in:3
-#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.ui:9
 msgid "Decibels"
 msgstr "Decibels"
 
-#: data/com.vixalien.decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.desktop.in.in:4
 msgid "Audio Player"
 msgstr "Lector àudio"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.vixalien.decibels.desktop.in.in:12
+#: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;"
 msgstr "musica;lector;mèdia;audio;àudio;"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:6
-#: data/com.vixalien.decibels.metainfo.xml.in.in:12
+#: data/org.gnome.Decibels.metainfo.xml.in.in:6
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Play audio files"
 msgstr "Legir de fichièrs àudio"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:13
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Current features:"
 msgstr "Foncionalitats actualas :"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:15
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Shows the waveform of the track"
 msgstr "Aficha las ondas de la pista"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Adjust playback speed"
 msgstr "Ajustar la velocitat de lectura"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Botons de recèrca simples"
 

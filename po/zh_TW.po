@@ -1,12 +1,12 @@
-# Chinese translations for com.vixalien.decibels package
-# Traditional Chinese translation for com.vixalien.decibels.
-# Copyright (C) 2023 THE com.vixalien.decibels'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.vixalien.decibels package.
+# Chinese translations for org.gnome.Decibels package
+# Traditional Chinese translation for org.gnome.Decibels.
+# Copyright (C) 2023 THE org.gnome.Decibels'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the org.gnome.Decibels package.
 # Peter Hsu <hsu@peterdavehello.org>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: com.vixalien.decibels\n"
+"Project-Id-Version: org.gnome.Decibels\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-10 19:43+0200\n"
 "PO-Revision-Date: 2023-11-01 01:53+0800\n"
@@ -17,34 +17,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/com.vixalien.decibels.desktop.in.in:3
-#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.ui:9
 msgid "Decibels"
 msgstr "Decibels"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.vixalien.decibels.desktop.in.in:11
+#: data/org.gnome.Decibels.desktop.in.in:11
 msgid "music;player;media;audio;"
 msgstr "音樂;播放器;媒體;音訊;"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:6
-#: data/com.vixalien.decibels.metainfo.xml.in.in:12
+#: data/org.gnome.Decibels.metainfo.xml.in.in:6
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Play audio files"
 msgstr "播放音訊檔案"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:13
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Current features:"
 msgstr "目前的功能："
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:15
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Shows the waveform of the track"
 msgstr "顯示音軌的波形"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Adjust playback speed"
 msgstr "調整播放速度"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "簡易搜尋控制"
 

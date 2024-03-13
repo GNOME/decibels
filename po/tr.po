@@ -19,34 +19,34 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: data/com.vixalien.decibels.desktop.in.in:3
-#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.ui:9
 msgid "Decibels"
 msgstr "Decibels"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.vixalien.decibels.desktop.in.in:11
+#: data/org.gnome.Decibels.desktop.in.in:11
 msgid "music;player;media;audio;"
 msgstr "music;player;media;audio;müzik;oynatıcı;ortam;ses;müzik;muzik;"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:6
-#: data/com.vixalien.decibels.metainfo.xml.in.in:12
+#: data/org.gnome.Decibels.metainfo.xml.in.in:6
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Play audio files"
 msgstr "Ses dosyalarını oynat"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:13
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Current features:"
 msgstr "Geçerli özellikleri:"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:15
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Shows the waveform of the track"
 msgstr "Parçanın dalga şeklini gösterir"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Adjust playback speed"
 msgstr "Oynatma hızını ayarla"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Kolay yönetim denetimleri"
 

@@ -122,4 +122,7 @@
     <control>touch</control>
     <control>tablet</control>
   </recommends>
+  <provides>
+    <id>com.vixalien.decibels</id>
+  </provides>
 </component>

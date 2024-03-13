@@ -1,11 +1,11 @@
-# Spanish translations for com.vixalien.decibels package.
-# Copyright (C) 2024 THE com.vixalien.decibels'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.vixalien.decibels package.
+# Spanish translations for org.gnome.Decibels package.
+# Copyright (C) 2024 THE org.gnome.Decibels'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the org.gnome.Decibels package.
 # Óscar Fernández Díaz <oscfdezdz@tuta.io>, 2024.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: com.vixalien.decibels\n"
+"Project-Id-Version: org.gnome.Decibels\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-19 10:38+0100\n"
 "PO-Revision-Date: 2024-01-19 10:56+0100\n"
@@ -18,37 +18,37 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Gtranslator 45.3\n"
 
-#: data/com.vixalien.decibels.desktop.in.in:3
-#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.ui:9
 msgid "Decibels"
 msgstr "Decibelios"
 
-#: data/com.vixalien.decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.desktop.in.in:4
 msgid "Audio Player"
 msgstr "Reproductor de audio"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.vixalien.decibels.desktop.in.in:12
+#: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;"
 msgstr "music;player;media;audio;música;reproductor;"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:6
+#: data/org.gnome.Decibels.metainfo.xml.in.in:6
 msgid "Play audio files"
 msgstr "Reproducir archivos de audio"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Current features:"
 msgstr "Características actuales:"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:18
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
 msgid "Shows the waveform of the track"
 msgstr "Muestra la forma de onda de la pista"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:19
+#: data/org.gnome.Decibels.metainfo.xml.in.in:19
 msgid "Adjust playback speed"
 msgstr "Ajustar la velocidad de reproducción"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:20
+#: data/org.gnome.Decibels.metainfo.xml.in.in:20
 msgid "Easy seek controls"
 msgstr "Controles de desplazamiento sencillos"
 

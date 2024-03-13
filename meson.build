@@ -19,7 +19,7 @@ else
   version_suffix = ''
 endif
 
-application_id = 'com.vixalien.decibels@0@'.format(profile)
+application_id = 'org.gnome.Decibels@0@'.format(profile)
 
 i18n = import('i18n')
 gnome = import('gnome')

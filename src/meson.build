@@ -34,7 +34,7 @@ source_res_conf.set('profile', profile)
 src_res = gnome.compile_resources(
  application_id + '.src',
  configure_file(
-  	input: 'com.vixalien.decibels.src.gresource.xml.in',
+  	input: 'org.gnome.Decibels.src.gresource.xml.in',
   	output: '@BASENAME@',
   	configuration: source_res_conf
   ),
@@ -55,7 +55,7 @@ bin_conf.set('resource_path', '/com/vixalien/decibels@0@'.format(profile))
 bin_conf.set('profile', profile)
 
 app_launcher = configure_file(
-  input: 'com.vixalien.decibels.in',
+  input: 'org.gnome.Decibels.in',
   output: application_id,
   configuration: bin_conf,
   install: true,
