@@ -148,9 +148,7 @@ export class APWaveForm extends Gtk.Widget {
       pointer = pointer + invisible_peaks;
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-for-in-array
-    for (const id in peaks.slice(invisible_peaks / GUTTER)) {
-      const peak = peaks.slice(invisible_peaks / GUTTER)[id];
+    for (const peak of peaks.slice(invisible_peaks / GUTTER)) {
       // this shouldn't happen, but just in case
       if (pointer < 0) {
         pointer += GUTTER;
