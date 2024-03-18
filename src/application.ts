@@ -18,7 +18,8 @@ export class Application extends Adw.Application {
     super({
       application_id: pkg.name,
       resource_base_path: "/com/vixalien/decibels",
-      flags: Gio.ApplicationFlags.HANDLES_OPEN,
+      flags:
+        Gio.ApplicationFlags.HANDLES_OPEN | Gio.ApplicationFlags.NON_UNIQUE,
     });
 
     const quit_action = new Gio.SimpleAction({ name: "quit" });
