@@ -141,6 +141,7 @@ export class Window extends Adw.ApplicationWindow {
     );
 
     this.mpris = new MPRIS(this.stream);
+    this.mpris.start();
 
     this.stream.connect("error", (_source, error: GLib.Error) => {
       console.error(
