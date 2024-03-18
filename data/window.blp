@@ -7,40 +7,35 @@ template $Gjs_Window : Adw.ApplicationWindow {
   width-request: 300;
   height-request: 260;
   title: _("Decibels");
-  content: 
-  WindowHandle {
-    $APDragOverlay {
-      [content]
-      Stack stack {
-        StackPage {
-          name: "empty";
-          child: 
-          $APEmptyState {
-          }
-
-          ;
+  content: $APDragOverlay {
+    [content]
+    Stack stack {
+      StackPage {
+        name: "empty";
+        child: 
+        $APEmptyState {
         }
 
-        StackPage {
-          name: "error";
-          child: 
-          $APErrorState error {
-          }
+        ;
+      }
 
-          ;
+      StackPage {
+        name: "error";
+        child: 
+        $APErrorState error {
         }
 
-        StackPage {
-          name: "player";
-          child: 
-          $APPlayerState player {
-          }
+        ;
+      }
 
-          ;
+      StackPage {
+        name: "player";
+        child: 
+        $APPlayerState player {
         }
+
+        ;
       }
     }
-  }
-
-  ;
+  };
 }
