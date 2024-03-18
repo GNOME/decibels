@@ -9,10 +9,10 @@ variables:
 .flatpak-local:
   variables:
     MANIFEST_PATH: "build-aux/flatpak/org.gnome.Decibels.json"
-    BUNDLE: "org.gnome.DecibelsDevel.flatpak"
+    BUNDLE: "org.gnome.Decibels.Devel.flatpak"
     FLATPAK_MODULE: "decibels"
     RUNTIME_REPO: "https://nightly.gnome.org/gnome-nightly.flatpakrepo"
-    APP_ID: "org.gnome.DecibelsDevel"
+    APP_ID: "org.gnome.Decibels.Devel"
   before_script:
     - flatpak --user install -y org.freedesktop.Sdk.Extension.node18//23.08 org.freedesktop.Sdk.Extension.typescript//23.08
 
