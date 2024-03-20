@@ -17,34 +17,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/com.vixalien.decibels.desktop.in.in:3
+#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
 msgid "Decibels"
 msgstr "Децибелы"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:11
+#: data/com.vixalien.decibels.desktop.in.in:11
 msgid "music;player;media;audio;"
 msgstr "music;player;media;audio;музыка;плеер;медиа;аудио;"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:6
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+#: data/com.vixalien.decibels.metainfo.xml.in.in:6
+#: data/com.vixalien.decibels.metainfo.xml.in.in:12
 msgid "Play audio files"
 msgstr "Воспроизведение аудио файлов"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+#: data/com.vixalien.decibels.metainfo.xml.in.in:13
 msgid "Current features:"
 msgstr "Текущие возможности:"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+#: data/com.vixalien.decibels.metainfo.xml.in.in:15
 msgid "Shows the waveform of the track"
 msgstr "Отображение волны трека"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+#: data/com.vixalien.decibels.metainfo.xml.in.in:16
 msgid "Adjust playback speed"
 msgstr "Настройка скорости воспроизведения"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+#: data/com.vixalien.decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Простое управление поиском"
 

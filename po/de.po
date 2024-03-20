@@ -1,11 +1,11 @@
 # German translation for Decibels.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the org.gnome.Decibels package.
+# This file is distributed under the same license as the com.vixalien.decibels package.
 # Philipp Kiemle <philipp.kiemle@gmail.com>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: org.gnome.Decibels\n"
+"Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-10 19:43+0200\n"
 "PO-Revision-Date: 2023-10-31 18:53+0100\n"
@@ -17,34 +17,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.1\n"
 
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/com.vixalien.decibels.desktop.in.in:3
+#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
 msgid "Decibels"
 msgstr "Decibels"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:11
+#: data/com.vixalien.decibels.desktop.in.in:11
 msgid "music;player;media;audio;"
 msgstr "music;player;media;audio;Musik;Abspieler;Medien;"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:6
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+#: data/com.vixalien.decibels.metainfo.xml.in.in:6
+#: data/com.vixalien.decibels.metainfo.xml.in.in:12
 msgid "Play audio files"
 msgstr "Audiodateien abspielen"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+#: data/com.vixalien.decibels.metainfo.xml.in.in:13
 msgid "Current features:"
 msgstr "Aktuelle Funktionen:"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+#: data/com.vixalien.decibels.metainfo.xml.in.in:15
 msgid "Shows the waveform of the track"
 msgstr "Zeigt die Wellenform des Tracks"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+#: data/com.vixalien.decibels.metainfo.xml.in.in:16
 msgid "Adjust playback speed"
 msgstr "Wiedergabegeschwindigkeit anpassen"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+#: data/com.vixalien.decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Einfache Suchen-Werkzeuge"
 

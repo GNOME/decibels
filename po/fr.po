@@ -19,34 +19,34 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "X-Generator: Gtranslator 45.2\n"
 
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/com.vixalien.decibels.desktop.in.in:3
+#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
 msgid "Decibels"
 msgstr "Décibels"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:11
+#: data/com.vixalien.decibels.desktop.in.in:11
 msgid "music;player;media;audio;"
 msgstr "musique;lecteur;jouer;média;audio;"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:6
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+#: data/com.vixalien.decibels.metainfo.xml.in.in:6
+#: data/com.vixalien.decibels.metainfo.xml.in.in:12
 msgid "Play audio files"
 msgstr "Jouez vos fichiers audio"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+#: data/com.vixalien.decibels.metainfo.xml.in.in:13
 msgid "Current features:"
 msgstr "Fonctionnalités actuelles :"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+#: data/com.vixalien.decibels.metainfo.xml.in.in:15
 msgid "Shows the waveform of the track"
 msgstr "Affichage de la forme du signal de la piste"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+#: data/com.vixalien.decibels.metainfo.xml.in.in:16
 msgid "Adjust playback speed"
 msgstr "Réglage de la vitesse de lecture"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+#: data/com.vixalien.decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Contrôle aisé de l’avancement"
 
