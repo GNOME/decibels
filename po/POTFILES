@@ -1,6 +1,6 @@
-data/com.vixalien.decibels.desktop.in.in
-data/com.vixalien.decibels.metainfo.xml.in.in
-data/com.vixalien.decibels.gschema.xml.in
+data/org.gnome.Decibels.desktop.in.in
+data/org.gnome.Decibels.metainfo.xml.in.in
+data/org.gnome.Decibels.gschema.xml.in
 data/drag-overlay.blp
 data/empty.blp
 data/error.blp

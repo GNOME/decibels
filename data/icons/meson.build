@@ -6,6 +6,6 @@ install_data(
 
 symbolic_dir = 'hicolor' / 'symbolic' / 'apps'
 install_data(
-  symbolic_dir / 'com.vixalien.decibels-symbolic.svg',
+  symbolic_dir / 'org.gnome.Decibels-symbolic.svg',
   install_dir: decibels_datadir / 'icons' / symbolic_dir
 )

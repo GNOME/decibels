@@ -1,5 +1,5 @@
 {
-  "id": "com.vixalien.decibelsDevel",
+  "id": "org.gnome.Decibels.Devel",
   "runtime": "org.gnome.Platform",
   "runtime-version": "master",
   "sdk": "org.gnome.Sdk",
@@ -13,7 +13,7 @@
   "build-options": {
     "append-path": "/usr/lib/sdk/node18/bin:/usr/lib/sdk/typescript/bin"
   },
-  "command": "com.vixalien.decibelsDevel",
+  "command": "org.gnome.Decibels.Devel",
   "finish-args": [
     "--device=dri",
     "--filesystem=xdg-download:ro",

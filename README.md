@@ -1,5 +1,5 @@
 <div align="center">
-<img src="data/icons/hicolor/scalable/apps/com.vixalien.decibels.svg" height="64">
+<img src="data/icons/hicolor/scalable/apps/org.gnome.Decibels.svg" height="64">
 
 # Decibels
 
@@ -16,9 +16,9 @@ Play audio files.
 ### Flathub
 
 Decibels is available to download on
-[Flathub](https://flathub.org/apps/details/com.vixalien.decibels).
+[Flathub](https://flathub.org/apps/details/org.gnome.Decibels).
 
-<a href="https://flathub.org/apps/details/com.vixalien.decibels" title="Download Decibels on Flathub">
+<a href="https://flathub.org/apps/details/org.gnome.Decibels" title="Download Decibels on Flathub">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="data/flathub-badges/download-i.svg">
     <source media="(prefers-color-scheme: light)" srcset="data/flathub-badges/download.svg">

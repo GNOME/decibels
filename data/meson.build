@@ -18,7 +18,7 @@ desktop_conf.set('app-id', application_id)
 
 desktop_file = i18n.merge_file(
   input: configure_file(
-    input: 'com.vixalien.decibels.desktop.in.in',
+    input: 'org.gnome.Decibels.desktop.in.in',
     output: '@BASENAME@',
     configuration: desktop_conf
   ),
@@ -40,11 +40,11 @@ appstream_conf.set('gettext-package', gettext_package)
 
 appstream_file = i18n.merge_file(
   input: configure_file(
-  	input: 'com.vixalien.decibels.metainfo.xml.in.in',
+  	input: 'org.gnome.Decibels.metainfo.xml.in.in',
   	output: '@BASENAME@',
   	configuration: appstream_conf
 	),
-  output: 'com.vixalien.decibels.metainfo.xml',
+  output: 'org.gnome.Decibels.metainfo.xml',
   po_dir: '../po',
   install: true,
   install_dir: decibels_datadir / 'metainfo'
@@ -64,7 +64,7 @@ gsettings_conf = configuration_data()
 gsettings_conf.set('app-id', application_id)
 gsettings_conf.set('gettext-package', gettext_package)
 gsettings_schema = configure_file(
-  input: 'com.vixalien.decibels.gschema.xml.in',
+  input: 'org.gnome.Decibels.gschema.xml.in',
   output: '@0@.gschema.xml'.format(application_id),
   configuration: gsettings_conf,
   install: true,
@@ -88,7 +88,7 @@ endif
 
 data_res = gnome.compile_resources(
   application_id + '.data',
-  'com.vixalien.decibels.data.gresource.xml',
+  'org.gnome.Decibels.data.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: decibels_pkgdatadir,
@@ -99,7 +99,7 @@ service_conf = configuration_data()
 service_conf.set('application_id', application_id)
 service_conf.set('bindir', decibels_bindir)
 configure_file(
-  input: 'com.vixalien.decibels.service.in',
+  input: 'org.gnome.Decibels.service.in',
   output: '@0@.service'.format(application_id),
   configuration: service_conf,
   install: true,

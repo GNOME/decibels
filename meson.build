@@ -5,7 +5,7 @@ project('decibels',
 )
 
 if get_option('profile') == 'development'
-  profile = 'Devel'
+  profile = '.Devel'
   name_suffix = ' (Development)'
   vcs_tag = run_command('git', 'rev-parse', '--short', 'HEAD', check: true).stdout().strip()
   if vcs_tag == ''
@@ -19,7 +19,7 @@ else
   version_suffix = ''
 endif
 
-application_id = 'com.vixalien.decibels@0@'.format(profile)
+application_id = 'org.gnome.Decibels@0@'.format(profile)
 
 i18n = import('i18n')
 gnome = import('gnome')
