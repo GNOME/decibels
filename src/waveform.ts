@@ -73,7 +73,7 @@ export class APWaveForm extends Gtk.Widget {
   }
 
   constructor(
-    params: Partial<Gtk.DrawingArea.ConstructorProperties> | undefined,
+    params: Partial<Gtk.Widget.ConstructorProperties> | undefined,
     // type: WaveType,
   ) {
     super(params);
