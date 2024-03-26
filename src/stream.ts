@@ -779,7 +779,7 @@ export function get_cubic_volume(value: number) {
 
 function get_safe_duration(value: number) {
   if (value >= GLib.MAXUINT64) {
-    return 100 * Gst.SECOND;
+    return 0;
   }
 
   return value;
