@@ -488,6 +488,14 @@ export class APMediaStream extends Gtk.MediaStream {
     );
   }
 
+  /**
+   * @deprecated This property returns the initial duration only. Please use
+   * `get_duration`.
+   */
+  get duration() {
+    return super.duration;
+  }
+
   // property: error
 
   private _error: GLib.Error | null = null;
