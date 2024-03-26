@@ -96,7 +96,9 @@ export class DBusInterface {
   constructor(
     private name: string,
     private path: string,
-  ) {
+  ) {}
+
+  start() {
     Gio.bus_get(Gio.BusType.SESSION, null)
       .then(this.got_bus.bind(this))
       .catch((e: GLib.Error) => {
