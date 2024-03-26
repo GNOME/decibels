@@ -26,6 +26,19 @@ flatpak@aarch64:
     - .flatpak@aarch64
     - .flatpak-local
 
+# Publish to nightly repo
+nightly@x86_64:
+  extends: ".publish_nightly"
+  stage: deploy
+  dependencies:
+    - flatpak@x86_64
+
+nightly@aarch64:
+  extends: ".publish_nightly"
+  stage: deploy
+  dependencies:
+    - flatpak@aarch64
+
 eslint:
   image: quay.io/fedora/fedora:latest
 
