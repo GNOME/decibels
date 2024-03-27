@@ -488,6 +488,14 @@ export class APMediaStream extends Gtk.MediaStream {
     );
   }
 
+  /**
+   * @deprecated This property returns the initial duration only. Please use
+   * `get_duration`.
+   */
+  get duration() {
+    return super.duration;
+  }
+
   // property: error
 
   private _error: GLib.Error | null = null;
@@ -771,7 +779,7 @@ export function get_cubic_volume(value: number) {
 
 function get_safe_duration(value: number) {
   if (value >= GLib.MAXUINT64) {
-    return 100 * Gst.SECOND;
+    return 0;
   }
 
   return value;

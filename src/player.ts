@@ -54,11 +54,16 @@ export class APPlayerState extends Adw.Bin {
 
     if (!window || !(window instanceof Window)) return;
 
-    window.stream.bind_property(
+    // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
+    window.stream.bind_property_full(
       "duration",
       this._scale_adjustment,
       "upper",
       GObject.BindingFlags.SYNC_CREATE,
+      () => {
+        return [true, window.stream.get_duration()];
+      },
+      null,
     );
 
     // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
@@ -67,9 +72,9 @@ export class APPlayerState extends Adw.Bin {
       this._duration_label,
       "label",
       GObject.BindingFlags.SYNC_CREATE,
-      (_binding, from: number) => {
+      () => {
         this._scale.grab_focus();
-        return [true, micro_to_string(from)];
+        return [true, micro_to_string(window.stream.get_duration())];
       },
       null,
     );
@@ -146,7 +151,7 @@ export class APPlayerState extends Adw.Bin {
 
         return [
           true,
-          Math.max(Math.min(from / window.stream.duration || 0, 1), 0),
+          Math.max(Math.min(from / window.stream.get_duration() || 0, 1), 0),
         ];
       },
       null,
@@ -161,7 +166,7 @@ export class APPlayerState extends Adw.Bin {
         }
 
         // show only the loaded peaks, and 0 for the other remaining
-        const duration = window.stream.duration;
+        const duration = window.stream.get_duration();
 
         if (duration <= 0) {
           return [];
@@ -243,7 +248,7 @@ export class APPlayerState extends Adw.Bin {
 
     if (!stream) return;
 
-    stream.seek(value * stream.duration);
+    stream.seek(value * stream.get_duration());
   }
 
   vfunc_root(): void {
