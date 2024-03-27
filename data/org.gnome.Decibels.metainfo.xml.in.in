@@ -35,7 +35,7 @@
         <ul>
           <li>Decibels joined GNOME Incubator 🥳!</li>
           <li>As a consequence, the application ID changed to <code>org.gnome.Decibels</code></li>
-          <li>The application's source code is now hosted on the GNOME Gitlab instance instead of Flathub</li>
+          <li>The application's source code is now hosted on GNOME Gitlab's instance instead of GitHub</li>
           <li>Only the header bar is now draggable, instead of the whole app window</li>
           <li>The app is more secure because it only uses the needed sandbox permissions</li>
           <li>Decibels no longer incorrectly advertises being able to open directories</li>
