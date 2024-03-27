@@ -30,6 +30,26 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="0.1.8" date="2024-03-27">
+      <description translatable="no">
+        <ul>
+          <li>Decibels joined GNOME Incubator 🥳!</li>
+          <li>As a consequence, the application ID changed to <code>org.gnome.Decibels</code></li>
+          <li>The application's source code is now hosted on the GNOME Gitlab instance instead of Flathub</li>
+          <li>Only the header bar is now draggable, instead of the whole app window</li>
+          <li>The app is more secure because it only uses the needed sandbox permissions</li>
+          <li>Only the header bar is now draggable, instead of the whole app window</li>
+          <li>Decibels no longer incorrectly advertises being able to open directories</li>
+          <li>The waveform now looks better because it has slightly thicker lines</li>
+          <li>Fixed crashes when handling invalid audio files</li>
+          <li>Added keyboard controls for controlling playback</li>
+          <li>It is now possible to scroll on the playback bar to seek forwards or backwards</li>
+          <li>It is now convinient to seek 10 seconds forwards or backwards by pressing the next or previous buttons on your keyboard respectively</li>
+          <li>The design of the app was improved with new icons and papercut fixes</li>
+          <li>Added Spanish and updated the Chinese, Russian and Ukrainian translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.7" date="2023-11-29">
       <description translatable="no">
         <ul>
