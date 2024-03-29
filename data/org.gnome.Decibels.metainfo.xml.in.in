@@ -41,7 +41,7 @@
           <li>Fixed crashes when handling invalid audio files</li>
           <li>Added keyboard controls for controlling playback</li>
           <li>It is now possible to scroll on the playback bar to seek forwards or backwards</li>
-          <li>Decibels now shows the correct track's durations reliably instead of showing <i>1:40</i></li>
+          <li>Decibels now shows the correct track's durations reliably instead of showing <code>1:40</code></li>
           <li>The design of the app was improved with new icons and papercut fixes</li>
           <li>Added Spanish and updated the Chinese, Russian and Ukrainian translations</li>
         </ul>
