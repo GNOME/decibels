@@ -32,31 +32,33 @@ export class Application extends Adw.Application {
     this.set_accels_for_action("win.open-file", ["<Control>o"]);
 
     const show_about_action = new Gio.SimpleAction({ name: "about" });
-    show_about_action.connect("activate", this.show_about_window_cb.bind(this));
+    show_about_action.connect("activate", this.show_about_dialog_cb.bind(this));
 
     this.add_action(show_about_action);
 
     Gio._promisify(Gtk.UriLauncher.prototype, "launch", "launch_finish");
   }
 
-  private show_about_window_cb() {
-    const aboutWindow = Adw.AboutWindow.new_from_appdata(
+  private show_about_dialog_cb() {
+    /* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call */
+    // @ts-expect-error Adw.AboutDialog types aren't in `gi-types` yet
+    const aboutDialog = Adw.AboutDialog.new_from_appdata(
       "/com/vixalien/decibels/org.gnome.Decibels.metainfo.xml",
       // remove commit tag
       pkg.version.split("-")[0],
     );
-    aboutWindow.set_version(pkg.version);
-    aboutWindow.set_developers([
+    aboutDialog.set_version(pkg.version);
+    aboutDialog.set_developers([
       "Angelo Verlain https://vixalien.com",
       "David Keller https://gitlab.com/BlobCodes",
     ]);
-    aboutWindow.set_artists(["kramo https://kramo.page"]);
-    aboutWindow.set_designers(["Allan Day"]);
-    aboutWindow.set_transient_for(this.get_active_window());
+    aboutDialog.set_artists(["kramo https://kramo.page"]);
+    aboutDialog.set_designers(["Allan Day"]);
     /* Translators: Replace "translator-credits" with your names, one name per line */
-    aboutWindow.set_translator_credits(_("translator-credits"));
+    aboutDialog.set_translator_credits(_("translator-credits"));
 
-    aboutWindow.present();
+    aboutDialog.present(this.get_active_window());
+    /* eslint-enable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call */
   }
 
   private present_main_window(): void {
