@@ -6,8 +6,6 @@
   <summary>Play audio files</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
-  <!-- developer_name tag deprecated with Appstream 1.0 -->
-  <developer_name translatable="no">Angelo Verlain</developer_name>
   <developer id="com.vixalien">
     <name translatable="no">Angelo Verlain</name>
   </developer>
@@ -30,6 +28,25 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="46.0" date="2024-03-27">
+      <description translatable="no">
+        <ul>
+          <li>Decibels joined GNOME Incubator 🥳!</li>
+          <li>As a consequence, the application ID changed to <code>org.gnome.Decibels</code></li>
+          <li>The application's source code is now hosted on GNOME Gitlab's instance instead of GitHub</li>
+          <li>Only the header bar is now draggable, instead of the whole app window</li>
+          <li>The app is more secure because it only uses the needed sandbox permissions</li>
+          <li>Decibels no longer incorrectly advertises being able to open directories</li>
+          <li>The waveform now looks better because it has slightly thicker lines</li>
+          <li>Fixed crashes when handling invalid audio files</li>
+          <li>Added keyboard controls for controlling playback</li>
+          <li>It is now possible to scroll on the playback bar to seek forwards or backwards</li>
+          <li>Decibels now shows the correct track's durations reliably instead of showing <code>1:40</code></li>
+          <li>The design of the app was improved with new icons and papercut fixes</li>
+          <li>Added Spanish and updated the Chinese, Russian and Ukrainian translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.7" date="2023-11-29">
       <description translatable="no">
         <ul>
