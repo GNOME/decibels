@@ -6,8 +6,6 @@
   <summary>Play audio files</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
-  <!-- developer_name tag deprecated with Appstream 1.0 -->
-  <developer_name translatable="no">Angelo Verlain</developer_name>
   <developer id="com.vixalien">
     <name translatable="no">Angelo Verlain</name>
   </developer>
