@@ -32,29 +32,31 @@ export class Application extends Adw.Application {
     this.set_accels_for_action("win.open-file", ["<Control>o"]);
 
     const show_about_action = new Gio.SimpleAction({ name: "about" });
-    show_about_action.connect("activate", () => {
-      const aboutWindow = Adw.AboutWindow.new_from_appdata(
-        "/com/vixalien/decibels/org.gnome.Decibels.metainfo.xml",
-        // remove commit tag
-        pkg.version.split("-")[0],
-      );
-      aboutWindow.set_version(pkg.version);
-      aboutWindow.set_developers([
-        "Angelo Verlain https://vixalien.com",
-        "David Keller https://gitlab.com/BlobCodes",
-      ]);
-      aboutWindow.set_artists(["kramo https://kramo.page"]);
-      aboutWindow.set_designers(["Allan Day"]);
-      aboutWindow.set_transient_for(this.get_active_window());
-      /* Translators: Replace "translator-credits" with your names, one name per line */
-      aboutWindow.set_translator_credits(_("translator-credits"));
-
-      aboutWindow.present();
-    });
+    show_about_action.connect("activate", this.show_about_window_cb.bind(this));
 
     this.add_action(show_about_action);
 
     Gio._promisify(Gtk.UriLauncher.prototype, "launch", "launch_finish");
+  }
+
+  private show_about_window_cb() {
+    const aboutWindow = Adw.AboutWindow.new_from_appdata(
+      "/com/vixalien/decibels/org.gnome.Decibels.metainfo.xml",
+      // remove commit tag
+      pkg.version.split("-")[0],
+    );
+    aboutWindow.set_version(pkg.version);
+    aboutWindow.set_developers([
+      "Angelo Verlain https://vixalien.com",
+      "David Keller https://gitlab.com/BlobCodes",
+    ]);
+    aboutWindow.set_artists(["kramo https://kramo.page"]);
+    aboutWindow.set_designers(["Allan Day"]);
+    aboutWindow.set_transient_for(this.get_active_window());
+    /* Translators: Replace "translator-credits" with your names, one name per line */
+    aboutWindow.set_translator_credits(_("translator-credits"));
+
+    aboutWindow.present();
   }
 
   private present_main_window(): void {
