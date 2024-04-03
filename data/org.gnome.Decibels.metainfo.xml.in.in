@@ -133,6 +133,10 @@
   <requires>
     <display_length compare="ge">360</display_length>
   </requires>
+  <branding>
+    <color type="primary" scheme_preference="light">#ffd27a</color>
+    <color type="primary" scheme_preference="dark">#ac3600</color>
+  </branding>
   <recommends>
     <control>pointing</control>
     <control>keyboard</control>
