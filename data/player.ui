@@ -101,7 +101,7 @@
                     <property name="action-target">-10</property>
                     <property name="icon-name">skip-backwards-10-symbolic</property>
                     <property name="valign">3</property>
-                    <property name="tooltip-text" translatable="yes">Skip back 10s</property>
+                    <property name="tooltip-text" translatable="yes">Skip Back 10s</property>
                     <style>
                       <class name="circular" />
                     </style>
@@ -130,7 +130,7 @@
                     <property name="action-target">10</property>
                     <property name="icon-name">skip-forward-10-symbolic</property>
                     <property name="valign">3</property>
-                    <property name="tooltip-text" translatable="yes">Skip forward 10s</property>
+                    <property name="tooltip-text" translatable="yes">Skip Forward 10s</property>
                     <style>
                       <class name="circular" />
                     </style>
