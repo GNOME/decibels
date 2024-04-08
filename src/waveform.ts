@@ -298,33 +298,37 @@ export class APPeaksGenerator extends GObject.Object {
     pipeline.set_state(Gst.State.PLAYING);
 
     const bus = pipeline.get_bus();
-    if (!bus)
-      return;
+    if (!bus) return;
 
     this.bus = bus;
     bus.add_signal_watch();
-    this.callback_id = bus.connect("message", (_bus: Gst.Bus, message: Gst.Message) => {
-      switch (message.type) {
-        case Gst.MessageType.ELEMENT: {
-          const s = message.get_structure();
-          if (s && s.has_name("level")) {
-            const peakVal = s.get_value("rms") as unknown as GObject.ValueArray;
+    this.callback_id = bus.connect(
+      "message",
+      (_bus: Gst.Bus, message: Gst.Message) => {
+        switch (message.type) {
+          case Gst.MessageType.ELEMENT: {
+            const s = message.get_structure();
+            if (s && s.has_name("level")) {
+              const peakVal = s.get_value(
+                "rms",
+              ) as unknown as GObject.ValueArray;
 
-            if (peakVal) {
-              const peak = peakVal.get_nth(0) as number;
-              this.loaded_peaks.push(Math.pow(10, peak / 20));
+              if (peakVal) {
+                const peak = peakVal.get_nth(0) as number;
+                this.loaded_peaks.push(Math.pow(10, peak / 20));
+              }
             }
+            break;
           }
-          break;
-        }
-        case Gst.MessageType.EOS:
-          this.peaks = [...this.loaded_peaks];
-          this.loaded_peaks.length = 0;
+          case Gst.MessageType.EOS:
+            this.peaks = [...this.loaded_peaks];
+            this.loaded_peaks.length = 0;
 
-          pipeline?.set_state(Gst.State.NULL);
-          break;
-      }
-    });
+            pipeline?.set_state(Gst.State.NULL);
+            break;
+        }
+      },
+    );
   }
 
   INTERVAL = 100000000;
