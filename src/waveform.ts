@@ -253,6 +253,9 @@ export class APPeaksGenerator extends GObject.Object {
   }
 
   private _peaks: number[] = [];
+  private pipeline?: Gst.Bin;
+  private bus?: Gst.Bus;
+  private callback_id?: number;
 
   get peaks() {
     return this._peaks;
@@ -267,10 +270,14 @@ export class APPeaksGenerator extends GObject.Object {
     super();
   }
 
-  private started = false;
-
   restart() {
-    this.started = true;
+    if (this.callback_id && this.bus) {
+      this.bus.disconnect(this.callback_id);
+      this.bus.remove_signal_watch();
+    }
+
+    this.pipeline?.set_state(Gst.State.NULL);
+
     this.loaded_peaks.length = 0;
     this.peaks.length = 0;
   }
@@ -279,6 +286,7 @@ export class APPeaksGenerator extends GObject.Object {
     const pipeline = Gst.parse_launch(
       `uridecodebin name=uridecodebin ! audioconvert ! audio/x-raw,channels=1 ! level name=level interval=${this.INTERVAL} ! fakesink name=faked`,
     ) as Gst.Bin;
+    this.pipeline = pipeline;
 
     const fakesink = pipeline.get_by_name("faked");
     fakesink?.set_property("qos", false);
@@ -290,9 +298,12 @@ export class APPeaksGenerator extends GObject.Object {
     pipeline.set_state(Gst.State.PLAYING);
 
     const bus = pipeline.get_bus();
-    bus?.add_signal_watch();
+    if (!bus)
+      return;
 
-    bus?.connect("message", (_bus: Gst.Bus, message: Gst.Message) => {
+    this.bus = bus;
+    bus.add_signal_watch();
+    this.callback_id = bus.connect("message", (_bus: Gst.Bus, message: Gst.Message) => {
       switch (message.type) {
         case Gst.MessageType.ELEMENT: {
           const s = message.get_structure();
@@ -307,10 +318,7 @@ export class APPeaksGenerator extends GObject.Object {
           break;
         }
         case Gst.MessageType.EOS:
-          if (this.started) {
-            this.peaks = [...this.loaded_peaks];
-          }
-
+          this.peaks = [...this.loaded_peaks];
           this.loaded_peaks.length = 0;
 
           pipeline?.set_state(Gst.State.NULL);
