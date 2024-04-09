@@ -22,6 +22,7 @@
 // based on code from GNOME Sound Recorder
 
 import Adw from "gi://Adw";
+import GLib from "gi://GLib";
 import GObject from "gi://GObject";
 import Gdk from "gi://Gdk?version=4.0";
 import Gtk from "gi://Gtk?version=4.0";
@@ -301,7 +302,7 @@ export class APPeaksGenerator extends GObject.Object {
     if (!bus) return;
 
     this.bus = bus;
-    bus.add_signal_watch();
+    bus.add_signal_watch_full(GLib.PRIORITY_DEFAULT_IDLE);
     this.callback_id = bus.connect(
       "message",
       (_bus: Gst.Bus, message: Gst.Message) => {
