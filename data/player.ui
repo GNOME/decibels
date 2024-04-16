@@ -119,8 +119,7 @@
                       </object>
                     </child>
                     <style>
-                      <class name="circular" />
-                      <class name="raised" />
+                      <class name="pill" />
                     </style>
                   </object>
                 </child>
