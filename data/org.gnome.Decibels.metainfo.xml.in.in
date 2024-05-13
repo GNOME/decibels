@@ -20,10 +20,10 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://gitlab.gnome.org/vixalien/decibels/-/raw/main/data/screenshots/screenshot-1.png?ref_type=heads</image>
+      <image>https://gitlab.gnome.org/GNOME/Incubator/decibels/-/raw/main/data/screenshots/screenshot-1.png</image>
     </screenshot>
     <screenshot>
-      <image>https://gitlab.gnome.org/vixalien/decibels/-/raw/main/data/screenshots/screenshot-2.png?ref_type=heads</image>
+      <image>https://gitlab.gnome.org/GNOME/Incubator/decibels/-/raw/main/data/screenshots/screenshot-2.png</image>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1" />
@@ -121,11 +121,11 @@
     </release>
   </releases>
   <launchable type="desktop-id">@app-id@.desktop</launchable>
-  <url type="homepage">https://gitlab.gnome.org/vixalien/decibels</url>
-  <url type="bugtracker">https://gitlab.gnome.org/vixalien/decibels/-/issues</url>
+  <url type="homepage">https://gitlab.gnome.org/GNOME/Incubator/decibels/</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues</url>
   <url type="donation">https://www.buymeacoffee.com/vixalien</url>
-  <url type="translate">https://gitlab.gnome.org/vixalien/decibels/-/tree/main/po?ref_type=heads</url>
-  <url type="vcs-browser">https://gitlab.gnome.org/vixalien/decibels</url>
+  <url type="translate">https://gitlab.gnome.org/GNOME/Incubator/decibels/-/tree/main/po</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/Incubator/decibels/</url>
   <translation type="gettext">@gettext-package@</translation>
   <custom>
     <value key="Purism::form_factor">mobile</value>
