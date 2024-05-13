@@ -17,13 +17,8 @@
   <maintainer>
     <foaf:Person>
       <foaf:name>Shema Angelo Verlain</foaf:name>
-      <foaf:mbox rdf:resource="mailto:hey@vixalien.com" />
-      <foaf:account>
-        <foaf:OnlineAccount>
-          <foaf:accountServiceHomepage rdf:resource="https://gitlab.gnome.org"/>
-          <foaf:accountName>vixalien</foaf:accountName>
-        </foaf:OnlineAccount>
-      </foaf:account>
+      <foaf:mbox rdf:resource="mailto:sav@gnome.org" />
+      <gnome:userid>sav</gnome:userid>
     </foaf:Person>
   </maintainer>
 </Project>
