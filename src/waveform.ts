@@ -284,21 +284,20 @@ export class APPeaksGenerator extends GObject.Object {
   }
 
   generate_peaks_async(uri: string): void {
-    const pipeline = Gst.parse_launch(
+    this.pipeline = Gst.parse_launch(
       `uridecodebin name=uridecodebin ! audioconvert ! audio/x-raw,channels=1 ! level name=level interval=${this.INTERVAL} ! fakesink name=faked`,
     ) as Gst.Bin;
-    this.pipeline = pipeline;
 
-    const fakesink = pipeline.get_by_name("faked");
+    const fakesink = this.pipeline.get_by_name("faked");
     fakesink?.set_property("qos", false);
     fakesink?.set_property("sync", false);
 
-    const uridecodebin = pipeline.get_by_name("uridecodebin");
+    const uridecodebin = this.pipeline.get_by_name("uridecodebin");
     uridecodebin?.set_property("uri", uri);
 
-    pipeline.set_state(Gst.State.PLAYING);
+    this.pipeline.set_state(Gst.State.PLAYING);
 
-    const bus = pipeline.get_bus();
+    const bus = this.pipeline.get_bus();
     if (!bus) return;
 
     this.bus = bus;
@@ -325,7 +324,7 @@ export class APPeaksGenerator extends GObject.Object {
             this.peaks = [...this.loaded_peaks];
             this.loaded_peaks.length = 0;
 
-            pipeline?.set_state(Gst.State.NULL);
+            this.pipeline?.set_state(Gst.State.NULL);
             break;
         }
       },
