@@ -254,6 +254,9 @@ export class APPeaksGenerator extends GObject.Object {
   }
 
   private _peaks: number[] = [];
+  private pipeline?: Gst.Bin;
+  private bus?: Gst.Bus;
+  private callback_id?: number;
 
   get peaks() {
     return this._peaks;
@@ -268,56 +271,64 @@ export class APPeaksGenerator extends GObject.Object {
     super();
   }
 
-  private started = false;
-
   restart() {
-    this.started = true;
+    if (this.callback_id && this.bus) {
+      this.bus.disconnect(this.callback_id);
+      this.bus.remove_signal_watch();
+    }
+
+    this.pipeline?.set_state(Gst.State.NULL);
+
     this.loaded_peaks.length = 0;
     this.peaks.length = 0;
   }
 
   generate_peaks_async(uri: string): void {
-    const pipeline = Gst.parse_launch(
+    this.pipeline = Gst.parse_launch(
       `uridecodebin name=uridecodebin ! audioconvert ! audio/x-raw,channels=1 ! level name=level interval=${this.INTERVAL} ! fakesink name=faked`,
     ) as Gst.Bin;
 
-    const fakesink = pipeline.get_by_name("faked");
+    const fakesink = this.pipeline.get_by_name("faked");
     fakesink?.set_property("qos", false);
     fakesink?.set_property("sync", false);
 
-    const uridecodebin = pipeline.get_by_name("uridecodebin");
+    const uridecodebin = this.pipeline.get_by_name("uridecodebin");
     uridecodebin?.set_property("uri", uri);
 
-    pipeline.set_state(Gst.State.PLAYING);
+    this.pipeline.set_state(Gst.State.PLAYING);
 
-    const bus = pipeline.get_bus();
-    bus?.add_signal_watch_full(GLib.PRIORITY_DEFAULT_IDLE);
+    const bus = this.pipeline.get_bus();
+    if (!bus) return;
 
-    bus?.connect("message", (_bus: Gst.Bus, message: Gst.Message) => {
-      switch (message.type) {
-        case Gst.MessageType.ELEMENT: {
-          const s = message.get_structure();
-          if (s && s.has_name("level")) {
-            const peakVal = s.get_value("rms") as unknown as GObject.ValueArray;
+    this.bus = bus;
+    bus.add_signal_watch_full(GLib.PRIORITY_DEFAULT_IDLE);
+    this.callback_id = bus.connect(
+      "message",
+      (_bus: Gst.Bus, message: Gst.Message) => {
+        switch (message.type) {
+          case Gst.MessageType.ELEMENT: {
+            const s = message.get_structure();
+            if (s && s.has_name("level")) {
+              const peakVal = s.get_value(
+                "rms",
+              ) as unknown as GObject.ValueArray;
 
-            if (peakVal) {
-              const peak = peakVal.get_nth(0) as number;
-              this.loaded_peaks.push(Math.pow(10, peak / 20));
+              if (peakVal) {
+                const peak = peakVal.get_nth(0) as number;
+                this.loaded_peaks.push(Math.pow(10, peak / 20));
+              }
             }
+            break;
           }
-          break;
-        }
-        case Gst.MessageType.EOS:
-          if (this.started) {
+          case Gst.MessageType.EOS:
             this.peaks = [...this.loaded_peaks];
-          }
+            this.loaded_peaks.length = 0;
 
-          this.loaded_peaks.length = 0;
-
-          pipeline?.set_state(Gst.State.NULL);
-          break;
-      }
-    });
+            this.pipeline?.set_state(Gst.State.NULL);
+            break;
+        }
+      },
+    );
   }
 
   INTERVAL = 100000000;
