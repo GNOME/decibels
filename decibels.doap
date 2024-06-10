@@ -21,4 +21,16 @@
       <gnome:userid>sav</gnome:userid>
     </foaf:Person>
   </maintainer>
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>David Keller</foaf:name>
+      <foaf:mbox rdf:resource="mailto:davidkeller@tuta.io" />
+      <foaf:account>
+        <foaf:OnlineAccount>
+          <foaf:accountServiceHomepage rdf:resource="https://gitlab.gnome.org"/>
+          <foaf:accountName>BlobCodes</foaf:accountName>
+        </foaf:OnlineAccount>
+      </foaf:account>
+    </foaf:Person>
+  </maintainer>
 </Project>
