@@ -25,6 +25,8 @@
         </foaf:OnlineAccount>
       </foaf:account>
     </foaf:Person>
+  </maintainer>
+  <maintainer>
     <foaf:Person>
       <foaf:name>David Keller</foaf:name>
       <foaf:mbox rdf:resource="mailto:davidkeller@tuta.io" />
