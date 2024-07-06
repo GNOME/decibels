@@ -40,8 +40,6 @@ export class Application extends Adw.Application {
   }
 
   private show_about_dialog_cb() {
-    /* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call */
-    // @ts-expect-error Adw.AboutDialog types aren't in `gi-types` yet
     const aboutDialog = Adw.AboutDialog.new_from_appdata(
       "/com/vixalien/decibels/org.gnome.Decibels.metainfo.xml",
       // remove commit tag
@@ -58,7 +56,6 @@ export class Application extends Adw.Application {
     aboutDialog.set_translator_credits(_("translator-credits"));
 
     aboutDialog.present(this.get_active_window());
-    /* eslint-enable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call */
   }
 
   private present_main_window(): void {
