@@ -4,7 +4,6 @@ using Adw 1;
 template $Gjs_Window : Adw.ApplicationWindow {
   default-width: 600;
   default-height: 400;
-  width-request: 300;
   height-request: 260;
   title: _("Decibels");
   content: $APDragOverlay {
@@ -12,7 +11,7 @@ template $Gjs_Window : Adw.ApplicationWindow {
     Stack stack {
       StackPage {
         name: "empty";
-        child: 
+        child:
         $APEmptyState {
         }
 
@@ -21,7 +20,7 @@ template $Gjs_Window : Adw.ApplicationWindow {
 
       StackPage {
         name: "error";
-        child: 
+        child:
         $APErrorState error {
         }
 
@@ -30,7 +29,7 @@ template $Gjs_Window : Adw.ApplicationWindow {
 
       StackPage {
         name: "player";
-        child: 
+        child:
         $APPlayerState player {
         }
 
