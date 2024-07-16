@@ -20,9 +20,9 @@ Decibels is available to download on
 
 <a href="https://flathub.org/apps/details/org.gnome.Decibels" title="Download Decibels on Flathub">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="data/flathub-badges/download-i.svg">
-    <source media="(prefers-color-scheme: light)" srcset="data/flathub-badges/download.svg">
-    <img alt="Download Decibels on Flathub" src="data/flathub-badges/download.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://flathub.org/api/badge?svg&locale=en&light">
+    <source media="(prefers-color-scheme: light)" srcset="https://flathub.org/api/badge?svg&locale=en">
+    <img alt="Download Decibels on Flathub" src="https://flathub.org/api/badge?svg&locale=en">
   </picture>
 </a>
 
