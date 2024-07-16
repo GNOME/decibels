@@ -14,7 +14,8 @@ variables:
     RUNTIME_REPO: "https://nightly.gnome.org/gnome-nightly.flatpakrepo"
     APP_ID: "org.gnome.Decibels.Devel"
   before_script:
-    - flatpak --user install -y org.freedesktop.Sdk.Extension.node18//23.08 org.freedesktop.Sdk.Extension.typescript//23.08
+    - flatpak --user remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+    - flatpak --user install -y flathub-beta org.freedesktop.Sdk.Extension.node18//24.08beta org.freedesktop.Sdk.Extension.typescript//24.08beta
 
 flatpak@x86_64:
   extends:
