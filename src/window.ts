@@ -3,6 +3,7 @@ import Gio from "gi://Gio";
 import GLib from "gi://GLib";
 import GObject from "gi://GObject";
 import Gtk from "gi://Gtk?version=4.0";
+import Gdk from "gi://Gdk?version=4.0";
 
 import { APMediaStream } from "./stream.js";
 
@@ -254,5 +255,26 @@ export class Window extends Adw.ApplicationWindow {
 
     this.show_stack_page("error");
     this._error.show_error(title, error);
+  }
+
+  private key_pressed_cb(
+    _controller: Gtk.EventControllerKey,
+    keyval: number,
+  ): boolean {
+    const stream = this.stream;
+
+    if (!stream) return Gdk.EVENT_PROPAGATE;
+
+    if (keyval === Gdk.KEY_space) {
+      stream.playing ? stream.pause() : stream.play();
+    } else if (keyval === Gdk.KEY_Left) {
+      stream.skip_seconds(-10);
+    } else if (keyval === Gdk.KEY_Right) {
+      stream.skip_seconds(10);
+    } else {
+      return Gdk.EVENT_PROPAGATE;
+    }
+
+    return Gdk.EVENT_STOP;
   }
 }

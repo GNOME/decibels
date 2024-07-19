@@ -73,7 +73,6 @@ export class APPlayerState extends Adw.Bin {
       "label",
       GObject.BindingFlags.SYNC_CREATE,
       () => {
-        this._scale.grab_focus();
         return [true, micro_to_string(window.stream.get_duration())];
       },
       null,
@@ -218,28 +217,6 @@ export class APPlayerState extends Adw.Bin {
     }
 
     stream.skip_seconds(delta);
-  }
-
-  private key_pressed_cb(
-    _controller: Gtk.EventControllerKey,
-    keyval: number,
-  ): boolean {
-    const window = this.get_root() as Window;
-    const stream = window?.stream;
-
-    if (!stream) return Gdk.EVENT_PROPAGATE;
-
-    if (keyval === Gdk.KEY_space) {
-      stream.playing ? stream.pause() : stream.play();
-    } else if (keyval === Gdk.KEY_Left) {
-      stream.skip_seconds(-10);
-    } else if (keyval === Gdk.KEY_Right) {
-      stream.skip_seconds(10);
-    } else {
-      return Gdk.EVENT_PROPAGATE;
-    }
-
-    return Gdk.EVENT_STOP;
   }
 
   private waveform_position_changed_cb(_scale: Gtk.Scale, value: number) {

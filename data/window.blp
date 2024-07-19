@@ -12,7 +12,7 @@ template $Gjs_Window : Adw.ApplicationWindow {
     Stack stack {
       StackPage {
         name: "empty";
-        child: 
+        child:
         $APEmptyState {
         }
 
@@ -21,7 +21,7 @@ template $Gjs_Window : Adw.ApplicationWindow {
 
       StackPage {
         name: "error";
-        child: 
+        child:
         $APErrorState error {
         }
 
@@ -30,7 +30,7 @@ template $Gjs_Window : Adw.ApplicationWindow {
 
       StackPage {
         name: "player";
-        child: 
+        child:
         $APPlayerState player {
         }
 
@@ -38,4 +38,9 @@ template $Gjs_Window : Adw.ApplicationWindow {
       }
     }
   };
+
+  EventControllerKey {
+    propagation-phase: capture;
+    key-pressed => $key_pressed_cb();
+  }
 }

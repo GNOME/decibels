@@ -159,10 +159,5 @@
         </child>
       </object>
     </child>
-    <child>
-      <object class="GtkEventControllerKey">
-        <signal name="key_pressed" handler="key_pressed_cb"/>
-      </object>
-    </child>
   </template>
 </interface>
