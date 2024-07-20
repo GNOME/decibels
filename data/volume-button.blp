@@ -1,10 +1,9 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $APVolumeButton : Adw.Bin {
+template $APVolumeButton: Adw.Bin {
   MenuButton menu_button {
-    popover: 
-    Popover {
+    popover: Popover {
       Box {
         margin-start: 4;
         margin-end: 4;
@@ -18,15 +17,14 @@ template $APVolumeButton : Adw.Bin {
           vexpand: true;
           orientation: vertical;
           inverted: true;
-          adjustment: 
-          Adjustment adjustment {
+
+          adjustment: Adjustment adjustment {
             step-increment: 0.1;
             lower: 0;
             upper: 1;
             value: 0.5;
-          }
+          };
 
-          ;
           change-value => $scale_change_value_cb();
 
           marks [
@@ -34,9 +32,7 @@ template $APVolumeButton : Adw.Bin {
           ]
         }
       }
-    }
-
-    ;
+    };
 
     styles [
       "flat",
