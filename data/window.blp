@@ -1,40 +1,32 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $Gjs_Window : Adw.ApplicationWindow {
+template $Gjs_Window: Adw.ApplicationWindow {
   default-width: 600;
   default-height: 400;
   width-request: 300;
   height-request: 260;
   title: _("Decibels");
+
   content: $APDragOverlay {
     [content]
     Stack stack {
       StackPage {
         name: "empty";
-        child: 
-        $APEmptyState {
-        }
 
-        ;
+        child: $APEmptyState {};
       }
 
       StackPage {
         name: "error";
-        child: 
-        $APErrorState error {
-        }
 
-        ;
+        child: $APErrorState error {};
       }
 
       StackPage {
         name: "player";
-        child: 
-        $APPlayerState player {
-        }
 
-        ;
+        child: $APPlayerState player {};
       }
     }
   };

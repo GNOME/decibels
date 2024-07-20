@@ -1,7 +1,7 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $APPlaybackRateButton : Adw.Bin {
+template $APPlaybackRateButton: Adw.Bin {
   MenuButton {
     Box {
       spacing: 6;
@@ -14,8 +14,8 @@ template $APPlaybackRateButton : Adw.Bin {
         label: '× 1.0';
       }
     }
-    popover: 
-    Popover {
+
+    popover: Popover {
       Box {
         margin-start: 4;
         margin-end: 4;
@@ -29,15 +29,14 @@ template $APPlaybackRateButton : Adw.Bin {
           vexpand: true;
           orientation: vertical;
           inverted: true;
-          adjustment: 
-          Adjustment adjustment {
+
+          adjustment: Adjustment adjustment {
             step-increment: 0.5;
             lower: 0.5;
             upper: 3;
             value: 1;
-          }
+          };
 
-          ;
           change-value => $scale_change_value_cb();
 
           marks [
@@ -48,9 +47,7 @@ template $APPlaybackRateButton : Adw.Bin {
           ]
         }
       }
-    }
-
-    ;
+    };
 
     styles [
       "flat",
