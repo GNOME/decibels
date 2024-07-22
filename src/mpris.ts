@@ -296,7 +296,7 @@ export class MPRIS extends DBusInterface {
       };
     }
 
-    const length = this.stream.duration;
+    const length = this.stream.get_duration();
 
     const metadata: Record<string, GLib.Variant> = {
       "mpris:trackid": GLib.Variant.new_object_path(song_dbus_path),
