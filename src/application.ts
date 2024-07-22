@@ -1,7 +1,6 @@
 import Adw from "gi://Adw";
 import Gio from "gi://Gio";
 import GObject from "gi://GObject";
-import Gtk from "gi://Gtk?version=4.0";
 
 import { AddActionEntries, Window } from "./window.js";
 
@@ -40,8 +39,6 @@ export class Application extends Adw.Application {
     show_about_action.connect("activate", this.show_about_dialog_cb.bind(this));
 
     this.add_action(show_about_action);
-
-    Gio._promisify(Gtk.UriLauncher.prototype, "launch", "launch_finish");
   }
 
   private show_about_dialog_cb() {
