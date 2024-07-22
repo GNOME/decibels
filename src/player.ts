@@ -121,7 +121,7 @@ export class APPlayerState extends Adw.Bin {
       "icon-name",
       GObject.BindingFlags.SYNC_CREATE,
       (_binding, from: boolean) => {
-        return [true, from ? "pause-symbolic" : "play-symbolic"];
+        return [true, from ? "pause-large-symbolic" : "play-large-symbolic"];
       },
       null,
     );
