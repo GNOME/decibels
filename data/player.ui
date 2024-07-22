@@ -115,12 +115,11 @@
                     <child>
                       <object class="GtkImage" id="playback_image">
                         <property name="icon-name">pause-symbolic</property>
-                        <property name="pixel-size">20</property>
+                        <property name="icon-size">large</property>
                       </object>
                     </child>
                     <style>
-                      <class name="circular" />
-                      <class name="raised" />
+                      <class name="pill" />
                     </style>
                   </object>
                 </child>
