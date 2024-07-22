@@ -243,17 +243,7 @@ export class MPRIS extends DBusInterface {
     super(`org.mpris.MediaPlayer2.${pkg.name}`, "/org/mpris/MediaPlayer2");
 
     this.stream.connect(
-      "notify::title",
-      this._on_current_song_changed.bind(this),
-    );
-
-    this.stream.connect(
-      "notify::artist",
-      this._on_current_song_changed.bind(this),
-    );
-
-    this.stream.connect(
-      "notify::duration",
+      "notify::media-info",
       this._on_current_song_changed.bind(this),
     );
 
@@ -261,6 +251,7 @@ export class MPRIS extends DBusInterface {
       "notify::playing",
       this._on_player_state_changed.bind(this),
     );
+
     this.stream.connect(
       "notify::loop",
       this._on_repeat_mode_changed.bind(this),

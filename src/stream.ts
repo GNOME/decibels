@@ -466,6 +466,8 @@ export class APMediaStream extends Gtk.MediaStream {
   }
 
   set media_info(media_info: GstPlay.PlayMediaInfo | null) {
+    if (media_info === this.media_info) return;
+
     this._media_info = media_info;
     this.notify("media-info");
   }
@@ -635,7 +637,7 @@ export class APMediaStream extends Gtk.MediaStream {
     _play: GstPlay.Play,
     info: GstPlay.PlayMediaInfo,
   ): void {
-    this._media_info = info;
+    this.media_info = info;
 
     if (!this.prepared) {
       this.stream_prepared(
@@ -654,8 +656,6 @@ export class APMediaStream extends Gtk.MediaStream {
           ),
         );
       }
-    } else {
-      this.notify("duration");
     }
   }
 
