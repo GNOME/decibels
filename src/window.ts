@@ -263,7 +263,7 @@ export class Window extends Adw.ApplicationWindow {
   ): boolean {
     const stream = this.stream;
 
-    if (!stream) return Gdk.EVENT_PROPAGATE;
+    if (!stream.media_info) return Gdk.EVENT_PROPAGATE;
 
     if (keyval === Gdk.KEY_space) {
       stream.playing ? stream.pause() : stream.play();
