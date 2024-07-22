@@ -29,4 +29,9 @@ template $Gjs_Window: Adw.ApplicationWindow {
       }
     }
   };
+
+  EventControllerKey {
+    propagation-phase: capture;
+    key-pressed => $key_pressed_cb();
+  }
 }
