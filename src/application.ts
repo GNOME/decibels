@@ -5,8 +5,6 @@ import Gtk from "gi://Gtk?version=4.0";
 
 import { Window } from "./window.js";
 
-export const Settings = new Gio.Settings({ schema: pkg.name });
-
 export class Application extends Adw.Application {
   private window?: Window;
 
