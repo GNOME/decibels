@@ -114,7 +114,7 @@
                     <property name="height-request">42</property>
                     <child>
                       <object class="GtkImage" id="playback_image">
-                        <property name="icon-name">pause-symbolic</property>
+                        <property name="icon-name">pause-large-symbolic</property>
                         <property name="icon-size">large</property>
                       </object>
                     </child>
