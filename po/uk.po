@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/iss"
 "ues\n"
-"POT-Creation-Date: 2024-07-08 17:37+0000\n"
-"PO-Revision-Date: 2024-07-09 07:45+0300\n"
+"POT-Creation-Date: 2024-07-22 15:29+0000\n"
+"PO-Revision-Date: 2024-07-22 21:26+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -62,25 +62,24 @@ msgstr "Просте керування позицією відтворення"
 msgid "Drop Here to Open"
 msgstr "Скиньте сюди, щоб відкрити"
 
-#: data/empty.blp:12
-#| msgid "Play audio files"
+#: data/empty.blp:11
 msgid "Play Audio Files"
 msgstr "Відтворювач аудіо файлів"
 
-#: data/empty.blp:13
+#: data/empty.blp:12
 msgid "Drag and drop audio files here"
 msgstr "Перетягніть сюди звукові файли і скиньте їх"
 
-#: data/empty.blp:20
+#: data/empty.blp:19
 msgid "_Open…"
 msgstr "_Відкрити…"
 
-#: data/error.blp:12 src/drag-overlay.ts:69 src/window.ts:155 src/window.ts:196
-#: src/window.ts:215 src/window.ts:231
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:128 src/window.ts:179
+#: src/window.ts:198 src/window.ts:217
 msgid "File Cannot Be Played"
 msgstr "Неможливо програти файл"
 
-#: data/error.blp:19
+#: data/error.blp:18
 msgid "_Try Again…"
 msgstr "_Спробувати ще раз…"
 
@@ -93,10 +92,15 @@ msgid "Open…"
 msgstr "Відкрити…"
 
 #: data/header.blp:26
+#| msgid "Unknown File"
+msgid "Show in _Files"
+msgstr "Показати у _Файлах"
+
+#: data/header.blp:34
 msgid "_Keyboard Shortcuts"
 msgstr "_Клавіатурні скорочення"
 
-#: data/header.blp:31
+#: data/header.blp:39
 msgid "_About Decibels"
 msgstr "_Про Децибели"
 
@@ -105,12 +109,10 @@ msgid "Adjust Playback Speed"
 msgstr "Регулювання швидкості відтворення"
 
 #: data/player.ui:104
-#| msgid "Skip back 10s"
 msgid "Skip Back 10s"
 msgstr "Перемотати назад на 10 секунд"
 
 #: data/player.ui:133
-#| msgid "Skip forward 10s"
 msgid "Skip Forward 10s"
 msgstr "Перемотати вперед на 10 секунд"
 
@@ -145,21 +147,17 @@ msgid "Pause/Play"
 msgstr "Відтворити/зупинити"
 
 #: data/gtk/help-overlay.blp:38
-#| msgctxt "shortcut window"
-#| msgid "Go back 10 seconds"
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "Перемотати назад на 10 секунд"
 
 #: data/gtk/help-overlay.blp:43
-#| msgctxt "shortcut window"
-#| msgid "Go forward 10 seconds"
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Перемотати вперед на 10 секунд"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:58
+#: src/application.ts:54
 msgid "translator-credits"
 msgstr "volkov <volkovissocool@gmail.com>"
 
@@ -231,31 +229,31 @@ msgstr "Пауза"
 msgid "Play"
 msgstr "Відтворити"
 
-#: src/window.ts:161
+#: src/window.ts:134
 msgid "Audio files"
 msgstr "Аудіо файли"
 
-#: src/window.ts:168
+#: src/window.ts:141
 msgid "Open File"
 msgstr "Відкрити файл"
 
-#: src/window.ts:197
+#: src/window.ts:180
 msgid "No available audio file found"
 msgstr "Не вдалося знайти доступний аудіо файл"
 
-#: src/window.ts:209
+#: src/window.ts:192
 msgid "Directories Cannot Be Played"
 msgstr "Не можна програвати теки"
 
-#: src/window.ts:210
+#: src/window.ts:193
 msgid "Please select a file."
 msgstr "Оберіть файл."
 
-#: src/window.ts:216
+#: src/window.ts:199
 msgid "The selected file is not a regular file."
 msgstr "Обраний файл не є звичайним файлом."
 
-#: src/window.ts:232
+#: src/window.ts:218
 msgid "No file was selected"
 msgstr "Не було обрано жодного файлу"
 
