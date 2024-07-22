@@ -2,12 +2,16 @@ import Adw from "gi://Adw";
 import Gio from "gi://Gio";
 import GObject from "gi://GObject";
 
+import { MPRIS } from "./mpris.js";
 import { AddActionEntries, Window } from "./window.js";
+import { APMediaStream } from "./stream.js";
 
 export class Application extends Adw.Application {
   static {
     GObject.registerClass(this);
   }
+
+  mpris: MPRIS;
 
   constructor() {
     super({
@@ -15,6 +19,13 @@ export class Application extends Adw.Application {
       resource_base_path: "/com/vixalien/decibels",
       flags: Gio.ApplicationFlags.HANDLES_OPEN,
     });
+
+    this.mpris = new MPRIS();
+
+    this.connect(
+      "notify::active-window",
+      this.active_window_changed_cb.bind(this),
+    );
 
     (this.add_action_entries as AddActionEntries)([
       {
@@ -65,7 +76,45 @@ export class Application extends Adw.Application {
     const window = new Window({ application: this });
     if (pkg.name.endsWith("Devel")) window.add_css_class("devel");
     window.present();
+
     return window;
+  }
+
+  private new_stream_listener: [APMediaStream, number] | null = null;
+
+  private cleanup_stream_listener() {
+    if (!this.new_stream_listener) return;
+
+    const [stream, listener_id] = this.new_stream_listener;
+    stream.disconnect(listener_id);
+    this.new_stream_listener = null;
+  }
+
+  private switch_mpris_stream(stream: APMediaStream) {
+    this.mpris.switch_stream(stream);
+    if (!this.mpris.started) this.mpris.start();
+    this.cleanup_stream_listener();
+  }
+
+  private active_window_changed_cb() {
+    const window = this.active_window;
+
+    if (!(window instanceof Window) || !window.stream) return;
+
+    const stream = window.stream;
+
+    if (stream.media_info) {
+      this.switch_mpris_stream(stream);
+    } else {
+      // this stream has not yet loaded a track. switch to it as soon as it
+      // loads a track to avoid showing "Unknown File" as playing
+      this.new_stream_listener = [
+        stream,
+        stream.connect("notify::media-info", () => {
+          this.switch_mpris_stream(stream);
+        }),
+      ];
+    }
   }
 
   vfunc_activate(): void {
