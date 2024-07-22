@@ -149,7 +149,17 @@ export class Window extends Adw.ApplicationWindow {
           this.open_file();
         },
       },
+      {
+        name: "show-file",
+        activate: () => {
+          this.show_file();
+        },
+      },
     ]);
+
+    (
+      this.lookup_action("show-file") as Gio.SimpleAction | undefined
+    )?.set_enabled(false);
   }
 
   load_uri(uri: string) {
@@ -191,6 +201,9 @@ export class Window extends Adw.ApplicationWindow {
         return;
     }
 
+    (
+      this.lookup_action("show-file") as Gio.SimpleAction | undefined
+    )?.set_enabled(true);
     this.stream.set_file(file);
   }
 
@@ -218,11 +231,22 @@ export class Window extends Adw.ApplicationWindow {
       });
   }
 
+  show_file() {
+    new Gtk.FileLauncher({ file: this.stream.file! }).open_containing_folder(
+      null,
+      null,
+      null,
+    );
+  }
+
   private show_stack_page(page: "empty" | "error" | "player") {
     this._stack.visible_child_name = page;
   }
 
   show_error(title: string, error: unknown) {
+    (
+      this.lookup_action("show-file") as Gio.SimpleAction | undefined
+    )?.set_enabled(false);
     this.stream.stop();
 
     this.show_stack_page("error");
