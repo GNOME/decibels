@@ -29,16 +29,17 @@ export class Application extends Adw.Application {
           this.quit();
         },
       },
+      {
+        name: "about",
+        activate: () => {
+          this.show_about_dialog_cb();
+        },
+      },
     ]);
 
     this.set_accels_for_action("app.new-window", ["<Control>n"]);
     this.set_accels_for_action("app.quit", ["<Control>q"]);
     this.set_accels_for_action("win.open-file", ["<Control>o"]);
-
-    const show_about_action = new Gio.SimpleAction({ name: "about" });
-    show_about_action.connect("activate", this.show_about_dialog_cb.bind(this));
-
-    this.add_action(show_about_action);
   }
 
   private show_about_dialog_cb() {
