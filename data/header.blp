@@ -16,6 +16,11 @@ template $APHeaderBar: Adw.Bin {
 menu primary_menu {
   section {
     item {
+      label: _("New Window");
+      action: "app.new-window";
+    }
+
+    item {
       label: _("Open…");
       action: "win.open-file";
     }
