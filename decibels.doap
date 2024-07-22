@@ -7,8 +7,8 @@
 
   <name xml:lang="en">Decibels</name>
   <shortdesc xml:lang="en">Play audio files</shortdesc>
-  <homepage rdf:resource="https://gitlab.gnome.org/vixalien/decibels" />
-  <bug-database rdf:resource="https://gitlab.gnome.org/vixalien/decibels/-/issues"/>
+  <homepage rdf:resource="https://gitlab.gnome.org/GNOME/Incubator/decibels" />
+  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues"/>
 
   <programming-language>JavaScript</programming-language>
   <platform>GTK 4</platform>
@@ -24,13 +24,8 @@
   <maintainer>
     <foaf:Person>
       <foaf:name>David Keller</foaf:name>
-      <foaf:mbox rdf:resource="mailto:davidkeller@tuta.io" />
-      <foaf:account>
-        <foaf:OnlineAccount>
-          <foaf:accountServiceHomepage rdf:resource="https://gitlab.gnome.org"/>
-          <foaf:accountName>BlobCodes</foaf:accountName>
-        </foaf:OnlineAccount>
-      </foaf:account>
+      <foaf:mbox rdf:resource="mailto:dkeller@gnome.org" />
+      <gnome:userid>dkeller</gnome:userid>
     </foaf:Person>
   </maintainer>
 </Project>

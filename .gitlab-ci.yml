@@ -14,7 +14,7 @@ variables:
     RUNTIME_REPO: "https://nightly.gnome.org/gnome-nightly.flatpakrepo"
     APP_ID: "org.gnome.Decibels.Devel"
   before_script:
-    - flatpak --user install -y org.freedesktop.Sdk.Extension.node18//23.08 org.freedesktop.Sdk.Extension.typescript//23.08
+    - flatpak --user install -y org.freedesktop.Sdk.Extension.node20//24.08beta org.freedesktop.Sdk.Extension.typescript//24.08beta
 
 flatpak@x86_64:
   extends:
@@ -52,3 +52,13 @@ eslint:
     paths:
       - ${LINT_LOG}
     when: on_failure
+
+blueprint-format:
+  variables:
+    GIT_SUBMODULE_STRATEGY: none
+
+  image: quay.io/fedora/fedora:latest
+
+  script:
+    - sudo dnf install -y --enablerepo=updates-testing --best blueprint-compiler
+    - blueprint-compiler format data
