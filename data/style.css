@@ -1,8 +1,6 @@
-@define-color dimmed_color alpha(currentColor, .55);
-
 .drag-overlay-status-page {
-  background-color: alpha(@accent_bg_color, 0.5);
-  color: @accent_fg_color;
+  background-color: color-mix(in srgb, var(--accent-bg-color), transparent);
+  color: var(--accent-fg-color);
   padding: 32px;
 }
 

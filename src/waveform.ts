@@ -42,6 +42,7 @@ export class APWaveForm extends Gtk.DrawingArea {
   private _position: number;
   private dragGesture?: Gtk.GestureDrag;
   private hcId: number;
+  private accentId: number;
   private drag_start_position: number | null = null;
 
   static {
@@ -88,12 +89,13 @@ export class APWaveForm extends Gtk.DrawingArea {
     this.dragGesture.connect("drag-end", this.dragEnd.bind(this));
     this.add_controller(this.dragGesture);
 
-    this.hcId = Adw.StyleManager.get_default().connect(
-      "notify::high-contrast",
-      () => {
-        this.queue_draw();
-      },
-    );
+    const styleManager = Adw.StyleManager.get_default();
+    this.hcId = styleManager.connect("notify::high-contrast", () => {
+      this.queue_draw();
+    });
+    this.accentId = styleManager.connect("notify::accent-color", () => {
+      this.queue_draw();
+    });
 
     this.set_draw_func(this.drawFunc.bind(this));
   }
@@ -124,7 +126,7 @@ export class APWaveForm extends Gtk.DrawingArea {
   }
 
   private drawFunc(
-    _: Gtk.DrawingArea,
+    da: Gtk.DrawingArea,
     ctx: Cairo.Context,
     width: number,
     height: number,
@@ -135,11 +137,13 @@ export class APWaveForm extends Gtk.DrawingArea {
 
     let pointer = horizCenter - this._position * peaks.length * GUTTER;
 
-    const styleContext = this.get_style_context();
+    const styleManager = Adw.StyleManager.get_default();
+    const accent = styleManager.accent_color;
+    const dark = styleManager.dark;
 
-    const rightColor = styleContext.lookup_color("dimmed_color")[1];
-
-    const leftColor = this.safeLookupColor("accent_color");
+    const leftColor = Adw.accent_color_to_standalone_rgba(accent, dark);
+    const rightColor = da.get_color();
+    rightColor.alpha *= styleManager.high_contrast ? 0.9 : 0.55;
 
     // Because the cairo module isn't real, we have to use these to ignore `any`.
     // We keep them to the minimum possible scope to catch real errors.
@@ -218,17 +222,9 @@ export class APWaveForm extends Gtk.DrawingArea {
 
   public destroy(): void {
     Adw.StyleManager.get_default().disconnect(this.hcId);
+    Adw.StyleManager.get_default().disconnect(this.accentId);
     this.peaks.length = 0;
     this.queue_draw();
-  }
-
-  private safeLookupColor(color: string) {
-    const styleContext = this.get_style_context();
-
-    const lookupColor = styleContext.lookup_color(color);
-    const ok = lookupColor[0];
-    if (ok) return lookupColor[1];
-    return styleContext.get_color();
   }
 }
 
