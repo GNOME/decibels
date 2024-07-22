@@ -11,7 +11,6 @@ import { APEmptyState } from "./empty.js";
 import { APErrorState } from "./error.js";
 import { APPlayerState } from "./player.js";
 import { MPRIS } from "./mpris.js";
-import { Settings } from "./application.js";
 import { APDragOverlay } from "./drag-overlay.js";
 
 Gio._promisify(Gtk.FileDialog.prototype, "open", "open_finish");
@@ -77,32 +76,6 @@ export class Window extends Adw.ApplicationWindow {
 
   constructor(params?: Partial<Adw.ApplicationWindow.ConstructorProperties>) {
     super(params);
-
-    // update the settings when the properties change and vice versa
-    Settings.bind(
-      "width",
-      this,
-      "default-width",
-      Gio.SettingsBindFlags.DEFAULT,
-    );
-    Settings.bind(
-      "height",
-      this,
-      "default-height",
-      Gio.SettingsBindFlags.DEFAULT,
-    );
-    Settings.bind(
-      "is-maximized",
-      this,
-      "maximized",
-      Gio.SettingsBindFlags.DEFAULT,
-    );
-    Settings.bind(
-      "is-fullscreen",
-      this,
-      "fullscreened",
-      Gio.SettingsBindFlags.DEFAULT,
-    );
 
     this.stream = new APMediaStream();
 

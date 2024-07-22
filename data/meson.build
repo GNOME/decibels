@@ -60,32 +60,6 @@ if (appstreamcli.found())
   )
 endif
 
-gsettings_conf = configuration_data()
-gsettings_conf.set('app-id', application_id)
-gsettings_conf.set('gettext-package', gettext_package)
-gsettings_schema = configure_file(
-  input: 'org.gnome.Decibels.gschema.xml.in',
-  output: '@0@.gschema.xml'.format(application_id),
-  configuration: gsettings_conf,
-  install: true,
-  install_dir: decibels_schemadir
-)
-
-compile_schemas = find_program('glib-compile-schemas', required: false)
-
-compile_local_schemas = custom_target(
-  'compile_local_schemas',
-  input: gsettings_schema,
-  output: 'gschemas.compiled',
-  command: [compile_schemas, meson.current_build_dir()]
-)
-
-if compile_schemas.found()
-  test('Validate schema file',
-       compile_schemas,
-       args: ['--strict', '--dry-run', meson.current_source_dir()])
-endif
-
 data_res = gnome.compile_resources(
   application_id + '.data',
   'org.gnome.Decibels.data.gresource.xml',

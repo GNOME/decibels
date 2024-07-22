@@ -30,7 +30,6 @@ decibels_bindir = decibels_prefix / get_option('bindir')
 decibels_libdir = decibels_prefix / get_option('libdir')
 decibels_datadir = decibels_prefix / get_option('datadir')
 decibels_pkgdatadir = decibels_datadir / application_id
-decibels_schemadir = decibels_datadir / 'glib-2.0' / 'schemas'
 
 gjs_dep = dependency('gjs-1.0', version: '>= 1.54.0')
 gjs_console = gjs_dep.get_variable(pkgconfig: 'gjs_console')
@@ -44,7 +43,6 @@ subdir('src')
 subdir('po')
 
 gnome.post_install(
-     glib_compile_schemas: true,
     gtk_update_icon_cache: true,
   update_desktop_database: true,
 )

@@ -1,6 +1,5 @@
 data/org.gnome.Decibels.desktop.in.in
 data/org.gnome.Decibels.metainfo.xml.in.in
-data/org.gnome.Decibels.gschema.xml.in
 data/drag-overlay.blp
 data/empty.blp
 data/error.blp
