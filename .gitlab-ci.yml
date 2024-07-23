@@ -8,7 +8,7 @@ variables:
 
 .flatpak-local:
   variables:
-    MANIFEST_PATH: "build-aux/flatpak/org.gnome.Decibels.json"
+    MANIFEST_PATH: "build-aux/flatpak/org.gnome.Decibels.Devel.json"
     BUNDLE: "org.gnome.Decibels.Devel.flatpak"
     FLATPAK_MODULE: "decibels"
     RUNTIME_REPO: "https://nightly.gnome.org/gnome-nightly.flatpakrepo"
