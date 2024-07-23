@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-09 15:12+0000\n"
-"PO-Revision-Date: 2024-07-09 20:40+0330\n"
+"POT-Creation-Date: 2024-07-22 15:29+0000\n"
+"PO-Revision-Date: 2024-07-23 07:21+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "Language: fa\n"
@@ -57,24 +57,24 @@ msgstr "واپایش‌های جویش آسان"
 msgid "Drop Here to Open"
 msgstr "رها کردن در این‌جا برای گشودن"
 
-#: data/empty.blp:12
+#: data/empty.blp:11
 msgid "Play Audio Files"
 msgstr "پخش پرونده‌های صوتی"
 
-#: data/empty.blp:13
+#: data/empty.blp:12
 msgid "Drag and drop audio files here"
 msgstr "کشیدن و رها کردن پرونده‌های صوتی در این‌جا"
 
-#: data/empty.blp:20
+#: data/empty.blp:19
 msgid "_Open…"
 msgstr "_گشودن…"
 
-#: data/error.blp:12 src/drag-overlay.ts:69 src/window.ts:155 src/window.ts:196
-#: src/window.ts:215 src/window.ts:231
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:128 src/window.ts:179
+#: src/window.ts:198 src/window.ts:217
 msgid "File Cannot Be Played"
 msgstr "پرونده نمی‌تواند پخش شود"
 
-#: data/error.blp:19
+#: data/error.blp:18
 msgid "_Try Again…"
 msgstr "_تلاش دوباره…"
 
@@ -87,10 +87,14 @@ msgid "Open…"
 msgstr "گشودن…"
 
 #: data/header.blp:26
+msgid "Show in _Files"
+msgstr "نمایش در _پرونده‌ها"
+
+#: data/header.blp:34
 msgid "_Keyboard Shortcuts"
 msgstr "_میان‌برهای صفحه‌کلید"
 
-#: data/header.blp:31
+#: data/header.blp:39
 msgid "_About Decibels"
 msgstr "_دربارهٔ دسی‌بل"
 
@@ -147,7 +151,7 @@ msgid "Go Forward 10 Seconds"
 msgstr "۱۰ ثانیه به پیش"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:58
+#: src/application.ts:54
 msgid "translator-credits"
 msgstr "دانیال بهزادی <dani.behzi@ubuntu.com>"
 
@@ -218,30 +222,30 @@ msgstr "مکث"
 msgid "Play"
 msgstr "پخش"
 
-#: src/window.ts:161
+#: src/window.ts:134
 msgid "Audio files"
 msgstr "پرونده‌های صوتی"
 
-#: src/window.ts:168
+#: src/window.ts:141
 msgid "Open File"
 msgstr "گشودن پرونده"
 
-#: src/window.ts:197
+#: src/window.ts:180
 msgid "No available audio file found"
 msgstr "هیچ پروندهٔ صوتی موجودی پیدا نشد"
 
-#: src/window.ts:209
+#: src/window.ts:192
 msgid "Directories Cannot Be Played"
 msgstr "شاخه‌ها نمی‌توانند پخش شوند"
 
-#: src/window.ts:210
+#: src/window.ts:193
 msgid "Please select a file."
 msgstr "لطفاً پرونده‌ای برگزینید."
 
-#: src/window.ts:216
+#: src/window.ts:199
 msgid "The selected file is not a regular file."
 msgstr "پروندهٔ گزیده پرونده‌ای عادی نیست."
 
-#: src/window.ts:232
+#: src/window.ts:218
 msgid "No file was selected"
 msgstr "هیچ پرونده‌ای گزیده نشده"
