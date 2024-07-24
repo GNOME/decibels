@@ -143,6 +143,6 @@
     <control>tablet</control>
   </recommends>
   <provides>
-    <id>com.vixalien.decibels</id>
+    <id>@APP_ID@</id>
   </provides>
 </component>
