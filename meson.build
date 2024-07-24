@@ -24,7 +24,6 @@ application_id = 'org.gnome.Decibels@0@'.format(profile)
 i18n = import('i18n')
 gnome = import('gnome')
 
-gettext_package = application_id
 decibels_prefix = get_option('prefix')
 decibels_bindir = decibels_prefix / get_option('bindir')
 decibels_libdir = decibels_prefix / get_option('libdir')
@@ -35,6 +34,17 @@ gjs_dep = dependency('gjs-1.0', version: '>= 1.54.0')
 gjs_console = gjs_dep.get_variable(pkgconfig: 'gjs_console')
 
 tsc = find_program('tsc', required: true)
+
+conf = configuration_data()
+conf.set('GJS', gjs_console)
+conf.set('PACKAGE_VERSION', '@0@@1@'.format(meson.project_version(), version_suffix))
+conf.set('APP_ID', application_id)
+conf.set('bindir', decibels_bindir)
+conf.set('prefix', decibels_prefix)
+conf.set('libdir', decibels_libdir)
+conf.set('datadir', decibels_datadir)
+conf.set('resource_path', '/com/vixalien/decibels@0@'.format(profile))
+conf.set('profile', profile)
 
 tsconfig = files('tsconfig.json')
 

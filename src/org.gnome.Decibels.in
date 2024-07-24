@@ -4,7 +4,7 @@ import GLib from "gi://GLib";
 import { exit } from "system";
 
 imports.package.init({
-  name: "@APPLICATION_ID@",
+  name: "@APP_ID@",
   version: "@PACKAGE_VERSION@",
   prefix: "@prefix@",
   libdir: "@libdir@",
