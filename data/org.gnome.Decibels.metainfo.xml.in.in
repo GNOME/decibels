@@ -123,7 +123,7 @@
   <url type="homepage">https://gitlab.gnome.org/GNOME/Incubator/decibels/</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues</url>
   <url type="donation">https://www.gnome.org/donate/</url>
-  <url type="translate">https://gitlab.gnome.org/GNOME/Incubator/decibels/-/tree/main/po</url>
+  <url type="translate">https://l10n.gnome.org/module/loupe/</url>
   <url type="vcs-browser">https://gitlab.gnome.org/GNOME/Incubator/decibels/</url>
   <translation type="gettext">@APP_ID@</translation>
   <custom>
