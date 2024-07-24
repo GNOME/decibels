@@ -162,7 +162,7 @@ export class Window extends Adw.ApplicationWindow {
     this.stream.set_uri(uri);
   }
 
-  async load_file(file: Gio.File) {
+  async load_file(file: Gio.File, autoplay = true) {
     const fileInfo = await file
       .query_info_async(
         "standard::*",
@@ -200,7 +200,8 @@ export class Window extends Adw.ApplicationWindow {
     (
       this.lookup_action("show-file") as Gio.SimpleAction | undefined
     )?.set_enabled(true);
-    this.stream.set_file(file);
+
+    this.stream.set_file(file, autoplay);
   }
 
   open_file() {

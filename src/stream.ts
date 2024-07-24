@@ -246,6 +246,8 @@ export class APMediaStream extends Gtk.MediaStream {
   private discoverer: GstPbUtils.Discoverer;
   peaks_generator: APPeaksGenerator;
 
+  private autoplay = true;
+
   constructor() {
     super();
 
@@ -574,7 +576,10 @@ export class APMediaStream extends Gtk.MediaStream {
   private uri_loaded_cb(): void {
     this.emit("loaded");
     this.notify("rate");
-    this.play();
+
+    // Calling `this._play.pause()` loads the file immediately instead of
+    // waiting of loading the file after the user starts playing
+    this.autoplay ? this.play() : this._play.pause();
   }
 
   private buffering_cb(_play: GstPlay.Play, percent: number): void {
@@ -688,10 +693,11 @@ export class APMediaStream extends Gtk.MediaStream {
     this.stop();
   }
 
-  set_uri(uri: string): void {
+  set_uri(uri: string, autoplay = true): void {
     this.reset();
 
     this.file = null;
+    this.autoplay = autoplay;
 
     this.discoverer.discover_uri_async(uri);
   }
@@ -700,10 +706,11 @@ export class APMediaStream extends Gtk.MediaStream {
     return this._play.uri;
   }
 
-  set_file(file: Gio.File) {
+  set_file(file: Gio.File, autoplay = true) {
     this.reset();
 
     this.file = file;
+    this.autoplay = autoplay;
 
     this.discoverer.discover_uri_async(file.get_uri());
   }

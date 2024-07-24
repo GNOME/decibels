@@ -124,7 +124,8 @@ export class Application extends Adw.Application {
   vfunc_open(files: Gio.FilePrototype[]): void {
     for (const file of files) {
       const window = this.present_new_window();
-      void window.load_file(file);
+      // only autoplay when only one file is opened
+      void window.load_file(file, files.length === 1);
     }
   }
 }
