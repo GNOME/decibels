@@ -1,0 +1,16 @@
+46.0
+---
+
+* Bugs fixed:
+  - #69 Migrate app ID to `org.gnome.`
+  - #73 Rest of the window should maybe not be a drag area since it's confusing
+  - #76 Don't use warning sign for invalid audio files since it's unnecessarily
+    scary
+  - #78 Every song reported as 1:40 long
+  - !71 Start MPRIS server explicitly
+  - !78 Remove `inode/directory` mimetype from `.desktop` file
+  - !79 CI: Publish nightly builds
+
+* Translation updates:
+  - Chinese (China) (Genius Alray)
+  - Spanish (Cassidy James oscfdezdz)
