@@ -122,10 +122,9 @@ export class Application extends Adw.Application {
   }
 
   vfunc_open(files: Gio.FilePrototype[]): void {
-    const window = this.get_active_window() ?? this.present_new_window();
-
-    if (window instanceof Window && files.length > 0) {
-      void window.load_file(files[0]);
+    for (const file of files) {
+      const window = this.present_new_window();
+      void window.load_file(file);
     }
   }
 }
