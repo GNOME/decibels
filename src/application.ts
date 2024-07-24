@@ -122,10 +122,19 @@ export class Application extends Adw.Application {
   }
 
   vfunc_open(files: Gio.FilePrototype[]): void {
+    const is_single_file = files.length === 1,
+      window = this.get_active_window() as Window;
+
+    if (is_single_file && !window.stream?.media_info) {
+      // we are opening a single file, and the current window has no file open,
+      // so open the file in the window
+      void window.load_file(files[0]);
+    }
+
     for (const file of files) {
       const window = this.present_new_window();
       // only autoplay when only one file is opened
-      void window.load_file(file, files.length === 1);
+      void window.load_file(file, is_single_file);
     }
   }
 }
