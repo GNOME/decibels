@@ -12,7 +12,7 @@ export class APPlaybackRateButton extends Adw.Bin {
     GObject.registerClass(
       {
         GTypeName: "APPlaybackRateButton",
-        Template: "resource:///com/vixalien/decibels/playback-rate-button.ui",
+        Template: "resource:///org/gnome/Decibels/playback-rate-button.ui",
         InternalChildren: ["adjustment", "label"],
         Properties: {},
       },

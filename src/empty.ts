@@ -6,7 +6,7 @@ export class APEmptyState extends Adw.Bin {
     GObject.registerClass(
       {
         GTypeName: "APEmptyState",
-        Template: "resource:///com/vixalien/decibels/empty.ui",
+        Template: "resource:///org/gnome/Decibels/empty.ui",
         InternalChildren: ["statusPage"],
       },
       this,

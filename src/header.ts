@@ -8,7 +8,7 @@ export class APHeaderBar extends Adw.Bin {
     GObject.registerClass(
       {
         GTypeName: "APHeaderBar",
-        Template: "resource:///com/vixalien/decibels/header.ui",
+        Template: "resource:///org/gnome/Decibels/header.ui",
         InternalChildren: ["header_bar"],
         Properties: {
           title: GObject.param_spec_string(

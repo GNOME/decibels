@@ -28,7 +28,7 @@ export class APPlayerState extends Adw.Bin {
     GObject.registerClass(
       {
         GTypeName: "APPlayerState",
-        Template: "resource:///com/vixalien/decibels/player.ui",
+        Template: "resource:///org/gnome/Decibels/player.ui",
         InternalChildren: [
           "scale_adjustment",
           "timestamp_label",

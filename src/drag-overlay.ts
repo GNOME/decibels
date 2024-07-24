@@ -12,7 +12,7 @@ export class APDragOverlay extends Adw.Bin {
     GObject.registerClass(
       {
         GTypeName: "APDragOverlay",
-        Template: "resource:///com/vixalien/decibels/drag-overlay.ui",
+        Template: "resource:///org/gnome/Decibels/drag-overlay.ui",
         Implements: [Gtk.Buildable],
         InternalChildren: ["overlay", "revealer"],
       },

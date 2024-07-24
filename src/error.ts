@@ -13,7 +13,7 @@ export class APErrorState extends Adw.Bin {
     GObject.registerClass(
       {
         GTypeName: "APErrorState",
-        Template: "resource:///com/vixalien/decibels/error.ui",
+        Template: "resource:///org/gnome/Decibels/error.ui",
         InternalChildren: ["statusPage"],
         Children: ["headerbar"],
       },
