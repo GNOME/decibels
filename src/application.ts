@@ -39,7 +39,7 @@ export class Application extends Adw.Application {
 
   private show_about_dialog_cb() {
     const aboutDialog = Adw.AboutDialog.new_from_appdata(
-      "/com/vixalien/decibels/org.gnome.Decibels.metainfo.xml",
+      `/com/vixalien/decibels/${pkg.name}.metainfo.xml`,
       // remove commit tag
       pkg.version.split("-")[0],
     );

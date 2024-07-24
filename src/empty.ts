@@ -7,12 +7,17 @@ export class APEmptyState extends Adw.Bin {
       {
         GTypeName: "APEmptyState",
         Template: "resource:///com/vixalien/decibels/empty.ui",
+        InternalChildren: ["statusPage"],
       },
       this,
     );
   }
 
+  private _statusPage!: Adw.StatusPage;
+
   constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
     super(params);
+
+    this._statusPage.icon_name = `${pkg.name}-symbolic`;
   }
 }

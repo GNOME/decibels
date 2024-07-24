@@ -13,16 +13,13 @@ blueprints = custom_target('blueprints',
   command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
 )
 
-desktop_conf = configuration_data()
-desktop_conf.set('app-id', application_id)
-
 desktop_file = i18n.merge_file(
   input: configure_file(
     input: 'org.gnome.Decibels.desktop.in.in',
-    output: '@BASENAME@',
-    configuration: desktop_conf
+  	output: application_id + '.desktop.in',
+    configuration: conf
   ),
-  output: '@0@.desktop'.format(application_id),
+  output: application_id + '.desktop',
   type: 'desktop',
   po_dir: '../po',
   install: true,
@@ -34,17 +31,13 @@ if desktop_utils.found()
   test('Validate desktop file', desktop_utils, args: [desktop_file])
 endif
 
-appstream_conf = configuration_data()
-appstream_conf.set('app-id', application_id)
-appstream_conf.set('gettext-package', gettext_package)
-
 appstream_file = i18n.merge_file(
   input: configure_file(
   	input: 'org.gnome.Decibels.metainfo.xml.in.in',
-  	output: '@BASENAME@',
-  	configuration: appstream_conf
+  	output: application_id + '.metainfo.xml.in',
+  	configuration: conf
 	),
-  output: 'org.gnome.Decibels.metainfo.xml',
+  output: application_id + '.metainfo.xml',
   po_dir: '../po',
   install: true,
   install_dir: decibels_datadir / 'metainfo'
@@ -62,20 +55,21 @@ endif
 
 data_res = gnome.compile_resources(
   application_id + '.data',
-  'org.gnome.Decibels.data.gresource.xml',
+  configure_file(
+  	input: 'org.gnome.Decibels.data.gresource.xml.in',
+  	output: application_id + '.data.gresource.xml',
+  	configuration: conf
+	),
   gresource_bundle: true,
   install: true,
   install_dir: decibels_pkgdatadir,
   dependencies: [appstream_file, blueprints],
 )
 
-service_conf = configuration_data()
-service_conf.set('application_id', application_id)
-service_conf.set('bindir', decibels_bindir)
 configure_file(
   input: 'org.gnome.Decibels.service.in',
-  output: '@0@.service'.format(application_id),
-  configuration: service_conf,
+  output: application_id + '.service',
+  configuration: conf,
   install: true,
   install_dir: decibels_datadir / 'dbus-1/services',
 )
