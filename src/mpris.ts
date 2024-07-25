@@ -265,28 +265,23 @@ export class MPRIS extends DBusInterface {
     // setup the new stream
 
     this.stream_listeners.push(
-      ...[
-        this.stream.connect(
-          "notify::media-info",
-          this._on_current_song_changed.bind(this),
-        ),
-
-        this.stream.connect(
-          "notify::playing",
-          this._on_player_state_changed.bind(this),
-        ),
-
-        this.stream.connect(
-          "notify::loop",
-          this._on_repeat_mode_changed.bind(this),
-        ),
-
-        this.stream.connect("notify::seeking", () => {
-          if (!this.stream.seeking) {
-            this._on_seek_finished(this, this.stream.timestamp);
-          }
-        }),
-      ],
+      this.stream.connect(
+        "notify::media-info",
+        this._on_current_song_changed.bind(this),
+      ),
+      this.stream.connect(
+        "notify::playing",
+        this._on_player_state_changed.bind(this),
+      ),
+      this.stream.connect(
+        "notify::loop",
+        this._on_repeat_mode_changed.bind(this),
+      ),
+      this.stream.connect("notify::seeking", () => {
+        if (!this.stream.seeking) {
+          this._on_seek_finished(this, this.stream.timestamp);
+        }
+      }),
     );
 
     // update metadata
