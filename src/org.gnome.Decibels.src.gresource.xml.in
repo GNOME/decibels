@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/com/vixalien/decibels@profile@/js">
+  <gresource prefix="/org/gnome/Decibels@profile@/js">
     <file>application.js</file>
     <file>drag-overlay.js</file>
     <file>empty.js</file>

@@ -10,7 +10,7 @@ export class APVolumeButton extends Adw.Bin {
     GObject.registerClass(
       {
         GTypeName: "APVolumeButton",
-        Template: "resource:///com/vixalien/decibels/volume-button.ui",
+        Template: "resource:///org/gnome/Decibels/volume-button.ui",
         InternalChildren: ["adjustment", "menu_button"],
         Properties: {
           value: GObject.param_spec_double(

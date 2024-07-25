@@ -15,7 +15,7 @@ export class Application extends Adw.Application {
   constructor() {
     super({
       application_id: pkg.name,
-      resource_base_path: "/com/vixalien/decibels",
+      resource_base_path: "/org/gnome/Decibels",
       flags: Gio.ApplicationFlags.HANDLES_OPEN,
     });
 
@@ -39,7 +39,7 @@ export class Application extends Adw.Application {
 
   private show_about_dialog_cb() {
     const aboutDialog = Adw.AboutDialog.new_from_appdata(
-      `/com/vixalien/decibels/${pkg.name}.metainfo.xml`,
+      `/org/gnome/Decibels/${pkg.name}.metainfo.xml`,
       // remove commit tag
       pkg.version.split("-")[0],
     );

@@ -52,7 +52,7 @@ export class Window extends Adw.ApplicationWindow {
   static {
     GObject.registerClass(
       {
-        Template: "resource:///com/vixalien/decibels/window.ui",
+        Template: "resource:///org/gnome/Decibels/window.ui",
         InternalChildren: ["stack", "error", "player"],
         Properties: {
           stream: GObject.param_spec_object(

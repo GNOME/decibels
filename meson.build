@@ -43,7 +43,7 @@ conf.set('bindir', decibels_bindir)
 conf.set('prefix', decibels_prefix)
 conf.set('libdir', decibels_libdir)
 conf.set('datadir', decibels_datadir)
-conf.set('resource_path', '/com/vixalien/decibels@0@'.format(profile))
+conf.set('resource_path', '/org/gnome/Decibels@0@'.format(profile))
 conf.set('profile', profile)
 
 tsconfig = files('tsconfig.json')
