@@ -98,7 +98,11 @@ export class DBusInterface {
     private path: string,
   ) {}
 
+  started = false;
+
   start() {
+    this.started = true;
+
     Gio.bus_get(Gio.BusType.SESSION, null)
       .then(this.got_bus.bind(this))
       .catch((e: GLib.Error) => {
@@ -239,38 +243,61 @@ export class MPRIS extends DBusInterface {
 
   private app = Gtk.Application.get_default()!;
 
-  constructor(public stream: APMediaStream) {
+  constructor() {
     super(`org.mpris.MediaPlayer2.${pkg.name}`, "/org/mpris/MediaPlayer2");
+  }
 
-    this.stream.connect(
-      "notify::title",
-      this._on_current_song_changed.bind(this),
-    );
+  private stream!: APMediaStream;
+  private stream_listeners: number[] = [];
 
-    this.stream.connect(
-      "notify::artist",
-      this._on_current_song_changed.bind(this),
-    );
+  /** Switch the stream to report playback status for */
+  switch_stream(stream: APMediaStream) {
+    if (stream === this.stream) return;
 
-    this.stream.connect(
-      "notify::duration",
-      this._on_current_song_changed.bind(this),
-    );
-
-    this.stream.connect(
-      "notify::playing",
-      this._on_player_state_changed.bind(this),
-    );
-    this.stream.connect(
-      "notify::loop",
-      this._on_repeat_mode_changed.bind(this),
-    );
-
-    this.stream.connect("notify::seeking", () => {
-      if (!this.stream.seeking) {
-        this._on_seek_finished(this, this.stream.timestamp);
-      }
+    // cleanup current streams
+    this.stream_listeners.forEach((listener_id) => {
+      this.stream?.disconnect(listener_id);
     });
+
+    this.stream_listeners.length = 0;
+    this.stream = stream;
+
+    // setup the new stream
+
+    this.stream_listeners.push(
+      this.stream.connect(
+        "notify::media-info",
+        this._on_current_song_changed.bind(this),
+      ),
+      this.stream.connect(
+        "notify::playing",
+        this._on_player_state_changed.bind(this),
+      ),
+      this.stream.connect(
+        "notify::loop",
+        this._on_repeat_mode_changed.bind(this),
+      ),
+      this.stream.connect("notify::seeking", () => {
+        if (!this.stream.seeking) {
+          this._on_seek_finished(this, this.stream.timestamp);
+        }
+      }),
+    );
+
+    // update metadata
+    const position_msecond = Math.trunc(this.stream.timestamp);
+    const playback_status = this._get_playback_status();
+
+    this._properties_changed(
+      this.MEDIA_PLAYER2_PLAYER_IFACE,
+      {
+        PlaybackStatus: GLib.Variant.new_string(playback_status),
+        LoopStatus: GLib.Variant.new_string(this._get_loop_status()),
+        Metadata: GLib.Variant.new("a{sv}", this._get_metadata()),
+        Position: GLib.Variant.new_int64(position_msecond),
+      },
+      [],
+    );
   }
 
   _get_playback_status() {
@@ -296,7 +323,7 @@ export class MPRIS extends DBusInterface {
       };
     }
 
-    const length = this.stream.duration;
+    const length = this.stream.get_duration();
 
     const metadata: Record<string, GLib.Variant> = {
       "mpris:trackid": GLib.Variant.new_object_path(song_dbus_path),

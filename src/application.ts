@@ -1,16 +1,17 @@
 import Adw from "gi://Adw";
 import Gio from "gi://Gio";
 import GObject from "gi://GObject";
-import Gtk from "gi://Gtk?version=4.0";
 
-import { Window } from "./window.js";
+import { MPRIS } from "./mpris.js";
+import { AddActionEntries, Window } from "./window.js";
+import { APMediaStream } from "./stream.js";
 
 export class Application extends Adw.Application {
-  private window?: Window;
-
   static {
     GObject.registerClass(this);
   }
+
+  mpris: MPRIS;
 
   constructor() {
     super({
@@ -19,22 +20,37 @@ export class Application extends Adw.Application {
       flags: Gio.ApplicationFlags.HANDLES_OPEN,
     });
 
-    const quit_action = new Gio.SimpleAction({ name: "quit" });
-    quit_action.connect("activate", () => {
-      this.quit();
-    });
+    this.mpris = new MPRIS();
 
-    this.add_action(quit_action);
+    this.connect(
+      "notify::active-window",
+      this.active_window_changed_cb.bind(this),
+    );
+
+    (this.add_action_entries as AddActionEntries)([
+      {
+        name: "new-window",
+        activate: () => {
+          this.present_new_window();
+        },
+      },
+      {
+        name: "quit",
+        activate: () => {
+          this.quit();
+        },
+      },
+      {
+        name: "about",
+        activate: () => {
+          this.show_about_dialog_cb();
+        },
+      },
+    ]);
+
+    this.set_accels_for_action("app.new-window", ["<Control>n"]);
     this.set_accels_for_action("app.quit", ["<Control>q"]);
-
     this.set_accels_for_action("win.open-file", ["<Control>o"]);
-
-    const show_about_action = new Gio.SimpleAction({ name: "about" });
-    show_about_action.connect("activate", this.show_about_dialog_cb.bind(this));
-
-    this.add_action(show_about_action);
-
-    Gio._promisify(Gtk.UriLauncher.prototype, "launch", "launch_finish");
   }
 
   private show_about_dialog_cb() {
@@ -56,26 +72,70 @@ export class Application extends Adw.Application {
     aboutDialog.present(this.get_active_window());
   }
 
-  private present_main_window(): void {
-    if (!this.window) {
-      this.window = new Window({ application: this });
-      if (pkg.name.endsWith("Devel")) this.window.add_css_class("devel");
-    }
+  private present_new_window() {
+    const window = new Window({ application: this });
+    if (pkg.name.endsWith("Devel")) window.add_css_class("devel");
+    window.present();
 
-    this.window.present();
+    return window;
+  }
+
+  private new_stream_listener: [APMediaStream, number] | null = null;
+
+  private cleanup_stream_listener() {
+    if (!this.new_stream_listener) return;
+
+    const [stream, listener_id] = this.new_stream_listener;
+    stream.disconnect(listener_id);
+    this.new_stream_listener = null;
+  }
+
+  private switch_mpris_stream(stream: APMediaStream) {
+    this.mpris.switch_stream(stream);
+    if (!this.mpris.started) this.mpris.start();
+    this.cleanup_stream_listener();
+  }
+
+  private active_window_changed_cb() {
+    const window = this.active_window;
+
+    if (!(window instanceof Window) || !window.stream) return;
+
+    const stream = window.stream;
+
+    if (stream.media_info) {
+      this.switch_mpris_stream(stream);
+    } else {
+      // this stream has not yet loaded a track. switch to it as soon as it
+      // loads a track to avoid showing "Unknown File" as playing
+      this.new_stream_listener = [
+        stream,
+        stream.connect("notify::media-info", () => {
+          this.switch_mpris_stream(stream);
+        }),
+      ];
+    }
   }
 
   vfunc_activate(): void {
-    this.present_main_window();
+    this.present_new_window();
   }
 
   vfunc_open(files: Gio.FilePrototype[]): void {
-    this.present_main_window();
+    const is_single_file = files.length === 1,
+      window = this.get_active_window() as Window;
 
-    const window = this.get_active_window();
-
-    if (window && window instanceof Window && files.length > 0) {
+    if (is_single_file && !window.stream?.media_info) {
+      // we are opening a single file, and the current window has no file open,
+      // so open the file in the window
       void window.load_file(files[0]);
+      return;
+    }
+
+    for (const file of files) {
+      const window = this.present_new_window();
+      // only autoplay when only one file is opened
+      void window.load_file(file, is_single_file);
     }
   }
 }

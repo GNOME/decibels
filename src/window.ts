@@ -11,7 +11,6 @@ import { APHeaderBar } from "./header.js";
 import { APEmptyState } from "./empty.js";
 import { APErrorState } from "./error.js";
 import { APPlayerState } from "./player.js";
-import { MPRIS } from "./mpris.js";
 import { APDragOverlay } from "./drag-overlay.js";
 
 Gio._promisify(Gtk.FileDialog.prototype, "open", "open_finish");
@@ -47,7 +46,6 @@ export class Window extends Adw.ApplicationWindow {
   stream: APMediaStream;
 
   private file_dialog: Gtk.FileDialog;
-  private mpris: MPRIS;
 
   static {
     GObject.registerClass(
@@ -114,9 +112,6 @@ export class Window extends Adw.ApplicationWindow {
       GObject.BindingFlags.DEFAULT,
     );
 
-    this.mpris = new MPRIS(this.stream);
-    this.mpris.start();
-
     this.stream.connect("error", (_source, error: GLib.Error) => {
       console.error(
         "error during playback",
@@ -167,7 +162,7 @@ export class Window extends Adw.ApplicationWindow {
     this.stream.set_uri(uri);
   }
 
-  async load_file(file: Gio.File) {
+  async load_file(file: Gio.File, autoplay = true) {
     const fileInfo = await file
       .query_info_async(
         "standard::*",
@@ -205,7 +200,8 @@ export class Window extends Adw.ApplicationWindow {
     (
       this.lookup_action("show-file") as Gio.SimpleAction | undefined
     )?.set_enabled(true);
-    this.stream.set_file(file);
+
+    this.stream.set_file(file, autoplay);
   }
 
   open_file() {
