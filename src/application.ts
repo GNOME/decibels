@@ -129,6 +129,7 @@ export class Application extends Adw.Application {
       // we are opening a single file, and the current window has no file open,
       // so open the file in the window
       void window.load_file(files[0]);
+      return;
     }
 
     for (const file of files) {
