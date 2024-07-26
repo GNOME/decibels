@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-22 15:29+0000\n"
-"PO-Revision-Date: 2024-07-24 20:02+0800\n"
+"POT-Creation-Date: 2024-07-26 11:31+0000\n"
+"PO-Revision-Date: 2024-07-26 21:00+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Generator: Gtranslator 46.1\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.blp:9
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Decibels"
 msgstr "Decibels"
 
@@ -31,7 +31,7 @@ msgid "Audio Player"
 msgstr "音频播放器"
 
 #: data/org.gnome.Decibels.desktop.in.in:5
-#: data/org.gnome.Decibels.metainfo.xml.in.in:6
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
 msgid "Play audio files"
 msgstr "播放音频文件"
 
@@ -40,19 +40,19 @@ msgstr "播放音频文件"
 msgid "music;player;media;audio;"
 msgstr "music;player;media;audio;音乐;播放器;媒体;音频;"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
 msgstr "目前的功能："
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:14
 msgid "Shows the waveform of the track"
 msgstr "显示音频波形"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Adjust playback speed"
 msgstr "调整播放速度"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Easy seek controls"
 msgstr "简易定位控制"
 
@@ -60,20 +60,20 @@ msgstr "简易定位控制"
 msgid "Drop Here to Open"
 msgstr "拖放到这里以打开"
 
-#: data/empty.blp:11
+#: data/empty.blp:10
 msgid "Play Audio Files"
 msgstr "播放音频文件"
 
-#: data/empty.blp:12
+#: data/empty.blp:11
 msgid "Drag and drop audio files here"
 msgstr "拖放音频文件到这里"
 
-#: data/empty.blp:19
+#: data/empty.blp:18
 msgid "_Open…"
 msgstr "打开(_O)…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:128 src/window.ts:179
-#: src/window.ts:198 src/window.ts:217
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
+#: src/window.ts:194 src/window.ts:214
 msgid "File Cannot Be Played"
 msgstr "音频无法播放"
 
@@ -86,18 +86,22 @@ msgid "Main Menu"
 msgstr "主菜单"
 
 #: data/header.blp:19
+msgid "New Window"
+msgstr "新建窗口"
+
+#: data/header.blp:24
 msgid "Open…"
 msgstr "打开…"
 
-#: data/header.blp:26
+#: data/header.blp:31
 msgid "Show in _Files"
 msgstr "在文件管理器中显示(_F)"
 
-#: data/header.blp:34
+#: data/header.blp:39
 msgid "_Keyboard Shortcuts"
 msgstr "键盘快捷键(_K)"
 
-#: data/header.blp:39
+#: data/header.blp:44
 msgid "_About Decibels"
 msgstr "关于 Decibels (_A)"
 
@@ -109,7 +113,7 @@ msgstr "调整播放速度"
 msgid "Skip Back 10s"
 msgstr "快退 10s"
 
-#: data/player.ui:133
+#: data/player.ui:132
 msgid "Skip Forward 10s"
 msgstr "快进 10s"
 
@@ -125,36 +129,41 @@ msgstr "显示快捷键"
 
 #: data/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
+msgid "New Window"
+msgstr "新建窗口"
+
+#: data/gtk/help-overlay.blp:24
+msgctxt "shortcut window"
 msgid "Quit"
 msgstr "退出"
 
-#: data/gtk/help-overlay.blp:25
+#: data/gtk/help-overlay.blp:30
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "播放器"
 
-#: data/gtk/help-overlay.blp:28
+#: data/gtk/help-overlay.blp:33
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "打开文件"
 
-#: data/gtk/help-overlay.blp:33
+#: data/gtk/help-overlay.blp:38
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "播放/暂停"
 
-#: data/gtk/help-overlay.blp:38
+#: data/gtk/help-overlay.blp:43
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "快退 10s"
 
-#: data/gtk/help-overlay.blp:43
+#: data/gtk/help-overlay.blp:48
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "快进 10s"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:54
+#: src/application.ts:70
 msgid "translator-credits"
 msgstr ""
 "GeniusAlray <GeniusAlray@outlook.com>, 2024.\n"
@@ -168,31 +177,31 @@ msgstr "无法访问拖放的文件"
 msgid "An unknown error happened"
 msgstr "发生未知错误"
 
-#: src/stream.ts:269
+#: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
 msgstr "文件使用了无法播放的格式，可能需要额外的解码器。"
 
-#: src/stream.ts:281
+#: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr "获取文件信息时出错，请再试一次"
 
-#: src/stream.ts:292
+#: src/stream.ts:294
 msgid "File uses an invalid URI"
 msgstr "文件使用了无效的 URI"
 
-#: src/stream.ts:303
+#: src/stream.ts:305
 msgid "Reading the file's information timed out. Please try again."
 msgstr "读取文件信息超时。请重试。"
 
-#: src/stream.ts:418
+#: src/stream.ts:420
 msgid "Unknown File"
 msgstr "未知文件"
 
-#: src/stream.ts:653
+#: src/stream.ts:660
 msgid "The selected file doesn't contain any audio"
 msgstr "选择的文件不包含音频"
 
@@ -215,39 +224,39 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:136
+#: src/player.ts:135
 msgid "Pause"
 msgstr "暂停"
 
-#: src/player.ts:136
+#: src/player.ts:135
 msgid "Play"
 msgstr "播放"
 
-#: src/window.ts:134
+#: src/window.ts:130
 msgid "Audio files"
 msgstr "音频文件"
 
-#: src/window.ts:141
+#: src/window.ts:137
 msgid "Open File"
 msgstr "打开文件"
 
-#: src/window.ts:180
+#: src/window.ts:176
 msgid "No available audio file found"
 msgstr "未发现可用音频文件"
 
-#: src/window.ts:192
+#: src/window.ts:188
 msgid "Directories Cannot Be Played"
 msgstr "无法播放目录"
 
-#: src/window.ts:193
+#: src/window.ts:189
 msgid "Please select a file."
 msgstr "请选择一个文件。"
 
-#: src/window.ts:199
+#: src/window.ts:195
 msgid "The selected file is not a regular file."
 msgstr "选择的文件不是常规文件。"
 
-#: src/window.ts:218
+#: src/window.ts:215
 msgid "No file was selected"
 msgstr "未选择文件"
 
