@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-22 15:29+0000\n"
-"PO-Revision-Date: 2024-07-23 07:21+0330\n"
+"POT-Creation-Date: 2024-07-26 11:31+0000\n"
+"PO-Revision-Date: 2024-07-26 16:25+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "Language: fa\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Poedit 3.4.4\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.blp:9
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Decibels"
 msgstr "دسی‌بل"
 
@@ -28,7 +28,7 @@ msgid "Audio Player"
 msgstr "پخش‌کنندهٔ صدا"
 
 #: data/org.gnome.Decibels.desktop.in.in:5
-#: data/org.gnome.Decibels.metainfo.xml.in.in:6
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
 msgid "Play audio files"
 msgstr "پخش پرونده‌های صوتی"
 
@@ -37,19 +37,19 @@ msgstr "پخش پرونده‌های صوتی"
 msgid "music;player;media;audio;"
 msgstr "music;player:media;audio;آهنگ;موسیقی;صدا;صوت;آوا;پخش‌کننده;رسانه;"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
 msgstr "ویژگی‌های کنونی:"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:14
 msgid "Shows the waveform of the track"
 msgstr "شکل موج قطعه را نشان می‌دهد"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Adjust playback speed"
 msgstr "تنظیم سرعت پخش"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Easy seek controls"
 msgstr "واپایش‌های جویش آسان"
 
@@ -57,20 +57,20 @@ msgstr "واپایش‌های جویش آسان"
 msgid "Drop Here to Open"
 msgstr "رها کردن در این‌جا برای گشودن"
 
-#: data/empty.blp:11
+#: data/empty.blp:10
 msgid "Play Audio Files"
 msgstr "پخش پرونده‌های صوتی"
 
-#: data/empty.blp:12
+#: data/empty.blp:11
 msgid "Drag and drop audio files here"
 msgstr "کشیدن و رها کردن پرونده‌های صوتی در این‌جا"
 
-#: data/empty.blp:19
+#: data/empty.blp:18
 msgid "_Open…"
 msgstr "_گشودن…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:128 src/window.ts:179
-#: src/window.ts:198 src/window.ts:217
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
+#: src/window.ts:194 src/window.ts:214
 msgid "File Cannot Be Played"
 msgstr "پرونده نمی‌تواند پخش شود"
 
@@ -83,18 +83,22 @@ msgid "Main Menu"
 msgstr "فهرست اصلی"
 
 #: data/header.blp:19
+msgid "New Window"
+msgstr "پنجرهٔ جدید"
+
+#: data/header.blp:24
 msgid "Open…"
 msgstr "گشودن…"
 
-#: data/header.blp:26
+#: data/header.blp:31
 msgid "Show in _Files"
 msgstr "نمایش در _پرونده‌ها"
 
-#: data/header.blp:34
+#: data/header.blp:39
 msgid "_Keyboard Shortcuts"
 msgstr "_میان‌برهای صفحه‌کلید"
 
-#: data/header.blp:39
+#: data/header.blp:44
 msgid "_About Decibels"
 msgstr "_دربارهٔ دسی‌بل"
 
@@ -106,7 +110,7 @@ msgstr "تنظیم سرعت پخش"
 msgid "Skip Back 10s"
 msgstr "۱۰ ثانیه پرش به پس"
 
-#: data/player.ui:133
+#: data/player.ui:132
 msgid "Skip Forward 10s"
 msgstr "۱۰ ثانیه پرش به پیش"
 
@@ -122,36 +126,41 @@ msgstr "نمایش میان‌برها"
 
 #: data/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
+msgid "New Window"
+msgstr "پنجرهٔ جدید"
+
+#: data/gtk/help-overlay.blp:24
+msgctxt "shortcut window"
 msgid "Quit"
 msgstr "خروج"
 
-#: data/gtk/help-overlay.blp:25
+#: data/gtk/help-overlay.blp:30
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "پخش‌کننده"
 
-#: data/gtk/help-overlay.blp:28
+#: data/gtk/help-overlay.blp:33
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "گشودن پرونده"
 
-#: data/gtk/help-overlay.blp:33
+#: data/gtk/help-overlay.blp:38
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "پخش یا مکث"
 
-#: data/gtk/help-overlay.blp:38
+#: data/gtk/help-overlay.blp:43
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "۱۰ ثانیه به پس"
 
-#: data/gtk/help-overlay.blp:43
+#: data/gtk/help-overlay.blp:48
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "۱۰ ثانیه به پیش"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:54
+#: src/application.ts:70
 msgid "translator-credits"
 msgstr "دانیال بهزادی <dani.behzi@ubuntu.com>"
 
@@ -163,7 +172,7 @@ msgstr "ناتوان در دسترسی به پرونده‌های رها شده"
 msgid "An unknown error happened"
 msgstr "خطایی ناشناخته رخ داد"
 
-#: src/stream.ts:269
+#: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -171,7 +180,7 @@ msgstr ""
 "پرونده از قالب که قابل پخش نیست استفاده می‌کند. شاید نیازمند رمزینه‌های رسانهٔ "
 "اضافی باشد."
 
-#: src/stream.ts:281
+#: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -179,19 +188,19 @@ msgstr ""
 "هنگام تلاش برای گرفتن اطّلاعات دربارهٔ پرونده خطایی رخ داد. لطفاً دوباره تلاش "
 "کنید."
 
-#: src/stream.ts:292
+#: src/stream.ts:294
 msgid "File uses an invalid URI"
 msgstr "پرونده از نشانی‌ای نامعتبر استفاده می‌کند"
 
-#: src/stream.ts:303
+#: src/stream.ts:305
 msgid "Reading the file's information timed out. Please try again."
 msgstr "مهلت خواندن اطّلاعات پرونده به سر رسید. لطفاً دوباره تلاش کنید."
 
-#: src/stream.ts:418
+#: src/stream.ts:420
 msgid "Unknown File"
 msgstr "پروندهٔ ناشناخته"
 
-#: src/stream.ts:653
+#: src/stream.ts:660
 msgid "The selected file doesn't contain any audio"
 msgstr "پروندهٔ گزیده هیچ صدایی ندارد"
 
@@ -214,38 +223,38 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%Id ٪"
 
-#: src/player.ts:136
+#: src/player.ts:135
 msgid "Pause"
 msgstr "مکث"
 
-#: src/player.ts:136
+#: src/player.ts:135
 msgid "Play"
 msgstr "پخش"
 
-#: src/window.ts:134
+#: src/window.ts:130
 msgid "Audio files"
 msgstr "پرونده‌های صوتی"
 
-#: src/window.ts:141
+#: src/window.ts:137
 msgid "Open File"
 msgstr "گشودن پرونده"
 
-#: src/window.ts:180
+#: src/window.ts:176
 msgid "No available audio file found"
 msgstr "هیچ پروندهٔ صوتی موجودی پیدا نشد"
 
-#: src/window.ts:192
+#: src/window.ts:188
 msgid "Directories Cannot Be Played"
 msgstr "شاخه‌ها نمی‌توانند پخش شوند"
 
-#: src/window.ts:193
+#: src/window.ts:189
 msgid "Please select a file."
 msgstr "لطفاً پرونده‌ای برگزینید."
 
-#: src/window.ts:199
+#: src/window.ts:195
 msgid "The selected file is not a regular file."
 msgstr "پروندهٔ گزیده پرونده‌ای عادی نیست."
 
-#: src/window.ts:218
+#: src/window.ts:215
 msgid "No file was selected"
 msgstr "هیچ پرونده‌ای گزیده نشده"
