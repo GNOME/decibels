@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-22 15:29+0000\n"
-"PO-Revision-Date: 2024-07-23 12:07+0200\n"
+"POT-Creation-Date: 2024-07-26 11:31+0000\n"
+"PO-Revision-Date: 2024-07-26 15:26+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <Slovenian>\n"
 "Language: sl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Poedit 2.2.1\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.blp:9
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Decibels"
 msgstr "Decibeli"
 
@@ -30,7 +30,7 @@ msgid "Audio Player"
 msgstr "Predvajalnik zvoka"
 
 #: data/org.gnome.Decibels.desktop.in.in:5
-#: data/org.gnome.Decibels.metainfo.xml.in.in:6
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
 msgid "Play audio files"
 msgstr "Predvajaje zvočne datoteke"
 
@@ -39,19 +39,19 @@ msgstr "Predvajaje zvočne datoteke"
 msgid "music;player;media;audio;"
 msgstr "glasba;predvajalnik;medij;zvok;audio;"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
 msgstr "Trenutne funkcije:"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:14
 msgid "Shows the waveform of the track"
 msgstr "Prikaz signalne oblike v stezi"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Adjust playback speed"
 msgstr "Prilagajanje hitrosti predvajanja"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Easy seek controls"
 msgstr "Kontrolniki za preprosto iskanje"
 
@@ -59,20 +59,20 @@ msgstr "Kontrolniki za preprosto iskanje"
 msgid "Drop Here to Open"
 msgstr "Spustite sem, da odprete"
 
-#: data/empty.blp:11
+#: data/empty.blp:10
 msgid "Play Audio Files"
 msgstr "Predvajajte zvočne datoteke"
 
-#: data/empty.blp:12
+#: data/empty.blp:11
 msgid "Drag and drop audio files here"
 msgstr "Povlecite in spustite zvočne datoteke sem"
 
-#: data/empty.blp:19
+#: data/empty.blp:18
 msgid "_Open…"
 msgstr "_Odpri …"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:128 src/window.ts:179
-#: src/window.ts:198 src/window.ts:217
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
+#: src/window.ts:194 src/window.ts:214
 msgid "File Cannot Be Played"
 msgstr "Datoteke ni mogoče predvajati"
 
@@ -85,18 +85,22 @@ msgid "Main Menu"
 msgstr "Glavni meni"
 
 #: data/header.blp:19
+msgid "New Window"
+msgstr "Novo okno"
+
+#: data/header.blp:24
 msgid "Open…"
 msgstr "Odpri…"
 
-#: data/header.blp:26
+#: data/header.blp:31
 msgid "Show in _Files"
 msgstr "Pokaži v _Datotekah"
 
-#: data/header.blp:34
+#: data/header.blp:39
 msgid "_Keyboard Shortcuts"
 msgstr "_Tipkovne bližnjice‫"
 
-#: data/header.blp:39
+#: data/header.blp:44
 msgid "_About Decibels"
 msgstr "_O programu Decibeli"
 
@@ -108,7 +112,7 @@ msgstr "Prilagodi hitrost predvajanja"
 msgid "Skip Back 10s"
 msgstr "Preskoči nazaj 10s"
 
-#: data/player.ui:133
+#: data/player.ui:132
 msgid "Skip Forward 10s"
 msgstr "Preskoči naprej 10s"
 
@@ -124,36 +128,41 @@ msgstr "Pokaže tipkovne bližnjice‫"
 
 #: data/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Odpre novo okno"
+
+#: data/gtk/help-overlay.blp:24
+msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Konča program"
 
-#: data/gtk/help-overlay.blp:25
+#: data/gtk/help-overlay.blp:30
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Predvajalnik"
 
-#: data/gtk/help-overlay.blp:28
+#: data/gtk/help-overlay.blp:33
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Odpre datoteko"
 
-#: data/gtk/help-overlay.blp:33
+#: data/gtk/help-overlay.blp:38
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "Začasno zaustavi/predvajaj"
 
-#: data/gtk/help-overlay.blp:38
+#: data/gtk/help-overlay.blp:43
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "Pojdi nazaj za 10 sekund"
 
-#: data/gtk/help-overlay.blp:43
+#: data/gtk/help-overlay.blp:48
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Pojdi naprej za 10 sekund"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:54
+#: src/application.ts:70
 msgid "translator-credits"
 msgstr "Martin Srebotnjak <miles@filmsi.net>"
 
@@ -165,7 +174,7 @@ msgstr "Dostop do izpuščenih datotek ni mogoč"
 msgid "An unknown error happened"
 msgstr "Prišlo je do neznane napake"
 
-#: src/stream.ts:269
+#: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -173,26 +182,26 @@ msgstr ""
 "Datoteka uporablja obliko zapisa, ki je ni mogoče predvajati. Morda boste "
 "potrebovali dodatne večpredstavnostne kodeke."
 
-#: src/stream.ts:281
+#: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr ""
 "Pri pridobivanju informacij o datoteki je prišlo do napake. Poskusite znova."
 
-#: src/stream.ts:292
+#: src/stream.ts:294
 msgid "File uses an invalid URI"
 msgstr "Datoteka uporablja neveljaven URI"
 
-#: src/stream.ts:303
+#: src/stream.ts:305
 msgid "Reading the file's information timed out. Please try again."
 msgstr "Branje podatkov o datoteki je poteklo. Prosimo, poskusite znova."
 
-#: src/stream.ts:418
+#: src/stream.ts:420
 msgid "Unknown File"
 msgstr "Neznana datoteka"
 
-#: src/stream.ts:653
+#: src/stream.ts:660
 msgid "The selected file doesn't contain any audio"
 msgstr "Izbrana datoteka ne vsebuje zvoka"
 
@@ -215,38 +224,38 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d  %%"
 
-#: src/player.ts:136
+#: src/player.ts:135
 msgid "Pause"
 msgstr "Premor"
 
-#: src/player.ts:136
+#: src/player.ts:135
 msgid "Play"
 msgstr "Predvajaj"
 
-#: src/window.ts:134
+#: src/window.ts:130
 msgid "Audio files"
 msgstr "Zvočne datoteke"
 
-#: src/window.ts:141
+#: src/window.ts:137
 msgid "Open File"
 msgstr "Odpri datoteko"
 
-#: src/window.ts:180
+#: src/window.ts:176
 msgid "No available audio file found"
 msgstr "Zvočnih datotek ni mogoče najti"
 
-#: src/window.ts:192
+#: src/window.ts:188
 msgid "Directories Cannot Be Played"
 msgstr "Map ni mogoče predvajati"
 
-#: src/window.ts:193
+#: src/window.ts:189
 msgid "Please select a file."
 msgstr "Izberite datoteko."
 
-#: src/window.ts:199
+#: src/window.ts:195
 msgid "The selected file is not a regular file."
 msgstr "Izbrana datoteka ni veljavna datoteka."
 
-#: src/window.ts:218
+#: src/window.ts:215
 msgid "No file was selected"
 msgstr "Izbrana ni nobena datoteka"
