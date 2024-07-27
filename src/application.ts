@@ -125,7 +125,7 @@ export class Application extends Adw.Application {
     const is_single_file = files.length === 1,
       window = this.get_active_window() as Window;
 
-    if (is_single_file && !window.stream?.media_info) {
+    if (is_single_file && window && !window.stream?.media_info) {
       // we are opening a single file, and the current window has no file open,
       // so open the file in the window
       void window.load_file(files[0]);
