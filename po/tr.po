@@ -1,122 +1,173 @@
 # Turkish translation for decibels.
-# Copyright (C) 2023 decibels's copyright holder
+# Copyright (C) 2023-2024 decibels's copyright holder
 # This file is distributed under the same license as the decibels package.
 #
-# Sabri Ünal <libreajans@gmail.com>, 2023.
+# Sabri Ünal <yakushabb@gmail.com>, 2023-2024.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: decibels\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-10 19:43+0200\n"
-"PO-Revision-Date: 2023-10-03 22:06+0300\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2024-08-02 05:54+0000\n"
+"PO-Revision-Date: 2024-08-09 08:00+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.3\n"
 
-#: data/com.vixalien.decibels.desktop.in.in:3
-#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Decibels"
 msgstr "Decibels"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.vixalien.decibels.desktop.in.in:11
-msgid "music;player;media;audio;"
-msgstr "music;player;media;audio;müzik;oynatıcı;ortam;ses;müzik;muzik;"
+#: data/org.gnome.Decibels.desktop.in.in:4
+msgid "Audio Player"
+msgstr "Ses Oynatıcı"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:6
-#: data/com.vixalien.decibels.metainfo.xml.in.in:12
+#: data/org.gnome.Decibels.desktop.in.in:5
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
 msgid "Play audio files"
 msgstr "Ses dosyalarını oynat"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:13
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:13
+msgid "music;player;media;audio;"
+msgstr "music;player;media;audio;müzik;oynatıcı;ortam;ses;müzik;muzik;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
 msgstr "Geçerli özellikleri:"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:15
+#: data/org.gnome.Decibels.metainfo.xml.in.in:14
 msgid "Shows the waveform of the track"
 msgstr "Parçanın dalga şeklini gösterir"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Adjust playback speed"
 msgstr "Oynatma hızını ayarla"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Easy seek controls"
 msgstr "Kolay yönetim denetimleri"
 
-#: data/drag-overlay.ui:17
-msgid "Drop an audio file to play it"
-msgstr "Oynatmak için bir ses dosyası bırakın"
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Buraya Bırakarak Aç"
 
-#: data/empty.ui:13
-msgid "Open an Audio File"
-msgstr "Ses Dosyası Aç"
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Ses Dosyalarını Oynat"
 
-#: data/empty.ui:20
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Ses dosyalarını sürükleyip buraya bırakın"
+
+#: data/empty.blp:18
 msgid "_Open…"
 msgstr "_Aç…"
 
-#: data/error.ui:13 src/drag-overlay.ts:72 src/window.ts:155 src/window.ts:197
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
+#: src/window.ts:194 src/window.ts:214
 msgid "File Cannot Be Played"
 msgstr "Dosya Oynatılamadı"
 
-#: data/error.ui:20
+#: data/error.blp:18
 msgid "_Try Again…"
 msgstr "_Yeniden Dene…"
 
-#: data/header.ui:12
+#: data/header.blp:11
 msgid "Main Menu"
 msgstr "Ana Menü"
 
-#: data/header.ui:21
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Yeni Pencere"
+
+#: data/header.blp:24
 msgid "Open…"
 msgstr "Aç…"
 
-#: data/header.ui:27
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "_Dosyalarʼda Göster"
+
+#: data/header.blp:39
 msgid "_Keyboard Shortcuts"
 msgstr "_Klavye Kısayolları"
 
-#: data/header.ui:31
+#: data/header.blp:44
 msgid "_About Decibels"
 msgstr "Decibels _Hakkında"
 
-#: data/gtk/help-overlay.ui:11
+#: data/player.ui:92
+msgid "Adjust Playback Speed"
+msgstr "Oynatma Hızını Ayarla"
+
+#: data/player.ui:104
+msgid "Skip Back 10s"
+msgstr "10sn Geri Git"
+
+#: data/player.ui:132
+msgid "Skip Forward 10s"
+msgstr "10sn İleri Git"
+
+#: data/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Genel"
 
-#: data/gtk/help-overlay.ui:14
+#: data/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Kısayolları Göster"
 
-#: data/gtk/help-overlay.ui:20
+#: data/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Yeni Pencere"
+
+#: data/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Çık"
 
-#: data/gtk/help-overlay.ui:28
+#: data/gtk/help-overlay.blp:30
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Oynatıcı"
 
-#: data/gtk/help-overlay.ui:31
+#: data/gtk/help-overlay.blp:33
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Dosya Aç"
 
+#: data/gtk/help-overlay.blp:38
+msgctxt "shortcut window"
+msgid "Pause/Play"
+msgstr "Duraklat/Oynat"
+
+#: data/gtk/help-overlay.blp:43
+msgctxt "shortcut window"
+msgid "Go Back 10 Seconds"
+msgstr "10 Saniye Geri Git"
+
+#: data/gtk/help-overlay.blp:48
+msgctxt "shortcut window"
+msgid "Go Forward 10 Seconds"
+msgstr "10 Saniye İleri Git"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:46
+#: src/application.ts:70
 msgid "translator-credits"
 msgstr "Sabri Ünal <libreajans@gmail.com>"
 
-#: src/drag-overlay.ts:73
+#: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
 msgstr "Bırakılan dosyalara erişilemiyor"
 
@@ -124,7 +175,7 @@ msgstr "Bırakılan dosyalara erişilemiyor"
 msgid "An unknown error happened"
 msgstr "Bilinmeyen hata oluştu"
 
-#: src/stream.ts:259
+#: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -132,7 +183,7 @@ msgstr ""
 "Dosya oynatılamayan bir biçim kullanıyor. Ek ortam kod çözme bileşenleri "
 "gerekli olabilir."
 
-#: src/stream.ts:269
+#: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -140,34 +191,74 @@ msgstr ""
 "Dosya hakkında bilgi alınmaya çalışılırken hata oluştu. Lütfen yeniden "
 "deneyin."
 
-#: src/stream.ts:393
+#: src/stream.ts:294
+msgid "File uses an invalid URI"
+msgstr "Dosya geçersiz bir URI kullanıyor"
+
+#: src/stream.ts:305
+msgid "Reading the file's information timed out. Please try again."
+msgstr ""
+"Dosya bilgilerinin okunması zaman aşımına uğradı. Lütfen yeniden deneyin."
+
+#: src/stream.ts:420
 msgid "Unknown File"
 msgstr "Bilinmeyen Dosya"
 
-#: src/stream.ts:619
+#: src/stream.ts:660
 msgid "The selected file doesn't contain any audio"
 msgstr "Seçilen dosya ses içermiyor"
 
-#: src/window.ts:161
+#: src/volume-button.ts:55
+msgid "Full Volume"
+msgstr "Tam Ses"
+
+#: src/volume-button.ts:57
+msgid "Muted"
+msgstr "Sessiz"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:65
+#, c-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%%%d"
+
+#: src/player.ts:135
+msgid "Pause"
+msgstr "Duraklat"
+
+#: src/player.ts:135
+msgid "Play"
+msgstr "Oynat"
+
+#: src/window.ts:130
 msgid "Audio files"
 msgstr "Ses dosyaları"
 
-#: src/window.ts:168
+#: src/window.ts:137
 msgid "Open File"
 msgstr "Dosya Aç"
 
-#: src/window.ts:198
-msgid "The file could not be accessed"
-msgstr "Dosyaya erişilemiyor"
+#: src/window.ts:176
+msgid "No available audio file found"
+msgstr "Kullanılabilir ses dosyası bulunamadı"
 
-#~ msgid "Angelo Verlain"
-#~ msgstr "Angelo Verlain"
+#: src/window.ts:188
+msgid "Directories Cannot Be Played"
+msgstr "Dizinler Oynatılamaz"
 
-#~ msgid "File Cannot be Played"
-#~ msgstr "Dosya Oynatılamadı"
+#: src/window.ts:189
+msgid "Please select a file."
+msgstr "Lütfen dosya seçin."
 
-#~ msgid "Last width & height of window"
-#~ msgstr "Pencerenin son genişliği ve yüksekliği"
+#: src/window.ts:195
+msgid "The selected file is not a regular file."
+msgstr "Seçilen dosya sıradan bir dosya değil."
 
-#~ msgid "The saved last size of the window (to be restored)"
-#~ msgstr "Pencerenin  son kaydedilen boyutu (geri yüklenecek)"
+#: src/window.ts:215
+msgid "No file was selected"
+msgstr "Hiçbir dosya seçilmedi"
