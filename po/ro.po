@@ -1,0 +1,264 @@
+# Romanian translation for Decibels.
+# Copyright (C) 2024 Decibels's COPYRIGHT HOLDER
+# This file is distributed under the same license as the Decibels package.
+# Florentina Mușat <florentina.musat.28@gmail.com>,  2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Decibels main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2024-08-11 13:36+0000\n"
+"PO-Revision-Date: 2024-08-12 13:48+0300\n"
+"Last-Translator: Florentina Mușat <florentina [dot] musat [dot] 28 [at] "
+"gmail [dot] com>\n"
+"Language-Team: Romanian <Romanian>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+msgid "Decibels"
+msgstr "Decibeli"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+msgid "Audio Player"
+msgstr "Player audio"
+
+#: data/org.gnome.Decibels.desktop.in.in:5
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Redă fișiere audio"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:13
+msgid "music;player;media;audio;"
+msgstr "music;player;media;audio;muzică;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid "Current features:"
+msgstr "Funcționalități curente:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:14
+msgid "Shows the waveform of the track"
+msgstr "Arată forma în valuri a piesei"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "Adjust playback speed"
+msgstr "Ajustează viteza de redare"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Easy seek controls"
+msgstr "Controale de căutare ușoare"
+
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Plasează aici pentru a deschide"
+
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Redă fișiere audio"
+
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Trage și plasează fișiere audio aici"
+
+#: data/empty.blp:18
+msgid "_Open…"
+msgstr "_Deschide…"
+
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
+#: src/window.ts:194 src/window.ts:214
+msgid "File Cannot Be Played"
+msgstr "Fișierul nu poate fi redat"
+
+#: data/error.blp:18
+msgid "_Try Again…"
+msgstr "Î_ncearcă din nou…"
+
+#: data/header.blp:11
+msgid "Main Menu"
+msgstr "Meniu principal"
+
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Fereastră nouă"
+
+#: data/header.blp:24
+msgid "Open…"
+msgstr "Deschide…"
+
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "Arată în _Fișiere"
+
+#: data/header.blp:39
+msgid "_Keyboard Shortcuts"
+msgstr "Scurtături de _tastatură"
+
+#: data/header.blp:44
+msgid "_About Decibels"
+msgstr "_Despre Decibeli"
+
+#: data/player.ui:92
+msgid "Adjust Playback Speed"
+msgstr "Ajustează viteza de redare"
+
+#: data/player.ui:104
+msgid "Skip Back 10s"
+msgstr "Omite înapoi 10s"
+
+#: data/player.ui:132
+msgid "Skip Forward 10s"
+msgstr "Omite înainte 10s"
+
+#: data/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Generale"
+
+#: data/gtk/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Arată scurtăturile"
+
+#: data/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Fereastră nouă"
+
+#: data/gtk/help-overlay.blp:24
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Ieșire"
+
+#: data/gtk/help-overlay.blp:30
+msgctxt "shortcut window"
+msgid "Player"
+msgstr "Player"
+
+#: data/gtk/help-overlay.blp:33
+msgctxt "shortcut window"
+msgid "Open File"
+msgstr "Deschide un fișier"
+
+#: data/gtk/help-overlay.blp:38
+msgctxt "shortcut window"
+msgid "Pause/Play"
+msgstr "Pauză/Redare"
+
+#: data/gtk/help-overlay.blp:43
+msgctxt "shortcut window"
+msgid "Go Back 10 Seconds"
+msgstr "Mergi înapoi 10 secunde"
+
+#: data/gtk/help-overlay.blp:48
+msgctxt "shortcut window"
+msgid "Go Forward 10 Seconds"
+msgstr "Mergi înainte 10 secunde"
+
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/application.ts:70
+msgid "translator-credits"
+msgstr ""
+"Florentina Mușat <florentina [dot] musat [dot] 28 [at] gmail [dot] com>, 2024"
+
+#: src/drag-overlay.ts:70
+msgid "Unable to access dropped files"
+msgstr "Nu se pot accesa fișierele plasate"
+
+#: src/error.ts:42
+msgid "An unknown error happened"
+msgstr "A apărut o eroare necunoscută"
+
+#: src/stream.ts:271
+msgid ""
+"File uses a format that cannot be played. Additional media codecs may be "
+"required."
+msgstr ""
+"Fișierul utilizează un format care nu poate fi redat. Pot fi necesare codec-"
+"uri media adiționale."
+
+#: src/stream.ts:283
+msgid ""
+"An error happened while trying to get information about the file. Please try "
+"again."
+msgstr ""
+"A apărut o eroare la încercarea de a obține informații despre fișier. "
+"Încercați din nou."
+
+#: src/stream.ts:294
+msgid "File uses an invalid URI"
+msgstr "Fișierul utilizează un URI nevalid"
+
+#: src/stream.ts:305
+msgid "Reading the file's information timed out. Please try again."
+msgstr "Citirea informațiilor fișierului a expirat. Încercați din nou."
+
+#: src/stream.ts:420
+msgid "Unknown File"
+msgstr "Fișier necunoscut"
+
+#: src/stream.ts:660
+msgid "The selected file doesn't contain any audio"
+msgstr "Fișierul selectat nu conține audio"
+
+#: src/volume-button.ts:55
+msgid "Full Volume"
+msgstr "Volum complet"
+
+#: src/volume-button.ts:57
+msgid "Muted"
+msgstr "Mut"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:65
+#, c-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%d %%"
+
+#: src/player.ts:135
+msgid "Pause"
+msgstr "Pauză"
+
+#: src/player.ts:135
+msgid "Play"
+msgstr "Redă"
+
+#: src/window.ts:130
+msgid "Audio files"
+msgstr "Fișiere audio"
+
+#: src/window.ts:137
+msgid "Open File"
+msgstr "Deschide un fișier"
+
+#: src/window.ts:176
+msgid "No available audio file found"
+msgstr "Nu s-a găsit niciun fișier audio disponibil"
+
+#: src/window.ts:188
+msgid "Directories Cannot Be Played"
+msgstr "Directoarele nu pot fi redate"
+
+#: src/window.ts:189
+msgid "Please select a file."
+msgstr "Selectați un fișier."
+
+#: src/window.ts:195
+msgid "The selected file is not a regular file."
+msgstr "Fișierul selectat nu este un fișier obișnuit."
+
+#: src/window.ts:215
+msgid "No file was selected"
+msgstr "Nu a fost selectat niciun fișier"
