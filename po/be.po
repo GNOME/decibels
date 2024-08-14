@@ -1,4 +1,4 @@
-# SOME DESCRIPTIVE TITLE.
+# Belarusian translation for Decibels.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.vixalien.decibels package.
 # Yahor Haurylenka <k1llo2810@gmail.com>, 2023.
@@ -6,115 +6,167 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-10 19:43+0200\n"
-"PO-Revision-Date: 2023-11-08 22:55+0100\n"
-"Last-Translator: Yahor Haurylenka <k1llo2810@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2024-07-26 11:31+0000\n"
+"PO-Revision-Date: 2024-08-14 15:43+0300\n"
+"Last-Translator: Yuras Shumovich <<shumovichy@gmail.com>>\n"
 "Language-Team: \n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.4.4\n"
 
-#: data/com.vixalien.decibels.desktop.in.in:3
-#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Decibels"
-msgstr "Дэцыбелы"
+msgstr "Decibels"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+msgid "Audio Player"
+msgstr "Аўдыяпрайгравальнік"
+
+#: data/org.gnome.Decibels.desktop.in.in:5
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Прайграванне аўдыяфайлаў"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.vixalien.decibels.desktop.in.in:11
+#: data/org.gnome.Decibels.desktop.in.in:13
 msgid "music;player;media;audio;"
-msgstr "music;player;media;audio;музыка;плэер;медыя;аўдыё;"
+msgstr ""
+"music;player;media;audio;музыка;музычны;музыкальны;плэер;прайгравальнік;"
+"аўдыяплэер;аўдыяпрайгравальнік;медыя;аўдыё;аўдыя;дэцыбелы;"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:6
-#: data/com.vixalien.decibels.metainfo.xml.in.in:12
-msgid "Play audio files"
-msgstr "Прайграванне аўдыё файлаў"
-
-#: data/com.vixalien.decibels.metainfo.xml.in.in:13
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
 msgstr "Бягучыя магчымасці:"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:15
+#: data/org.gnome.Decibels.metainfo.xml.in.in:14
 msgid "Shows the waveform of the track"
-msgstr "Адлюстраванне хвалевай формы трэка"
+msgstr "Паказ хвалевай формы трэка"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Adjust playback speed"
-msgstr "Настройка хуткасці прайгравання"
+msgstr "Змяненне хуткасці прайгравання"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Easy seek controls"
 msgstr "Лёгкае кіраванне пошукам"
 
-#: data/drag-overlay.ui:17
-msgid "Drop an audio file to play it"
-msgstr "Перацягніце аўдыяфайл, каб прайграць яго"
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Перацягніце сюды, каб адкрыць"
 
-#: data/empty.ui:13
-msgid "Open an Audio File"
-msgstr "Адкрыць аўдыя файл"
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Прайграванне аўдыяфайлаў"
 
-#: data/empty.ui:20
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Перацягніце аўдыяфайлы сюды"
+
+#: data/empty.blp:18
 msgid "_Open…"
 msgstr "_Адкрыць…"
 
-#: data/error.ui:13 src/drag-overlay.ts:72 src/window.ts:155 src/window.ts:197
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
+#: src/window.ts:194 src/window.ts:214
 msgid "File Cannot Be Played"
 msgstr "Немагчыма прайграць файл"
 
-#: data/error.ui:20
+#: data/error.blp:18
 msgid "_Try Again…"
 msgstr "_Паспрабуйце зноў…"
 
-#: data/header.ui:12
+#: data/header.blp:11
 msgid "Main Menu"
 msgstr "Галоўнае меню"
 
-#: data/header.ui:21
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Новае акно"
+
+#: data/header.blp:24
 msgid "Open…"
 msgstr "Адкрыць…"
 
-#: data/header.ui:27
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "Паказаць праз «_Файлы»"
+
+#: data/header.blp:39
 msgid "_Keyboard Shortcuts"
 msgstr "_Спалучэнні клавіш"
 
-#: data/header.ui:31
+#: data/header.blp:44
 msgid "_About Decibels"
-msgstr "_Пра Дэцыбелы"
+msgstr "_Аб праграме"
 
-#: data/gtk/help-overlay.ui:11
+#: data/player.ui:92
+msgid "Adjust Playback Speed"
+msgstr "Змяненне хуткасці прайгравання"
+
+#: data/player.ui:104
+msgid "Skip Back 10s"
+msgstr "Назад на 10 с"
+
+#: data/player.ui:132
+msgid "Skip Forward 10s"
+msgstr "Наперад на 10 с"
+
+#: data/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Агульныя"
 
-#: data/gtk/help-overlay.ui:14
+#: data/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Паказаць спалучэнні клавіш"
 
-#: data/gtk/help-overlay.ui:20
+#: data/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Новае акно"
+
+#: data/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Закрыць"
 
-#: data/gtk/help-overlay.ui:28
+#: data/gtk/help-overlay.blp:30
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Прайгравальнік"
 
-#: data/gtk/help-overlay.ui:31
+#: data/gtk/help-overlay.blp:33
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Адкрыць файл"
 
+#: data/gtk/help-overlay.blp:38
+msgctxt "shortcut window"
+msgid "Pause/Play"
+msgstr "Паўза/Прайграванне"
+
+#: data/gtk/help-overlay.blp:43
+msgctxt "shortcut window"
+msgid "Go Back 10 Seconds"
+msgstr "Назад на 10 секунд"
+
+#: data/gtk/help-overlay.blp:48
+msgctxt "shortcut window"
+msgid "Go Forward 10 Seconds"
+msgstr "Наперад на 10 секунд"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:46
+#: src/application.ts:70
 msgid "translator-credits"
 msgstr "Yahor Haurylenka <k1llo2810@gmail.com> 2023"
 
-#: src/drag-overlay.ts:73
+#: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
 msgstr "Немагчыма атрымаць доступ да выбраных файлаў"
 
@@ -122,38 +174,98 @@ msgstr "Немагчыма атрымаць доступ да выбраных �
 msgid "An unknown error happened"
 msgstr "Адбылася невядомая памылка"
 
-#: src/stream.ts:259
+#: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
 msgstr ""
-"Файл выкарыстоўвае фармат, які немагчыма прайграць. Могуць спатрэбіцца "
-"дадатковыя медыя-кодэкі."
+"Файл выкарыстоўвае фармат, які немагчыма прайграць. Магчыма патрабуюцца "
+"дадатковыя кодэкі мультымедыя."
 
-#: src/stream.ts:269
+#: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr ""
-"Адбылася памылка пры спробе атрымаць інфармацыю аб файле. Калі ласка, "
-"паспрабуйце яшчэ раз."
+"Адбылася памылка падчас спробы атрымаць інфармацыю пра файл. Паўтарыце "
+"спробу."
 
-#: src/stream.ts:393
+#: src/stream.ts:294
+msgid "File uses an invalid URI"
+msgstr "Файл выкарыстоўвае памылковы URI"
+
+#: src/stream.ts:305
+msgid "Reading the file's information timed out. Please try again."
+msgstr "Скончыўся час для чытання інфармацыі пра файл. Паўтарыце спробу."
+
+#: src/stream.ts:420
 msgid "Unknown File"
 msgstr "Невядомы файл"
 
-#: src/stream.ts:619
+#: src/stream.ts:660
 msgid "The selected file doesn't contain any audio"
-msgstr "Выбраны файл не ўтрымлівае аўдыя"
+msgstr "Выбраны файл не ўтрымлівае аўдыяданых"
 
-#: src/window.ts:161
+#: src/volume-button.ts:55
+msgid "Full Volume"
+msgstr "Поўная гучнасць"
+
+#: src/volume-button.ts:57
+msgid "Muted"
+msgstr "Гук адключаны"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:65
+#, c-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%d %%"
+
+#: src/player.ts:135
+msgid "Pause"
+msgstr "Паўза"
+
+#: src/player.ts:135
+msgid "Play"
+msgstr "Прайграць"
+
+#: src/window.ts:130
 msgid "Audio files"
-msgstr "Аўдыё файлы"
+msgstr "Аўдыяфайлы"
 
-#: src/window.ts:168
+#: src/window.ts:137
 msgid "Open File"
 msgstr "Адкрыць файл"
 
-#: src/window.ts:198
-msgid "The file could not be accessed"
-msgstr "Не ўдалося атрымаць доступ да файла"
+#: src/window.ts:176
+msgid "No available audio file found"
+msgstr "Прыдатнага аўдыяфайла не знойдзена"
+
+#: src/window.ts:188
+msgid "Directories Cannot Be Played"
+msgstr "Немагчыма прайграць каталогі"
+
+#: src/window.ts:189
+msgid "Please select a file."
+msgstr "Выберыце файл."
+
+#: src/window.ts:195
+msgid "The selected file is not a regular file."
+msgstr "Выбраны файл не з'яўляецца звычайным файлам."
+
+#: src/window.ts:215
+msgid "No file was selected"
+msgstr "Файл не выбраны"
+
+#~ msgid "Drop an audio file to play it"
+#~ msgstr "Перацягніце аўдыяфайл, каб прайграць яго"
+
+#~ msgid "Open an Audio File"
+#~ msgstr "Адкрыць аўдыяфайл"
+
+#~ msgid "The file could not be accessed"
+#~ msgstr "Не ўдалося атрымаць доступ да файла"
