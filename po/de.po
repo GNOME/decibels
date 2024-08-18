@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the com.vixalien.decibels package.
 # Philipp Kiemle <philipp.kiemle@gmail.com>, 2023.
 # Gabriel Brand <gabr.brand@gmail.com>, 2024.
+# Jürgen Benvenuti <gastornis@posteo.org>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-08 17:37+0000\n"
-"PO-Revision-Date: 2024-07-10 23:00+0200\n"
-"Last-Translator: Gabriel Brand <gabr.brand@gmail.com>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2024-08-16 13:32+0000\n"
+"PO-Revision-Date: 2024-08-17 21:24+0200\n"
+"Last-Translator: Jürgen Benvenuti <gastornis@posteo.org>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 "X-Generator: Poedit 3.4.4\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5 data/window.blp:9
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Decibels"
 msgstr "Decibels"
 
@@ -29,7 +30,7 @@ msgid "Audio Player"
 msgstr "Audioplayer"
 
 #: data/org.gnome.Decibels.desktop.in.in:5
-#: data/org.gnome.Decibels.metainfo.xml.in.in:6
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
 msgid "Play audio files"
 msgstr "Audiodateien abspielen"
 
@@ -38,19 +39,19 @@ msgstr "Audiodateien abspielen"
 msgid "music;player;media;audio;"
 msgstr "music;player;media;audio;Musik;Abspieler;Medien;"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
 msgstr "Aktuelle Funktionen:"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:14
 msgid "Shows the waveform of the track"
 msgstr "Zeigt die Wellenform des Tracks"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Adjust playback speed"
 msgstr "Wiedergabegeschwindigkeit anpassen"
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Easy seek controls"
 msgstr "Einfache Suchen-Werkzeuge"
 
@@ -58,24 +59,24 @@ msgstr "Einfache Suchen-Werkzeuge"
 msgid "Drop Here to Open"
 msgstr "Hier ablegen zum Öffnen"
 
-#: data/empty.blp:12
+#: data/empty.blp:10
 msgid "Play Audio Files"
 msgstr "Audiodateien abspielen"
 
-#: data/empty.blp:13
+#: data/empty.blp:11
 msgid "Drag and drop audio files here"
 msgstr "Audiodateien hierhin ziehen und ablegen"
 
-#: data/empty.blp:20
+#: data/empty.blp:18
 msgid "_Open…"
 msgstr "Ö_ffnen …"
 
-#: data/error.blp:12 src/drag-overlay.ts:69 src/window.ts:155 src/window.ts:196
-#: src/window.ts:215 src/window.ts:231
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
+#: src/window.ts:194 src/window.ts:214
 msgid "File Cannot Be Played"
 msgstr "Datei kann nicht abgespielt werden"
 
-#: data/error.blp:19
+#: data/error.blp:18
 msgid "_Try Again…"
 msgstr "Erneu_t versuchen …"
 
@@ -84,14 +85,22 @@ msgid "Main Menu"
 msgstr "Hauptmenü"
 
 #: data/header.blp:19
+msgid "New Window"
+msgstr "Neues Fenster"
+
+#: data/header.blp:24
 msgid "Open…"
 msgstr "Öffnen …"
 
-#: data/header.blp:26
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "In Date_ien anzeigen"
+
+#: data/header.blp:39
 msgid "_Keyboard Shortcuts"
 msgstr "_Tastenkürzel"
 
-#: data/header.blp:31
+#: data/header.blp:44
 msgid "_About Decibels"
 msgstr "_Info zu Decibels"
 
@@ -103,7 +112,7 @@ msgstr "Wiedergabegeschwindigkeit anpassen"
 msgid "Skip Back 10s"
 msgstr "10s zurück springen"
 
-#: data/player.ui:133
+#: data/player.ui:132
 msgid "Skip Forward 10s"
 msgstr "10s vor springen"
 
@@ -119,40 +128,46 @@ msgstr "Tastenkürzel anzeigen"
 
 #: data/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Neues Fenster"
+
+#: data/gtk/help-overlay.blp:24
+msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Beenden"
 
-#: data/gtk/help-overlay.blp:25
+#: data/gtk/help-overlay.blp:30
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Player"
 
-#: data/gtk/help-overlay.blp:28
+#: data/gtk/help-overlay.blp:33
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Datei öffnen"
 
-#: data/gtk/help-overlay.blp:33
+#: data/gtk/help-overlay.blp:38
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "Pausieren/Abspielen"
 
-#: data/gtk/help-overlay.blp:38
+#: data/gtk/help-overlay.blp:43
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "10 Sekunden zurückgehen"
 
-#: data/gtk/help-overlay.blp:43
+#: data/gtk/help-overlay.blp:48
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "10 Sekunden vorgehen"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:58
+#: src/application.ts:70
 msgid "translator-credits"
 msgstr ""
 "Philipp Kiemle <philipp.kiemle@gmail.com>\n"
-"Gabriel Brand <gabr.brand@gmail.com>"
+"Gabriel Brand <gabr.brand@gmail.com>\n"
+"Jürgen Benvenuti <gastornis@posteo.org>"
 
 #: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
@@ -162,7 +177,7 @@ msgstr "Zugriff auf abgelegte Dateien fehlgeschlagen"
 msgid "An unknown error happened"
 msgstr "Ein unbekannter Fehler ist aufgetreten"
 
-#: src/stream.ts:269
+#: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -170,7 +185,7 @@ msgstr ""
 "Datei ist in einem nicht abspielbaren Format. Zusätzliche Media-Codecs "
 "könnten erforderlich sein."
 
-#: src/stream.ts:281
+#: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -178,21 +193,21 @@ msgstr ""
 "Während des Holens von Informationen über die Datei ist ein Fehler "
 "aufgetreten. Bitte versuchen Sie es noch einmal."
 
-#: src/stream.ts:292
+#: src/stream.ts:294
 msgid "File uses an invalid URI"
 msgstr "Datei verwendet eine ungültige Adresse"
 
-#: src/stream.ts:303
+#: src/stream.ts:305
 msgid "Reading the file's information timed out. Please try again."
 msgstr ""
 "Das Lesen der Dateiinformationen wurde abgebrochen. Bitte versuchen Sie es "
 "erneut."
 
-#: src/stream.ts:418
+#: src/stream.ts:420
 msgid "Unknown File"
 msgstr "Unbekannte Datei"
 
-#: src/stream.ts:653
+#: src/stream.ts:660
 msgid "The selected file doesn't contain any audio"
 msgstr "Die ausgewählte Datei enthält kein Audio"
 
@@ -215,39 +230,39 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:136
+#: src/player.ts:135
 msgid "Pause"
 msgstr "Pausieren"
 
-#: src/player.ts:136
+#: src/player.ts:135
 msgid "Play"
 msgstr "Abspielen"
 
-#: src/window.ts:161
+#: src/window.ts:130
 msgid "Audio files"
 msgstr "Audiodateien"
 
-#: src/window.ts:168
+#: src/window.ts:137
 msgid "Open File"
 msgstr "Datei öffnen"
 
-#: src/window.ts:197
+#: src/window.ts:176
 msgid "No available audio file found"
 msgstr "Keine verfügbare Audiodatei gefunden"
 
-#: src/window.ts:209
+#: src/window.ts:188
 msgid "Directories Cannot Be Played"
 msgstr "Ordner können nicht abgespielt werden"
 
-#: src/window.ts:210
+#: src/window.ts:189
 msgid "Please select a file."
 msgstr "Bitte wählen Sie eine Datei aus."
 
-#: src/window.ts:216
+#: src/window.ts:195
 msgid "The selected file is not a regular file."
 msgstr "Die ausgewählte Datei ist keine reguläre Datei."
 
-#: src/window.ts:232
+#: src/window.ts:215
 msgid "No file was selected"
 msgstr "Keine Datei wurde ausgewählt"
 
