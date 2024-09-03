@@ -5,22 +5,21 @@ import Gdk from "gi://Gdk?version=4.0";
 
 import { Window } from "./window.js";
 import { APHeaderBar } from "./header.js";
-import { APWaveForm } from "./waveform.js";
+import { APWaveformScale } from "./waveform-scale.js";
 import { APPlaybackRateButton } from "./playback-rate-button.js";
 import { APVolumeButton } from "./volume-button.js";
 
 GObject.type_ensure(APPlaybackRateButton.$gtype);
 GObject.type_ensure(APVolumeButton.$gtype);
+GObject.type_ensure(APWaveformScale.$gtype);
 
 export class APPlayerState extends Adw.Bin {
-  private _scale_adjustment!: Gtk.Adjustment;
   private _timestamp_label!: Gtk.Label;
   private _duration_label!: Gtk.Label;
   private _volume_button!: Gtk.VolumeButton;
   private _playback_image!: Gtk.Image;
   private _playback_button!: Gtk.Button;
-  private _waveform!: APWaveForm;
-  private _scale!: Gtk.Scale;
+  private _waveform!: APWaveformScale;
 
   headerbar!: APHeaderBar;
 
@@ -30,14 +29,12 @@ export class APPlayerState extends Adw.Bin {
         GTypeName: "APPlayerState",
         Template: "resource:///org/gnome/Decibels/player.ui",
         InternalChildren: [
-          "scale_adjustment",
           "timestamp_label",
           "duration_label",
           "volume_button",
           "playback_image",
           "playback_button",
           "waveform",
-          "scale",
         ],
         Children: ["headerbar"],
       },
@@ -57,39 +54,11 @@ export class APPlayerState extends Adw.Bin {
     // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
     window.stream.bind_property_full(
       "duration",
-      this._scale_adjustment,
-      "upper",
-      GObject.BindingFlags.SYNC_CREATE,
-      () => {
-        return [true, window.stream.get_duration()];
-      },
-      null,
-    );
-
-    // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
-    window.stream.bind_property_full(
-      "duration",
       this._duration_label,
       "label",
       GObject.BindingFlags.SYNC_CREATE,
       () => {
         return [true, micro_to_string(window.stream.get_duration())];
-      },
-      null,
-    );
-
-    // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
-    window.stream.bind_property_full(
-      "timestamp",
-      this._scale_adjustment,
-      "value",
-      GObject.BindingFlags.SYNC_CREATE,
-      () => {
-        if ((this._scale.get_state_flags() & Gtk.StateFlags.ACTIVE) != 0) {
-          return [false, null];
-        }
-
-        return [true, window.stream.timestamp];
       },
       null,
     );
@@ -156,45 +125,12 @@ export class APPlayerState extends Adw.Bin {
       null,
     );
 
-    Object.defineProperty(this._waveform, "peaks", {
-      get() {
-        const peaks = window.stream.peaks_generator.peaks;
-
-        if (peaks.length > 0) {
-          return peaks;
-        }
-
-        // show only the loaded peaks, and 0 for the other remaining
-        const duration = window.stream.get_duration();
-
-        if (duration <= 0) {
-          return [];
-        }
-
-        const loaded_peaks = window.stream.peaks_generator.loaded_peaks.length;
-        const total_peaks = Math.ceil(
-          duration / window.stream.peaks_generator.INTERVAL,
-        );
-
-        return [
-          ...window.stream.peaks_generator.loaded_peaks,
-          new Array(Math.max(total_peaks - loaded_peaks, 0)).fill(0),
-        ];
-      },
-    });
-
-    window.stream.peaks_generator.connect("notify::peaks", () => {
-      this._waveform.queue_draw();
-    });
-  }
-
-  private scale_change_value_cb() {
-    const window = this.get_root() as Window;
-    const stream = window?.stream;
-
-    if (!stream) return;
-
-    stream.seek(this._scale_adjustment.value);
+    window.stream.waveform_generator.bind_property(
+      "peaks",
+      this._waveform.paintable,
+      "peaks",
+      GObject.BindingFlags.SYNC_CREATE,
+    );
   }
 
   private scroll_cb(
@@ -219,7 +155,10 @@ export class APPlayerState extends Adw.Bin {
     stream.skip_seconds(delta);
   }
 
-  private waveform_position_changed_cb(_scale: Gtk.Scale, value: number) {
+  private waveform_position_changed_cb(
+    _waveform: APWaveformScale,
+    value: number,
+  ) {
     const window = this.get_root() as Window;
     const stream = window?.stream;
 

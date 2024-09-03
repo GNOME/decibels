@@ -12,7 +12,9 @@ sources = [
   'player.ts',
   'stream.ts',
   'volume-button.ts',
-  'waveform.ts',
+  'waveform-bar-chart.ts',
+  'waveform-generator.ts',
+  'waveform-scale.ts',
   'window.ts',
 ]
 
