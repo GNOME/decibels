@@ -14,6 +14,7 @@ module.exports = {
     },
     rules: {
         '@typescript-eslint/restrict-template-expressions': ['error', { allowNullish: true, },],
+        '@typescript-eslint/no-unused-vars': ["error", { argsIgnorePattern: "^_", varsIgnorePattern: "^_", },],
         'prettier/prettier': 'error',
     },
     plugins: ['@typescript-eslint', 'prettier'],

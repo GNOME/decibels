@@ -12,7 +12,9 @@
     <file>player.js</file>
     <file>stream.js</file>
     <file>volume-button.js</file>
-    <file>waveform.js</file>
+    <file>waveform-bar-chart.js</file>
+    <file>waveform-generator.js</file>
+    <file>waveform-scale.js</file>
     <file>window.js</file>
   </gresource>
 </gresources>

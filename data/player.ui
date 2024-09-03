@@ -10,68 +10,47 @@
         <child>
           <object class="AdwClamp">
             <property name="orientation">1</property>
-            <property name="maximum-size">400</property>
+            <property name="maximum-size">600</property>
             <property name="tightening-threshold">300</property>
             <child>
-              <object class="APWaveForm" id="waveform">
-                <signal name="position-changed" handler="waveform_position_changed_cb" />
-                <property name="vexpand">true</property>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
                 <child>
-                  <object class="GtkEventControllerScroll">
-                    <property name="flags">both-axes</property>
-                    <signal name="scroll" handler="scroll_cb"/>
-                  </object>
-                </child>
-              </object>
-            </child>
-          </object>
-        </child>
-        <child type="bottom">
-          <object class="GtkBox">
-            <property name="orientation">1</property>
-            <child>
-              <object class="GtkScale" id="scale">
-                <property name="margin-start">12</property>
-                <property name="margin-end">12</property>
-                <property name="hexpand">true</property>
-                <signal name="change-value" handler="scale_change_value_cb" after="yes"/>
-                <property name="adjustment">
-                  <object class="GtkAdjustment" id="scale_adjustment">
-                    <property name="upper">1</property>
-                    <property name="lower">0</property>
-                    <property name="value">0</property>
-                    <!-- Allow to skip 10 seconds by pressing the left and right keys -->
-                    <property name="step-increment">10000000</property>
-                  </object>
-                </property>
-                <child>
-                  <object class="GtkEventControllerScroll">
-                    <property name="flags">both-axes</property>
-                    <signal name="scroll" handler="scroll_cb"/>
-                  </object>
-                </child>
-              </object>
-            </child>
-            <child>
-              <object class="GtkBox" id="labels">
-                <property name="margin-start">24</property>
-                <property name="margin-end">24</property>
-                <child>
-                  <object class="GtkLabel" id="timestamp_label">
-                    <style>
-                      <class name="caption" />
-                      <class name="numeric" />
-                    </style>
+                  <object class="APWaveformScale" id="waveform">
+                    <signal name="position-changed" handler="waveform_position_changed_cb" />
+                    <property name="vexpand">true</property>
+                    <property name="margin-start">14</property>
+                    <property name="margin-end">14</property>
+                    <child>
+                      <object class="GtkEventControllerScroll">
+                        <property name="flags">both-axes</property>
+                        <signal name="scroll" handler="scroll_cb"/>
+                      </object>
+                    </child>
                   </object>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="duration_label">
-                    <property name="hexpand">true</property>
-                    <property name="halign">2</property>
-                    <style>
-                      <class name="caption" />
-                      <class name="numeric" />
-                    </style>
+                  <object class="GtkBox" id="labels">
+                    <property name="margin-start">24</property>
+                    <property name="margin-end">24</property>
+                    <child>
+                      <object class="GtkLabel" id="timestamp_label">
+                        <style>
+                          <class name="caption" />
+                          <class name="numeric" />
+                        </style>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="duration_label">
+                        <property name="hexpand">true</property>
+                        <property name="halign">2</property>
+                        <style>
+                          <class name="caption" />
+                          <class name="numeric" />
+                        </style>
+                      </object>
+                    </child>
                   </object>
                 </child>
               </object>

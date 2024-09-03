@@ -8,7 +8,7 @@ import Gio from "gi://Gio";
 import GstPbUtils from "gi://GstPbutils";
 
 import type { AddActionEntries } from "./window.js";
-import { APPeaksGenerator } from "./waveform.js";
+import { APWaveformGenerator } from "./waveform-generator.js";
 
 if (!Gst.is_initialized()) {
   GLib.setenv("GST_PLAY_USE_PLAYBIN3", "1", false);
@@ -244,7 +244,7 @@ export class APMediaStream extends Gtk.MediaStream {
   }
 
   private discoverer: GstPbUtils.Discoverer;
-  peaks_generator: APPeaksGenerator;
+  waveform_generator: APWaveformGenerator;
 
   private autoplay = true;
 
@@ -259,7 +259,7 @@ export class APMediaStream extends Gtk.MediaStream {
         case GstPbUtils.DiscovererResult.OK: {
           const uri = info.get_uri();
           this._play.set_uri(uri);
-          this.peaks_generator.generate_peaks_async(uri);
+          this.waveform_generator.generate_peaks_async(uri);
           return;
         }
         case GstPbUtils.DiscovererResult.MISSING_PLUGINS:
@@ -310,7 +310,7 @@ export class APMediaStream extends Gtk.MediaStream {
       }
     });
 
-    this.peaks_generator = new APPeaksGenerator();
+    this.waveform_generator = new APWaveformGenerator();
 
     this._play = new GstPlay.Play();
 
@@ -688,7 +688,7 @@ export class APMediaStream extends Gtk.MediaStream {
     this.discoverer.stop();
     this.discoverer.start();
 
-    this.peaks_generator.restart();
+    this.waveform_generator.restart();
 
     this.stop();
   }
