@@ -683,7 +683,7 @@ export class APMediaStream extends Gtk.MediaStream {
     }
   }
 
-  private reset() {
+  reset() {
     this.tags = null;
     this.discoverer.stop();
     this.discoverer.start();

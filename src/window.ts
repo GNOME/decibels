@@ -236,6 +236,11 @@ export class Window extends Adw.ApplicationWindow {
     );
   }
 
+  vfunc_close_request(): boolean {
+    this.stream.reset();
+    return false;
+  }
+
   private show_stack_page(page: "empty" | "error" | "player") {
     this._stack.visible_child_name = page;
   }
