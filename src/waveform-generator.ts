@@ -109,7 +109,7 @@ export class APWaveformGenerator extends GObject.Object {
 
               if (peakVal) {
                 const peak = peakVal.get_nth(0) as number;
-                this.loaded_peaks.push(Math.pow(10, peak / 20));
+                this.loaded_peaks.push(Math.pow(10, (peak || 0) / 20));
               }
             }
             break;
