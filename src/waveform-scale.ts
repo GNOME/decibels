@@ -238,7 +238,7 @@ export class APWaveformScale extends Gtk.Widget {
 
     rect.init(0, 0, play_x, height);
     snapshot.append_color(this.left_color, rect);
-    rect.init(play_x, 0, width, height);
+    rect.init(play_x, 0, width - play_x, height);
     snapshot.append_color(this.right_color, rect);
     snapshot.pop();
 
