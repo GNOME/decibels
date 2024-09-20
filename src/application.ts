@@ -1,6 +1,7 @@
 import Adw from "gi://Adw";
 import Gio from "gi://Gio";
 import GObject from "gi://GObject";
+import Gtk from "gi://Gtk?version=4.0";
 
 import { MPRIS } from "./mpris.js";
 import { AddActionEntries, Window } from "./window.js";
@@ -21,6 +22,8 @@ export class Application extends Adw.Application {
     });
 
     this.mpris = new MPRIS();
+
+    Gtk.Window.set_default_icon_name(pkg.name);
 
     this.connect(
       "notify::active-window",
