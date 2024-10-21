@@ -31,7 +31,7 @@
         <ul>
           <li>Decibels joined GNOME Incubator 🥳!</li>
           <li>As a consequence, the application ID changed to <code>org.gnome.Decibels</code></li>
-          <li>The application's source code is now hosted on GNOME Gitlab's instance instead of GitHub</li>
+          <li>The application’s source code is now hosted on GNOME Gitlab’s instance instead of GitHub</li>
           <li>Only the header bar is now draggable, instead of the whole app window</li>
           <li>The app is more secure because it only uses the needed sandbox permissions</li>
           <li>Decibels no longer incorrectly advertises being able to open directories</li>
@@ -39,7 +39,7 @@
           <li>Fixed crashes when handling invalid audio files</li>
           <li>Added keyboard controls for controlling playback</li>
           <li>It is now possible to scroll on the playback bar to seek forwards or backwards</li>
-          <li>Decibels now shows the correct track's durations reliably instead of showing <code>1:40</code></li>
+          <li>Decibels now shows the correct track’s durations reliably instead of showing <code>1:40</code></li>
           <li>The design of the app was improved with new icons and papercut fixes</li>
           <li>Added Spanish and updated the Chinese, Russian and Ukrainian translations</li>
         </ul>
@@ -93,8 +93,8 @@
           <li>Allow dragging the app window from everywhere (except the waveform)</li>
           <li>Made the playback speed popover look less cluttered by removing the +/- buttons and mark labels</li>
           <li>Fix an issue that prevented accessing file metadata from within the Flatpak sandbox</li>
-          <li>Don't try to play files without audio streams (images and videos without sound)</li>
-          <li>Don't try to process video streams even if they were not rendered</li>
+          <li>Don’t try to play files without audio streams (images and videos without sound)</li>
+          <li>Don’t try to process video streams even if they were not rendered</li>
           <li>Fixed some issues with the Development build of Decibels</li>
           <li>Fixed a minor glitch with the app icon</li>
         </ul>

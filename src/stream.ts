@@ -302,7 +302,7 @@ export class APMediaStream extends Gtk.MediaStream {
                 GstPlay.PlayError,
                 GstPlay.PlayError.FAILED,
                 _(
-                  "Reading the file's information timed out. Please try again.",
+                  "Reading the file’s information timed out. Please try again.",
                 ),
               ),
           );
@@ -657,7 +657,7 @@ export class APMediaStream extends Gtk.MediaStream {
           GLib.Error.new_literal(
             GstPlay.PlayError,
             GstPlay.PlayError.FAILED,
-            _("The selected file doesn't contain any audio"),
+            _("The selected file doesn’t contain any audio"),
           ),
         );
       }

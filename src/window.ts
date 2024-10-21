@@ -224,7 +224,7 @@ export class Window extends Adw.ApplicationWindow {
           return;
         }
 
-        this.show_error("Couldn't read the file", error);
+        this.show_error("Couldn’t read the file", error);
       });
   }
 
