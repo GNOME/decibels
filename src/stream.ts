@@ -368,6 +368,7 @@ export class APMediaStream extends Gtk.MediaStream {
   }
 
   set rate(value: number) {
+    value = Math.min(3.0, Math.max(0.5, value));
     if (value !== this._play.rate) {
       this._play.rate = value;
     }
