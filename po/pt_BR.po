@@ -1,23 +1,24 @@
 # Brazilian portuguese translation for Decibels.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2024 THE com.vixalien.decibels'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.vixalien.decibels package.
 # Tiago Lucas Flach <tiagolucas9830@gmail.com>, 2023.
 # Juliano de Souza Camargo <julianosc@pm.me>, 2024.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-26 11:31+0000\n"
-"PO-Revision-Date: 2024-08-11 10:35-0300\n"
-"Last-Translator: Juliano de Souza Camargo <julianosc@pm.me>\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-10-22 13:19-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 46.1\n"
+"X-Generator: Gtranslator 47.0\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
@@ -104,15 +105,15 @@ msgstr "_Atalhos do teclado"
 msgid "_About Decibels"
 msgstr "_Sobre o Decibéis"
 
-#: data/player.ui:92
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Ajustar a velocidade de reprodução"
 
-#: data/player.ui:104
+#: data/player.blp:78
 msgid "Skip Back 10s"
 msgstr "Voltar 10s"
 
-#: data/player.ui:132
+#: data/player.blp:105
 msgid "Skip Forward 10s"
 msgstr "Avançar 10s"
 
@@ -162,7 +163,7 @@ msgid "Go Forward 10 Seconds"
 msgstr "Avança 10 segundos"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:70
+#: src/application.ts:73
 msgid "translator-credits"
 msgstr ""
 "Tiago Lucas Flach <tiagolucas9830@gmail.com>\n"
@@ -198,7 +199,7 @@ msgid "File uses an invalid URI"
 msgstr "O arquivo usa um URI inválido"
 
 #: src/stream.ts:305
-msgid "Reading the file's information timed out. Please try again."
+msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
 "A leitura das informações do arquivo expirou. Por favor, tente novamente."
 
@@ -207,7 +208,7 @@ msgid "Unknown File"
 msgstr "Arquivo desconhecido"
 
 #: src/stream.ts:660
-msgid "The selected file doesn't contain any audio"
+msgid "The selected file doesn’t contain any audio"
 msgstr "O arquivo selecionado não contém nenhum áudio"
 
 #: src/volume-button.ts:55
@@ -229,11 +230,11 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Pause"
 msgstr "Pausar"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Play"
 msgstr "Reproduzir"
 
