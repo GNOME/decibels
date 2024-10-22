@@ -7,10 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issu"
-"es\n"
-"POT-Creation-Date: 2024-07-26 11:31+0000\n"
-"PO-Revision-Date: 2024-07-27 15:59+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/iss"
+"ues\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-10-22 22:53+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 23.04.3\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
-"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
@@ -107,15 +107,15 @@ msgstr "_Клавіатурні скорочення"
 msgid "_About Decibels"
 msgstr "_Про Децибели"
 
-#: data/player.ui:92
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Регулювання швидкості відтворення"
 
-#: data/player.ui:104
+#: data/player.blp:78
 msgid "Skip Back 10s"
 msgstr "Перемотати назад на 10 секунд"
 
-#: data/player.ui:132
+#: data/player.blp:105
 msgid "Skip Forward 10s"
 msgstr "Перемотати вперед на 10 секунд"
 
@@ -165,7 +165,7 @@ msgid "Go Forward 10 Seconds"
 msgstr "Перемотати вперед на 10 секунд"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:70
+#: src/application.ts:73
 msgid "translator-credits"
 msgstr "volkov <volkovissocool@gmail.com>"
 
@@ -199,7 +199,8 @@ msgid "File uses an invalid URI"
 msgstr "Файл використовує не правильний УІР (URI)"
 
 #: src/stream.ts:305
-msgid "Reading the file's information timed out. Please try again."
+#| msgid "Reading the file's information timed out. Please try again."
+msgid "Reading the file’s information timed out. Please try again."
 msgstr "Час читання файлу вичерпано. Спробуйте ще раз."
 
 #: src/stream.ts:420
@@ -207,7 +208,8 @@ msgid "Unknown File"
 msgstr "Невідомий файл"
 
 #: src/stream.ts:660
-msgid "The selected file doesn't contain any audio"
+#| msgid "The selected file doesn't contain any audio"
+msgid "The selected file doesn’t contain any audio"
 msgstr "Обраний файл не містить аудіо даних"
 
 #: src/volume-button.ts:55
@@ -229,11 +231,11 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Pause"
 msgstr "Пауза"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Play"
 msgstr "Відтворити"
 
