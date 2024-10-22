@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-26 11:31+0000\n"
-"PO-Revision-Date: 2024-07-26 16:25+0330\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-10-22 15:31+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "Language: fa\n"
@@ -102,15 +102,15 @@ msgstr "_میان‌برهای صفحه‌کلید"
 msgid "_About Decibels"
 msgstr "_دربارهٔ دسی‌بل"
 
-#: data/player.ui:92
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "تنظیم سرعت پخش"
 
-#: data/player.ui:104
+#: data/player.blp:78
 msgid "Skip Back 10s"
 msgstr "۱۰ ثانیه پرش به پس"
 
-#: data/player.ui:132
+#: data/player.blp:105
 msgid "Skip Forward 10s"
 msgstr "۱۰ ثانیه پرش به پیش"
 
@@ -160,7 +160,7 @@ msgid "Go Forward 10 Seconds"
 msgstr "۱۰ ثانیه به پیش"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:70
+#: src/application.ts:73
 msgid "translator-credits"
 msgstr "دانیال بهزادی <dani.behzi@ubuntu.com>"
 
@@ -193,7 +193,7 @@ msgid "File uses an invalid URI"
 msgstr "پرونده از نشانی‌ای نامعتبر استفاده می‌کند"
 
 #: src/stream.ts:305
-msgid "Reading the file's information timed out. Please try again."
+msgid "Reading the file’s information timed out. Please try again."
 msgstr "مهلت خواندن اطّلاعات پرونده به سر رسید. لطفاً دوباره تلاش کنید."
 
 #: src/stream.ts:420
@@ -201,7 +201,7 @@ msgid "Unknown File"
 msgstr "پروندهٔ ناشناخته"
 
 #: src/stream.ts:660
-msgid "The selected file doesn't contain any audio"
+msgid "The selected file doesn’t contain any audio"
 msgstr "پروندهٔ گزیده هیچ صدایی ندارد"
 
 #: src/volume-button.ts:55
@@ -223,11 +223,11 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%Id ٪"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Pause"
 msgstr "مکث"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Play"
 msgstr "پخش"
 
