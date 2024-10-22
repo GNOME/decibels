@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-08-11 13:36+0000\n"
-"PO-Revision-Date: 2024-08-12 13:48+0300\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-10-22 14:59+0300\n"
 "Last-Translator: Florentina Mușat <florentina [dot] musat [dot] 28 [at] "
 "gmail [dot] com>\n"
 "Language-Team: Romanian <Romanian>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
@@ -105,15 +105,15 @@ msgstr "Scurtături de _tastatură"
 msgid "_About Decibels"
 msgstr "_Despre Decibeli"
 
-#: data/player.ui:92
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Ajustează viteza de redare"
 
-#: data/player.ui:104
+#: data/player.blp:78
 msgid "Skip Back 10s"
 msgstr "Omite înapoi 10s"
 
-#: data/player.ui:132
+#: data/player.blp:105
 msgid "Skip Forward 10s"
 msgstr "Omite înainte 10s"
 
@@ -163,7 +163,7 @@ msgid "Go Forward 10 Seconds"
 msgstr "Mergi înainte 10 secunde"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:70
+#: src/application.ts:73
 msgid "translator-credits"
 msgstr ""
 "Florentina Mușat <florentina [dot] musat [dot] 28 [at] gmail [dot] com>, 2024"
@@ -197,7 +197,7 @@ msgid "File uses an invalid URI"
 msgstr "Fișierul utilizează un URI nevalid"
 
 #: src/stream.ts:305
-msgid "Reading the file's information timed out. Please try again."
+msgid "Reading the file’s information timed out. Please try again."
 msgstr "Citirea informațiilor fișierului a expirat. Încercați din nou."
 
 #: src/stream.ts:420
@@ -205,7 +205,7 @@ msgid "Unknown File"
 msgstr "Fișier necunoscut"
 
 #: src/stream.ts:660
-msgid "The selected file doesn't contain any audio"
+msgid "The selected file doesn’t contain any audio"
 msgstr "Fișierul selectat nu conține audio"
 
 #: src/volume-button.ts:55
@@ -227,11 +227,11 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Pause"
 msgstr "Pauză"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Play"
 msgstr "Redă"
 
