@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-26 11:31+0000\n"
-"PO-Revision-Date: 2024-07-26 15:26+0200\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-10-23 07:53+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <Slovenian>\n"
 "Language: sl\n"
@@ -104,15 +104,15 @@ msgstr "_Tipkovne bližnjice‫"
 msgid "_About Decibels"
 msgstr "_O programu Decibeli"
 
-#: data/player.ui:92
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Prilagodi hitrost predvajanja"
 
-#: data/player.ui:104
+#: data/player.blp:78
 msgid "Skip Back 10s"
 msgstr "Preskoči nazaj 10s"
 
-#: data/player.ui:132
+#: data/player.blp:105
 msgid "Skip Forward 10s"
 msgstr "Preskoči naprej 10s"
 
@@ -162,7 +162,7 @@ msgid "Go Forward 10 Seconds"
 msgstr "Pojdi naprej za 10 sekund"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:70
+#: src/application.ts:73
 msgid "translator-credits"
 msgstr "Martin Srebotnjak <miles@filmsi.net>"
 
@@ -194,7 +194,7 @@ msgid "File uses an invalid URI"
 msgstr "Datoteka uporablja neveljaven URI"
 
 #: src/stream.ts:305
-msgid "Reading the file's information timed out. Please try again."
+msgid "Reading the file’s information timed out. Please try again."
 msgstr "Branje podatkov o datoteki je poteklo. Prosimo, poskusite znova."
 
 #: src/stream.ts:420
@@ -202,7 +202,7 @@ msgid "Unknown File"
 msgstr "Neznana datoteka"
 
 #: src/stream.ts:660
-msgid "The selected file doesn't contain any audio"
+msgid "The selected file doesn’t contain any audio"
 msgstr "Izbrana datoteka ne vsebuje zvoka"
 
 #: src/volume-button.ts:55
@@ -224,11 +224,11 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d  %%"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Pause"
 msgstr "Premor"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Play"
 msgstr "Predvajaj"
 
