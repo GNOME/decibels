@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-26 11:31+0000\n"
-"PO-Revision-Date: 2024-08-14 19:33+0200\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-10-26 00:25+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.3\n"
+"X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
@@ -102,15 +102,15 @@ msgstr "_Acorchis clavièr"
 msgid "_About Decibels"
 msgstr "_A prepaus de Decibels"
 
-#: data/player.ui:92
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Ajustar la velocitat de lectura"
 
-#: data/player.ui:104
+#: data/player.blp:78
 msgid "Skip Back 10s"
 msgstr "Recular de 10s"
 
-#: data/player.ui:132
+#: data/player.blp:105
 msgid "Skip Forward 10s"
 msgstr "Avançar de 10s"
 
@@ -160,7 +160,7 @@ msgid "Go Forward 10 Seconds"
 msgstr "Avançar de 10 segondas"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:70
+#: src/application.ts:73
 msgid "translator-credits"
 msgstr "Quentin PAGÈS"
 
@@ -193,9 +193,9 @@ msgid "File uses an invalid URI"
 msgstr "Lo fichièr utiliza una URI invalida"
 
 #: src/stream.ts:305
-msgid "Reading the file's information timed out. Please try again."
+msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
-"Una error se's producha en legissent las informacions a prepaus del fichièr. "
+"Una error s'es producha en legissent las informacions a prepaus del fichièr. "
 "Tornatz ensajar mai tard."
 
 #: src/stream.ts:420
@@ -203,7 +203,7 @@ msgid "Unknown File"
 msgstr "Fichièr desconegut"
 
 #: src/stream.ts:660
-msgid "The selected file doesn't contain any audio"
+msgid "The selected file doesn’t contain any audio"
 msgstr "Lo fichièr seleccionat conten pas cap d’àudio"
 
 #: src/volume-button.ts:55
@@ -225,11 +225,11 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d  %%"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Pause"
 msgstr "Pausa"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Play"
 msgstr "Lectura"
 
