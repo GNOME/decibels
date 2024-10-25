@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-26 11:31+0000\n"
-"PO-Revision-Date: 2024-09-01 00:36+0200\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-10-25 13:28+0200\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
@@ -101,15 +101,15 @@ msgstr "_Klávesové zkratky"
 msgid "_About Decibels"
 msgstr "O _aplikaci Decibely"
 
-#: data/player.ui:92
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Nastavitelná rychlost přehrávání"
 
-#: data/player.ui:104
+#: data/player.blp:78
 msgid "Skip Back 10s"
 msgstr "Přeskočit zpět 10s"
 
-#: data/player.ui:132
+#: data/player.blp:105
 msgid "Skip Forward 10s"
 msgstr "Přeskočit vpřed 10s"
 
@@ -159,7 +159,7 @@ msgid "Go Forward 10 Seconds"
 msgstr "Přechod o 10 sekund vpřed"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:70
+#: src/application.ts:73
 msgid "translator-credits"
 msgstr ""
 "Písek Pískovec <pisekpiskovec@gmail.com>\n"
@@ -193,7 +193,7 @@ msgid "File uses an invalid URI"
 msgstr "Soubor používá neplatný URI"
 
 #: src/stream.ts:305
-msgid "Reading the file's information timed out. Please try again."
+msgid "Reading the file’s information timed out. Please try again."
 msgstr "Čas pro čtení informací o souboru vypršel. Zkuste to prosím znovu."
 
 #: src/stream.ts:420
@@ -201,7 +201,7 @@ msgid "Unknown File"
 msgstr "Neznámý soubor"
 
 #: src/stream.ts:660
-msgid "The selected file doesn't contain any audio"
+msgid "The selected file doesn’t contain any audio"
 msgstr "Vybraný soubor neobsahuje žádný zvuk"
 
 #: src/volume-button.ts:55
@@ -223,11 +223,11 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Pause"
 msgstr "Pozastavit"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Play"
 msgstr "Přehrát"
 
