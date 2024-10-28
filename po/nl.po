@@ -1,128 +1,182 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.vixalien.decibels package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Heimen Stoffels <vistausss@fastmail.com>, 2024.
+# Nathan Follens <nfollens@gnome.org>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-10 19:43+0200\n"
-"PO-Revision-Date: 2023-11-09 17:54+0100\n"
-"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
-"Language-Team: \n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-10-28 22:57+0100\n"
+"Last-Translator: Nathan Follens <nfollens@gnome.org>\n"
+"Language-Team: GNOME-NL https://matrix.to/#/#nl:gnome.org\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.4\n"
 
-#: data/com.vixalien.decibels.desktop.in.in:3
-#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Decibels"
 msgstr "Decibels"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.vixalien.decibels.desktop.in.in:11
-msgid "music;player;media;audio;"
-msgstr "muziek;speler;media;audio;"
+#: data/org.gnome.Decibels.desktop.in.in:4
+msgid "Audio Player"
+msgstr "Audiospeler"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:6
-#: data/com.vixalien.decibels.metainfo.xml.in.in:12
+#: data/org.gnome.Decibels.desktop.in.in:5
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
 msgid "Play audio files"
 msgstr "Beluister audiobestanden"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:13
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:13
+msgid "music;player;media;audio;"
+msgstr "music;player;media;audio;muziek;speler;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
 msgstr "Huidige mogelijkheden:"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:15
+#: data/org.gnome.Decibels.metainfo.xml.in.in:14
 msgid "Shows the waveform of the track"
-msgstr "Toon de golflengte van een nummer"
+msgstr "De golfvorm van een nummer tonen"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Adjust playback speed"
-msgstr "Pas de afspeelsnelheid aan"
+msgstr "De afspeelsnelheid aanpassen"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:17
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Easy seek controls"
 msgstr "Eenvoudige spoelknoppen"
 
-#: data/drag-overlay.ui:17
-msgid "Drop an audio file to play it"
-msgstr "Sleep een audiobestand hierheen"
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Versleep om te openen"
 
-#: data/empty.ui:13
-msgid "Open an Audio File"
-msgstr "Open een audiobestand"
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Speel audiobestanden af"
 
-#: data/empty.ui:20
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Versleep audiobestanden hiernaartoe"
+
+#: data/empty.blp:18
 msgid "_Open…"
 msgstr "_Openen…"
 
-#: data/error.ui:13 src/drag-overlay.ts:72 src/window.ts:155 src/window.ts:197
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
+#: src/window.ts:194 src/window.ts:214
 msgid "File Cannot Be Played"
-msgstr "Dit bestand kan niet worden afgespeeld"
+msgstr "Dit bestand kan niet afgespeeld worden"
 
-#: data/error.ui:20
+#: data/error.blp:18
 msgid "_Try Again…"
 msgstr "O_pnieuw proberen…"
 
-#: data/header.ui:12
+#: data/header.blp:11
 msgid "Main Menu"
 msgstr "Hoofdmenu"
 
-#: data/header.ui:21
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Nieuw venster"
+
+#: data/header.blp:24
 msgid "Open…"
 msgstr "Openen…"
 
-#: data/header.ui:27
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "Tonen in _Bestanden"
+
+#: data/header.blp:39
 msgid "_Keyboard Shortcuts"
 msgstr "_Sneltoetsen"
 
-#: data/header.ui:31
+#: data/header.blp:44
 msgid "_About Decibels"
 msgstr "Ov_er Decibels"
 
-#: data/gtk/help-overlay.ui:11
+#: data/player.blp:66
+msgid "Adjust Playback Speed"
+msgstr "Afspeelsnelheid aanpassen"
+
+#: data/player.blp:78
+msgid "Skip Back 10s"
+msgstr "10 seconden terug"
+
+#: data/player.blp:105
+msgid "Skip Forward 10s"
+msgstr "10 seconden verder"
+
+#: data/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Algemeen"
 
-#: data/gtk/help-overlay.ui:14
+#: data/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Sneltoetsen tonen"
 
-#: data/gtk/help-overlay.ui:20
+#: data/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Nieuw venster"
+
+#: data/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: data/gtk/help-overlay.ui:28
+#: data/gtk/help-overlay.blp:30
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Speler"
 
-#: data/gtk/help-overlay.ui:31
+#: data/gtk/help-overlay.blp:33
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Bestand openen"
 
-#. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:46
-msgid "translator-credits"
-msgstr "Heimen Stoffels <vistausss@fastmail.com>"
+#: data/gtk/help-overlay.blp:38
+msgctxt "shortcut window"
+msgid "Pause/Play"
+msgstr "Pauzeren/afspelen"
 
-#: src/drag-overlay.ts:73
+#: data/gtk/help-overlay.blp:43
+msgctxt "shortcut window"
+msgid "Go Back 10 Seconds"
+msgstr "Ga 10 seconden terug"
+
+#: data/gtk/help-overlay.blp:48
+msgctxt "shortcut window"
+msgid "Go Forward 10 Seconds"
+msgstr "Ga 10 seconden verder"
+
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/application.ts:73
+msgid "translator-credits"
+msgstr ""
+"Heimen Stoffels <vistausss@fastmail.com>\n"
+"Nathan Follens <nfollens@gnome.org>\n"
+"Meer info over GNOME-NL https://nl.gnome.org"
+
+#: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
-msgstr "U heeft geen toegang tot de bestanden"
+msgstr "U hebt geen toegang tot de bestanden"
 
 #: src/error.ts:42
 msgid "An unknown error happened"
 msgstr "Er is een onbekende fout opgetreden"
 
-#: src/stream.ts:259
+#: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -130,7 +184,7 @@ msgstr ""
 "Dit bestandsformaat wordt niet ondersteund. Wellicht zijn er aanvullende "
 "codecs beschikbaar."
 
-#: src/stream.ts:269
+#: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -138,22 +192,84 @@ msgstr ""
 "Er is een fout opgetreden tijdens het ophalen van de bestandsinformatie. "
 "Probeer het opnieuw."
 
-#: src/stream.ts:393
+#: src/stream.ts:294
+msgid "File uses an invalid URI"
+msgstr "Het bestand heeft een ongeldige URI"
+
+#: src/stream.ts:305
+msgid "Reading the file’s information timed out. Please try again."
+msgstr ""
+"Er is een time-out opgetreden tijdens het ophalen van de bestandsinformatie. "
+"Probeer het opnieuw."
+
+#: src/stream.ts:420
 msgid "Unknown File"
 msgstr "Onbekend bestandstype"
 
-#: src/stream.ts:619
-msgid "The selected file doesn't contain any audio"
+#: src/stream.ts:660
+msgid "The selected file doesn’t contain any audio"
 msgstr "Het gekozen bestand bevat geen audio"
 
-#: src/window.ts:161
+#: src/volume-button.ts:55
+msgid "Full Volume"
+msgstr "Maximaal volume"
+
+#: src/volume-button.ts:57
+msgid "Muted"
+msgstr "Gedempt"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:65
+#, c-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%d %%"
+
+#: src/player.ts:104
+msgid "Pause"
+msgstr "Pauzeren"
+
+#: src/player.ts:104
+msgid "Play"
+msgstr "Afspelen"
+
+#: src/window.ts:130
 msgid "Audio files"
 msgstr "Audiobestanden"
 
-#: src/window.ts:168
+#: src/window.ts:137
 msgid "Open File"
 msgstr "Bestand openen"
 
-#: src/window.ts:198
-msgid "The file could not be accessed"
-msgstr "U heeft geen toegang tot dit bestand"
+#: src/window.ts:176
+msgid "No available audio file found"
+msgstr "Geen beschikbaar audiobestand gevonden"
+
+#: src/window.ts:188
+msgid "Directories Cannot Be Played"
+msgstr "Mappen kunnen niet afgespeeld worden"
+
+#: src/window.ts:189
+msgid "Please select a file."
+msgstr "Selecteer een bestand."
+
+#: src/window.ts:195
+msgid "The selected file is not a regular file."
+msgstr "Het gekozen bestand is geen normaal bestand."
+
+#: src/window.ts:215
+msgid "No file was selected"
+msgstr "Geen bestand geselecteerd"
+
+#~ msgid "Drop an audio file to play it"
+#~ msgstr "Sleep een audiobestand hierheen"
+
+#~ msgid "Open an Audio File"
+#~ msgstr "Open een audiobestand"
+
+#~ msgid "The file could not be accessed"
+#~ msgstr "U heeft geen toegang tot dit bestand"
