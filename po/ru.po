@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-07-26 11:31+0000\n"
-"PO-Revision-Date: 2024-07-26 14:55+0300\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-10-23 14:35+0300\n"
 "Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
@@ -102,15 +102,15 @@ msgstr "_Комбинации клавиш"
 msgid "_About Decibels"
 msgstr "_О приложении"
 
-#: data/player.ui:92
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Настройка скорости воспроизведения"
 
-#: data/player.ui:104
+#: data/player.blp:78
 msgid "Skip Back 10s"
 msgstr "Пропустить назад на 10 секунд"
 
-#: data/player.ui:132
+#: data/player.blp:105
 msgid "Skip Forward 10s"
 msgstr "Пропустить вперед на 10 секунд"
 
@@ -160,7 +160,7 @@ msgid "Go Forward 10 Seconds"
 msgstr "Перейти на 10 секунд вперед"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:70
+#: src/application.ts:73
 msgid "translator-credits"
 msgstr "Сергей Ворон <voron@duck.com>"
 
@@ -193,7 +193,7 @@ msgid "File uses an invalid URI"
 msgstr "Файл использует недопустимый URI"
 
 #: src/stream.ts:305
-msgid "Reading the file's information timed out. Please try again."
+msgid "Reading the file’s information timed out. Please try again."
 msgstr "Чтение информации о файле прервано. Пожалуйста, попробуйте еще раз."
 
 #: src/stream.ts:420
@@ -201,7 +201,7 @@ msgid "Unknown File"
 msgstr "Неизвестный файл"
 
 #: src/stream.ts:660
-msgid "The selected file doesn't contain any audio"
+msgid "The selected file doesn’t contain any audio"
 msgstr "Выбранный файл не содержит аудио"
 
 #: src/volume-button.ts:55
@@ -223,11 +223,11 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Pause"
 msgstr "Пауза"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Play"
 msgstr "Воспроизведение"
 
