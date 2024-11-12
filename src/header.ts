@@ -83,7 +83,7 @@ export class APHeaderBar extends Adw.Bin {
     window_title.set_subtitle(this.subtitle ?? "");
   }
 
-  constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
+  constructor(params?: Partial<Adw.Bin.ConstructorProps>) {
     super(params);
   }
 }

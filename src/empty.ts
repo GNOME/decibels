@@ -15,7 +15,7 @@ export class APEmptyState extends Adw.Bin {
 
   private _statusPage!: Adw.StatusPage;
 
-  constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
+  constructor(params?: Partial<Adw.Bin.ConstructorProps>) {
     super(params);
 
     this._statusPage.icon_name = `${pkg.name}-symbolic`;

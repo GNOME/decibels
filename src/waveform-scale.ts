@@ -64,7 +64,7 @@ export class APWaveformScale extends Gtk.Widget {
     );
   }
 
-  constructor(params: Partial<Gtk.Widget.ConstructorProperties> | undefined) {
+  constructor(params: Partial<Gtk.Widget.ConstructorProps> | undefined) {
     super(params);
 
     this._paintable = new APWaveformBarChart();
@@ -98,13 +98,11 @@ export class APWaveformScale extends Gtk.Widget {
 
     this.update_colors();
 
-    // @ts-expect-error: No overload for creating new GValue
     const gvalue_zero = new GObject.Value();
     gvalue_zero.init(GObject.TYPE_DOUBLE);
     gvalue_zero.set_double(0);
     this.update_property([Gtk.AccessibleProperty.VALUE_MIN], [gvalue_zero]);
 
-    // @ts-expect-error: No overload for creating new GValue
     const gvalue_one = new GObject.Value();
     gvalue_one.init(GObject.TYPE_DOUBLE);
     gvalue_one.set_double(1);
@@ -129,7 +127,6 @@ export class APWaveformScale extends Gtk.Widget {
       this.queue_draw();
     }
 
-    // @ts-expect-error: No overload for creating new GValue
     const gvalue_position = new GObject.Value();
     gvalue_position.init(GObject.TYPE_DOUBLE);
     gvalue_position.set_double(position);

@@ -24,7 +24,7 @@ export class APDragOverlay extends Adw.Bin {
   private _revealer!: Gtk.Revealer;
   private _drop_target!: Gtk.DropTarget;
 
-  constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
+  constructor(params?: Partial<Adw.Bin.ConstructorProps>) {
     super(params);
 
     this._drop_target = new Gtk.DropTarget({

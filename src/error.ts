@@ -21,7 +21,7 @@ export class APErrorState extends Adw.Bin {
     );
   }
 
-  constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
+  constructor(params?: Partial<Adw.Bin.ConstructorProps>) {
     super(params);
   }
 

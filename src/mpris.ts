@@ -128,7 +128,12 @@ export class DBusInterface {
       null,
     );
 
-    for (const iface of Gio.DBusNodeInfo.new_for_xml(MPRIS_XML).interfaces) {
+    // prettier-ignore
+    const ifaces: Gio.DBusInterfaceInfo[] = Gio.DBusNodeInfo.new_for_xml(MPRIS_XML)
+    // @ts-expect-error https://github.com/gjsify/ts-for-gir/issues/221
+      .interfaces;
+
+    for (const iface of ifaces) {
       for (const method of iface.methods) {
         this.method_outargs.set(
           method.name,
@@ -169,7 +174,7 @@ export class DBusInterface {
     parameters: GLib.Variant,
     invocation: Gio.DBusMethodInvocation,
   ) {
-    const args = parameters.unpack() as unknown[];
+    const args: number[] = parameters.unpack();
 
     this.method_inargs.get(method_name)!.forEach((sig, i) => {
       if (sig === "h") {
@@ -219,9 +224,7 @@ export class DBusInterface {
       parameters.push(GLib.Variant.new(signature, value));
     }
 
-    // TODO: the type is incorrect
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const variant = GLib.Variant.new_tuple(parameters as any);
+    const variant = GLib.Variant.new_tuple(parameters);
 
     this.connection.emit_signal(
       null,
@@ -500,7 +503,7 @@ export class MPRIS extends DBusInterface {
       const message = `MPRIS does not handle ${iface}.${prop}`;
       console.warn(message);
       // eslint-disable-next-line @typescript-eslint/only-throw-error
-      throw new GLib.Error(GLib.LOG_DOMAIN, 0, message);
+      throw GLib.Error.new_literal(GLib.LOG_DOMAIN, 0, message);
     }
   }
 

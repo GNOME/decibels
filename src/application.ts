@@ -124,7 +124,7 @@ export class Application extends Adw.Application {
     this.present_new_window();
   }
 
-  vfunc_open(files: Gio.FilePrototype[]): void {
+  vfunc_open(files: Gio.File[]): void {
     const is_single_file = files.length === 1,
       window = this.get_active_window() as Window;
 
