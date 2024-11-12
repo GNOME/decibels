@@ -1,35 +1,22 @@
-import GObject from "gi://GObject";
+import gettext from "gettext";
 
+// while waiting for https://github.com/gjsify/ts-for-gir/issues/220
+declare namespace package {
+  export const name: string;
+  export const version: string;
+  export const prefix: string;
+  export const datadir: string;
+  export const libdir: string;
+  export const pkgdatadir: string;
+  export const pkglibdir: string;
+  export const moduledir: string;
+  export const localedir: string;
+}
 
 declare global {
-  const pkg: {
-    version: string;
-    name: string;
-  };
+  const pkg: typeof package;
 
-  function _(id: string): string;
-  function C_(ctx: string, id: string): string;
-  function print(args: string): void;
-  function log(obj: object, others?: object[]): void;
-  function log(msg: string, substitutions?: any[]): void;
-
-  const console: {
-    error(...args: any[]): void;
-    log(...args: any[]): void,
-    warn(...args: any[]): void;
-    info(...args: any[]): void;
-    debug(...args: any[]): void;
-  }
-
-  const imports: {
-    format: {
-      format(this: String, ...args: any[]): string;
-      printf(fmt: string, ...args: any[]): string;
-      vprintf(fmt: string, args: any[]): string;
-    };
-  }
-
-  interface ObjectConstructor {
-    $gtype: GObject.GType<unknown>;
-  }
+  const _: typeof gettext.gettext;
+  const C_: typeof gettext.pgettext;
+  const N_: (x: string) => string;
 }
