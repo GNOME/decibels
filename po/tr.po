@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-08-02 05:54+0000\n"
-"PO-Revision-Date: 2024-08-09 08:00+0300\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-10-22 23:16+0300\n"
+"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.3\n"
+"X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
@@ -105,15 +105,15 @@ msgstr "_Klavye Kısayolları"
 msgid "_About Decibels"
 msgstr "Decibels _Hakkında"
 
-#: data/player.ui:92
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Oynatma Hızını Ayarla"
 
-#: data/player.ui:104
+#: data/player.blp:78
 msgid "Skip Back 10s"
 msgstr "10sn Geri Git"
 
-#: data/player.ui:132
+#: data/player.blp:105
 msgid "Skip Forward 10s"
 msgstr "10sn İleri Git"
 
@@ -163,9 +163,9 @@ msgid "Go Forward 10 Seconds"
 msgstr "10 Saniye İleri Git"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:70
+#: src/application.ts:73
 msgid "translator-credits"
-msgstr "Sabri Ünal <libreajans@gmail.com>"
+msgstr "Sabri Ünal <yakushabb@gmail.com>"
 
 #: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
@@ -196,7 +196,7 @@ msgid "File uses an invalid URI"
 msgstr "Dosya geçersiz bir URI kullanıyor"
 
 #: src/stream.ts:305
-msgid "Reading the file's information timed out. Please try again."
+msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
 "Dosya bilgilerinin okunması zaman aşımına uğradı. Lütfen yeniden deneyin."
 
@@ -205,7 +205,7 @@ msgid "Unknown File"
 msgstr "Bilinmeyen Dosya"
 
 #: src/stream.ts:660
-msgid "The selected file doesn't contain any audio"
+msgid "The selected file doesn’t contain any audio"
 msgstr "Seçilen dosya ses içermiyor"
 
 #: src/volume-button.ts:55
@@ -227,11 +227,11 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%%%d"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Pause"
 msgstr "Duraklat"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Play"
 msgstr "Oynat"
 
