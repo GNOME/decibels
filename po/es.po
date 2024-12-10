@@ -2,159 +2,181 @@
 # Copyright (C) 2024 THE com.vixalien.decibels'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.vixalien.decibels package.
 # Óscar Fernández Díaz <oscfdezdz@tuta.io>, 2024.
+# Julián Villodre <jvillodrede@gmail.com>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 10:38+0100\n"
-"PO-Revision-Date: 2024-01-19 10:56+0100\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
-"Language-Team: Spanish\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
+"PO-Revision-Date: 2024-11-10 23:52+0100\n"
+"Last-Translator: Julián Villodre <jvillodrede@gmail.com>\n"
+"Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 45.3\n"
+"X-Generator: Gtranslator 47.0\n"
 
-#: data/com.vixalien.decibels.desktop.in.in:3
-#: data/com.vixalien.decibels.metainfo.xml.in.in:5 data/window.ui:9
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Decibels"
 msgstr "Decibelios"
 
-#: data/com.vixalien.decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.desktop.in.in:4
 msgid "Audio Player"
-msgstr "Reproductor de audio"
+msgstr "Reproductor de sonido"
+
+#: data/org.gnome.Decibels.desktop.in.in:5
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Reproduzca archivos de sonido"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/com.vixalien.decibels.desktop.in.in:12
+#: data/org.gnome.Decibels.desktop.in.in:13
 msgid "music;player;media;audio;"
-msgstr "music;player;media;audio;música;reproductor;"
+msgstr "music;player;media;audio;música;reproductor;sonido;"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:6
-msgid "Play audio files"
-msgstr "Reproducir archivos de audio"
-
-#: data/com.vixalien.decibels.metainfo.xml.in.in:16
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
 msgstr "Características actuales:"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:18
+#: data/org.gnome.Decibels.metainfo.xml.in.in:14
 msgid "Shows the waveform of the track"
 msgstr "Muestra la forma de onda de la pista"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:19
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Adjust playback speed"
-msgstr "Ajustar la velocidad de reproducción"
+msgstr "Ajuste la velocidad de reproducción"
 
-#: data/com.vixalien.decibels.metainfo.xml.in.in:20
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Easy seek controls"
 msgstr "Controles de desplazamiento sencillos"
 
-#: data/drag-overlay.ui:17
-msgid "Drop an audio file to play it"
-msgstr "Suelte un archivo de audio para reproducirlo"
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Suelte aquí para abrir"
 
-#: data/empty.ui:13
-msgid "Open an Audio File"
-msgstr "Abrir un archivo de audio"
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Reproducir archivos de sonido"
 
-#: data/empty.ui:20
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Arrastre y suelte archivos de sonido aquí"
+
+#: data/empty.blp:18
 msgid "_Open…"
 msgstr "A_brir…"
 
-#: data/error.ui:13 src/drag-overlay.ts:72 src/window.ts:156 src/window.ts:195
-#: src/window.ts:214 src/window.ts:230
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
+#: src/window.ts:194 src/window.ts:214
 msgid "File Cannot Be Played"
 msgstr "No se puede reproducir el archivo"
 
-#: data/error.ui:20
+#: data/error.blp:18
 msgid "_Try Again…"
 msgstr "_Intentar de nuevo…"
 
-#: data/header.ui:12
+#: data/header.blp:11
 msgid "Main Menu"
 msgstr "Menú principal"
 
-#: data/header.ui:21
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Nueva ventana"
+
+#: data/header.blp:24
 msgid "Open…"
 msgstr "Abrir…"
 
-#: data/header.ui:27
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "_Mostrar en Archivos"
+
+#: data/header.blp:39
 msgid "_Keyboard Shortcuts"
 msgstr "Atajos del _teclado"
 
-#: data/header.ui:31
+#: data/header.blp:44
 msgid "_About Decibels"
 msgstr "_Acerca de Decibelios"
 
-#: data/player.ui:91
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Ajustar la velocidad de reproducción"
 
-#: data/player.ui:103
-msgid "Skip back 10s"
+#: data/player.blp:78
+msgid "Skip Back 10s"
 msgstr "Retroceder 10s"
 
-#: data/player.ui:131
-msgid "Skip forward 10s"
+#: data/player.blp:105
+msgid "Skip Forward 10s"
 msgstr "Avanzar 10s"
 
-#: data/gtk/help-overlay.ui:11
+#: data/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
 msgstr "General"
 
-#: data/gtk/help-overlay.ui:14
+#: data/gtk/help-overlay.blp:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Mostrar atajos"
 
-#: data/gtk/help-overlay.ui:20
+#: data/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Nueva ventana"
+
+#: data/gtk/help-overlay.blp:24
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Salir"
 
-#: data/gtk/help-overlay.ui:28
+#: data/gtk/help-overlay.blp:30
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Reproductor"
 
-#: data/gtk/help-overlay.ui:31
+#: data/gtk/help-overlay.blp:33
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Abrir archivo"
 
-#: data/gtk/help-overlay.ui:37
+#: data/gtk/help-overlay.blp:38
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "Pausar/Reproducir"
 
-#: data/gtk/help-overlay.ui:43
+#: data/gtk/help-overlay.blp:43
 msgctxt "shortcut window"
-msgid "Go back 10 seconds"
+msgid "Go Back 10 Seconds"
 msgstr "Retroceder 10 segundos"
 
-#: data/gtk/help-overlay.ui:49
+#: data/gtk/help-overlay.blp:48
 msgctxt "shortcut window"
-msgid "Go forward 10 seconds"
+msgid "Go Forward 10 Seconds"
 msgstr "Avanzar 10 segundos"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:50
+#: src/application.ts:73
 msgid "translator-credits"
-msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
+msgstr ""
+"Julián Villodre <jvillodrede@gmail.com>, 2024\n"
+"Óscar Fernández Díaz <oscfdezdz@tuta.io>"
 
-#: src/drag-overlay.ts:73
+#: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
 msgstr "No se puede acceder a los archivos eliminados"
 
 #: src/error.ts:42
 msgid "An unknown error happened"
-msgstr "Se ha producido un error desconocido"
+msgstr "Ocurrió un error desconocido"
 
-#: src/stream.ts:264
+#: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -162,64 +184,89 @@ msgstr ""
 "El archivo usa un formato que no se puede reproducir. Es posible que se "
 "necesiten códecs multimedia adicionales."
 
-#: src/stream.ts:274
+#: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr ""
-"Se ha producido un error al intentar obtener información sobre el archivo. "
-"Por favor, inténtelo de nuevo."
+"Ocurrió un error al intentar obtener información sobre el archivo. Inténtelo "
+"de nuevo."
 
-#: src/stream.ts:284
+#: src/stream.ts:294
 msgid "File uses an invalid URI"
 msgstr "El archivo usa una URI no válida"
 
-#: src/stream.ts:294
-msgid "Reading the file's information timed out. Please try again."
+#: src/stream.ts:305
+msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
-"Se ha agotado el tiempo de lectura de la información del archivo. Por favor, "
-"inténtelo de nuevo."
+"Se agotó el tiempo de lectura de la información del archivo. Inténtelo de "
+"nuevo."
 
-#: src/stream.ts:408
+#: src/stream.ts:420
 msgid "Unknown File"
 msgstr "Archivo desconocido"
 
-#: src/stream.ts:633
-msgid "The selected file doesn't contain any audio"
-msgstr "El archivo seleccionado no contiene audio"
+#: src/stream.ts:660
+msgid "The selected file doesn’t contain any audio"
+msgstr "El archivo seleccionado no contiene sonido"
 
-#: src/player.ts:136
+#: src/volume-button.ts:55
+msgid "Full Volume"
+msgstr "Volumen al máximo"
+
+#: src/volume-button.ts:57
+msgid "Muted"
+msgstr "Silenciado"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:65
+#, c-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%d %%"
+
+#: src/player.ts:104
 msgid "Pause"
 msgstr "Pausar"
 
-#: src/player.ts:136
+#: src/player.ts:104
 msgid "Play"
 msgstr "Reproducir"
 
-#: src/window.ts:162
+#: src/window.ts:130
 msgid "Audio files"
-msgstr "Archivos de audio"
+msgstr "Archivos de sonido"
 
-#: src/window.ts:169
+#: src/window.ts:137
 msgid "Open File"
 msgstr "Abrir archivo"
 
-#: src/window.ts:196
+#: src/window.ts:176
 msgid "No available audio file found"
-msgstr "No se ha encontrado ningún archivo de audio disponible"
+msgstr "No se encontró ningún archivo de sonido disponible"
 
-#: src/window.ts:208
+#: src/window.ts:188
 msgid "Directories Cannot Be Played"
-msgstr "Los directorios no se pueden reproducir"
+msgstr "Las carpetas no se pueden reproducir"
 
-#: src/window.ts:209
+#: src/window.ts:189
 msgid "Please select a file."
 msgstr "Seleccione un archivo."
 
-#: src/window.ts:215
+#: src/window.ts:195
 msgid "The selected file is not a regular file."
-msgstr "El archivo seleccionado no es un archivo normal."
+msgstr "El archivo seleccionado no es un archivo admitido."
 
-#: src/window.ts:231
+#: src/window.ts:215
 msgid "No file was selected"
-msgstr "No se ha seleccionado ningún archivo"
+msgstr "No se seleccionó ningún archivo"
+
+#~ msgid "Drop an audio file to play it"
+#~ msgstr "Suelte un archivo de audio para reproducirlo"
+
+#~ msgid "Open an Audio File"
+#~ msgstr "Abrir un archivo de audio"
