@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Audio Player
 GenericName=Audio Player
-Comment=Play audio files
+Comment=Slim audio player for single audio files
 TryExec=@APP_ID@
 Exec=@APP_ID@ %U
 Icon=@APP_ID@

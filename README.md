@@ -3,7 +3,7 @@
 
 # Audio Player (Decibels)
 
-Play audio files.
+Slim audio player for single audio files.
 
 ![The main view of Decibels.](./data/screenshots/screenshot-1.png)
 
