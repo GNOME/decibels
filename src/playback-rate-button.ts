@@ -48,19 +48,6 @@ export class APPlaybackRateButton extends Adw.Bin {
       },
       null,
     );
-
-    // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
-    window.stream.bind_property_full(
-      "rate",
-      this._label,
-      "visible",
-      GObject.BindingFlags.SYNC_CREATE,
-      (_binding, from: number) => {
-        const rounded = Math.round(from * 10) / 10;
-        return [true, rounded !== 1];
-      },
-      null,
-    );
   }
 
   private scale_change_value_cb(
