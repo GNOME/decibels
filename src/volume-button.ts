@@ -5,13 +5,14 @@ import GObject from "gi://GObject";
 export class APVolumeButton extends Adw.Bin {
   private _adjustment!: Gtk.Adjustment;
   private _menu_button!: Gtk.MenuButton;
+  private _mute_button!: Gtk.ToggleButton;
 
   static {
     GObject.registerClass(
       {
         GTypeName: "APVolumeButton",
         Template: "resource:///org/gnome/Decibels/volume-button.ui",
-        InternalChildren: ["adjustment", "menu_button"],
+        InternalChildren: ["adjustment", "menu_button", "mute_button"],
         Properties: {
           value: GObject.param_spec_double(
             "value",
@@ -73,8 +74,9 @@ export class APVolumeButton extends Adw.Bin {
   private set_icon(value: number) {
     let icon_name: string;
 
-    if (value === 0) icon_name = "audio-volume-muted";
-    else if (value === 1) icon_name = "audio-volume-high";
+    if (this._mute_button.active || value === 0) {
+      icon_name = "audio-volume-muted";
+    } else if (value === 1) icon_name = "audio-volume-high";
     else if (value <= 0.5) icon_name = "audio-volume-low";
     else icon_name = "audio-volume-medium";
 
@@ -87,5 +89,18 @@ export class APVolumeButton extends Adw.Bin {
     value: number,
   ) {
     this.value = value;
+  }
+
+  private mute_button_toggled_cb() {
+    this.set_icon(this.value);
+  }
+
+  private get_mute_button_icon(
+    _button: APVolumeButton,
+    is_active: boolean,
+  ): string {
+    return is_active
+      ? "audio-volume-muted-symbolic"
+      : "audio-volume-high-symbolic";
   }
 }

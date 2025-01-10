@@ -3,23 +3,38 @@ using Adw 1;
 
 template $APVolumeButton: Adw.Bin {
   MenuButton menu_button {
+    direction: up;
+
     popover: Popover {
+      width-request: 250;
+
       Box {
         margin-start: 4;
         margin-end: 4;
         margin-top: 4;
         margin-bottom: 4;
         spacing: 4;
-        orientation: vertical;
+
+        ToggleButton mute_button {
+          icon-name: bind $get_mute_button_icon(mute_button.active) as <string>;
+          action-name: "player.toggle-mute";
+          toggled => $mute_button_toggled_cb();
+
+          accessibility {
+            label: _("Mute/Unmute");
+          }
+
+          styles [
+            "circular",
+            "flat"
+          ]
+        }
 
         Scale {
-          height-request: 200;
-          vexpand: true;
-          orientation: vertical;
-          inverted: true;
+          hexpand: true;
 
           adjustment: Adjustment adjustment {
-            step-increment: 0.1;
+            step-increment: 0.2;
             lower: 0;
             upper: 1;
             value: 0.5;
