@@ -258,6 +258,7 @@ export class Window extends Adw.ApplicationWindow {
   private key_pressed_cb(
     _controller: Gtk.EventControllerKey,
     keyval: number,
+    state: Gdk.ModifierType,
   ): boolean {
     const stream = this.stream;
 
@@ -273,6 +274,29 @@ export class Window extends Adw.ApplicationWindow {
       stream.skip_seconds(-10);
     } else if (keyval === Gdk.KEY_Right) {
       stream.skip_seconds(10);
+    } else if (
+      keyval === Gdk.KEY_equal ||
+      (keyval === Gdk.KEY_equal && state & Gdk.ModifierType.CONTROL_MASK) ||
+      keyval === Gdk.KEY_plus ||
+      (keyval === Gdk.KEY_plus && state & Gdk.ModifierType.CONTROL_MASK) ||
+      keyval === Gdk.KEY_KP_Equal ||
+      (keyval === Gdk.KEY_KP_Equal && state & Gdk.ModifierType.CONTROL_MASK)
+    ) {
+      stream.rate += 0.1;
+    } else if (
+      keyval === Gdk.KEY_minus ||
+      (keyval === Gdk.KEY_minus && state & Gdk.ModifierType.CONTROL_MASK) ||
+      keyval === Gdk.KEY_KP_Subtract ||
+      (keyval === Gdk.KEY_KP_Subtract && state & Gdk.ModifierType.CONTROL_MASK)
+    ) {
+      stream.rate -= 0.1;
+    } else if (
+      keyval === Gdk.KEY_0 ||
+      (keyval === Gdk.KEY_0 && state & Gdk.ModifierType.CONTROL_MASK) ||
+      keyval === Gdk.KEY_KP_0 ||
+      (keyval === Gdk.KEY_KP_0 && state & Gdk.ModifierType.CONTROL_MASK)
+    ) {
+      stream.rate = 1;
     } else {
       return Gdk.EVENT_PROPAGATE;
     }

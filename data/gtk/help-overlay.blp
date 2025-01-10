@@ -49,5 +49,24 @@ ShortcutsWindow help_overlay {
         accelerator: "Right";
       }
     }
+
+    ShortcutsGroup {
+      title: C_("shortcut window", "Playback Rate");
+
+      ShortcutsShortcut {
+        title: C_("shortcut window", "Increase Playback Rate");
+        accelerator: "<Ctrl>plus plus";
+      }
+
+      ShortcutsShortcut {
+        title: C_("shortcut window", "Decrease Playback Rate");
+        accelerator: "<Ctrl>minus minus";
+      }
+
+      ShortcutsShortcut {
+        title: C_("shortcut window", "Reset Playback Rate");
+        accelerator: "<Ctrl>0 0";
+      }
+    }
   }
 }
