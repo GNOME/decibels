@@ -150,7 +150,8 @@ class APPlaySignalAdapter extends GObject.Object {
         break;
       case GstPlay.PlayMessage.SEEK_DONE:
         this.emit_message("seek-done", [
-          GstPlay.play_message_parse_position_updated(message)!,
+          // NOTE: GstPlay.play_message_parse_seek_done requires Gstreamer 1.26
+          message.get_structure()!.get_uint64("position")[1],
         ]);
         break;
     }
