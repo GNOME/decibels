@@ -16,9 +16,8 @@ if (!Gst.is_initialized()) {
   Gst.init(null);
 }
 
-type GTypeToType<Y extends GObject.GType> = Y extends GObject.GType<infer T>
-  ? T
-  : never;
+type GTypeToType<Y extends GObject.GType> =
+  Y extends GObject.GType<infer T> ? T : never;
 
 type GTypeArrayToTypeArray<Y extends readonly GObject.GType[]> = {
   [K in keyof Y]: GTypeToType<Y[K]>;
@@ -68,7 +67,7 @@ class APPlaySignalAdapter extends GObject.Object {
 
     this._play = play;
 
-    const bus = this._play.get_message_bus()!;
+    const bus = this._play.get_message_bus();
     bus.add_signal_watch();
 
     bus.connect("message", this.on_message.bind(this));
@@ -85,7 +84,7 @@ class APPlaySignalAdapter extends GObject.Object {
       GstPlay.PlayMessage.$gtype,
     );
 
-    if (!type[0] || structure.get_name()! !== "gst-play-message-data") {
+    if (!type[0] || structure.get_name() !== "gst-play-message-data") {
       return;
     }
 
@@ -146,7 +145,7 @@ class APPlaySignalAdapter extends GObject.Object {
         break;
       case GstPlay.PlayMessage.MUTE_CHANGED:
         this.emit_message("mute-changed", [
-          GstPlay.play_message_parse_muted_changed(message)!,
+          GstPlay.play_message_parse_muted_changed(message),
         ]);
         break;
       case GstPlay.PlayMessage.SEEK_DONE:
@@ -579,7 +578,11 @@ export class APMediaStream extends Gtk.MediaStream {
 
     // Calling `this._play.pause()` loads the file immediately instead of
     // waiting of loading the file after the user starts playing
-    this.autoplay ? this.play() : this._play.pause();
+    if (this.autoplay) {
+      this.play();
+    } else {
+      this._play.pause();
+    }
   }
 
   private buffering_cb(_play: GstPlay.Play, percent: number): void {

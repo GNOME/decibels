@@ -264,7 +264,11 @@ export class Window extends Adw.ApplicationWindow {
     if (!stream.media_info) return Gdk.EVENT_PROPAGATE;
 
     if (keyval === Gdk.KEY_space) {
-      stream.playing ? stream.pause() : stream.play();
+      if (stream.playing) {
+        stream.pause();
+      } else {
+        stream.play();
+      }
     } else if (keyval === Gdk.KEY_Left) {
       stream.skip_seconds(-10);
     } else if (keyval === Gdk.KEY_Right) {
