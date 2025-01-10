@@ -131,7 +131,7 @@ export class DBusInterface {
     // prettier-ignore
     const ifaces: Gio.DBusInterfaceInfo[] = Gio.DBusNodeInfo.new_for_xml(MPRIS_XML)
     // @ts-expect-error https://github.com/gjsify/ts-for-gir/issues/221
-      .interfaces;
+      .interfaces as Gio.DBusInterfaceInfo[];
 
     for (const iface of ifaces) {
       for (const method of iface.methods) {
