@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Decibels
+Name=Audio Player
 GenericName=Audio Player
 Comment=Play audio files
 TryExec=@APP_ID@
@@ -9,7 +9,7 @@ Terminal=false
 Type=Application
 Categories=GNOME;GTK;Music;Audio;AudioVideo;
 # Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-Keywords=music;player;media;audio;
+Keywords=music;player;media;audio;decibels;
 StartupNotify=true
 X-SingleMainWindow=true
 X-Purism-FormFactor=Workstation;Mobile;

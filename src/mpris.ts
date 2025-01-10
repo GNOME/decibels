@@ -516,7 +516,7 @@ export class MPRIS extends DBusInterface {
           CanSetFullscreen: GLib.Variant.new_boolean(false),
           CanRaise: GLib.Variant.new_boolean(true),
           HasTrackList: GLib.Variant.new_boolean(false),
-          Identity: GLib.Variant.new_string("Decibels"),
+          Identity: GLib.Variant.new_string("Audio Player"),
           DesktopEntry: GLib.Variant.new_string(application_id),
           SupportedUriSchemes: GLib.Variant.new_strv([]),
           SupportedMimeTypes: GLib.Variant.new_strv([]),

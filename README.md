@@ -1,7 +1,7 @@
 <div align="center">
 <img src="data/icons/hicolor/scalable/apps/org.gnome.Decibels.svg" height="64">
 
-# Decibels
+# Audio Player (Decibels)
 
 Play audio files.
 
