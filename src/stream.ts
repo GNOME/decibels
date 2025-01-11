@@ -769,6 +769,10 @@ export class APMediaStream extends Gtk.MediaStream {
       },
     ]);
 
+    action_group.add_action(
+      Gio.PropertyAction.new("toggle-mute", this, "muted"),
+    );
+
     return action_group;
   }
 }

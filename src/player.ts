@@ -78,7 +78,7 @@ export class APPlayerState extends Adw.Bin {
     window.stream.bind_property(
       "cubic-volume",
       this._volume_button,
-      "value",
+      "volume",
       GObject.BindingFlags.SYNC_CREATE | GObject.BindingFlags.BIDIRECTIONAL,
     );
 

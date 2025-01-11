@@ -1,28 +1,32 @@
 import Adw from "gi://Adw";
-import Gtk from "gi://Gtk?version=4.0";
 import GObject from "gi://GObject";
 
 export class APVolumeButton extends Adw.Bin {
-  private _adjustment!: Gtk.Adjustment;
-  private _menu_button!: Gtk.MenuButton;
+  volume!: number;
+  muted!: boolean;
 
   static {
     GObject.registerClass(
       {
         GTypeName: "APVolumeButton",
         Template: "resource:///org/gnome/Decibels/volume-button.ui",
-        InternalChildren: ["adjustment", "menu_button"],
+        InternalChildren: ["adjustment", "menu_button", "mute_button"],
         Properties: {
-          value: GObject.param_spec_double(
-            "value",
-            "value",
-            "The current value of the VolumeButton",
+          volume: GObject.param_spec_double(
+            "volume",
+            "volume",
+            "The current volume, regardless of mute status",
             0,
             1.0,
             0.5,
-            GObject.ParamFlags.READABLE |
-              GObject.ParamFlags.WRITABLE |
-              GObject.ParamFlags.EXPLICIT_NOTIFY,
+            GObject.ParamFlags.READWRITE,
+          ),
+          muted: GObject.param_spec_boolean(
+            "muted",
+            "muted",
+            "Whether the audio is currently muted",
+            false,
+            GObject.ParamFlags.READWRITE,
           ),
         },
       },
@@ -30,62 +34,37 @@ export class APVolumeButton extends Adw.Bin {
     );
   }
 
-  constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
-    super(params);
+  private mute_button_icon_cb(_widget: this, muted: boolean): string {
+    return muted ? "audio-volume-muted-symbolic" : "audio-volume-high-symbolic";
   }
 
-  get value() {
-    return this._adjustment.value;
+  private menu_button_icon_cb(
+    _widget: this,
+    volume: number,
+    muted: boolean,
+  ): string {
+    if (muted || volume === 0) return "audio-volume-muted-symbolic";
+    else if (volume === 1) return "audio-volume-high-symbolic";
+    else if (volume > 0.5) return "audio-volume-medium-symbolic";
+    else return "audio-volume-low-symbolic";
   }
 
-  set value(val: number) {
-    if (val === this.value) return;
-
-    this._adjustment.value = val;
-    this.set_tooltip(val);
-    this.set_icon(val);
-
-    this.notify("value");
-  }
-
-  private set_tooltip(value: number) {
-    let tooltip;
-
-    if (value === 1) {
-      tooltip = _("Full Volume");
-    } else if (value === 0) {
-      tooltip = _("Muted");
-    } else {
-      tooltip = imports.format.vprintf(
+  private tooltip_text_cb(
+    _widget: this,
+    volume: number,
+    muted: boolean,
+  ): string {
+    if (muted || volume === 0) return _("Muted");
+    else if (volume === 1) return _("Full Volume");
+    else
+      return imports.format.vprintf(
         /* Translators: this is the percentage of the current volume,
          * as used in the tooltip, eg. "49 %".
          * Translate the "%d" to "%Id" if you want to use localised digits,
          * or otherwise translate the "%d" to "%d".
          */
         C_("volume percentage", "%d %%"),
-        [Math.round(100 * value).toString()],
+        [Math.round(100 * volume).toString()],
       );
-    }
-
-    this.set_tooltip_text(tooltip);
-  }
-
-  private set_icon(value: number) {
-    let icon_name: string;
-
-    if (value === 0) icon_name = "audio-volume-muted";
-    else if (value === 1) icon_name = "audio-volume-high";
-    else if (value <= 0.5) icon_name = "audio-volume-low";
-    else icon_name = "audio-volume-medium";
-
-    this._menu_button.icon_name = `${icon_name}-symbolic`;
-  }
-
-  private scale_change_value_cb(
-    _scale: Gtk.Scale,
-    _scroll: Gtk.ScrollType,
-    value: number,
-  ) {
-    this.value = value;
   }
 }
