@@ -19,9 +19,7 @@
     <file preprocess="xml-stripblanks">icons/scalable/actions/pause-large-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/scalable/actions/play-large-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/scalable/actions/skip-backwards-10-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/scalable/actions/skip-backwards-30-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/scalable/actions/skip-forward-10-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/scalable/actions/skip-forward-30-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/scalable/actions/speedometer-symbolic.svg</file>
   </gresource>
 </gresources>
