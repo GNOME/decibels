@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the com.vixalien.decibels package.
 #
 # volkov <volkovissocool@gmail.com>, 2023-2024.
-# Yuri Chornoivan <yurchor@ukr.net>, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/iss"
 "ues\n"
-"POT-Creation-Date: 2024-10-22 10:26+0000\n"
-"PO-Revision-Date: 2024-10-22 22:53+0300\n"
+"POT-Creation-Date: 2025-01-10 22:27+0000\n"
+"PO-Revision-Date: 2025-01-11 09:24+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -22,13 +22,10 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Decibels"
-msgstr "Децибели"
-
 #: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Audio Player"
-msgstr "Аудіо програвач"
+msgstr "Аудіопрогравач"
 
 #: data/org.gnome.Decibels.desktop.in.in:5
 #: data/org.gnome.Decibels.metainfo.xml.in.in:5
@@ -37,10 +34,12 @@ msgstr "Відтворювач аудіо файлів"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;"
+#| msgid "music;player;media;audio;"
+msgid "music;player;media;audio;decibels;"
 msgstr ""
-"music;player;media;audio;музика;аудіо;плеєр;медіа;звук;програвач;трек;музяка;"
-"відтворювач;плеер;"
+"music;player;media;audio;decibels;музика;аудіо;плеєр;медіа;звук;програвач;тре"
+"к;музяка;"
+"відтворювач;плеєр;децибели;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
@@ -104,8 +103,9 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Клавіатурні скорочення"
 
 #: data/header.blp:44
-msgid "_About Decibels"
-msgstr "_Про Децибели"
+#| msgid "Audio Player"
+msgid "_About Audio Player"
+msgstr "Про «Аудіопрогравач»"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -177,7 +177,7 @@ msgstr "Неможливо отримати доступ до перетягну
 msgid "An unknown error happened"
 msgstr "Сталася невідома помилка"
 
-#: src/stream.ts:271
+#: src/stream.ts:270
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -185,7 +185,7 @@ msgstr ""
 "Файл використовує формат який неможливо відтворити. Можливо, вам потрібно "
 "встановити додаткові медіа-кодеки."
 
-#: src/stream.ts:283
+#: src/stream.ts:282
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -194,21 +194,19 @@ msgstr ""
 "раз."
 
 # https://uk.wikipedia.org/wiki/%D0%A3%D0%BD%D1%96%D1%84%D1%96%D0%BA%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9_%D1%96%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D1%96%D0%BA%D0%B0%D1%82%D0%BE%D1%80_%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%96%D0%B2
-#: src/stream.ts:294
+#: src/stream.ts:293
 msgid "File uses an invalid URI"
 msgstr "Файл використовує не правильний УІР (URI)"
 
-#: src/stream.ts:305
-#| msgid "Reading the file's information timed out. Please try again."
+#: src/stream.ts:304
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Час читання файлу вичерпано. Спробуйте ще раз."
 
-#: src/stream.ts:420
+#: src/stream.ts:419
 msgid "Unknown File"
 msgstr "Невідомий файл"
 
-#: src/stream.ts:660
-#| msgid "The selected file doesn't contain any audio"
+#: src/stream.ts:663
 msgid "The selected file doesn’t contain any audio"
 msgstr "Обраний файл не містить аудіо даних"
 
@@ -266,6 +264,12 @@ msgstr "Обраний файл не є звичайним файлом."
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "Не було обрано жодного файлу"
+
+#~ msgid "Decibels"
+#~ msgstr "Децибели"
+
+#~ msgid "_About Decibels"
+#~ msgstr "_Про Децибели"
 
 # https://apps.gnome.org/uk/, тут "Circle Apps" переклали як "Супутні програми"
 #~ msgid "Decibels joined GNOME Circle! 🥳"
