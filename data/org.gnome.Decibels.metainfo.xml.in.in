@@ -9,11 +9,13 @@
     <name translate="no">The GNOME Project</name>
   </developer>
   <description>
-    <p>Current features:</p>
+    <p>An audio player that just plays audio files. It doesn't require an organized music library and won't overload you with tons of functionality.</p>
+    <p>Audio Player still offers advanced features such as:</p>
     <ul>
-      <li>Shows the waveform of the track</li>
-      <li>Adjust playback speed</li>
+      <li>An elegant waveform of the track</li>
+      <li>Adjustable playback speed</li>
       <li>Easy seek controls</li>
+      <li>Playing multiple files at the same time</li>
     </ul>
   </description>
   <screenshots>
