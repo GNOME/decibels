@@ -181,6 +181,7 @@ export class APWaveformScale extends Gtk.Widget {
 
     this.left_color = Adw.accent_color_to_standalone_rgba(accent_color, dark);
     this.right_color = current_color;
+    this.queue_draw();
   }
 
   vfunc_size_allocate(width: number, height: number, _baseline: number): void {
