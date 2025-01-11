@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/iss"
 "ues\n"
-"POT-Creation-Date: 2025-01-10 22:27+0000\n"
-"PO-Revision-Date: 2025-01-11 09:24+0200\n"
+"POT-Creation-Date: 2025-01-11 11:43+0000\n"
+"PO-Revision-Date: 2025-01-11 22:56+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -34,12 +34,10 @@ msgstr "Відтворювач аудіо файлів"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
-#| msgid "music;player;media;audio;"
 msgid "music;player;media;audio;decibels;"
 msgstr ""
-"music;player;media;audio;decibels;музика;аудіо;плеєр;медіа;звук;програвач;тре"
-"к;музяка;"
-"відтворювач;плеєр;децибели;"
+"music;player;media;audio;decibels;музика;аудіо;плеєр;медіа;звук;програвач;"
+"трек;музяка;відтворювач;плеєр;децибели;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
@@ -103,7 +101,6 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Клавіатурні скорочення"
 
 #: data/header.blp:44
-#| msgid "Audio Player"
 msgid "_About Audio Player"
 msgstr "Про «Аудіопрогравач»"
 
@@ -164,6 +161,27 @@ msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Перемотати вперед на 10 секунд"
 
+#: data/gtk/help-overlay.blp:54
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Швидкість відтворення"
+
+#: data/gtk/help-overlay.blp:57
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Збільшити швидкість відтворення"
+
+#: data/gtk/help-overlay.blp:62
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Зменшити швидкість відтворення"
+
+#: data/gtk/help-overlay.blp:67
+#| msgid "Adjust Playback Speed"
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Відновити типову швидкість відтворення"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
@@ -177,7 +195,7 @@ msgstr "Неможливо отримати доступ до перетягну
 msgid "An unknown error happened"
 msgstr "Сталася невідома помилка"
 
-#: src/stream.ts:270
+#: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -185,7 +203,7 @@ msgstr ""
 "Файл використовує формат який неможливо відтворити. Можливо, вам потрібно "
 "встановити додаткові медіа-кодеки."
 
-#: src/stream.ts:282
+#: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -194,36 +212,36 @@ msgstr ""
 "раз."
 
 # https://uk.wikipedia.org/wiki/%D0%A3%D0%BD%D1%96%D1%84%D1%96%D0%BA%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9_%D1%96%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D1%96%D0%BA%D0%B0%D1%82%D0%BE%D1%80_%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%96%D0%B2
-#: src/stream.ts:293
+#: src/stream.ts:294
 msgid "File uses an invalid URI"
 msgstr "Файл використовує не правильний УІР (URI)"
 
-#: src/stream.ts:304
+#: src/stream.ts:305
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Час читання файлу вичерпано. Спробуйте ще раз."
 
-#: src/stream.ts:419
+#: src/stream.ts:421
 msgid "Unknown File"
 msgstr "Невідомий файл"
 
-#: src/stream.ts:663
+#: src/stream.ts:665
 msgid "The selected file doesn’t contain any audio"
 msgstr "Обраний файл не містить аудіо даних"
-
-#: src/volume-button.ts:55
-msgid "Full Volume"
-msgstr "Повна гучність"
 
 #: src/volume-button.ts:57
 msgid "Muted"
 msgstr "Вимкнути звук"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Повна гучність"
 
 #. Translators: this is the percentage of the current volume,
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
 #.
-#: src/volume-button.ts:65
+#: src/volume-button.ts:66
 #, c-format
 msgctxt "volume percentage"
 msgid "%d %%"
