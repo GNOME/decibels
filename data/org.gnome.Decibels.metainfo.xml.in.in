@@ -18,12 +18,12 @@
   </description>
   <screenshots>
     <screenshot environment="gnome" type="default">
-      <image type="thumbnail" width="772" height="572">https://static.gnome.org/appdata/decibels/main-lodpi-light.png</image>
-      <image scale="2" type="source">https://static.gnome.org/appdata/decibels/main-hidpi-light.png</image>
+      <image type="thumbnail" width="772" height="572">https://static.gnome.org/appdata/gnome-48/decibels/playing-light-x1.png</image>
+      <image scale="2" type="source">https://static.gnome.org/appdata/gnome-48/decibels/playing-light-x2.png</image>
     </screenshot>
     <screenshot environment="gnome:dark">
-      <image type="thumbnail" width="772" height="572">https://static.gnome.org/appdata/decibels/main-lodpi-dark.png</image>
-      <image scale="2" type="source">https://static.gnome.org/appdata/decibels/main-hidpi-dark.png</image>
+      <image type="thumbnail" width="772" height="572">https://static.gnome.org/appdata/gnome-48/decibels/playing-dark-x1.png</image>
+      <image scale="2" type="source">https://static.gnome.org/appdata/gnome-48/decibels/playing-dark-x2.png</image>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1" />

@@ -5,10 +5,15 @@
 
 Play audio files.
 
-![The main view of Decibels.](./data/screenshots/screenshot-1.png)
-
-![Decibels in dark mode and on a mobile.](./data/screenshots/screenshot-2.png)
-
+<picture style="max-width: 600px;">
+  <source media="(prefers-color-scheme: dark)"
+          srcset="https://static.gnome.org/appdata/gnome-48/decibels/playing-dark-x1.png,
+                  https://static.gnome.org/appdata/gnome-48/decibels/playing-dark-x2.png 2x"/>
+  <source srcset="https://static.gnome.org/appdata/gnome-48/decibels/playing-light-x1.png,
+                  https://static.gnome.org/appdata/gnome-48/decibels/playing-light-x2.png 2x"/>
+  <img src="https://static.gnome.org/appdata/gnome-48/decibels/playing-light-x1.png"
+       alt="Screenshot of the app while playing a track">
+</picture>
 </div>
 
 ## Installing
