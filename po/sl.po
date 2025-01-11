@@ -8,24 +8,21 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-10-22 10:26+0000\n"
-"PO-Revision-Date: 2024-10-23 07:53+0200\n"
+"POT-Creation-Date: 2025-01-11 11:43+0000\n"
+"PO-Revision-Date: 2025-01-11 19:50+0100\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <Slovenian>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && n"
-"%100<=4 ? 2 : 3);\n"
-"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && "
+"n%100<=4 ? 2 : 3);\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Decibels"
-msgstr "Decibeli"
-
 #: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Audio Player"
 msgstr "Predvajalnik zvoka"
 
@@ -36,8 +33,8 @@ msgstr "Predvajaje zvočne datoteke"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;"
-msgstr "glasba;predvajalnik;medij;zvok;audio;"
+msgid "music;player;media;audio;decibels;"
+msgstr "glasba;predvajalnik;medij;zvok;audio;decibeli;decibels;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
@@ -101,8 +98,8 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Tipkovne bližnjice‫"
 
 #: data/header.blp:44
-msgid "_About Decibels"
-msgstr "_O programu Decibeli"
+msgid "_About Audio Player"
+msgstr "_O Predvajalniku zvoka"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -161,6 +158,26 @@ msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Pojdi naprej za 10 sekund"
 
+#: data/gtk/help-overlay.blp:54
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Hitrost predvajanja"
+
+#: data/gtk/help-overlay.blp:57
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Povečajte hitrost predvajanja"
+
+#: data/gtk/help-overlay.blp:62
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Zmanjšajte hitrosti predvajanja"
+
+#: data/gtk/help-overlay.blp:67
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Ponastavi hitrost predvajanja"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
@@ -197,28 +214,28 @@ msgstr "Datoteka uporablja neveljaven URI"
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Branje podatkov o datoteki je poteklo. Prosimo, poskusite znova."
 
-#: src/stream.ts:420
+#: src/stream.ts:421
 msgid "Unknown File"
 msgstr "Neznana datoteka"
 
-#: src/stream.ts:660
+#: src/stream.ts:665
 msgid "The selected file doesn’t contain any audio"
 msgstr "Izbrana datoteka ne vsebuje zvoka"
-
-#: src/volume-button.ts:55
-msgid "Full Volume"
-msgstr "Polna glasnost"
 
 #: src/volume-button.ts:57
 msgid "Muted"
 msgstr "Utišano"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Polna glasnost"
 
 #. Translators: this is the percentage of the current volume,
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
 #.
-#: src/volume-button.ts:65
+#: src/volume-button.ts:66
 #, c-format
 msgctxt "volume percentage"
 msgid "%d %%"
