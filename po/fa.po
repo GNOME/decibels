@@ -1,29 +1,26 @@
 # Persian translation for Decibels.
 # Copyright (C) 2024 Decibels's COPYRIGHT HOLDER
 # This file is distributed under the same license as the Decibels package.
-# Danial Behzadi <dani.behzi@ubuntu.com>,  2024.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2024-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-10-22 10:26+0000\n"
-"PO-Revision-Date: 2024-10-22 15:31+0330\n"
+"POT-Creation-Date: 2025-01-10 22:27+0000\n"
+"PO-Revision-Date: 2025-01-11 13:41+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Decibels"
-msgstr "دسی‌بل"
-
 #: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Audio Player"
 msgstr "پخش‌کنندهٔ صدا"
 
@@ -34,8 +31,8 @@ msgstr "پخش پرونده‌های صوتی"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;"
-msgstr "music;player:media;audio;آهنگ;موسیقی;صدا;صوت;آوا;پخش‌کننده;رسانه;"
+msgid "music;player;media;audio;decibels;"
+msgstr "music;player:media;audio;decibels;آهنگ;موسیقی;صدا;صوت;آوا;پخش‌کننده;رسانه;دسی‌بل;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
@@ -99,8 +96,8 @@ msgid "_Keyboard Shortcuts"
 msgstr "_میان‌برهای صفحه‌کلید"
 
 #: data/header.blp:44
-msgid "_About Decibels"
-msgstr "_دربارهٔ دسی‌بل"
+msgid "_About Audio Player"
+msgstr "_دربارهٔ پخش کنندهٔ صدا"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -172,7 +169,7 @@ msgstr "ناتوان در دسترسی به پرونده‌های رها شده"
 msgid "An unknown error happened"
 msgstr "خطایی ناشناخته رخ داد"
 
-#: src/stream.ts:271
+#: src/stream.ts:270
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -180,7 +177,7 @@ msgstr ""
 "پرونده از قالب که قابل پخش نیست استفاده می‌کند. شاید نیازمند رمزینه‌های رسانهٔ "
 "اضافی باشد."
 
-#: src/stream.ts:283
+#: src/stream.ts:282
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -188,19 +185,19 @@ msgstr ""
 "هنگام تلاش برای گرفتن اطّلاعات دربارهٔ پرونده خطایی رخ داد. لطفاً دوباره تلاش "
 "کنید."
 
-#: src/stream.ts:294
+#: src/stream.ts:293
 msgid "File uses an invalid URI"
 msgstr "پرونده از نشانی‌ای نامعتبر استفاده می‌کند"
 
-#: src/stream.ts:305
+#: src/stream.ts:304
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "مهلت خواندن اطّلاعات پرونده به سر رسید. لطفاً دوباره تلاش کنید."
 
-#: src/stream.ts:420
+#: src/stream.ts:419
 msgid "Unknown File"
 msgstr "پروندهٔ ناشناخته"
 
-#: src/stream.ts:660
+#: src/stream.ts:663
 msgid "The selected file doesn’t contain any audio"
 msgstr "پروندهٔ گزیده هیچ صدایی ندارد"
 
@@ -258,3 +255,9 @@ msgstr "پروندهٔ گزیده پرونده‌ای عادی نیست."
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "هیچ پرونده‌ای گزیده نشده"
+
+#~ msgid "Decibels"
+#~ msgstr "دسی‌بل"
+
+#~ msgid "_About Decibels"
+#~ msgstr "_دربارهٔ دسی‌بل"
