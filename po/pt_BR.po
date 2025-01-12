@@ -1,32 +1,29 @@
 # Brazilian portuguese translation for Decibels.
-# Copyright (C) 2024 THE com.vixalien.decibels'S COPYRIGHT HOLDER
+# Copyright (C) 2025 THE com.vixalien.decibels'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.vixalien.decibels package.
 # Tiago Lucas Flach <tiagolucas9830@gmail.com>, 2023.
 # Juliano de Souza Camargo <julianosc@pm.me>, 2024.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2024.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2024-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-10-22 10:26+0000\n"
-"PO-Revision-Date: 2024-10-22 13:19-0300\n"
+"POT-Creation-Date: 2025-01-11 11:43+0000\n"
+"PO-Revision-Date: 2025-01-11 22:40-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 47.0\n"
+"X-Generator: Gtranslator 47.1\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Decibels"
-msgstr "Decibéis"
-
 #: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Audio Player"
 msgstr "Reprodutor de áudio"
 
@@ -37,8 +34,8 @@ msgstr "Reproduza arquivos de áudio"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;"
-msgstr "música;player;mídia;áudio;"
+msgid "music;player;media;audio;decibels;"
+msgstr "música;player;mídia;áudio;decibéis;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
@@ -102,8 +99,8 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Atalhos do teclado"
 
 #: data/header.blp:44
-msgid "_About Decibels"
-msgstr "_Sobre o Decibéis"
+msgid "_About Audio Player"
+msgstr "_Sobre o Reprodutor de Áudio"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -162,6 +159,26 @@ msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Avança 10 segundos"
 
+#: data/gtk/help-overlay.blp:54
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Taxa de reprodução"
+
+#: data/gtk/help-overlay.blp:57
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Aumenta a taxa de reprodução"
+
+#: data/gtk/help-overlay.blp:62
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Diminui a taxa de reprodução"
+
+#: data/gtk/help-overlay.blp:67
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Redefinir a taxa de reprodução"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
@@ -203,28 +220,28 @@ msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
 "A leitura das informações do arquivo expirou. Por favor, tente novamente."
 
-#: src/stream.ts:420
+#: src/stream.ts:421
 msgid "Unknown File"
 msgstr "Arquivo desconhecido"
 
-#: src/stream.ts:660
+#: src/stream.ts:665
 msgid "The selected file doesn’t contain any audio"
 msgstr "O arquivo selecionado não contém nenhum áudio"
-
-#: src/volume-button.ts:55
-msgid "Full Volume"
-msgstr "Volume total"
 
 #: src/volume-button.ts:57
 msgid "Muted"
 msgstr "Silenciado"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Volume total"
 
 #. Translators: this is the percentage of the current volume,
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
 #.
-#: src/volume-button.ts:65
+#: src/volume-button.ts:66
 #, c-format
 msgctxt "volume percentage"
 msgid "%d %%"
@@ -265,6 +282,12 @@ msgstr "O arquivo selecionado não é um arquivo normal."
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "Nenhum arquivo foi selecionado"
+
+#~ msgid "Decibels"
+#~ msgstr "Decibéis"
+
+#~ msgid "_About Decibels"
+#~ msgstr "_Sobre o Decibéis"
 
 #~ msgid "Drop an audio file to play it"
 #~ msgstr "Solte um arquivo de áudio para reproduzi-lo"
