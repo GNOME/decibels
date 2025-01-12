@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/iss"
 "ues\n"
-"POT-Creation-Date: 2025-01-11 11:43+0000\n"
-"PO-Revision-Date: 2025-01-11 22:56+0200\n"
+"POT-Creation-Date: 2025-01-12 09:33+0000\n"
+"PO-Revision-Date: 2025-01-12 22:32+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -40,20 +40,35 @@ msgstr ""
 "трек;музяка;відтворювач;плеєр;децибели;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid "Current features:"
-msgstr "Поточні можливості:"
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Програвач звукових даних, який просто відтворює звукові файли. Не потребує"
+" упорядкованої фонотеки і не перевантажує вас сотнями функціональних"
+" можливостей."
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
-msgid "Shows the waveform of the track"
-msgstr "Показує звукову хвилю треку"
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Втім, програвач пропонує і додаткові можливості, зокрема:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "Adjust playback speed"
-msgstr "Регулювання швидкості відтворення"
+#| msgid "Shows the waveform of the track"
+msgid "An elegant waveform of the track"
+msgstr "Елегантну звукову хвилю треку"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
+#| msgid "Adjust playback speed"
+msgid "Adjustable playback speed"
+msgstr "Регулювання швидкості відтворення"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Просте керування позицією відтворення"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Одночасне відтворення декількох файлів"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -177,7 +192,6 @@ msgid "Decrease Playback Rate"
 msgstr "Зменшити швидкість відтворення"
 
 #: data/gtk/help-overlay.blp:67
-#| msgid "Adjust Playback Speed"
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Відновити типову швидкість відтворення"
@@ -282,6 +296,9 @@ msgstr "Обраний файл не є звичайним файлом."
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "Не було обрано жодного файлу"
+
+#~ msgid "Current features:"
+#~ msgstr "Поточні можливості:"
 
 #~ msgid "Decibels"
 #~ msgstr "Децибели"
