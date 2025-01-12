@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-01-10 22:27+0000\n"
-"PO-Revision-Date: 2025-01-11 13:41+0330\n"
+"POT-Creation-Date: 2025-01-11 11:43+0000\n"
+"PO-Revision-Date: 2025-01-12 11:43+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "Language: fa\n"
@@ -156,6 +156,26 @@ msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "۱۰ ثانیه به پیش"
 
+#: data/gtk/help-overlay.blp:54
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "آهنگ پخش"
+
+#: data/gtk/help-overlay.blp:57
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "افزایش آهنگ پخش"
+
+#: data/gtk/help-overlay.blp:62
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "کاهش آهنگ پخش"
+
+#: data/gtk/help-overlay.blp:67
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "بازنشانی آهنگ پخش"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
@@ -169,7 +189,7 @@ msgstr "ناتوان در دسترسی به پرونده‌های رها شده"
 msgid "An unknown error happened"
 msgstr "خطایی ناشناخته رخ داد"
 
-#: src/stream.ts:270
+#: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -177,7 +197,7 @@ msgstr ""
 "پرونده از قالب که قابل پخش نیست استفاده می‌کند. شاید نیازمند رمزینه‌های رسانهٔ "
 "اضافی باشد."
 
-#: src/stream.ts:282
+#: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -185,36 +205,36 @@ msgstr ""
 "هنگام تلاش برای گرفتن اطّلاعات دربارهٔ پرونده خطایی رخ داد. لطفاً دوباره تلاش "
 "کنید."
 
-#: src/stream.ts:293
+#: src/stream.ts:294
 msgid "File uses an invalid URI"
 msgstr "پرونده از نشانی‌ای نامعتبر استفاده می‌کند"
 
-#: src/stream.ts:304
+#: src/stream.ts:305
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "مهلت خواندن اطّلاعات پرونده به سر رسید. لطفاً دوباره تلاش کنید."
 
-#: src/stream.ts:419
+#: src/stream.ts:421
 msgid "Unknown File"
 msgstr "پروندهٔ ناشناخته"
 
-#: src/stream.ts:663
+#: src/stream.ts:665
 msgid "The selected file doesn’t contain any audio"
 msgstr "پروندهٔ گزیده هیچ صدایی ندارد"
-
-#: src/volume-button.ts:55
-msgid "Full Volume"
-msgstr "نهایت صدا"
 
 #: src/volume-button.ts:57
 msgid "Muted"
 msgstr "بی‌صدا"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "نهایت صدا"
 
 #. Translators: this is the percentage of the current volume,
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
 #.
-#: src/volume-button.ts:65
+#: src/volume-button.ts:66
 #, c-format
 msgctxt "volume percentage"
 msgid "%d %%"
