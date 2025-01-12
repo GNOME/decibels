@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-01-11 11:43+0000\n"
-"PO-Revision-Date: 2025-01-11 19:50+0100\n"
+"POT-Creation-Date: 2025-01-12 09:33+0000\n"
+"PO-Revision-Date: 2025-01-12 11:30+0100\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <Slovenian>\n"
 "Language: sl\n"
@@ -37,20 +37,33 @@ msgid "music;player;media;audio;decibels;"
 msgstr "glasba;predvajalnik;medij;zvok;audio;decibeli;decibels;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid "Current features:"
-msgstr "Trenutne funkcije:"
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Avdio predvajalnik, ki samo predvaja zvočne datoteke. Ne zahteva "
+"organizirane glasbene knjižnice in vas ne bo preobremenil s številnimi "
+"funkcijami."
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
-msgid "Shows the waveform of the track"
-msgstr "Prikaz signalne oblike v stezi"
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Predvajalnik zvoka še vedno ponuja napredne funkcije, kot so:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "Adjust playback speed"
-msgstr "Prilagajanje hitrosti predvajanja"
+msgid "An elegant waveform of the track"
+msgstr "Eleganten prikaz signalne oblike v stezi"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Prilagajanje hitrosti predvajanja"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Kontrolniki za preprosto iskanje"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Predvajanje več datotek hkrati"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
