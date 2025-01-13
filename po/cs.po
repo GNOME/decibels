@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-01-11 11:43+0000\n"
-"PO-Revision-Date: 2025-01-11 22:34+0100\n"
+"POT-Creation-Date: 2025-01-12 09:33+0000\n"
+"PO-Revision-Date: 2025-01-13 01:24+0100\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: \n"
 "Language: cs\n"
@@ -37,20 +37,32 @@ msgid "music;player;media;audio;decibels;"
 msgstr "hudba;přehrávač;média;audio;zvuk;decibely;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid "Current features:"
-msgstr "Současné funkce:"
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Zvukový přehrávač, který pouze přehrává zvukové soubory. Nevyžaduje "
+"uspořádanou hudební knihovnu a nezahltí vás spoustou funkcí."
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
-msgid "Shows the waveform of the track"
-msgstr "Ukazuje zvukové vlny stopy"
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Zvukový přehrávač stále nabízí pokročilé funkce, jako jsou:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "Adjust playback speed"
-msgstr "Nastavitelná rychlost přehrávání"
+msgid "An elegant waveform of the track"
+msgstr "Elegantní zvukové vlny stopy"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Nastavitelná rychlost přehrávání"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Snadné ovládání přeskakování"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Přehrávání více souborů najednou"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -279,6 +291,9 @@ msgstr "Vybraný soubor není běžný soubor."
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "Nebyl vybrán žádný soubor"
+
+#~ msgid "Current features:"
+#~ msgstr "Současné funkce:"
 
 #~ msgid "Decibels"
 #~ msgstr "Decibely"
