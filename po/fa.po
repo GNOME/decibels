@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-01-11 11:43+0000\n"
-"PO-Revision-Date: 2025-01-12 11:43+0330\n"
+"POT-Creation-Date: 2025-01-12 09:33+0000\n"
+"PO-Revision-Date: 2025-01-13 15:51+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "Language: fa\n"
@@ -35,20 +35,32 @@ msgid "music;player;media;audio;decibels;"
 msgstr "music;player:media;audio;decibels;آهنگ;موسیقی;صدا;صوت;آوا;پخش‌کننده;رسانه;دسی‌بل;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid "Current features:"
-msgstr "ویژگی‌های کنونی:"
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"پخش کنندهٔ صدایی که فقط پرونده‌های صوتی را پخش می‌کند. این کاره نیازمند کتابخانهٔ "
+"آهنگی سازمان یافته نبوده و امکانات بیش از حد ندارد."
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
-msgid "Shows the waveform of the track"
-msgstr "شکل موج قطعه را نشان می‌دهد"
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "با این حال پخش کنندهٔ صدا دارای چندین ویژگی پیش‌رفته است:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "Adjust playback speed"
-msgstr "تنظیم سرعت پخش"
+msgid "An elegant waveform of the track"
+msgstr "نمایش شکل موج قطعه"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "سرعت پخش تنظیم‌پذیر"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "واپایش‌های جویش آسان"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "پخش کردن همزمان چندین پرونده"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -275,6 +287,9 @@ msgstr "پروندهٔ گزیده پرونده‌ای عادی نیست."
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "هیچ پرونده‌ای گزیده نشده"
+
+#~ msgid "Current features:"
+#~ msgstr "ویژگی‌های کنونی:"
 
 #~ msgid "Decibels"
 #~ msgstr "دسی‌بل"
