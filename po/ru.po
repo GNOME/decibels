@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-10-22 10:26+0000\n"
-"PO-Revision-Date: 2024-10-23 14:35+0300\n"
+"POT-Creation-Date: 2025-01-12 09:33+0000\n"
+"PO-Revision-Date: 2025-01-13 20:54+0300\n"
 "Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -19,11 +19,8 @@ msgstr ""
 "X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Decibels"
-msgstr "Децибелы"
-
 #: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Audio Player"
 msgstr "Аудиопроигрыватель"
 
@@ -34,24 +31,37 @@ msgstr "Воспроизведение аудио файлов"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;"
-msgstr "music;player;media;audio;музыка;проигрыватель;медиа;аудио;"
+msgid "music;player;media;audio;decibels;"
+msgstr "music;player;media;audio;decibels;музыка;проигрыватель;медиа;аудио;децибелы;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid "Current features:"
-msgstr "Текущие возможности:"
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Аудиопроигрыватель, который просто воспроизводит аудиофайлы. Он не требует "
+"наличия организованной музыкальной библиотеки и не перегружает вас "
+"множеством функций."
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
-msgid "Shows the waveform of the track"
-msgstr "Отображение волны трека"
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Аудиопроигрыватель предлагает такие расширенные возможности, как:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "Adjust playback speed"
-msgstr "Настройка скорости воспроизведения"
+msgid "An elegant waveform of the track"
+msgstr "Элегантная форма волны трека"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Регулируемая скорость воспроизведения"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
-msgstr "Простое управление поиском"
+msgstr "Простое управление поиском по треку"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Одновременное воспроизведение нескольких файлов"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -99,7 +109,7 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Комбинации клавиш"
 
 #: data/header.blp:44
-msgid "_About Decibels"
+msgid "_About Audio Player"
 msgstr "_О приложении"
 
 #: data/player.blp:66
@@ -108,11 +118,11 @@ msgstr "Настройка скорости воспроизведения"
 
 #: data/player.blp:78
 msgid "Skip Back 10s"
-msgstr "Пропустить назад на 10 секунд"
+msgstr "Перейти на 10 секунд назад"
 
 #: data/player.blp:105
 msgid "Skip Forward 10s"
-msgstr "Пропустить вперед на 10 секунд"
+msgstr "Перейти на 10 секунд вперед"
 
 #: data/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
@@ -159,6 +169,26 @@ msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Перейти на 10 секунд вперед"
 
+#: data/gtk/help-overlay.blp:54
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Скорость воспроизведения"
+
+#: data/gtk/help-overlay.blp:57
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Увеличить скорость воспроизведения"
+
+#: data/gtk/help-overlay.blp:62
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Уменьшить скорость воспроизведения"
+
+#: data/gtk/help-overlay.blp:67
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Сбросить скорость воспроизведения"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
@@ -196,28 +226,28 @@ msgstr "Файл использует недопустимый URI"
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Чтение информации о файле прервано. Пожалуйста, попробуйте еще раз."
 
-#: src/stream.ts:420
+#: src/stream.ts:421
 msgid "Unknown File"
 msgstr "Неизвестный файл"
 
-#: src/stream.ts:660
+#: src/stream.ts:665
 msgid "The selected file doesn’t contain any audio"
 msgstr "Выбранный файл не содержит аудио"
-
-#: src/volume-button.ts:55
-msgid "Full Volume"
-msgstr "Полная громкость"
 
 #: src/volume-button.ts:57
 msgid "Muted"
 msgstr "Без звука"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Полная громкость"
 
 #. Translators: this is the percentage of the current volume,
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
 #.
-#: src/volume-button.ts:65
+#: src/volume-button.ts:66
 #, c-format
 msgctxt "volume percentage"
 msgid "%d %%"
@@ -258,6 +288,15 @@ msgstr "Выбранный файл не является обычным фай�
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "Не выбран файл"
+
+#~ msgid "Decibels"
+#~ msgstr "Децибелы"
+
+#~ msgid "Current features:"
+#~ msgstr "Текущие возможности:"
+
+#~ msgid "_About Decibels"
+#~ msgstr "_О приложении"
 
 #~ msgid "Open an Audio File"
 #~ msgstr "Открыть аудио файл"
