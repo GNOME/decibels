@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-11-11 18:14+0000\n"
-"PO-Revision-Date: 2025-01-09 09:07+0100\n"
+"POT-Creation-Date: 2025-01-15 10:01+0000\n"
+"PO-Revision-Date: 2025-01-15 11:10+0100\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <Serbian>\n"
 "Language: sr\n"
@@ -21,11 +21,8 @@ msgstr ""
 "X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Decibels"
-msgstr "Децибели"
-
 #: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Audio Player"
 msgstr "Програм за музику"
 
@@ -36,24 +33,37 @@ msgstr "Пуштајте звучне датотеке"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;"
-msgstr "музика;звук;аудио;медија;пуштач;music;player;media;audio;"
+msgid "music;player;media;audio;decibels;"
+msgstr ""
+"музика;звук;аудио;медија;децибели;пуштач;music;player;media;audio;decibels;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid "Current features:"
-msgstr "Текуће функције:"
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Програм за музику који само пушта датотеке звука. Не захтева сређену "
+"библиотеку музике и неће вас претрпати гомилом функционалности."
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
-msgid "Shows the waveform of the track"
-msgstr "Приказује таласни облик нумере"
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Програм нуди напредне функције као што су:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "Adjust playback speed"
-msgstr "Подесите брзину пуштања"
+msgid "An elegant waveform of the track"
+msgstr "Елегантан таласни облик нумере"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Подесива брзина пуштања"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Контроле лаког премотавања"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Пушта више датотека у исто време"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -90,7 +100,7 @@ msgstr "Нови прозор"
 
 #: data/header.blp:24
 msgid "Open…"
-msgstr "Отварам..."
+msgstr "Отварам…"
 
 #: data/header.blp:31
 msgid "Show in _Files"
@@ -101,8 +111,8 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Пречице тастатуре"
 
 #: data/header.blp:44
-msgid "_About Decibels"
-msgstr "O _Децибелу"
+msgid "_About Audio Player"
+msgstr "О програму з_а музику"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -161,6 +171,26 @@ msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Иде напред 10 секунде"
 
+#: data/gtk/help-overlay.blp:54
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Стопа пуштања"
+
+#: data/gtk/help-overlay.blp:57
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Повећава стопу пуштања"
+
+#: data/gtk/help-overlay.blp:62
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Смањује стопу пуштања"
+
+#: data/gtk/help-overlay.blp:67
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Враћа стопу пуштања"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
@@ -198,28 +228,28 @@ msgstr "Датотека користи неисправну путању"
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Истекло је време за читање информација о датотеци. Покушајте поново."
 
-#: src/stream.ts:420
+#: src/stream.ts:421
 msgid "Unknown File"
 msgstr "Непозната датотека"
 
-#: src/stream.ts:660
+#: src/stream.ts:665
 msgid "The selected file doesn’t contain any audio"
 msgstr "Изабрана датотека не садржи никакав звук"
-
-#: src/volume-button.ts:55
-msgid "Full Volume"
-msgstr "Пун звук"
 
 #: src/volume-button.ts:57
 msgid "Muted"
 msgstr "Утишано"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Пун звук"
 
 #. Translators: this is the percentage of the current volume,
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
 #.
-#: src/volume-button.ts:65
+#: src/volume-button.ts:66
 #, c-format
 msgctxt "volume percentage"
 msgid "%d %%"
@@ -260,3 +290,12 @@ msgstr "Изабрана датотека није обична датотека
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "Није изабрана ни једна датотека"
+
+#~ msgid "Decibels"
+#~ msgstr "Децибели"
+
+#~ msgid "Current features:"
+#~ msgstr "Текуће функције:"
+
+#~ msgid "_About Decibels"
+#~ msgstr "O _Децибелу"
