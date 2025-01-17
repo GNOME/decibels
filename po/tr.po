@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-01-11 11:43+0000\n"
-"PO-Revision-Date: 2025-01-12 08:00+0300\n"
+"POT-Creation-Date: 2025-01-12 09:33+0000\n"
+"PO-Revision-Date: 2025-01-17 08:00+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
 "Language: tr\n"
@@ -35,23 +35,36 @@ msgstr "Ses dosyalarını oynat"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
 msgid "music;player;media;audio;decibels;"
-msgstr "music;player;media;audio;müzik;oynatıcı;ortam;medya;ses;müzik;muzik;decibels;"
+msgstr ""
+"music;player;media;audio;müzik;oynatıcı;ortam;medya;ses;müzik;muzik;decibels;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid "Current features:"
-msgstr "Geçerli özellikleri:"
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Yalnızca ses dosyalarını oynatan bir ses oynatıcı. Düzenlenmiş müzik "
+"kitaplığı gerektirmez ve sizi tonlarca işlevsellikle doldurmaz."
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
-msgid "Shows the waveform of the track"
-msgstr "Parçanın dalga şeklini gösterir"
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Ses Oynatıcı yine de şu gelişmiş özellikleri sunar:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "Adjust playback speed"
-msgstr "Oynatma hızını ayarla"
+msgid "An elegant waveform of the track"
+msgstr "Parçanın şık bir dalga biçimi"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Ayarlanır oynatma hızı"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Kolay yönetim denetimleri"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Aynı anda birden çok dosya oynatımı"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -279,6 +292,9 @@ msgstr "Seçilen dosya sıradan bir dosya değil."
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "Hiçbir dosya seçilmedi"
+
+#~ msgid "Current features:"
+#~ msgstr "Geçerli özellikleri:"
 
 #~ msgid "Decibels"
 #~ msgstr "Decibels"
