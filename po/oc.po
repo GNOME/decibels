@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-10-22 10:26+0000\n"
-"PO-Revision-Date: 2024-10-26 00:25+0200\n"
+"POT-Creation-Date: 2025-01-12 09:33+0000\n"
+"PO-Revision-Date: 2025-01-23 17:57+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
 "Language: oc\n"
@@ -19,11 +19,8 @@ msgstr ""
 "X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Decibels"
-msgstr "Decibels"
-
 #: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Audio Player"
 msgstr "Lector àudio"
 
@@ -34,24 +31,37 @@ msgstr "Legir de fichièrs àudio"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;"
-msgstr "musica;lector;mèdia;audio;àudio;"
+msgid "music;player;media;audio;decibels;"
+msgstr "musica;lector;mèdia;audio;àudio;decibels;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid "Current features:"
-msgstr "Foncionalitats actualas :"
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Un lector àudio que fa pas que legir de fichièrs àudio. Requerís pas una "
+"bibliotèca de musica organizada e vos coparà pas lo cap amb un fum de "
+"foncionalitats."
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
-msgid "Shows the waveform of the track"
-msgstr "Aficha las ondas de la pista"
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Lo lector àudio ofrís tanben de foncionalitats avançadas coma :"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "Adjust playback speed"
-msgstr "Ajustar la velocitat de lectura"
+msgid "An elegant waveform of the track"
+msgstr "Una onda eleganta de la pista"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Velocitat de lectura ajustabla"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Botons de recèrca simples"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Legir mantun fichièr a l’encòp"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -99,8 +109,8 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Acorchis clavièr"
 
 #: data/header.blp:44
-msgid "_About Decibels"
-msgstr "_A prepaus de Decibels"
+msgid "_About Audio Player"
+msgstr "_A prepaus del lector àudio"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -159,6 +169,26 @@ msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Avançar de 10 segondas"
 
+#: data/gtk/help-overlay.blp:54
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Velocitat de lectura"
+
+#: data/gtk/help-overlay.blp:57
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Aumentar la velocitat de lectura"
+
+#: data/gtk/help-overlay.blp:62
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Reduire la velocitat de lectura"
+
+#: data/gtk/help-overlay.blp:67
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Reïnicializar la velocitat de lectura"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
@@ -198,28 +228,28 @@ msgstr ""
 "Una error s'es producha en legissent las informacions a prepaus del fichièr. "
 "Tornatz ensajar mai tard."
 
-#: src/stream.ts:420
+#: src/stream.ts:421
 msgid "Unknown File"
 msgstr "Fichièr desconegut"
 
-#: src/stream.ts:660
+#: src/stream.ts:665
 msgid "The selected file doesn’t contain any audio"
 msgstr "Lo fichièr seleccionat conten pas cap d’àudio"
-
-#: src/volume-button.ts:55
-msgid "Full Volume"
-msgstr "Volum maximum"
 
 #: src/volume-button.ts:57
 msgid "Muted"
 msgstr "Sordina"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Volum maximum"
 
 #. Translators: this is the percentage of the current volume,
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
 #.
-#: src/volume-button.ts:65
+#: src/volume-button.ts:66
 #, c-format
 msgctxt "volume percentage"
 msgid "%d %%"
@@ -260,6 +290,15 @@ msgstr "Lo fichièr seleccionat es pas un fichièr costumièr."
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "Cap de fichièr pas seleccionat"
+
+#~ msgid "Decibels"
+#~ msgstr "Decibels"
+
+#~ msgid "Current features:"
+#~ msgstr "Foncionalitats actualas :"
+
+#~ msgid "_About Decibels"
+#~ msgstr "_A prepaus de Decibels"
 
 #~ msgid "Drop an audio file to play it"
 #~ msgstr "Depausar un fichièr àudio per lo legir"
