@@ -9,7 +9,8 @@ Play audio files.
   <source media="(prefers-color-scheme: dark)"
           srcset="https://static.gnome.org/appdata/gnome-48/decibels/playing-dark-x1.png,
                   https://static.gnome.org/appdata/gnome-48/decibels/playing-dark-x2.png 2x"/>
-  <source srcset="https://static.gnome.org/appdata/gnome-48/decibels/playing-light-x1.png,
+  <source media="(prefers-color-scheme: light)"
+          srcset="https://static.gnome.org/appdata/gnome-48/decibels/playing-light-x1.png,
                   https://static.gnome.org/appdata/gnome-48/decibels/playing-light-x2.png 2x"/>
   <img src="https://static.gnome.org/appdata/gnome-48/decibels/playing-light-x1.png"
        alt="Screenshot of the app while playing a track">
