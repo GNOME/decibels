@@ -7,8 +7,8 @@
 
   <name xml:lang="en">Decibels</name>
   <shortdesc xml:lang="en">Play audio files</shortdesc>
-  <homepage rdf:resource="https://gitlab.gnome.org/GNOME/Incubator/decibels" />
-  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues"/>
+  <homepage rdf:resource="https://gitlab.gnome.org/GNOME/decibels" />
+  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/decibels/-/issues"/>
 
   <programming-language>JavaScript</programming-language>
   <platform>GTK 4</platform>

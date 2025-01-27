@@ -4,7 +4,7 @@
   "description": "Play audio files",
   "main": "src/main.ts",
   "private": true,
-  "repository": "https://gitlab.gnome.org/GNOME/Incubator/decibels/",
+  "repository": "https://gitlab.gnome.org/GNOME/decibels/",
   "author": "The GNOME Project (https://gnome.org)",
   "license": "GPL-3.0",
   "dependencies": {
