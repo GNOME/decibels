@@ -5,7 +5,7 @@
   <summary>Play audio files</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
-  <developer id="gnome.org">
+  <developer id="org.gnome">
     <name>The GNOME Project</name>
   </developer>
   <description>
