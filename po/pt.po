@@ -1,15 +1,15 @@
 # Portuguese translation for Decibels.
 # Copyright (C) 2024 Decibels's COPYRIGHT HOLDER
 # This file is distributed under the same license as the Decibels package.
-# Hugo Carvalho <hugo79@vivaldi.net>,  2024.
+# Hugo Carvalho <hugo79@vivaldi.net>,  2024, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-10-22 10:26+0000\n"
-"PO-Revision-Date: 2024-10-23 11:55+0100\n"
+"POT-Creation-Date: 2025-01-12 09:33+0000\n"
+"PO-Revision-Date: 2025-01-31 01:29+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <hugokarvalho@hotmail.com>\n"
 "Language: pt\n"
@@ -17,14 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Decibels"
-msgstr "Decibéis"
-
 #: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Audio Player"
 msgstr "Leitor de áudio"
 
@@ -35,24 +32,37 @@ msgstr "Reproduzir ficheiros de áudio"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;"
-msgstr "música;reprodutor;leitor;ficheiro;multimédia;áudio;áudio;"
+msgid "music;player;media;audio;decibels;"
+msgstr "música;reprodutor;leitor;ficheiro;multimédia;áudio;decibéis;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid "Current features:"
-msgstr "Funcionalidades atuais:"
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Um leitor de áudio que apenas reproduz ficheiros de áudio. Não requer uma "
+"biblioteca de música organizada e não o sobrecarrega com toneladas de "
+"funcionalidades."
 
-#: data/org.gnome.Decibels.metainfo.xml.in.in:14
-msgid "Shows the waveform of the track"
-msgstr "Mostra a forma de onda da faixa"
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "O Leitor de áudio ainda oferece funcionalidades avançadas, tais como:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "Adjust playback speed"
-msgstr "Ajustar a velocidade de reprodução"
+msgid "An elegant waveform of the track"
+msgstr "Uma elegante forma de onda da faixa"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Velocidade de reprodução ajustável"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
 msgstr "Controlos de procura fácil"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Reproduzir vários ficheiros ao mesmo tempo"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -100,8 +110,8 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Teclas de atalho"
 
 #: data/header.blp:44
-msgid "_About Decibels"
-msgstr "_Acerca do Decibéis"
+msgid "_About Audio Player"
+msgstr "_Acerca do Leitor de áudio"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -160,6 +170,26 @@ msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Avançar 10 segundos"
 
+#: data/gtk/help-overlay.blp:54
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Taxa de reprodução"
+
+#: data/gtk/help-overlay.blp:57
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Aumentar a taxa de reprodução"
+
+#: data/gtk/help-overlay.blp:62
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Diminuir a taxa de reprodução"
+
+#: data/gtk/help-overlay.blp:67
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Repor a velocidade de reprodução"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
@@ -198,28 +228,28 @@ msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
 "O tempo de leitura das informações do ficheiro expirou. Tente novamente."
 
-#: src/stream.ts:420
+#: src/stream.ts:421
 msgid "Unknown File"
 msgstr "Ficheiro desconhecido"
 
-#: src/stream.ts:660
+#: src/stream.ts:665
 msgid "The selected file doesn’t contain any audio"
 msgstr "O ficheiro selecionado não contém qualquer áudio"
-
-#: src/volume-button.ts:55
-msgid "Full Volume"
-msgstr "Volume máximo"
 
 #: src/volume-button.ts:57
 msgid "Muted"
 msgstr "Sem som"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Volume máximo"
 
 #. Translators: this is the percentage of the current volume,
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
 #.
-#: src/volume-button.ts:65
+#: src/volume-button.ts:66
 #, c-format
 msgctxt "volume percentage"
 msgid "%d %%"
@@ -260,3 +290,12 @@ msgstr "O ficheiro selecionado não é um ficheiro normal."
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "Não foi selecionado nenhum ficheiro"
+
+#~ msgid "Decibels"
+#~ msgstr "Decibéis"
+
+#~ msgid "Current features:"
+#~ msgstr "Funcionalidades atuais:"
+
+#~ msgid "_About Decibels"
+#~ msgstr "_Acerca do Decibéis"
