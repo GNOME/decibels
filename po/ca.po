@@ -6,8 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues\n"
-"POT-Creation-Date: 2025-02-02 22:51+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2025-02-08 10:36+0000\n"
 "PO-Revision-Date: 2025-02-02 22:51+0000\n"
 "Last-Translator: Jordi Mas i Hernàndez <jmas@softcatala.org>\n"
 "Language-Team: Catalan <Catalan>\n"
@@ -28,21 +29,21 @@ msgstr "Reproductor d'àudio"
 msgid "Play audio files"
 msgstr "Reprodueix fitxers d'àudio"
 
-#. Translators: Search terms to find this application. Do NOT translate or
-#. localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
 msgid "music;player;media;audio;decibels;"
 msgstr "música;reproductor;mèdia;àudio;decibels;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
-"An audio player that just plays audio files. It doesn't require an organized"
-" music library and won't overload you with tons of functionality."
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
 msgstr ""
-"Un reproductor d'àudio que reprodueix fitxers d'àudio. No requereix "
-"una biblioteca de música organitzada i no us sobrecarregarà amb massa "
+"Un reproductor d'àudio que reprodueix fitxers d'àudio. No requereix una "
+"biblioteca de música organitzada i no us sobrecarregarà amb massa "
 "funcionalitat."
 
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Audio Player still offers advanced features such as:"
 msgstr "Audio Player ofereix funcions avançades com ara:"
 
@@ -60,11 +61,11 @@ msgstr "Controls de cerca fàcil"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:18
 msgid "Playing multiple files at the same time"
-msgstr "Reprodució diversos fitxers alhora"
+msgstr "Reproducció diversos fitxers alhora"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
-msgstr "Deixa anar aquí per obrir"
+msgstr "Deixa anar aquí per a obrir"
 
 #: data/empty.blp:10
 msgid "Play Audio Files"
@@ -78,8 +79,8 @@ msgstr "Arrossega i deixa anar fitxers d'àudio aquí"
 msgid "_Open…"
 msgstr "_Obre…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124
-#: src/window.ts:175 src/window.ts:194 src/window.ts:214
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
+#: src/window.ts:194 src/window.ts:214
 msgid "File Cannot Be Played"
 msgstr "No es pot reproduir el fitxer"
 
@@ -117,11 +118,11 @@ msgstr "_Ajusta la velocitat de reproducció"
 
 #: data/player.blp:78
 msgid "Skip Back 10s"
-msgstr "Ves enrere 10s"
+msgstr "Ves enrere 10 s"
 
 #: data/player.blp:105
 msgid "Skip Forward 10s"
-msgstr "Ves endavant 10s"
+msgstr "Ves endavant 10 s"
 
 #: data/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
@@ -188,8 +189,7 @@ msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Restableix la velocitat de reproducció"
 
-#. Translators: Replace "translator-credits" with your names, one name per
-#. line
+#. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
 msgstr "Jordi Mas i Hernàndez <jmas@softcatala.org>"
@@ -212,11 +212,11 @@ msgstr ""
 
 #: src/stream.ts:283
 msgid ""
-"An error happened while trying to get information about the file. Please try"
-" again."
+"An error happened while trying to get information about the file. Please try "
+"again."
 msgstr ""
-"S'ha produït un error en intentar obtenir informació sobre el fitxer. "
-"Torneu-ho a provar."
+"S'ha produït un error en intentar obtenir informació sobre el fitxer. Torneu-"
+"ho a provar."
 
 #: src/stream.ts:294
 msgid "File uses an invalid URI"
@@ -248,6 +248,7 @@ msgstr "Màxim volum"
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
+#.
 #: src/volume-button.ts:66
 #, c-format
 msgctxt "volume percentage"
