@@ -86,6 +86,13 @@ export class Window extends Adw.ApplicationWindow {
       this.show_stack_page("player");
     });
 
+    this.stream.connect("notify::file", () => {
+      this.set_stream_title();
+    });
+    this.stream.connect("notify::title", () => {
+      this.set_stream_title();
+    });
+
     this.stream.bind_property(
       "title",
       this._player.headerbar,
@@ -162,6 +169,23 @@ export class Window extends Adw.ApplicationWindow {
 
   load_uri(uri: string) {
     this.stream.set_uri(uri);
+  }
+
+  set_stream_title() {
+    const appname = GLib.get_application_name();
+    if (this.stream.file) {
+      const title = this.stream.title;
+      const subtitle = this.stream.artist;
+
+      if (subtitle) {
+        this.set_title(`${title} — ${subtitle} — ${appname}`);
+        return;
+      }
+
+      this.set_title(`${title} — ${appname}`);
+    } else {
+      this.set_title(`${appname}`);
+    }
   }
 
   async load_file(file: Gio.File, autoplay = true) {
