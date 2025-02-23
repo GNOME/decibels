@@ -1,5 +1,6 @@
 import Adw from "gi://Adw";
 import Gio from "gi://Gio";
+import GLib from "gi://GLib";
 import GObject from "gi://GObject";
 import Gtk from "gi://Gtk?version=4.0";
 
@@ -24,6 +25,7 @@ export class Application extends Adw.Application {
     this.mpris = new MPRIS();
 
     Gtk.Window.set_default_icon_name(pkg.name);
+    GLib.set_application_name(_("Audio Player"));
 
     this.connect(
       "notify::active-window",
