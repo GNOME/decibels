@@ -1,3 +1,52 @@
+48.0
+---
+
+* Bugs fixed:
+  - !144 Cleanup: Remove unused seek 30s icons
+  - !145 metainfo: Fix developer id
+  - !146 Fix links
+  - !147 metainfo: Mark developer name as translatable
+  - !149 Upgrade blueprint-compiler
+  - !150 Update the file name to LICENSE
+
+* Translation updates:
+  - Basque (Asier Sarasua Garmendia)
+  - Belarusian (Vasil Pupkin)
+  - Bokmål, Norwegian (Brage Fuglseth)
+  - Bulgarian (Alexander Shopov)
+  - Catalan (Jordi Mas i Hernandez)
+  - Chinese (China) (Luming Zh)
+  - Czech (Daniel Rusek)
+  - Danish (Ask Hjorth Larsen)
+  - Finnish (Jiri Grönroos)
+  - French (Alexandre Franke)
+  - Galician (Fran Dieguez)
+  - Georgian (Ekaterine Papava)
+  - German (Jürgen Benvenuti)
+  - Hebrew (Yaron Shahrabani)
+  - Hindi (Scrambled 777)
+  - Hungarian (Balázs Meskó)
+  - Indonesian (Andika Triwidada)
+  - Interlingua (International Auxiliary Language Association) (Emilio
+    Sepúlveda)
+  - Italian (Davide Ferracin)
+  - Korean (Seong-ho Cho)
+  - Lithuanian (Aurimas Černius)
+  - Nepali (Pawan Chitrakar)
+  - Occitan (post 1500) (Quentin PAGÈS)
+  - Panjabi (A S Alam)
+  - Persian (Danial Behzadi)
+  - Portuguese (Hugo Carvalho)
+  - Portuguese (Brazil) (Rafael Fontenelle)
+  - Russian (Artur S0)
+  - Serbian (Мирослав Николић)
+  - Slovak (Peter Mráz)
+  - Slovenian (Martin, Matej Urbančič)
+  - Spanish (Julián Villodre)
+  - Swedish (Anders Jonsson)
+  - Turkish (Emin Tufan Çetin)
+  - Ukrainian (Yuri Chornoivan)
+
 48.0.alpha
 ---
 * The waveform was rewritten, redesigned and unified with the scale
