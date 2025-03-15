@@ -47,7 +47,6 @@
           <li>Removed support for remembering the previous window size</li>
           <li>Fixed the keyboard controls sometimes moving the focus element</li>
           <li>Improved security by removing more sandbox holes</li>
-          <li>Added LANGUAGES and updated the LANGUAGES translations</li>
         </ul>
       </description>
     </release>
