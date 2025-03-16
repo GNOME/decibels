@@ -218,6 +218,7 @@ export class APWaveformScale extends Gtk.Widget {
     }
     const rect = new Graphene.Rect();
     const play_x = Math.round(width * position);
+    this.last_play_x = play_x;
 
     // Draw monochrome bar chart as mask
     snapshot.push_mask(Gsk.MaskMode.ALPHA);
