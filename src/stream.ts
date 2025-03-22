@@ -635,10 +635,12 @@ export class APMediaStream extends Gtk.MediaStream {
   }
 
   protected eos_cb(): void {
+    const playing = this.playing;
+
     this.pause();
     this.seek(0);
 
-    if (this.loop) {
+    if (this.loop && playing) {
       this.play();
     }
   }
@@ -729,7 +731,15 @@ export class APMediaStream extends Gtk.MediaStream {
   }
 
   skip_seconds(seconds: number) {
-    this.seek(Math.max(this.timestamp + seconds * Gst.MSECOND, 0));
+    const duration = this.get_duration();
+    const new_timestamp = Math.max(this.timestamp + seconds * Gst.MSECOND, 0);
+
+    if (duration !== 0 && new_timestamp > duration) {
+      this.eos_cb();
+      return;
+    }
+
+    this.seek(new_timestamp);
   }
 
   get_action_group() {
