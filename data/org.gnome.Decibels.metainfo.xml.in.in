@@ -147,7 +147,7 @@
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/decibels/-/issues</url>
   <url type="contribute">https://welcome.gnome.org/app/Decibels/</url>
   <url type="donation">https://www.gnome.org/donate/</url>
-  <url type="translate">https://l10n.gnome.org/module/decibels/</url>
+  <url type="translate">https://l10n.gnome.org/module/Decibels/</url>
   <url type="vcs-browser">https://gitlab.gnome.org/GNOME/decibels/</url>
   <translation type="gettext">@APP_ID@</translation>
   <custom>
