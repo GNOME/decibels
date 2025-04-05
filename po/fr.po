@@ -289,4 +289,3 @@ msgstr "Le fichier sélectionné n’est pas un fichier standard."
 #: src/window.ts:215
 msgid "No file was selected"
 msgstr "Aucun fichier sélectionné"
-
