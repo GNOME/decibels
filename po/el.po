@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2024-08-31 22:38+0000\n"
+"POT-Creation-Date: 2024-10-22 10:26+0000\n"
 "PO-Revision-Date: 2024-09-01 02:57+0300\n"
-"Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
+"Last-Translator: Giannis Antypas <gianni.antypas@gmail.com>\n"
 "Language-Team: Greek <Greek>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Decibels"
-msgstr ""
+msgstr "Decibels"
 
 #: data/org.gnome.Decibels.desktop.in.in:4
 msgid "Audio Player"
@@ -36,7 +36,7 @@ msgstr "Αναπαραγωγή αρχείων ήχου"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:13
 msgid "music;player;media;audio;"
-msgstr ""
+msgstr "μουσική;αναπαραγωγέας;πολυμέσα;ήχος;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid "Current features:"
@@ -44,19 +44,19 @@ msgstr "Τρέχοντα χαρακτηριστικά:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:14
 msgid "Shows the waveform of the track"
-msgstr ""
+msgstr "Εμφανίζει την κυματομορφή του κομματιού"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "Adjust playback speed"
-msgstr ""
+msgstr "Ρύθμιση ταχύτητας αναπαραγωγής"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Easy seek controls"
-msgstr ""
+msgstr "Χειριστήρια εύκολης αναζήτησης"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
-msgstr ""
+msgstr "Απόθεση εδώ για άνοιγμα"
 
 #: data/empty.blp:10
 msgid "Play Audio Files"
@@ -64,7 +64,7 @@ msgstr "Αναπαραγωγή αρχείων ήχου"
 
 #: data/empty.blp:11
 msgid "Drag and drop audio files here"
-msgstr ""
+msgstr "Σύρσιμο και απόθεση εδώ αρχείων ήχου"
 
 #: data/empty.blp:18
 msgid "_Open…"
@@ -73,11 +73,11 @@ msgstr "Άν_οιγμα…"
 #: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
 #: src/window.ts:194 src/window.ts:214
 msgid "File Cannot Be Played"
-msgstr ""
+msgstr "Το αρχείο δε μπορεί να αναπαραχθεί"
 
 #: data/error.blp:18
 msgid "_Try Again…"
-msgstr ""
+msgstr "_Προσπαθήστε ξανά…"
 
 #: data/header.blp:11
 msgid "Main Menu"
@@ -103,17 +103,17 @@ msgstr "Συντομεύσεις _πληκτρολογίου"
 msgid "_About Decibels"
 msgstr "_Περί Decibels"
 
-#: data/player.ui:92
+#: data/player.blp:66
 msgid "Adjust Playback Speed"
-msgstr ""
+msgstr "Ρύθμιση ταχύτητας αναπαραγωγής"
 
-#: data/player.ui:104
+#: data/player.blp:78
 msgid "Skip Back 10s"
-msgstr ""
+msgstr "Μεταπήδηση πίσω 10δ"
 
-#: data/player.ui:132
+#: data/player.blp:105
 msgid "Skip Forward 10s"
-msgstr ""
+msgstr "Μεταπήδηση μπροστά 10δ"
 
 #: data/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
@@ -138,7 +138,7 @@ msgstr "Έξοδος"
 #: data/gtk/help-overlay.blp:30
 msgctxt "shortcut window"
 msgid "Player"
-msgstr ""
+msgstr "Αναπαραγωγέας"
 
 #: data/gtk/help-overlay.blp:33
 msgctxt "shortcut window"
@@ -148,7 +148,7 @@ msgstr "Άνοιγμα αρχείου"
 #: data/gtk/help-overlay.blp:38
 msgctxt "shortcut window"
 msgid "Pause/Play"
-msgstr ""
+msgstr "Παύση/Αναπαραγωγή"
 
 #: data/gtk/help-overlay.blp:43
 msgctxt "shortcut window"
@@ -161,7 +161,7 @@ msgid "Go Forward 10 Seconds"
 msgstr "Μετάβαση 10 δευτερόλεπτα μπροστά"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:70
+#: src/application.ts:73
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -172,39 +172,41 @@ msgstr ""
 
 #: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
-msgstr ""
+msgstr "Αδυναμία πρόσβασης αποτεθειμένων αρχείων"
 
 #: src/error.ts:42
 msgid "An unknown error happened"
-msgstr ""
+msgstr "Συνέβη ένα άγνωστο σφάλμα"
 
 #: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
-msgstr ""
+msgstr "Το αρχείο χρησιμοποιεί μία μορφή που δε μπορεί να αναπαραχθεί. Μπορεί να απαιτούνται "
+"πρόσθετοι κωδικοποιητές πολυμέσων."
 
 #: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
-msgstr ""
+msgstr "Συνέβη ένα σφάλμα κατά την προσπάθεια λήψης πληροφοριών σχετικά με το αρχείο. Παρακαλούμε προσπαθήστε "
+"ξανά."
 
 #: src/stream.ts:294
 msgid "File uses an invalid URI"
-msgstr ""
+msgstr "Το αρχείο χρησιμοποιεί μια μη έγκυρη URI"
 
 #: src/stream.ts:305
-msgid "Reading the file's information timed out. Please try again."
-msgstr ""
+msgid "Reading the file’s information timed out. Please try again."
+msgstr "Λήξη χρονικού ορίου ανάγνωσης πληροφοριών του αρχείου. Παρακαλούμε προσπαθήστε ξανά."
 
 #: src/stream.ts:420
 msgid "Unknown File"
 msgstr "Άγνωστος τύπος αρχείου"
 
 #: src/stream.ts:660
-msgid "The selected file doesn't contain any audio"
-msgstr ""
+msgid "The selected file doesn’t contain any audio"
+msgstr "Το επιλεγμένο αρχείο δεν περιέχει καθόλου ήχο"
 
 #: src/volume-button.ts:55
 msgid "Full Volume"
@@ -225,11 +227,11 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Pause"
 msgstr "Παύση"
 
-#: src/player.ts:135
+#: src/player.ts:104
 msgid "Play"
 msgstr "Αναπαραγωγή"
 
@@ -243,11 +245,11 @@ msgstr "Άνοιγμα αρχείου"
 
 #: src/window.ts:176
 msgid "No available audio file found"
-msgstr ""
+msgstr "Δε βρέθηκε κανένα διαθέσιμο αρχείο ήχου"
 
 #: src/window.ts:188
 msgid "Directories Cannot Be Played"
-msgstr ""
+msgstr "Οι κατάλογοι δε μπορούν να αναπαραχθούν"
 
 #: src/window.ts:189
 msgid "Please select a file."
@@ -255,7 +257,7 @@ msgstr "Παρακαλώ επιλέξτε αρχείο."
 
 #: src/window.ts:195
 msgid "The selected file is not a regular file."
-msgstr ""
+msgstr "Το επιλεγμένο αρχείο δεν είναι ένα κανονικό αρχείο."
 
 #: src/window.ts:215
 msgid "No file was selected"
