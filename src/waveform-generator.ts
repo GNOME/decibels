@@ -1,23 +1,7 @@
-/*
- * Copyright 2013 Meg Ford
-             2020 Kavan Mevada
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Library General Public
- * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Library General Public License for more details.
- *
- * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, see <http://www.gnu.org/licenses/>.
- *
- *  Author: Meg Ford <megford@gnome.org>
- *          Kavan Mevada <kavanmevada@gmail.com>
- *
- */
+// SPDX-FileCopyrightText: 2013  Meg Ford <megford@gnome.org>
+// SPDX-FileCopyrightText: 2020  Kavan Mevada <kavanmevada@gmail.com>
+// SPDX-FileCopyrightText: 2025  The GNOME Project (https://gnome.org)
+// SPDX-License-Identifier: GPL-3.0-or-later
 
 // based on code from GNOME Sound Recorder
 

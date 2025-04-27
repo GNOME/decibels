@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2022  Maximiliano Sandoval R <msandova@gnome.org>
+// SPDX-FileCopyrightText: 2025  The GNOME Project (https://gnome.org)
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 // Adapted from https://gitlab.gnome.org/World/amberol/-/blob/main/src/drag_overlay.rs#L15
 import Adw from "gi://Adw";
 import Gdk from "gi://Gdk?version=4.0";

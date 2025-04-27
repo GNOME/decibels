@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2025  The GNOME Project (https://gnome.org)
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 import Adw from "gi://Adw";
 import GObject from "gi://GObject";
 import Gdk from "gi://Gdk?version=4.0";
