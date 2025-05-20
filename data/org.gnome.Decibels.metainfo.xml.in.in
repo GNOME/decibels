@@ -158,7 +158,7 @@
   </requires>
   <branding>
     <color type="primary" scheme_preference="light">#fcbbb5</color>
-    <color type="primary" scheme_preference="dark">#fcbbb5</color>
+    <color type="primary" scheme_preference="dark">#615dcf</color>
   </branding>
   <recommends>
     <control>pointing</control>
