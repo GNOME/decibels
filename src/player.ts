@@ -17,6 +17,7 @@ export class APPlayerState extends Adw.Bin {
   private _timestamp_label!: Gtk.Label;
   private _duration_label!: Gtk.Label;
   private _volume_button!: Gtk.VolumeButton;
+  private _playback_box!: Gtk.Box;
   private _playback_image!: Gtk.Image;
   private _playback_button!: Gtk.Button;
   private _waveform!: APWaveformScale;
@@ -32,6 +33,7 @@ export class APPlayerState extends Adw.Bin {
           "timestamp_label",
           "duration_label",
           "volume_button",
+          "playback_box",
           "playback_image",
           "playback_button",
           "waveform",
@@ -50,6 +52,9 @@ export class APPlayerState extends Adw.Bin {
     const window = this.get_root() as Window;
 
     if (!window || !(window instanceof Window)) return;
+
+    // Enforce Left-to-Right direction for playback buttons box
+    this._playback_box.set_direction(Gtk.TextDirection.LTR);
 
     // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
     window.stream.bind_property_full(
