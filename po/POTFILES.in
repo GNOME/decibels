@@ -6,7 +6,7 @@ data/error.blp
 data/header.blp
 data/player.blp
 data/window.blp
-data/gtk/help-overlay.blp
+data/shortcuts-dialog.blp
 src/application.ts
 src/drag-overlay.ts
 src/error.ts
