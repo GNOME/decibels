@@ -1,6 +1,6 @@
 blueprints = custom_target('blueprints',
   input: files(
-    'gtk/help-overlay.blp',
+    'shortcuts-dialog.blp',
     'drag-overlay.blp',
     'empty.blp',
     'error.blp',
