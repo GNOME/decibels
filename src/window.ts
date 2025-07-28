@@ -76,6 +76,8 @@ export class Window extends Adw.ApplicationWindow {
   constructor(params?: Partial<Adw.ApplicationWindow.ConstructorProperties>) {
     super(params);
 
+    new Gtk.WindowGroup().add_window(this);
+
     this.stream = new APMediaStream();
 
     this.insert_action_group("player", this.stream.get_action_group());
