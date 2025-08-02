@@ -14,9 +14,11 @@ GObject.type_ensure(APVolumeButton.$gtype);
 GObject.type_ensure(APWaveformScale.$gtype);
 
 export class APPlayerState extends Adw.Bin {
+  private _labels!: Gtk.Box;
   private _timestamp_label!: Gtk.Label;
   private _duration_label!: Gtk.Label;
   private _volume_button!: Gtk.VolumeButton;
+  private _playback_box!: Gtk.Box;
   private _playback_image!: Gtk.Image;
   private _playback_button!: Gtk.Button;
   private _waveform!: APWaveformScale;
@@ -29,9 +31,11 @@ export class APPlayerState extends Adw.Bin {
         GTypeName: "APPlayerState",
         Template: "resource:///org/gnome/Decibels/player.ui",
         InternalChildren: [
+          "labels",
           "timestamp_label",
           "duration_label",
           "volume_button",
+          "playback_box",
           "playback_image",
           "playback_button",
           "waveform",
@@ -50,6 +54,18 @@ export class APPlayerState extends Adw.Bin {
     const window = this.get_root() as Window;
 
     if (!window || !(window instanceof Window)) return;
+
+    // Enforce Left-to-Right direction for playback buttons and timeline
+    const forced_ltr_widgets = [
+      this._labels,
+      this._timestamp_label,
+      this._duration_label,
+      this._playback_box,
+    ];
+
+    for (const widget of forced_ltr_widgets) {
+      widget.set_direction(Gtk.TextDirection.LTR);
+    }
 
     // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
     window.stream.bind_property_full(
