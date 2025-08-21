@@ -61,7 +61,7 @@ msgstr "Controls de cerca fàcil"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:18
 msgid "Playing multiple files at the same time"
-msgstr "Reproducció diversos fitxers alhora"
+msgstr "Reproducció de diversos fitxers alhora"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -196,7 +196,7 @@ msgstr "Jordi Mas i Hernàndez <jmas@softcatala.org>"
 
 #: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
-msgstr "No s'han pogut accedir als fitxers deixats"
+msgstr "No s'ha pogut accedir als fitxers deixats"
 
 #: src/error.ts:42
 msgid "An unknown error happened"
