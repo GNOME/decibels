@@ -1,3 +1,35 @@
+49.0
+---
+
+* Bugs fixed:
+  - #130 Missing trailing new line (Jeremy Bícha)
+  - !154 fix: reset position when skipping past the end of audio
+  - !156 fix: correctly avoid excess draws on waveform scale position update
+  - !157 Fix translate url
+  - !162 metainfo: fix dark brand color
+  - !163 Force playback buttons and timeline to be Left-To-Right
+  - !164 Port to AdwShortcutsDialog
+  - !165 flatpak: Remove blueprint-compiler and update node extension
+  - !167 Put each main window into its own group
+
+* Translation updates:
+  - Arabic (Amar Al-Janabi)
+  - Belarusian (Vasil Pupkin)
+  - Catalan (Jordi Mas)
+  - Chinese (Taiwan) (Cheng-Chia Tseng)
+  - Dutch (Nathan Follens)
+  - Esperanto (Kristjan SCHMIDT)
+  - French (Jeremy Bícha)
+  - Friulian (Fabio Tomat)
+  - Greek, Modern (1453-) (Giannis Antypas)
+  - Interlingua (International Auxiliary Language Association) (Emilio
+    Sepúlveda)
+  - Italian (Jeremy Bícha)
+  - Japanese (Jun Oyamada)
+  - Kabyle (Athmane MOKRAOUI)
+  - Romanian (Antonio Marin)
+  - Uzbek (Asadbek Rajabov)
+
 48.0
 ---
 
