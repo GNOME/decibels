@@ -1,5 +1,5 @@
 # Turkish translation for decibels.
-# Copyright (C) 2023-2024 decibels's copyright holder
+# Copyright (C) 2023-2025 decibels's copyright holder
 # This file is distributed under the same license as the decibels package.
 #
 # Sabri Ünal <yakushabb@gmail.com>, 2023-2024.
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-01-12 09:33+0000\n"
+"POT-Creation-Date: 2025-09-10 11:49+0000\n"
 "PO-Revision-Date: 2025-01-17 08:00+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -21,22 +21,21 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.5\n"
 
+#: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.desktop.in.in:4
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Audio Player"
 msgstr "Ses Oynatıcı"
 
-#: data/org.gnome.Decibels.desktop.in.in:5
+#: data/org.gnome.Decibels.desktop.in.in:4
 #: data/org.gnome.Decibels.metainfo.xml.in.in:5
 msgid "Play audio files"
 msgstr "Ses dosyalarını oynat"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:13
+#: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
-msgstr ""
-"music;player;media;audio;müzik;oynatıcı;ortam;medya;ses;müzik;muzik;decibels;"
+msgstr "music;player;media;audio;müzik;oynatıcı;ortam;medya;ses;müzik;muzik;decibels;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -82,8 +81,8 @@ msgstr "Ses dosyalarını sürükleyip buraya bırakın"
 msgid "_Open…"
 msgstr "_Aç…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
-#: src/window.ts:194 src/window.ts:214
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
 msgstr "Dosya Oynatılamadı"
 
@@ -127,67 +126,67 @@ msgstr "10sn Geri Git"
 msgid "Skip Forward 10s"
 msgstr "10sn İleri Git"
 
-#: data/gtk/help-overlay.blp:11
+#: data/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Genel"
 
-#: data/gtk/help-overlay.blp:14
+#: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Kısayolları Göster"
 
-#: data/gtk/help-overlay.blp:19
+#: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "Yeni Pencere"
 
-#: data/gtk/help-overlay.blp:24
+#: data/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Çık"
 
-#: data/gtk/help-overlay.blp:30
+#: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Oynatıcı"
 
-#: data/gtk/help-overlay.blp:33
+#: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Dosya Aç"
 
-#: data/gtk/help-overlay.blp:38
+#: data/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "Duraklat/Oynat"
 
-#: data/gtk/help-overlay.blp:43
+#: data/shortcuts-dialog.blp:38
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "10 Saniye Geri Git"
 
-#: data/gtk/help-overlay.blp:48
+#: data/shortcuts-dialog.blp:43
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "10 Saniye İleri Git"
 
-#: data/gtk/help-overlay.blp:54
+#: data/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Playback Rate"
 msgstr "Oynatma Hızı"
 
-#: data/gtk/help-overlay.blp:57
+#: data/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Increase Playback Rate"
 msgstr "Oynatma Hızını Artır"
 
-#: data/gtk/help-overlay.blp:62
+#: data/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Decrease Playback Rate"
 msgstr "Oynatma Hızını Düşür"
 
-#: data/gtk/help-overlay.blp:67
+#: data/shortcuts-dialog.blp:62
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Oynatma Hızını Sıfırla"
@@ -234,7 +233,7 @@ msgstr ""
 msgid "Unknown File"
 msgstr "Bilinmeyen Dosya"
 
-#: src/stream.ts:665
+#: src/stream.ts:667
 msgid "The selected file doesn’t contain any audio"
 msgstr "Seçilen dosya ses içermiyor"
 
@@ -257,47 +256,38 @@ msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%%%d"
 
-#: src/player.ts:104
+#: src/player.ts:120
 msgid "Pause"
 msgstr "Duraklat"
 
-#: src/player.ts:104
+#: src/player.ts:120
 msgid "Play"
 msgstr "Oynat"
 
-#: src/window.ts:130
+#: src/window.ts:132
 msgid "Audio files"
 msgstr "Ses dosyaları"
 
-#: src/window.ts:137
+#: src/window.ts:139
 msgid "Open File"
 msgstr "Dosya Aç"
 
-#: src/window.ts:176
+#: src/window.ts:178
 msgid "No available audio file found"
 msgstr "Kullanılabilir ses dosyası bulunamadı"
 
-#: src/window.ts:188
+#: src/window.ts:190
 msgid "Directories Cannot Be Played"
 msgstr "Dizinler Oynatılamaz"
 
-#: src/window.ts:189
+#: src/window.ts:191
 msgid "Please select a file."
 msgstr "Lütfen dosya seçin."
 
-#: src/window.ts:195
+#: src/window.ts:197
 msgid "The selected file is not a regular file."
 msgstr "Seçilen dosya sıradan bir dosya değil."
 
-#: src/window.ts:215
+#: src/window.ts:217
 msgid "No file was selected"
 msgstr "Hiçbir dosya seçilmedi"
-
-#~ msgid "Current features:"
-#~ msgstr "Geçerli özellikleri:"
-
-#~ msgid "Decibels"
-#~ msgstr "Decibels"
-
-#~ msgid "_About Decibels"
-#~ msgstr "Decibels _Hakkında"
