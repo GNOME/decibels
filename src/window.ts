@@ -305,4 +305,13 @@ export class Window extends Adw.ApplicationWindow {
 
     return Gdk.EVENT_STOP;
   }
+
+  private get_window_title(
+    __: this,
+    title: string | null,
+    artist: string | null,
+  ) {
+    if (!title) return _("Audio Player");
+    return `${title} — ${artist}`;
+  }
 }

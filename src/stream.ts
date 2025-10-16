@@ -399,6 +399,8 @@ export class APMediaStream extends Gtk.MediaStream {
   protected _title: string | null = null;
 
   get title() {
+    if (!this.file) return null;
+
     const tag_title = this.tags?.get_string("title");
 
     if (tag_title && tag_title[0] && tag_title[1]) {

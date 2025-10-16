@@ -5,7 +5,10 @@ template $Gjs_Window: Adw.ApplicationWindow {
   default-width: 650;
   default-height: 450;
   height-request: 260;
-  title: _("Audio Player");
+  title: bind $get_window_title(
+    template.stream as <$APMediaStream>.title,
+    template.stream as <$APMediaStream>.artist
+  ) as <string>;
 
   content: $APDragOverlay {
     [content]
