@@ -4,6 +4,7 @@ import GLib from "gi://GLib";
 import GObject from "gi://GObject";
 import Gtk from "gi://Gtk?version=4.0";
 import Gdk from "gi://Gdk?version=4.0";
+import GstPlay from "gi://GstPlay";
 
 import { APMediaStream } from "./stream.js";
 
@@ -73,6 +74,8 @@ export class Window extends Adw.ApplicationWindow {
     );
   }
 
+  private suspend_cookie: number | null = null;
+
   constructor(params?: Partial<Adw.ApplicationWindow.ConstructorProperties>) {
     super(params);
 
@@ -85,6 +88,22 @@ export class Window extends Adw.ApplicationWindow {
     this.stream.connect("loaded", () => {
       this.show_stack_page("player");
     });
+
+    this.stream.adapter.connect(
+      "state-changed",
+      (_play: GstPlay.Play, state: GstPlay.PlayState) => {
+        if (state === GstPlay.PlayState.PLAYING) {
+          this.suspend_cookie = this.application.inhibit(
+            this,
+            Gtk.ApplicationInhibitFlags.SUSPEND,
+            "Playing media",
+          );
+        } else if (this.suspend_cookie !== null) {
+          this.application.uninhibit(this.suspend_cookie);
+          this.suspend_cookie = null;
+        }
+      },
+    );
 
     this.stream.bind_property(
       "title",

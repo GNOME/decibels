@@ -247,6 +247,7 @@ export class APMediaStream extends Gtk.MediaStream {
   waveform_generator: APWaveformGenerator;
 
   private autoplay = true;
+  adapter: APPlaySignalAdapter;
 
   constructor() {
     super();
@@ -322,23 +323,29 @@ export class APMediaStream extends Gtk.MediaStream {
     GstPlay.Play.config_set_seek_accurate(play_config, true);
     this._play.set_config(play_config);
 
-    const adapter = new APPlaySignalAdapter(this._play);
+    this.adapter = new APPlaySignalAdapter(this._play);
 
-    adapter.connect("uri-loaded", this.uri_loaded_cb.bind(this));
-    adapter.connect("buffering", this.buffering_cb.bind(this));
-    adapter.connect("end-of-stream", this.eos_cb.bind(this));
-    adapter.connect("error", this.error_cb.bind(this));
-    adapter.connect("state-changed", this.state_changed_cb.bind(this));
-    adapter.connect("position-updated", this.position_updated_cb.bind(this));
-    adapter.connect("duration-changed", this.duration_changed_cb.bind(this));
-    adapter.connect(
+    this.adapter.connect("uri-loaded", this.uri_loaded_cb.bind(this));
+    this.adapter.connect("buffering", this.buffering_cb.bind(this));
+    this.adapter.connect("end-of-stream", this.eos_cb.bind(this));
+    this.adapter.connect("error", this.error_cb.bind(this));
+    this.adapter.connect("state-changed", this.state_changed_cb.bind(this));
+    this.adapter.connect(
+      "position-updated",
+      this.position_updated_cb.bind(this),
+    );
+    this.adapter.connect(
+      "duration-changed",
+      this.duration_changed_cb.bind(this),
+    );
+    this.adapter.connect(
       "media-info-updated",
       this.media_info_updated_cb.bind(this),
     );
-    adapter.connect("volume-changed", this.volume_changed_cb.bind(this));
-    adapter.connect("mute-changed", this.mute_changed_cb.bind(this));
-    adapter.connect("seek-done", this.seek_done_cb.bind(this));
-    adapter.connect("warning", (_object, error: GLib.Error) => {
+    this.adapter.connect("volume-changed", this.volume_changed_cb.bind(this));
+    this.adapter.connect("mute-changed", this.mute_changed_cb.bind(this));
+    this.adapter.connect("seek-done", this.seek_done_cb.bind(this));
+    this.adapter.connect("warning", (_object, error: GLib.Error) => {
       console.warn("player warning", error.code, error.message);
     });
 
