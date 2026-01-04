@@ -1,15 +1,15 @@
 # Swedish translation for Decibels.
-# Copyright © 2024-2025 Decibels's COPYRIGHT HOLDER
+# Copyright © 2024-2026 Decibels's COPYRIGHT HOLDER
 # This file is distributed under the same license as the Decibels package.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>,  2024, 2025.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>,  2024, 2025, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-01-12 09:33+0000\n"
-"PO-Revision-Date: 2025-02-27 00:18+0100\n"
+"POT-Creation-Date: 2025-12-24 11:31+0000\n"
+"PO-Revision-Date: 2026-01-04 15:10+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -17,51 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.5\n"
-
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.desktop.in.in:4
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Audio Player"
-msgstr "Ljudspelare"
-
-#: data/org.gnome.Decibels.desktop.in.in:5
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5
-msgid "Play audio files"
-msgstr "Spela ljudfiler"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;decibels;"
-msgstr "musik;spelare;media;audio;ljud;decibels;"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
-msgstr ""
-"En ljudspelare som bara spelar ljudfiler. Den kräver inget organiserat "
-"musikbibliotek och kommer inte överösa dig med en massa funktioner."
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
-msgid "Audio Player still offers advanced features such as:"
-msgstr "Ljudspelare erbjuder fortfarande avancerade funktioner som:"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "An elegant waveform of the track"
-msgstr "En elegant vågform för spåret"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
-msgid "Adjustable playback speed"
-msgstr "Justerbar uppspelningshastighet"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
-msgid "Easy seek controls"
-msgstr "Lätta kontroller för snabbspolning"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
-msgid "Playing multiple files at the same time"
-msgstr "Spelning av flera filer samtidigt"
+"X-Generator: Poedit 3.8\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -79,8 +35,8 @@ msgstr "Dra och släpp ljudfiler här"
 msgid "_Open…"
 msgstr "Ö_ppna…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
-#: src/window.ts:194 src/window.ts:214
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
 msgstr "Filen kan inte spelas upp"
 
@@ -112,6 +68,50 @@ msgstr "_Tangentbordsgenvägar"
 msgid "_About Audio Player"
 msgstr "_Om Ljudspelare"
 
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+msgid "Audio Player"
+msgstr "Ljudspelare"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Spela ljudfiler"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "musik;spelare;media;audio;ljud;decibels;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"En ljudspelare som bara spelar ljudfiler. Den kräver inget organiserat "
+"musikbibliotek och kommer inte överösa dig med en massa funktioner."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Ljudspelare erbjuder fortfarande avancerade funktioner som:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "En elegant vågform för spåret"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Justerbar uppspelningshastighet"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Lätta kontroller för snabbspolning"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Spelning av flera filer samtidigt"
+
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Justera uppspelningshastighet"
@@ -124,70 +124,74 @@ msgstr "Hoppa tillbaka 10 s"
 msgid "Skip Forward 10s"
 msgstr "Hoppa framåt 10 s"
 
-#: data/gtk/help-overlay.blp:11
+#: data/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Allmänt"
 
-#: data/gtk/help-overlay.blp:14
+#: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Visa kortkommandon"
 
-#: data/gtk/help-overlay.blp:19
+#: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "Nytt fönster"
 
-#: data/gtk/help-overlay.blp:24
+#: data/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Avsluta"
 
-#: data/gtk/help-overlay.blp:30
+#: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Spelare"
 
-#: data/gtk/help-overlay.blp:33
+#: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Öppna fil"
 
-#: data/gtk/help-overlay.blp:38
+#: data/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "Pausa / Spela"
 
-#: data/gtk/help-overlay.blp:43
+#: data/shortcuts-dialog.blp:38
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "Gå tillbaka 10 sekunder"
 
-#: data/gtk/help-overlay.blp:48
+#: data/shortcuts-dialog.blp:43
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Gå framåt 10 sekunder"
 
-#: data/gtk/help-overlay.blp:54
+#: data/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Playback Rate"
 msgstr "Uppspelningshastighet"
 
-#: data/gtk/help-overlay.blp:57
+#: data/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Increase Playback Rate"
 msgstr "Öka uppspelningshastighet"
 
-#: data/gtk/help-overlay.blp:62
+#: data/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Decrease Playback Rate"
 msgstr "Sänk uppspelningshastighet"
 
-#: data/gtk/help-overlay.blp:67
+#: data/shortcuts-dialog.blp:62
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Återställ uppspelningshastighet"
+
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Tysta/aktivera ljud"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
@@ -201,6 +205,14 @@ msgstr "Kunde inte komma åt släppta filer"
 #: src/error.ts:42
 msgid "An unknown error happened"
 msgstr "Ett okänt fel inträffade"
+
+#: src/player.ts:120
+msgid "Pause"
+msgstr "Pausa"
+
+#: src/player.ts:120
+msgid "Play"
+msgstr "Spela"
 
 #: src/stream.ts:271
 msgid ""
@@ -230,7 +242,7 @@ msgstr "Tidsgräns för läsning av filens information överskreds. Försök ige
 msgid "Unknown File"
 msgstr "Okänd fil"
 
-#: src/stream.ts:665
+#: src/stream.ts:667
 msgid "The selected file doesn’t contain any audio"
 msgstr "Den valda filen innehåller inte något ljud"
 
@@ -248,43 +260,35 @@ msgstr "Full volym"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:104
-msgid "Pause"
-msgstr "Pausa"
-
-#: src/player.ts:104
-msgid "Play"
-msgstr "Spela"
-
-#: src/window.ts:130
+#: src/window.ts:132
 msgid "Audio files"
 msgstr "Ljudfiler"
 
-#: src/window.ts:137
+#: src/window.ts:139
 msgid "Open File"
 msgstr "Öppna fil"
 
-#: src/window.ts:176
+#: src/window.ts:178
 msgid "No available audio file found"
 msgstr "Ingen tillgänglig ljudfil hittades"
 
-#: src/window.ts:188
+#: src/window.ts:190
 msgid "Directories Cannot Be Played"
 msgstr "Kataloger kan inte spelas upp"
 
-#: src/window.ts:189
+#: src/window.ts:191
 msgid "Please select a file."
 msgstr "Välj en fil."
 
-#: src/window.ts:195
+#: src/window.ts:197
 msgid "The selected file is not a regular file."
 msgstr "Den valda filen är inte en vanlig fil."
 
-#: src/window.ts:215
+#: src/window.ts:217
 msgid "No file was selected"
 msgstr "Ingen fil valdes"
