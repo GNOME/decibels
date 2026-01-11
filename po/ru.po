@@ -6,62 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: decibels\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-01-12 09:33+0000\n"
-"PO-Revision-Date: 2025-01-13 20:54+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues\n"
+"POT-Creation-Date: 2025-12-24 11:31+0000\n"
+"PO-Revision-Date: 2026-01-05 16:21+0300\n"
 "Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.5\n"
-
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.desktop.in.in:4
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Audio Player"
-msgstr "Аудиопроигрыватель"
-
-#: data/org.gnome.Decibels.desktop.in.in:5
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5
-msgid "Play audio files"
-msgstr "Воспроизведение аудио файлов"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;decibels;"
-msgstr "music;player;media;audio;decibels;музыка;проигрыватель;медиа;аудио;децибелы;"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
-msgstr ""
-"Аудиопроигрыватель, который просто воспроизводит аудиофайлы. Он не требует "
-"наличия организованной музыкальной библиотеки и не перегружает вас "
-"множеством функций."
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
-msgid "Audio Player still offers advanced features such as:"
-msgstr "Аудиопроигрыватель предлагает такие расширенные возможности, как:"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "An elegant waveform of the track"
-msgstr "Элегантная форма волны трека"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
-msgid "Adjustable playback speed"
-msgstr "Регулируемая скорость воспроизведения"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
-msgid "Easy seek controls"
-msgstr "Простое управление поиском по треку"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
-msgid "Playing multiple files at the same time"
-msgstr "Одновременное воспроизведение нескольких файлов"
+"X-Generator: Poedit 3.8\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -79,8 +33,8 @@ msgstr "Перетащите аудиофайлы сюда"
 msgid "_Open…"
 msgstr "_Открыть…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
-#: src/window.ts:194 src/window.ts:214
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
 msgstr "Невозможно воспроизвести файл"
 
@@ -112,6 +66,49 @@ msgstr "_Комбинации клавиш"
 msgid "_About Audio Player"
 msgstr "_О приложении"
 
+#: data/org.gnome.Decibels.desktop.in.in:2 data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+msgid "Audio Player"
+msgstr "Аудиопроигрыватель"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Воспроизведение аудио файлов"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "music;player;media;audio;decibels;музыка;проигрыватель;медиа;аудио;децибелы;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized music "
+"library and won't overload you with tons of functionality."
+msgstr ""
+"Аудиопроигрыватель, который просто воспроизводит аудиофайлы. Он не требует наличия "
+"организованной музыкальной библиотеки и не перегружает вас множеством функций."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Аудиопроигрыватель предлагает такие расширенные возможности, как:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "Элегантная форма волны трека"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Регулируемая скорость воспроизведения"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Простое управление поиском по треку"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Одновременное воспроизведение нескольких файлов"
+
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Настройка скорости воспроизведения"
@@ -124,70 +121,74 @@ msgstr "Перейти на 10 секунд назад"
 msgid "Skip Forward 10s"
 msgstr "Перейти на 10 секунд вперед"
 
-#: data/gtk/help-overlay.blp:11
+#: data/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Общие"
 
-#: data/gtk/help-overlay.blp:14
+#: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Показать комбинации клавиш"
 
-#: data/gtk/help-overlay.blp:19
+#: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "Новое окно"
 
-#: data/gtk/help-overlay.blp:24
+#: data/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Закрыть"
 
-#: data/gtk/help-overlay.blp:30
+#: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Проигрыватель"
 
-#: data/gtk/help-overlay.blp:33
+#: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Открыть файл"
 
-#: data/gtk/help-overlay.blp:38
+#: data/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "Пауза/Воспроизведение"
 
-#: data/gtk/help-overlay.blp:43
+#: data/shortcuts-dialog.blp:38
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "Перейти на 10 секунд назад"
 
-#: data/gtk/help-overlay.blp:48
+#: data/shortcuts-dialog.blp:43
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Перейти на 10 секунд вперед"
 
-#: data/gtk/help-overlay.blp:54
+#: data/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Playback Rate"
 msgstr "Скорость воспроизведения"
 
-#: data/gtk/help-overlay.blp:57
+#: data/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Increase Playback Rate"
 msgstr "Увеличить скорость воспроизведения"
 
-#: data/gtk/help-overlay.blp:62
+#: data/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Decrease Playback Rate"
 msgstr "Уменьшить скорость воспроизведения"
 
-#: data/gtk/help-overlay.blp:67
+#: data/shortcuts-dialog.blp:62
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Сбросить скорость воспроизведения"
+
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Выключить/включить звук"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
@@ -202,21 +203,27 @@ msgstr "Невозможно получить доступ к удаленным
 msgid "An unknown error happened"
 msgstr "Произошла неизвестная ошибка"
 
+#: src/player.ts:120
+msgid "Pause"
+msgstr "Пауза"
+
+#: src/player.ts:120
+msgid "Play"
+msgstr "Воспроизведение"
+
 #: src/stream.ts:271
 msgid ""
-"File uses a format that cannot be played. Additional media codecs may be "
-"required."
+"File uses a format that cannot be played. Additional media codecs may be required."
 msgstr ""
-"Файл использует формат, который невозможно воспроизвести. Возможно, "
-"потребуются дополнительные медиакодеки."
+"Файл использует формат, который невозможно воспроизвести. Возможно, потребуются "
+"дополнительные медиакодеки."
 
 #: src/stream.ts:283
 msgid ""
-"An error happened while trying to get information about the file. Please try "
-"again."
+"An error happened while trying to get information about the file. Please try again."
 msgstr ""
-"Произошла ошибка при попытке получить информацию о файле. Пожалуйста, "
-"попробуйте еще раз."
+"Произошла ошибка при попытке получить информацию о файле. Пожалуйста, попробуйте "
+"еще раз."
 
 #: src/stream.ts:294
 msgid "File uses an invalid URI"
@@ -230,7 +237,7 @@ msgstr "Чтение информации о файле прервано. Пож
 msgid "Unknown File"
 msgstr "Неизвестный файл"
 
-#: src/stream.ts:665
+#: src/stream.ts:667
 msgid "The selected file doesn’t contain any audio"
 msgstr "Выбранный файл не содержит аудио"
 
@@ -248,44 +255,36 @@ msgstr "Полная громкость"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:104
-msgid "Pause"
-msgstr "Пауза"
-
-#: src/player.ts:104
-msgid "Play"
-msgstr "Воспроизведение"
-
-#: src/window.ts:130
+#: src/window.ts:132
 msgid "Audio files"
 msgstr "Аудиофайлы"
 
-#: src/window.ts:137
+#: src/window.ts:139
 msgid "Open File"
 msgstr "Открыть файл"
 
-#: src/window.ts:176
+#: src/window.ts:178
 msgid "No available audio file found"
 msgstr "Доступный аудиофайл не найден"
 
-#: src/window.ts:188
+#: src/window.ts:190
 msgid "Directories Cannot Be Played"
 msgstr "Каталоги не могут быть воспроизведены"
 
-#: src/window.ts:189
+#: src/window.ts:191
 msgid "Please select a file."
 msgstr "Пожалуйста, выберите файл."
 
-#: src/window.ts:195
+#: src/window.ts:197
 msgid "The selected file is not a regular file."
 msgstr "Выбранный файл не является обычным файлом."
 
-#: src/window.ts:215
+#: src/window.ts:217
 msgid "No file was selected"
 msgstr "Не выбран файл"
 
@@ -317,33 +316,30 @@ msgstr "Не выбран файл"
 #~ msgstr "Переход к началу дорожки после ее окончания"
 
 #~ msgid "Allow dragging the app window from everywhere (except the waveform)"
-#~ msgstr ""
-#~ "Разрешить перетаскивание окна приложения отовсюду (кроме волны трека)"
+#~ msgstr "Разрешить перетаскивание окна приложения отовсюду (кроме волны трека)"
 
 #~ msgid ""
-#~ "Made the playback speed popover look less cluttered by removing the +/- "
-#~ "buttons and mark labels"
+#~ "Made the playback speed popover look less cluttered by removing the +/- buttons "
+#~ "and mark labels"
 #~ msgstr ""
-#~ "Всплывающее окно скорости воспроизведения стало менее загроможденным, "
-#~ "удалив кнопки +/- и метки"
+#~ "Всплывающее окно скорости воспроизведения стало менее загроможденным, удалив "
+#~ "кнопки +/- и метки"
 
 #~ msgid ""
-#~ "Fix an issue that prevented accessing file metadata from within the "
-#~ "Flatpak sandbox"
+#~ "Fix an issue that prevented accessing file metadata from within the Flatpak "
+#~ "sandbox"
 #~ msgstr ""
-#~ "Устранена проблема, из-за которой невозможно было получить доступ к "
-#~ "метаданным файла из песочницы Flatpak"
+#~ "Устранена проблема, из-за которой невозможно было получить доступ к метаданным "
+#~ "файла из песочницы Flatpak"
 
 #~ msgid ""
-#~ "Don't try to play files without audio streams (images and videos without "
-#~ "sound)"
+#~ "Don't try to play files without audio streams (images and videos without sound)"
 #~ msgstr ""
-#~ "Не пытайтесь воспроизвести файлы без аудио потоков (изображения и видео "
-#~ "без звука)"
+#~ "Не пытайтесь воспроизвести файлы без аудио потоков (изображения и видео без "
+#~ "звука)"
 
 #~ msgid "Don't try to process video streams even if they were not rendered"
-#~ msgstr ""
-#~ "Не пытайтесь обрабатывать видео потоки, даже если они не были отрендерены"
+#~ msgstr "Не пытайтесь обрабатывать видео потоки, даже если они не были отрендерены"
 
 #~ msgid "Fixed some issues with the Development build of Decibels"
 #~ msgstr "Исправлены некоторые проблемы со сборкой для разработчиков"
@@ -355,11 +351,11 @@ msgstr "Не выбран файл"
 #~ msgstr "Несколько исправлений ошибок, улучшающих приложение"
 
 #~ msgid ""
-#~ "Differentiate development versions of the app from the stable app by "
-#~ "styling the icon and header differently"
+#~ "Differentiate development versions of the app from the stable app by styling "
+#~ "the icon and header differently"
 #~ msgstr ""
-#~ "Отличайте разрабатываемые версии приложения от стабильной версии, "
-#~ "используя разные стили иконки и заголовка"
+#~ "Отличайте разрабатываемые версии приложения от стабильной версии, используя "
+#~ "разные стили иконки и заголовка"
 
 #~ msgid "Added donation link in application metadata"
 #~ msgstr "Добавлена ссылка на пожертвования в метаданные приложения"
@@ -369,8 +365,8 @@ msgstr "Не выбран файл"
 
 #~ msgid "Fix the About Window showing release notes for an older version"
 #~ msgstr ""
-#~ "Исправлено окно «О программе», показывающее примечания к выпуску для "
-#~ "более старой версии"
+#~ "Исправлено окно «О программе», показывающее примечания к выпуску для более "
+#~ "старой версии"
 
 #~ msgid "Initial Release"
 #~ msgstr "Первоначальный выпуск"
