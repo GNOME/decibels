@@ -17,7 +17,7 @@ export class APPlayerState extends Adw.Bin {
   private _labels!: Gtk.Box;
   private _timestamp_label!: Gtk.Label;
   private _duration_label!: Gtk.Label;
-  private _volume_button!: Gtk.VolumeButton;
+  private _volume_button!: APVolumeButton;
   private _playback_box!: Gtk.Box;
   private _playback_image!: Gtk.Image;
   private _playback_button!: Gtk.Button;
