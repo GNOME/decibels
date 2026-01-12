@@ -185,15 +185,6 @@ export class APMediaStream extends Gtk.MediaStream {
             GstPlay.PlayMediaInfo.$gtype,
             GObject.ParamFlags.READABLE,
           ),
-          cubic_volume: GObject.param_spec_double(
-            "cubic-volume",
-            "Cubic Volume",
-            "The volume that is suitable for display",
-            0.0,
-            1.0,
-            1.0,
-            GObject.ParamFlags.READWRITE,
-          ),
           file: GObject.param_spec_object(
             "file",
             "File",
@@ -349,16 +340,6 @@ export class APMediaStream extends Gtk.MediaStream {
     }
 
     this._play.pipeline.set_property("video-sink", sink);
-  }
-
-  // cubic volume
-
-  get cubic_volume() {
-    return get_cubic_volume(this.volume);
-  }
-
-  set cubic_volume(value: number) {
-    this.volume = get_linear_volume(value);
   }
 
   // rate
@@ -569,7 +550,6 @@ export class APMediaStream extends Gtk.MediaStream {
   vfunc_update_audio(muted: boolean, volume: number): void {
     this._play.mute = muted;
     this._play.volume = volume;
-    this.notify("cubic-volume");
   }
 
   // handlers
@@ -673,7 +653,6 @@ export class APMediaStream extends Gtk.MediaStream {
 
   private volume_changed_cb(): void {
     this.notify("volume");
-    this.notify("cubic-volume");
   }
 
   private mute_changed_cb(): void {

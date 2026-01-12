@@ -8,6 +8,7 @@ import { APHeaderBar } from "./header.js";
 import { APWaveformScale } from "./waveform-scale.js";
 import { APPlaybackRateButton } from "./playback-rate-button.js";
 import { APVolumeButton } from "./volume-button.js";
+import { get_cubic_volume, get_linear_volume } from "./stream.js";
 
 GObject.type_ensure(APPlaybackRateButton.$gtype);
 GObject.type_ensure(APVolumeButton.$gtype);
@@ -91,11 +92,17 @@ export class APPlayerState extends Adw.Bin {
       null,
     );
 
-    window.stream.bind_property(
-      "cubic-volume",
+    window.stream.bind_property_full(
+      "volume",
       this._volume_button,
       "volume",
       GObject.BindingFlags.SYNC_CREATE | GObject.BindingFlags.BIDIRECTIONAL,
+      (_binding, linear: number) => {
+        return [true, get_cubic_volume(linear)];
+      },
+      (_binding, cubic: number) => {
+        return [true, get_linear_volume(cubic)];
+      },
     );
 
     // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
