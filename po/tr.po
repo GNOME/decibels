@@ -8,62 +8,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: decibels\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-09-10 11:49+0000\n"
-"PO-Revision-Date: 2025-01-17 08:00+0300\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues\n"
+"POT-Creation-Date: 2025-12-24 11:31+0000\n"
+"PO-Revision-Date: 2026-01-06 19:22+0300\n"
+"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.5\n"
-
-#: data/org.gnome.Decibels.desktop.in.in:2
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Audio Player"
-msgstr "Ses Oynatıcı"
-
-#: data/org.gnome.Decibels.desktop.in.in:4
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5
-msgid "Play audio files"
-msgstr "Ses dosyalarını oynat"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:12
-msgid "music;player;media;audio;decibels;"
-msgstr "music;player;media;audio;müzik;oynatıcı;ortam;medya;ses;müzik;muzik;decibels;"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
-msgstr ""
-"Yalnızca ses dosyalarını oynatan bir ses oynatıcı. Düzenlenmiş müzik "
-"kitaplığı gerektirmez ve sizi tonlarca işlevsellikle doldurmaz."
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
-msgid "Audio Player still offers advanced features such as:"
-msgstr "Ses Oynatıcı yine de şu gelişmiş özellikleri sunar:"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "An elegant waveform of the track"
-msgstr "Parçanın şık bir dalga biçimi"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
-msgid "Adjustable playback speed"
-msgstr "Ayarlanır oynatma hızı"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
-msgid "Easy seek controls"
-msgstr "Kolay yönetim denetimleri"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
-msgid "Playing multiple files at the same time"
-msgstr "Aynı anda birden çok dosya oynatımı"
+"X-Generator: Poedit 3.8\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -113,6 +68,49 @@ msgstr "_Klavye Kısayolları"
 #: data/header.blp:44
 msgid "_About Audio Player"
 msgstr "Ses Oynatıcı _Hakkında"
+
+#: data/org.gnome.Decibels.desktop.in.in:2 data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+msgid "Audio Player"
+msgstr "Ses Oynatıcı"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Ses dosyalarını oynat"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "music;player;media;audio;müzik;oynatıcı;ortam;medya;ses;müzik;muzik;decibels;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized music "
+"library and won't overload you with tons of functionality."
+msgstr ""
+"Yalnızca ses dosyalarını oynatan bir ses oynatıcı. Düzenlenmiş müzik kitaplığı "
+"gerektirmez ve sizi tonlarca işlevsellikle doldurmaz."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Ses Oynatıcı yine de şu gelişmiş özellikleri sunar:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "Parçanın şık bir dalga biçimi"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Ayarlanır oynatma hızı"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Kolay yönetim denetimleri"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Aynı anda birden çok dosya oynatımı"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -191,6 +189,10 @@ msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Oynatma Hızını Sıfırla"
 
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Sesi Kapat/Aç"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
@@ -204,21 +206,26 @@ msgstr "Bırakılan dosyalara erişilemiyor"
 msgid "An unknown error happened"
 msgstr "Bilinmeyen hata oluştu"
 
+#: src/player.ts:120
+msgid "Pause"
+msgstr "Duraklat"
+
+#: src/player.ts:120
+msgid "Play"
+msgstr "Oynat"
+
 #: src/stream.ts:271
 msgid ""
-"File uses a format that cannot be played. Additional media codecs may be "
-"required."
+"File uses a format that cannot be played. Additional media codecs may be required."
 msgstr ""
-"Dosya oynatılamayan bir biçim kullanıyor. Ek ortam kod çözme bileşenleri "
-"gerekli olabilir."
+"Dosya oynatılamayan bir biçim kullanıyor. Ek ortam kod çözme bileşenleri gerekli "
+"olabilir."
 
 #: src/stream.ts:283
 msgid ""
-"An error happened while trying to get information about the file. Please try "
-"again."
+"An error happened while trying to get information about the file. Please try again."
 msgstr ""
-"Dosya hakkında bilgi alınmaya çalışılırken hata oluştu. Lütfen yeniden "
-"deneyin."
+"Dosya hakkında bilgi alınmaya çalışılırken hata oluştu. Lütfen yeniden deneyin."
 
 #: src/stream.ts:294
 msgid "File uses an invalid URI"
@@ -226,8 +233,7 @@ msgstr "Dosya geçersiz bir URI kullanıyor"
 
 #: src/stream.ts:305
 msgid "Reading the file’s information timed out. Please try again."
-msgstr ""
-"Dosya bilgilerinin okunması zaman aşımına uğradı. Lütfen yeniden deneyin."
+msgstr "Dosya bilgilerinin okunması zaman aşımına uğradı. Lütfen yeniden deneyin."
 
 #: src/stream.ts:421
 msgid "Unknown File"
@@ -251,18 +257,10 @@ msgstr "Tam Ses"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%%%d"
-
-#: src/player.ts:120
-msgid "Pause"
-msgstr "Duraklat"
-
-#: src/player.ts:120
-msgid "Play"
-msgstr "Oynat"
 
 #: src/window.ts:132
 msgid "Audio files"
