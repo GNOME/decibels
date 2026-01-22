@@ -1,37 +1,86 @@
 # Bulgarian translation of decibels po-file.
 # Copyright (C) 2024 Decibels's COPYRIGHT HOLDER
 # This file is distributed under the same license as the Decibels package.
-# twlvnn kraftwerk <kraft_werk@tutanota.com>, 2024, 2025.
+# twlvnn kraftwerk <kraft_werk@tutanota.com>, 2024, 2025, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-01-15 10:01+0000\n"
-"PO-Revision-Date: 2025-01-31 14:37+0100\n"
+"POT-Creation-Date: 2025-12-24 11:31+0000\n"
+"PO-Revision-Date: 2026-01-22 10:26+0100\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 47.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
 
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Пуснете тук за отваряне"
+
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Пускайте звукови файлове"
+
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Изтеглете и пуснете звукови файлове тук"
+
+#: data/empty.blp:18
+msgid "_Open…"
+msgstr "_Отваряне…"
+
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
+msgid "File Cannot Be Played"
+msgstr "Файлът не може да се пусне"
+
+#: data/error.blp:18
+msgid "_Try Again…"
+msgstr "_Опитайте отново…"
+
+#: data/header.blp:11
+msgid "Main Menu"
+msgstr "Основно меню"
+
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Нов прозорец"
+
+#: data/header.blp:24
+msgid "Open…"
+msgstr "Отваряне…"
+
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "Показване в мениджъра на _файлове"
+
+#: data/header.blp:39
+msgid "_Keyboard Shortcuts"
+msgstr "_Клавишни комбинации"
+
+#: data/header.blp:44
+msgid "_About Audio Player"
+msgstr "_Относно „Програма за музика“"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.desktop.in.in:4
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 msgid "Audio Player"
 msgstr "Програма за музика"
 
-#: data/org.gnome.Decibels.desktop.in.in:5
+#: data/org.gnome.Decibels.desktop.in.in:4
 #: data/org.gnome.Decibels.metainfo.xml.in.in:5
 msgid "Play audio files"
 msgstr "Пускане на звукови файлове"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:13
+#: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "музика;медия;звук;аудио;мултимедия;децибели;music;player;media;audio;"
 
@@ -64,55 +113,6 @@ msgstr "Лесни контроли за търсене"
 msgid "Playing multiple files at the same time"
 msgstr "Възпроизвеждане на няколко файла едновременно"
 
-#: data/drag-overlay.blp:17
-msgid "Drop Here to Open"
-msgstr "Пуснете тук за отваряне"
-
-#: data/empty.blp:10
-msgid "Play Audio Files"
-msgstr "Пускайте звукови файлове"
-
-#: data/empty.blp:11
-msgid "Drag and drop audio files here"
-msgstr "Изтеглете и пуснете звукови файлове тук"
-
-#: data/empty.blp:18
-msgid "_Open…"
-msgstr "_Отваряне…"
-
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
-#: src/window.ts:194 src/window.ts:214
-msgid "File Cannot Be Played"
-msgstr "Файлът не може да се пусне"
-
-#: data/error.blp:18
-msgid "_Try Again…"
-msgstr "_Опитайте отново…"
-
-#: data/header.blp:11
-msgid "Main Menu"
-msgstr "Основно меню"
-
-#: data/header.blp:19
-msgid "New Window"
-msgstr "Нов прозорец"
-
-#: data/header.blp:24
-msgid "Open…"
-msgstr "Отваряне…"
-
-#: data/header.blp:31
-msgid "Show in _Files"
-msgstr "Показване в мениджъра на _файлове"
-
-#: data/header.blp:39
-msgid "_Keyboard Shortcuts"
-msgstr "_Клавишни комбинации"
-
-#: data/header.blp:44
-msgid "_About Audio Player"
-msgstr "_Относно „Програма за музика“"
-
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Нагласяне на скоростта на възпроизвеждане"
@@ -125,70 +125,74 @@ msgstr "Назад 10с"
 msgid "Skip Forward 10s"
 msgstr "Напред 10с"
 
-#: data/gtk/help-overlay.blp:11
+#: data/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Общи"
 
-#: data/gtk/help-overlay.blp:14
+#: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Показване на клавишните комбинации"
 
-#: data/gtk/help-overlay.blp:19
+#: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "Нов прозорец"
 
-#: data/gtk/help-overlay.blp:24
+#: data/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Спиране на програмата"
 
-#: data/gtk/help-overlay.blp:30
+#: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Програма"
 
-#: data/gtk/help-overlay.blp:33
+#: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Отваряне на файл"
 
-#: data/gtk/help-overlay.blp:38
+#: data/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "Пауза/Пускане"
 
-#: data/gtk/help-overlay.blp:43
+#: data/shortcuts-dialog.blp:38
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "Назад 10 секунди"
 
-#: data/gtk/help-overlay.blp:48
+#: data/shortcuts-dialog.blp:43
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Напред 10 секунди"
 
-#: data/gtk/help-overlay.blp:54
+#: data/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Playback Rate"
 msgstr "Скорост на възпроизвеждане"
 
-#: data/gtk/help-overlay.blp:57
+#: data/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Increase Playback Rate"
 msgstr "Увеличаване на скоростта на възпроизвеждане"
 
-#: data/gtk/help-overlay.blp:62
+#: data/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Decrease Playback Rate"
 msgstr "Намаляване на скоростта на възпроизвеждане"
 
-#: data/gtk/help-overlay.blp:67
+#: data/shortcuts-dialog.blp:62
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Връщане на скоростта на възпроизвеждане"
+
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Заглушаване/отглушаване"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
@@ -211,6 +215,14 @@ msgstr "Пуснатите файлове не може да се достъпя
 #: src/error.ts:42
 msgid "An unknown error happened"
 msgstr "Възникна непозната грешка"
+
+#: src/player.ts:120
+msgid "Pause"
+msgstr "Пауза"
+
+#: src/player.ts:120
+msgid "Play"
+msgstr "Пускане"
 
 #: src/stream.ts:271
 msgid ""
@@ -239,7 +251,7 @@ msgstr "Времето за разчитане на информацията н�
 msgid "Unknown File"
 msgstr "Непознат файл"
 
-#: src/stream.ts:665
+#: src/stream.ts:667
 msgid "The selected file doesn’t contain any audio"
 msgstr "Избраният файл не съдържа звукови данни"
 
@@ -257,43 +269,35 @@ msgstr "Максимална сила"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:104
-msgid "Pause"
-msgstr "Пауза"
-
-#: src/player.ts:104
-msgid "Play"
-msgstr "Пускане"
-
-#: src/window.ts:130
+#: src/window.ts:132
 msgid "Audio files"
 msgstr "Звукови файлове"
 
-#: src/window.ts:137
+#: src/window.ts:139
 msgid "Open File"
 msgstr "Отваряне на файл"
 
-#: src/window.ts:176
+#: src/window.ts:178
 msgid "No available audio file found"
 msgstr "Няма аудио файлове"
 
-#: src/window.ts:188
+#: src/window.ts:190
 msgid "Directories Cannot Be Played"
 msgstr "Папките не може да се пуснат"
 
-#: src/window.ts:189
+#: src/window.ts:191
 msgid "Please select a file."
 msgstr "Изберете файл."
 
-#: src/window.ts:195
+#: src/window.ts:197
 msgid "The selected file is not a regular file."
 msgstr "Избраният файл не е обикновен."
 
-#: src/window.ts:215
+#: src/window.ts:217
 msgid "No file was selected"
 msgstr "Няма избран файл"
