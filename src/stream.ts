@@ -652,11 +652,11 @@ export class APMediaStream extends Gtk.MediaStream {
   }
 
   private volume_changed_cb(): void {
-    this.notify("volume");
+    this.volume = this._play.volume;
   }
 
   private mute_changed_cb(): void {
-    this.notify("muted");
+    this.muted = this._play.mute;
   }
 
   private seek_done_cb(_play: GstPlay.Play, timestamp: number): void {
