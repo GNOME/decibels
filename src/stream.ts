@@ -304,6 +304,8 @@ export class APMediaStream extends Gtk.MediaStream {
     this.waveform_generator = new APWaveformGenerator();
 
     this._play = new GstPlay.Play();
+    // Explicitly default the volume to 100% or Gst will remember the previous volume
+    this._play.volume = 1;
 
     this._play.connect("notify::rate", () => this.notify("rate"));
 
