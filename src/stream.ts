@@ -185,15 +185,6 @@ export class APMediaStream extends Gtk.MediaStream {
             GstPlay.PlayMediaInfo.$gtype,
             GObject.ParamFlags.READABLE,
           ),
-          cubic_volume: GObject.param_spec_double(
-            "cubic-volume",
-            "Cubic Volume",
-            "The volume that is suitable for display",
-            0.0,
-            1.0,
-            1.0,
-            GObject.ParamFlags.READWRITE,
-          ),
           file: GObject.param_spec_object(
             "file",
             "File",
@@ -313,6 +304,8 @@ export class APMediaStream extends Gtk.MediaStream {
     this.waveform_generator = new APWaveformGenerator();
 
     this._play = new GstPlay.Play();
+    // Explicitly default the volume to 100% or Gst will remember the previous volume
+    this._play.volume = 1;
 
     this._play.connect("notify::rate", () => this.notify("rate"));
 
@@ -349,16 +342,6 @@ export class APMediaStream extends Gtk.MediaStream {
     }
 
     this._play.pipeline.set_property("video-sink", sink);
-  }
-
-  // cubic volume
-
-  get cubic_volume() {
-    return get_cubic_volume(this.volume);
-  }
-
-  set cubic_volume(value: number) {
-    this.volume = get_linear_volume(value);
   }
 
   // rate
@@ -569,7 +552,6 @@ export class APMediaStream extends Gtk.MediaStream {
   vfunc_update_audio(muted: boolean, volume: number): void {
     this._play.mute = muted;
     this._play.volume = volume;
-    this.notify("cubic-volume");
   }
 
   // handlers
@@ -672,12 +654,11 @@ export class APMediaStream extends Gtk.MediaStream {
   }
 
   private volume_changed_cb(): void {
-    this.notify("volume");
-    this.notify("cubic-volume");
+    this.volume = this._play.volume;
   }
 
   private mute_changed_cb(): void {
-    this.notify("muted");
+    this.muted = this._play.mute;
   }
 
   private seek_done_cb(_play: GstPlay.Play, timestamp: number): void {

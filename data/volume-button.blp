@@ -2,7 +2,7 @@ using Gtk 4.0;
 using Adw 1;
 
 template $APVolumeButton: Adw.Bin {
-  volume: bind adjustment.value;
+  volume: bind adjustment.value bidirectional;
   muted: bind mute_button.active;
   tooltip-text: bind $tooltip_text_cb(template.volume, template.muted) as <string>;
 
