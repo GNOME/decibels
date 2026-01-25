@@ -172,10 +172,10 @@
     <color type="primary" scheme_preference="light">#fcbbb5</color>
     <color type="primary" scheme_preference="dark">#615dcf</color>
   </branding>
-  <recommends>
+  <supports>
     <control>pointing</control>
     <control>keyboard</control>
     <control>touch</control>
     <control>tablet</control>
-  </recommends>
+  </supports>
 </component>
