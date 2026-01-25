@@ -456,7 +456,7 @@ export class MPRIS extends DBusInterface {
   /**
    * Set the current track in microseconds
    */
-  set_position(track_id: string, position_msecond: number) {
+  _set_position(track_id: string, position_msecond: number) {
     const metadata = this._get_metadata();
 
     const current_track_id = metadata["mpris:trackid"].get_string()[0];
@@ -473,7 +473,7 @@ export class MPRIS extends DBusInterface {
    *
    * Not implemented
    */
-  open_uri() {
+  _open_uri() {
     return;
   }
 
