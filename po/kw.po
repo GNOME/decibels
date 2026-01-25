@@ -1,0 +1,301 @@
+# Cornish translation for Decibels.
+# Copyright (C) 2026 Decibels's COPYRIGHT HOLDER
+# This file is distributed under the same license as the Decibels package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Flynn Peck <cirilla@tuta.io>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Decibels main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2025-12-24 11:31+0000\n"
+"PO-Revision-Date: 2026-01-25 16:45+0000\n"
+"Last-Translator: Flynn Peck <cirilla@tuta.io>\n"
+"Language-Team: kw\n"
+"Language: kw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-DL-VCS-Web: https://gitlab.gnome.org/GNOME/decibels.git\n"
+"X-DL-Lang: kw\n"
+"X-DL-Module: Decibels\n"
+"X-DL-Branch: main\n"
+"X-DL-Domain: po\n"
+"X-DL-State: Translating\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 49.0\n"
+
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Draylya Omma rag Ygeri"
+
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Gwari Restrennow Son"
+
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Draylya ha droppya restrennow son omma"
+
+#: data/empty.blp:18
+msgid "_Open…"
+msgstr "_Ygeri…"
+
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
+msgid "File Cannot Be Played"
+msgstr "Restren Na Gallos Gwariys"
+
+#: data/error.blp:18
+msgid "_Try Again…"
+msgstr "_Assaya Arta…"
+
+#: data/header.blp:11
+msgid "Main Menu"
+msgstr "Rol Chif"
+
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Fenester Nowydh"
+
+#: data/header.blp:24
+msgid "Open…"
+msgstr "Ygeri…"
+
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "Diskwedhes yn _Restrennow"
+
+#: data/header.blp:39
+msgid "_Keyboard Shortcuts"
+msgstr "_Kesunyansow Bysowek"
+
+#: data/header.blp:44
+msgid "_About Audio Player"
+msgstr "_A-dro Gwarier Son"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+msgid "Audio Player"
+msgstr "Gwarier Son"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Gwari restrennow son"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "ilow;gwarier;media;son;decibels;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Unn gwarier son may gwari restrennow son hepken. Yth na rekiwrya unn "
+"lyververk ilow ornys ha na a wra gorveghya ty gans lies nasyow."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Gwarier Son offra hogen nasyow avonsys kepar ha:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "Unn tonnfurv afinys an son"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Tooth senyans desedhadow"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Botonyow termyn es"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Ow gwari restrennow liesplek restrennow yn kettermyn"
+
+#: data/player.blp:66
+msgid "Adjust Playback Speed"
+msgstr "Desedha Tooth Senyans"
+
+#: data/player.blp:78
+msgid "Skip Back 10s"
+msgstr "Dehweles 10e"
+
+#: data/player.blp:105
+msgid "Skip Forward 10s"
+msgstr "Mos Yn-Rag 10e"
+
+#: data/shortcuts-dialog.blp:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Ollgemmyn"
+
+#: data/shortcuts-dialog.blp:9
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Diskwedhes Kesunyansow Bysowek"
+
+#: data/shortcuts-dialog.blp:14
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Fenester Nowydh"
+
+#: data/shortcuts-dialog.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Kwytya"
+
+#: data/shortcuts-dialog.blp:25
+msgctxt "shortcut window"
+msgid "Player"
+msgstr "Gwarier"
+
+#: data/shortcuts-dialog.blp:28
+msgctxt "shortcut window"
+msgid "Open File"
+msgstr "Ygeri Restren"
+
+#: data/shortcuts-dialog.blp:33
+msgctxt "shortcut window"
+msgid "Pause/Play"
+msgstr "Powes/Gwari"
+
+#: data/shortcuts-dialog.blp:38
+msgctxt "shortcut window"
+msgid "Go Back 10 Seconds"
+msgstr "Dehweles 10 Eylennow"
+
+#: data/shortcuts-dialog.blp:43
+msgctxt "shortcut window"
+msgid "Go Forward 10 Seconds"
+msgstr "Mos Yn-Rag 10 Eylennow"
+
+#: data/shortcuts-dialog.blp:49
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Tooth Senyans"
+
+#: data/shortcuts-dialog.blp:52
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Kressya Tooth Senyans"
+
+#: data/shortcuts-dialog.blp:57
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Iselhe Tooth Senyans"
+
+#: data/shortcuts-dialog.blp:62
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Dasgorra Tooth Senyans"
+
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Tewel/Distewel"
+
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/application.ts:73
+msgid "translator-credits"
+msgstr "Flynn"
+
+#: src/drag-overlay.ts:70
+msgid "Unable to access dropped files"
+msgstr "Anabel dhe drehedhes restrennow droppys"
+
+#: src/error.ts:42
+msgid "An unknown error happened"
+msgstr "Unn error ankoth happys"
+
+#: src/player.ts:120
+msgid "Pause"
+msgstr "Powes"
+
+#: src/player.ts:120
+msgid "Play"
+msgstr "Gwari"
+
+#: src/stream.ts:271
+msgid ""
+"File uses a format that cannot be played. Additional media codecs may be "
+"required."
+msgstr ""
+"Restren devnydhya an furvas na gallos bos gwariys. Kodeks media keworransel "
+"a res martesen."
+
+#: src/stream.ts:283
+msgid ""
+"An error happened while trying to get information about the file. Please try "
+"again."
+msgstr ""
+"Unn error happys hag owth assaya kerghes kedhlow a-dro an restren. Mar pleg "
+"assaya arta."
+
+#: src/stream.ts:294
+msgid "File uses an invalid URI"
+msgstr "Restren devnydhya unn URI anewn"
+
+#: src/stream.ts:305
+msgid "Reading the file’s information timed out. Please try again."
+msgstr "Ow redya an kedhlow restren yn termyn yn-mes. Mar pleg assaya arta.s"
+
+#: src/stream.ts:421
+msgid "Unknown File"
+msgstr "Restren Ankoth"
+
+#: src/stream.ts:667
+msgid "The selected file doesn’t contain any audio"
+msgstr "An restren dewisys na komprehendya neb sownd"
+
+#: src/volume-button.ts:57
+msgid "Muted"
+msgstr "Tewelys"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Ughelder Leun"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:66
+#, javascript-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%d%%"
+
+#: src/window.ts:132
+msgid "Audio files"
+msgstr "Restrennow son"
+
+#: src/window.ts:139
+msgid "Open File"
+msgstr "Ygeri Restren"
+
+#: src/window.ts:178
+msgid "No available audio file found"
+msgstr "Restren son kavadow kavosys vyth"
+
+#: src/window.ts:190
+msgid "Directories Cannot Be Played"
+msgstr "Restrenvaow Na Gallos Bos Gwariys"
+
+#: src/window.ts:191
+msgid "Please select a file."
+msgstr "Mar pleg dewis unn restren."
+
+#: src/window.ts:197
+msgid "The selected file is not a regular file."
+msgstr "An restren dewisys na unn restren rewlys."
+
+#: src/window.ts:217
+msgid "No file was selected"
+msgstr "Restren vyth dewisys"
