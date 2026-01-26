@@ -4,59 +4,19 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
-msgstr "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues\n"
-"POT-Creation-Date: 2025-09-10 11:49+0000\n"
-"PO-Revision-Date: 2025-09-11 00:29-0400\n"
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2025-12-24 11:31+0000\n"
+"PO-Revision-Date: 2026-01-26 10:53-0500\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: \n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.7\n"
-
-#: data/org.gnome.Decibels.desktop.in.in:2
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Audio Player"
-msgstr "ئۈن قويغۇچ"
-
-#: data/org.gnome.Decibels.desktop.in.in:4
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5
-msgid "Play audio files"
-msgstr "ئۈن ھۆججىتىنى قويىدۇ"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:12
-msgid "music;player;media;audio;decibels;"
-msgstr "music;player;media;audio;decibels;نەغمە؛قويغۇچ؛ۋاسىتە؛ئاۋاز؛"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
-msgstr "پەقەت ئاۋاز ھۆججىتىنىلا قويىدىغان ئۈن قويغۇچ. ئۇ تەشكىللەنگەن نەغمە ئامبىرىغا ئېھتىياجلىق ئەمەس ئۇنىڭ ئۈستىگە نۇرغۇن ئىقتىدارلار بىلەن قايمۇقتۇرمايدۇ."
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
-msgid "Audio Player still offers advanced features such as:"
-msgstr "ئۈن قويغۇچ يەنىلا ئالىي ئىقتىدارلارنى تەمىنلەيدۇ:"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "An elegant waveform of the track"
-msgstr "نەپىس ئاۋاز دولقۇنىنى كۆرسىتىدۇ"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
-msgid "Adjustable playback speed"
-msgstr "تەڭشىگىلى بولىدىغان ياڭرىتىش سۈرئىتى"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
-msgid "Easy seek controls"
-msgstr "ئاددىي ئورۇن بەلگىلەپ تىزگىنلەش"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
-msgid "Playing multiple files at the same time"
-msgstr "كۆپ ھۆججەتنى بىرلا ۋاقىتتا قويالايدۇ"
+"X-Generator: Poedit 3.8\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -106,6 +66,51 @@ msgstr "ھەرپتاختا تېزلەتمىسى(_K)"
 #: data/header.blp:44
 msgid "_About Audio Player"
 msgstr "ئۈن قويغۇچ ھەققىدە(_A)"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+msgid "Audio Player"
+msgstr "ئۈن قويغۇچ"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "ئۈن ھۆججىتىنى قويىدۇ"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "music;player;media;audio;decibels;نەغمە؛قويغۇچ؛ۋاسىتە؛ئاۋاز؛"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"پەقەت ئاۋاز ھۆججىتىنىلا قويىدىغان ئۈن قويغۇچ. ئۇ تەشكىللەنگەن نەغمە "
+"ئامبىرىغا ئېھتىياجلىق ئەمەس ئۇنىڭ ئۈستىگە نۇرغۇن ئىقتىدارلار بىلەن "
+"قايمۇقتۇرمايدۇ."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "ئۈن قويغۇچ يەنىلا ئالىي ئىقتىدارلارنى تەمىنلەيدۇ:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "نەپىس ئاۋاز دولقۇنىنى كۆرسىتىدۇ"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "تەڭشىگىلى بولىدىغان ياڭرىتىش سۈرئىتى"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "ئاددىي ئورۇن بەلگىلەپ تىزگىنلەش"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "كۆپ ھۆججەتنى بىرلا ۋاقىتتا قويالايدۇ"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -184,10 +189,15 @@ msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "ياڭرىتىش نىسبىتىنى ئەسلىگە قايتۇر"
 
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "ئۈنسىز/ئۈنلۈك"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
 msgid "translator-credits"
-msgstr "تەرجىمان تۆھپىسى\n"
+msgstr ""
+"تەرجىمان تۆھپىسى\n"
 " Gheyret Kenji <gheyret@gmail.com>\n"
 "ئابدۇقادىر ئابلىز <sahranbay@gmail.com>"
 
@@ -199,17 +209,28 @@ msgstr "سۆرەپ تاشلانغان ھۆججەتنى زىيارەت قىلال
 msgid "An unknown error happened"
 msgstr "يوچۇن خاتالىق كۆرۈلدى"
 
+#: src/player.ts:120
+msgid "Pause"
+msgstr "ۋاقىتلىق توختا"
+
+#: src/player.ts:120
+msgid "Play"
+msgstr "ياڭرات"
+
 #: src/stream.ts:271
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
-msgstr "ھۆججەت ياڭراتقىلى بولمايدىغان پىچىم ئىشلەتكەن. قوشۇمچە ۋاسىتە كودلىغۇچ زۆرۈر بولۇشى مۇمكىن."
+msgstr ""
+"ھۆججەت ياڭراتقىلى بولمايدىغان پىچىم ئىشلەتكەن. قوشۇمچە ۋاسىتە كودلىغۇچ زۆرۈر "
+"بولۇشى مۇمكىن."
 
 #: src/stream.ts:283
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
-msgstr "ھۆججەت ھەققىدىكى ئۇچۇرغا ئېرىشىشنى سىناۋاتقاندا خاتالىق كۆرۈلدى. قايتا سىناڭ."
+msgstr ""
+"ھۆججەت ھەققىدىكى ئۇچۇرغا ئېرىشىشنى سىناۋاتقاندا خاتالىق كۆرۈلدى. قايتا سىناڭ."
 
 #: src/stream.ts:294
 msgid "File uses an invalid URI"
@@ -241,18 +262,10 @@ msgstr "ئەڭ يۇقىرى ئاۋاز"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
-
-#: src/player.ts:120
-msgid "Pause"
-msgstr "ۋاقىتلىق توختا"
-
-#: src/player.ts:120
-msgid "Play"
-msgstr "ياڭرات"
 
 #: src/window.ts:132
 msgid "Audio files"
