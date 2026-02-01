@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-01-12 09:33+0000\n"
-"PO-Revision-Date: 2025-02-18 14:16+0200\n"
+"POT-Creation-Date: 2025-12-24 11:31+0000\n"
+"PO-Revision-Date: 2026-02-01 08:54+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew\n"
 "Language: he\n"
@@ -18,51 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
 "2 : 3);\n"
-"X-Generator: Poedit 3.5\n"
-
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.desktop.in.in:4
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Audio Player"
-msgstr "נגן שמע"
-
-#: data/org.gnome.Decibels.desktop.in.in:5
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5
-msgid "Play audio files"
-msgstr "ניגון קובצי שמע"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;decibels;"
-msgstr "מוזיקה;מוסיקה;שמע;צליל;נגן;מדיה;אודיו;דציבלים;נגינה;"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
-msgstr ""
-"נגן שמע שפשוט מנגן קובצי שמע. הוא לא דורש ספריית מוזיקה מאורגנת ולא יעמיס "
-"עליך ערימות של תכונות וכלים."
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
-msgid "Audio Player still offers advanced features such as:"
-msgstr "נגן המדיה עדיין מציע יכולות מתקדמות כגון:"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "An elegant waveform of the track"
-msgstr "צורת גל אלגנטית של הרצועה"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
-msgid "Adjustable playback speed"
-msgstr "מהירות התאמה מתכווננת"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
-msgid "Easy seek controls"
-msgstr "פקדי שמע נוחים לשימוש"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
-msgid "Playing multiple files at the same time"
-msgstr "כמה קבצים מתנגנים בו־זמנית"
+"X-Generator: Poedit 3.8\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -80,8 +36,8 @@ msgstr "יש לגרור ולשחרר לכאן קובצי שמע"
 msgid "_Open…"
 msgstr "_פתיחה…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
-#: src/window.ts:194 src/window.ts:214
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
 msgstr "לא ניתן לנגן את הקובץ"
 
@@ -113,6 +69,50 @@ msgstr "_צירופי מקשים"
 msgid "_About Audio Player"
 msgstr "_על נגן שמע"
 
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+msgid "Audio Player"
+msgstr "נגן שמע"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "ניגון קובצי שמע"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "מוזיקה;מוסיקה;שמע;צליל;נגן;מדיה;אודיו;דציבלים;נגינה;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"נגן שמע שפשוט מנגן קובצי שמע. הוא לא דורש ספריית מוזיקה מאורגנת ולא יעמיס "
+"עליך ערימות של תכונות וכלים."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "נגן המדיה עדיין מציע יכולות מתקדמות כגון:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "צורת גל אלגנטית של הרצועה"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "מהירות התאמה מתכווננת"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "פקדי שמע נוחים לשימוש"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "כמה קבצים מתנגנים בו־זמנית"
+
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "התאמת מהירות השמעה"
@@ -125,70 +125,74 @@ msgstr "חזרה 10 שניות לאחור"
 msgid "Skip Forward 10s"
 msgstr "קפיצה 10 שניות קדימה"
 
-#: data/gtk/help-overlay.blp:11
+#: data/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "כללי"
 
-#: data/gtk/help-overlay.blp:14
+#: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "הצגת צירופי מקשים"
 
-#: data/gtk/help-overlay.blp:19
+#: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "חלון חדש"
 
-#: data/gtk/help-overlay.blp:24
+#: data/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "יציאה"
 
-#: data/gtk/help-overlay.blp:30
+#: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "נגן"
 
-#: data/gtk/help-overlay.blp:33
+#: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "פתיחת קבוץ"
 
-#: data/gtk/help-overlay.blp:38
+#: data/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "נגינה/השהיה"
 
-#: data/gtk/help-overlay.blp:43
+#: data/shortcuts-dialog.blp:38
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "חזרה 10 שניות אחורה"
 
-#: data/gtk/help-overlay.blp:48
+#: data/shortcuts-dialog.blp:43
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "קפיצה 10 שניות קדימה"
 
-#: data/gtk/help-overlay.blp:54
+#: data/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Playback Rate"
 msgstr "קצב נגינה"
 
-#: data/gtk/help-overlay.blp:57
+#: data/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Increase Playback Rate"
 msgstr "האצת קצב הנגינה"
 
-#: data/gtk/help-overlay.blp:62
+#: data/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Decrease Playback Rate"
 msgstr "האטת קצב הנגינה"
 
-#: data/gtk/help-overlay.blp:67
+#: data/shortcuts-dialog.blp:62
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "איפוס מהירות השמעה"
+
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "השתקה/ביטול השתקה"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:73
@@ -204,6 +208,14 @@ msgstr "לא ניתן לגשת לקבצים שנזרקו"
 #: src/error.ts:42
 msgid "An unknown error happened"
 msgstr "אירעה שגיאה לא ידועה"
+
+#: src/player.ts:120
+msgid "Pause"
+msgstr "השהיה"
+
+#: src/player.ts:120
+msgid "Play"
+msgstr "השמעה"
 
 #: src/stream.ts:271
 msgid ""
@@ -230,7 +242,7 @@ msgstr "הזמן המוקצב לקריאת המידע על הקובץ עבר. נ
 msgid "Unknown File"
 msgstr "קובץ לא ידוע"
 
-#: src/stream.ts:665
+#: src/stream.ts:667
 msgid "The selected file doesn’t contain any audio"
 msgstr "הקובץ הנבחר לא מכיל שמע כלשהו"
 
@@ -248,44 +260,36 @@ msgstr "עצמה מלאה"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:104
-msgid "Pause"
-msgstr "השהיה"
-
-#: src/player.ts:104
-msgid "Play"
-msgstr "השמעה"
-
-#: src/window.ts:130
+#: src/window.ts:132
 msgid "Audio files"
 msgstr "קובצי שמע"
 
-#: src/window.ts:137
+#: src/window.ts:139
 msgid "Open File"
 msgstr "פתיחת קבוץ"
 
-#: src/window.ts:176
+#: src/window.ts:178
 msgid "No available audio file found"
 msgstr "לא נמצאו קובצי שמע"
 
-#: src/window.ts:188
+#: src/window.ts:190
 msgid "Directories Cannot Be Played"
 msgstr "לא ניתן לנגן תיקייות"
 
-#: src/window.ts:189
+#: src/window.ts:191
 msgid "Please select a file."
 msgstr "יש לבחור קובץ."
 
-#: src/window.ts:195
+#: src/window.ts:197
 msgid "The selected file is not a regular file."
 msgstr "הקובץ הנבחר הוא לא קובץ רגיל."
 
-#: src/window.ts:215
+#: src/window.ts:217
 msgid "No file was selected"
 msgstr "לא נבחר קובץ"
 
