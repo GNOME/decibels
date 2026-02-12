@@ -3,66 +3,23 @@
 # This file is distributed under the same license as the com.vixalien.decibels package.
 # Óscar Fernández Díaz <oscfdezdz@tuta.io>, 2024.
 # Julián Villodre <jvillodrede@gmail.com>, 2024-2025.
+# Daniel Mustieles García <daniel.mustieles@gmail.com>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-01-12 09:33+0000\n"
-"PO-Revision-Date: 2025-02-02 13:47+0100\n"
-"Last-Translator: Julián Villodre <jvillodrede@gmail.com>\n"
-"Language-Team: es_ES\n"
+"POT-Creation-Date: 2026-01-25 19:47+0000\n"
+"PO-Revision-Date: 2026-02-12 13:38+0100\n"
+"Last-Translator: Daniel Mustieles García <daniel.mustieles@gmail.com>\n"
+"Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 47.1\n"
-
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.desktop.in.in:4
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Audio Player"
-msgstr "Reproductor de sonido"
-
-#: data/org.gnome.Decibels.desktop.in.in:5
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5
-msgid "Play audio files"
-msgstr "Reproduzca archivos de sonido"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;decibels;"
-msgstr "music;player;media;audio;decibels;música;reproductor;sonido;"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
-msgstr ""
-"Un reproductor de sonido que sólo reproduce archivos de sonido. No requiere "
-"una biblioteca de música y no le abrumará con cientos de funciones."
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
-msgid "Audio Player still offers advanced features such as:"
-msgstr "Aun así, el reproductor de sonido ofrece funciones avanzadas como:"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "An elegant waveform of the track"
-msgstr "Una elegante forma de onda de la pista"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
-msgid "Adjustable playback speed"
-msgstr "Velocidad de reproducción ajustable"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
-msgid "Easy seek controls"
-msgstr "Controles de desplazamiento sencillos"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
-msgid "Playing multiple files at the same time"
-msgstr "Reproducción de varios archivos simultáneamente"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 49.0\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -80,8 +37,8 @@ msgstr "Arrastre y suelte archivos de sonido aquí"
 msgid "_Open…"
 msgstr "A_brir…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
-#: src/window.ts:194 src/window.ts:214
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
 msgstr "No se puede reproducir el archivo"
 
@@ -113,6 +70,52 @@ msgstr "Atajos del _teclado"
 msgid "_About Audio Player"
 msgstr "_Acerca del reproductor de sonido"
 
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
+msgid "Audio Player"
+msgstr "Reproductor de sonido"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Reproduzca archivos de sonido"
+
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "music;player;media;audio;decibels;música;reproductor;sonido;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Un reproductor de sonido que sólo reproduce archivos de sonido. No requiere "
+"una biblioteca de música y no le abrumará con cientos de funciones."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Aun así, el reproductor de sonido ofrece funciones avanzadas como:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "Una elegante forma de onda de la pista"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Velocidad de reproducción ajustable"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Controles de desplazamiento sencillos"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Reproducción de varios archivos simultáneamente"
+
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Ajustar la velocidad de reproducción"
@@ -125,73 +128,78 @@ msgstr "Retroceder 10s"
 msgid "Skip Forward 10s"
 msgstr "Avanzar 10s"
 
-#: data/gtk/help-overlay.blp:11
+#: data/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "General"
 
-#: data/gtk/help-overlay.blp:14
+#: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Mostrar atajos"
 
-#: data/gtk/help-overlay.blp:19
+#: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "Nueva ventana"
 
-#: data/gtk/help-overlay.blp:24
+#: data/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Salir"
 
-#: data/gtk/help-overlay.blp:30
+#: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Reproductor"
 
-#: data/gtk/help-overlay.blp:33
+#: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Abrir archivo"
 
-#: data/gtk/help-overlay.blp:38
+#: data/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "Pausar/Reproducir"
 
-#: data/gtk/help-overlay.blp:43
+#: data/shortcuts-dialog.blp:38
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "Retroceder 10 segundos"
 
-#: data/gtk/help-overlay.blp:48
+#: data/shortcuts-dialog.blp:43
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Avanzar 10 segundos"
 
-#: data/gtk/help-overlay.blp:54
+#: data/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Playback Rate"
 msgstr "Velocidad de reproducción"
 
-#: data/gtk/help-overlay.blp:57
+#: data/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Increase Playback Rate"
 msgstr "Aumentar velocidad de reproducción"
 
-#: data/gtk/help-overlay.blp:62
+#: data/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Decrease Playback Rate"
 msgstr "Disminuir velocidad de reproducción"
 
-#: data/gtk/help-overlay.blp:67
+#: data/shortcuts-dialog.blp:62
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Reiniciar velocidad de reproducción"
 
-#. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Silenciar/Quitar silencio"
+
+#. Translators: Replace "translator-credits" with your names, one name per
+#. line
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr ""
 "Julián Villodre <jvillodrede@gmail.com>, 2024-2025\n"
@@ -205,7 +213,15 @@ msgstr "No se puede acceder a los archivos eliminados"
 msgid "An unknown error happened"
 msgstr "Ocurrió un error desconocido"
 
-#: src/stream.ts:271
+#: src/player.ts:127
+msgid "Pause"
+msgstr "Pausar"
+
+#: src/player.ts:127
+msgid "Play"
+msgstr "Reproducir"
+
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -213,7 +229,7 @@ msgstr ""
 "El archivo usa un formato que no se puede reproducir. Es posible que se "
 "necesiten códecs multimedia adicionales."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -221,21 +237,21 @@ msgstr ""
 "Ocurrió un error al intentar obtener información sobre el archivo. Inténtelo "
 "de nuevo."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "El archivo usa una URI no válida"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
 "Se agotó el tiempo de lectura de la información del archivo. Inténtelo de "
 "nuevo."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Archivo desconocido"
 
-#: src/stream.ts:665
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "El archivo seleccionado no contiene sonido"
 
@@ -251,60 +267,56 @@ msgstr "Volumen al máximo"
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
-#.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:104
-msgid "Pause"
-msgstr "Pausar"
-
-#: src/player.ts:104
-msgid "Play"
-msgstr "Reproducir"
-
-#: src/window.ts:130
+#: src/window.ts:132
 msgid "Audio files"
 msgstr "Archivos de sonido"
 
-#: src/window.ts:137
+#: src/window.ts:139
 msgid "Open File"
 msgstr "Abrir archivo"
 
-#: src/window.ts:176
+#: src/window.ts:178
 msgid "No available audio file found"
 msgstr "No se encontró ningún archivo de sonido disponible"
 
-#: src/window.ts:188
+#: src/window.ts:190
 msgid "Directories Cannot Be Played"
 msgstr "Las carpetas no se pueden reproducir"
 
-#: src/window.ts:189
+#: src/window.ts:191
 msgid "Please select a file."
 msgstr "Seleccione un archivo."
 
-#: src/window.ts:195
+#: src/window.ts:197
 msgid "The selected file is not a regular file."
 msgstr "El archivo seleccionado no es un archivo admitido."
 
-#: src/window.ts:215
+#: src/window.ts:217
 msgid "No file was selected"
 msgstr "No se seleccionó ningún archivo"
 
+#, fuzzy
 #~ msgid "Decibels"
-#~ msgstr "Decibelios"
+#~ msgstr "Decibeles"
 
+#, fuzzy
 #~ msgid "Current features:"
 #~ msgstr "Características actuales:"
 
+#, fuzzy
 #~ msgid "_About Decibels"
-#~ msgstr "_Acerca de Decibelios"
+#~ msgstr "_Acerca de los decibeles"
 
+#, fuzzy
 #~ msgid "Drop an audio file to play it"
-#~ msgstr "Suelte un archivo de audio para reproducirlo"
+#~ msgstr "Suelta un archivo de audio para reproducirlo"
 
+#, fuzzy
 #~ msgid "Open an Audio File"
 #~ msgstr "Abrir un archivo de audio"
