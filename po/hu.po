@@ -1,71 +1,24 @@
 # Hungarian translation for Decibels.
-# Copyright (C) 2024, 2025 Free Software Foundation, Inc.
+# Copyright (C) 2024, 2025, 2026 Free Software Foundation, Inc.
 # This file is distributed under the same license as the Decibels package.
 #
 # Balázs Meskó <mesko.balazs at fsf dot hu>, 2025.
-# Balázs Úr <ur.balazs at fsf dot hu>, 2024, 2025.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2024, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issu"
 "es\n"
-"POT-Creation-Date: 2025-01-12 09:33+0000\n"
-"PO-Revision-Date: 2025-02-28 17:50+0100\n"
-"Last-Translator: Balázs Meskó <mesko.balazs at fsf dot hu>\n"
+"POT-Creation-Date: 2026-01-25 19:47+0000\n"
+"PO-Revision-Date: 2026-02-21 18:25+0100\n"
+"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.5\n"
-
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.desktop.in.in:4
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Audio Player"
-msgstr "Hanglejátszó"
-
-#: data/org.gnome.Decibels.desktop.in.in:5
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5
-msgid "Play audio files"
-msgstr "Hangfájlok lejátszása"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:13
-#| msgid "music;player;media;audio;"
-msgid "music;player;media;audio;decibels;"
-msgstr "zene;lejátszó;média;hang;decibelek;"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
-msgstr ""
-"Egy hanglejátszó, amely egyszerűen csak lejátssza a hangfájlokat. Nem igényel"
-" rendszerezett zenegyűjteményt, és nem terheli túl rengeteg funkcióval."
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
-msgid "Audio Player still offers advanced features such as:"
-msgstr "A Hanglejátszó továbbra is biztosítja ezeket a speciális funkciókat:"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
-#| msgid "Shows the waveform of the track"
-msgid "An elegant waveform of the track"
-msgstr "A szám elegáns hullámformája"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
-#| msgid "Adjust playback speed"
-msgid "Adjustable playback speed"
-msgstr "Állítható lejátszási sebesség"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
-msgid "Easy seek controls"
-msgstr "Könnyű tekerésvezérlők"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
-msgid "Playing multiple files at the same time"
-msgstr "Több fájl egyidejű lejátszása"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -83,8 +36,8 @@ msgstr "Fogjon meg és ejtsen ide egy hangfájlt"
 msgid "_Open…"
 msgstr "_Megnyitás…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
-#: src/window.ts:194 src/window.ts:214
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
 msgstr "A fájlt nem lehet lejátszani"
 
@@ -113,9 +66,54 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Gyorsbillentyűk"
 
 #: data/header.blp:44
-#| msgid "Audio Player"
 msgid "_About Audio Player"
 msgstr "A Hanglejátszó _névjegye"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
+msgid "Audio Player"
+msgstr "Hanglejátszó"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Hangfájlok lejátszása"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "zene;lejátszó;média;hang;decibelek;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Egy hanglejátszó, amely egyszerűen csak lejátssza a hangfájlokat. Nem "
+"igényel rendszerezett zenegyűjteményt, és nem terheli túl rengeteg "
+"funkcióval."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "A Hanglejátszó továbbra is biztosítja ezeket a speciális funkciókat:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "A szám elegáns hullámformája"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Állítható lejátszási sebesség"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Könnyű tekerésvezérlők"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Több fájl egyidejű lejátszása"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -129,74 +127,77 @@ msgstr "Ugrás vissza 10 másodpercet"
 msgid "Skip Forward 10s"
 msgstr "Ugrás előre 10 másodpercet"
 
-#: data/gtk/help-overlay.blp:11
+#: data/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Általános"
 
-#: data/gtk/help-overlay.blp:14
+#: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Gyorsbillentyűk megjelenítése"
 
-#: data/gtk/help-overlay.blp:19
+#: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "Új ablak"
 
-#: data/gtk/help-overlay.blp:24
+#: data/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Kilépés"
 
-#: data/gtk/help-overlay.blp:30
+#: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Lejátszó"
 
-#: data/gtk/help-overlay.blp:33
+#: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Fájl megnyitása"
 
-#: data/gtk/help-overlay.blp:38
+#: data/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "Lejátszás vagy szüneteltetés"
 
-#: data/gtk/help-overlay.blp:43
+#: data/shortcuts-dialog.blp:38
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "Ugrás vissza 10 másodpercet"
 
-#: data/gtk/help-overlay.blp:48
+#: data/shortcuts-dialog.blp:43
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Ugrás előre 10 másodpercet"
 
-#: data/gtk/help-overlay.blp:54
+#: data/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Playback Rate"
 msgstr "Lejátszási sebesség"
 
-#: data/gtk/help-overlay.blp:57
+#: data/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Increase Playback Rate"
 msgstr "Lejátszási sebesség növelése"
 
-#: data/gtk/help-overlay.blp:62
+#: data/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Decrease Playback Rate"
 msgstr "Lejátszási sebesség csökkentése"
 
-#: data/gtk/help-overlay.blp:67
-#| msgid "Adjust Playback Speed"
+#: data/shortcuts-dialog.blp:62
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Lejátszási sebesség visszaállítása"
 
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Némítás vagy visszahangosítás"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr ""
 "Meskó Balázs <mesko dot balazs at fsf dot hu>, 2025.\n"
@@ -210,7 +211,15 @@ msgstr "Nem lehet hozzáférni a behúzott fájlokhoz"
 msgid "An unknown error happened"
 msgstr "Ismeretlen hiba történt"
 
-#: src/stream.ts:271
+#: src/player.ts:127
+msgid "Pause"
+msgstr "Szüneteltetés"
+
+#: src/player.ts:127
+msgid "Play"
+msgstr "Lejátszás"
+
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -218,7 +227,7 @@ msgstr ""
 "A fájl olyan formátumot használ, amelyet nem lehet lejátszani. További "
 "médiakodekekre lehet szükség."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -226,22 +235,20 @@ msgstr ""
 "Hiba történt a fájlra vonatkozó információk lekérése közben. Próbálja meg "
 "újra."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "A fájl érvénytelen URI-t használ"
 
-#: src/stream.ts:305
-#| msgid "Reading the file's information timed out. Please try again."
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
 "A fájl információinak olvasása túllépte az időkorlátot. Próbálja meg újra."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Ismeretlen fájl"
 
-#: src/stream.ts:665
-#| msgid "The selected file doesn't contain any audio"
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "A kiválasztott fájl nem tartalmaz hangot"
 
@@ -259,43 +266,35 @@ msgstr "Teljes hangerő"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d%%"
 
-#: src/player.ts:104
-msgid "Pause"
-msgstr "Szüneteltetés"
-
-#: src/player.ts:104
-msgid "Play"
-msgstr "Lejátszás"
-
-#: src/window.ts:130
+#: src/window.ts:132
 msgid "Audio files"
 msgstr "Hangfájlok"
 
-#: src/window.ts:137
+#: src/window.ts:139
 msgid "Open File"
 msgstr "Fájl megnyitása"
 
-#: src/window.ts:176
+#: src/window.ts:178
 msgid "No available audio file found"
 msgstr "Nem található elérhető hangfájl"
 
-#: src/window.ts:188
+#: src/window.ts:190
 msgid "Directories Cannot Be Played"
 msgstr "Könyvtárakat nem lehet lejátszani"
 
-#: src/window.ts:189
+#: src/window.ts:191
 msgid "Please select a file."
 msgstr "Válasszon egy fájlt."
 
-#: src/window.ts:195
+#: src/window.ts:197
 msgid "The selected file is not a regular file."
 msgstr "A kiválasztott fájl nem szabályos fájl."
 
-#: src/window.ts:215
+#: src/window.ts:217
 msgid "No file was selected"
 msgstr "Nem lett fájl kiválasztva"
