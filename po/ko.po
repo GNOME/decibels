@@ -1,15 +1,15 @@
 # Korean translation for Decibels.
-# Copyright (C) 2025 Decibels's contributors.
+# Copyright (C) 2025 Decibels's all of contributors.
 # This file is distributed under the same license as the Decibels package.
-# Seong-ho Cho <shcho@gnome.org>,  2025.
+# Seong-ho Cho <shcho@gnome.org>,  2025-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-02-27 21:21+0000\n"
-"PO-Revision-Date: 2025-03-01 04:39+0900\n"
+"POT-Creation-Date: 2026-01-25 19:47+0000\n"
+"PO-Revision-Date: 2026-02-22 20:58+0900\n"
 "Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -17,21 +17,71 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.7\n"
 
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "열 파일을 여기에 끌어다 놓으십시오"
+
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "오디오 파일 재생"
+
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "오디오 파일을 여기에 끌어다 높으십시오"
+
+#: data/empty.blp:18
+msgid "_Open…"
+msgstr "열기(_O)…"
+
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
+msgid "File Cannot Be Played"
+msgstr "파일을 재생할 수 없습니다"
+
+#: data/error.blp:18
+msgid "_Try Again…"
+msgstr "다시 시도(_T)…"
+
+#: data/header.blp:11
+msgid "Main Menu"
+msgstr "주 메뉴"
+
+#: data/header.blp:19
+msgid "New Window"
+msgstr "새 창"
+
+#: data/header.blp:24
+msgid "Open…"
+msgstr "열기…"
+
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "파일에 표시(_F)"
+
+#: data/header.blp:39
+msgid "_Keyboard Shortcuts"
+msgstr "키보드 바로 가기 키(_K)"
+
+#: data/header.blp:44
+msgid "_About Audio Player"
+msgstr "오디오 재생기 정보(_A)"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.desktop.in.in:4
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "오디오 재생기"
 
-#: data/org.gnome.Decibels.desktop.in.in:5
+#: data/org.gnome.Decibels.desktop.in.in:4
 #: data/org.gnome.Decibels.metainfo.xml.in.in:5
 msgid "Play audio files"
 msgstr "오디오 파일을 재생합니다"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:13
+#: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr ""
 "music;음악;player;재생기;media;미디어;audio;오디오;음향;decibels;데시벨;"
@@ -64,55 +114,6 @@ msgstr "쉬운 탐색 컨트롤"
 msgid "Playing multiple files at the same time"
 msgstr "동시에 여러 파일 재생하기"
 
-#: data/drag-overlay.blp:17
-msgid "Drop Here to Open"
-msgstr "열 파일을 여기에 끌어다 놓으십시오"
-
-#: data/empty.blp:10
-msgid "Play Audio Files"
-msgstr "오디오 파일 재생"
-
-#: data/empty.blp:11
-msgid "Drag and drop audio files here"
-msgstr "오디오 파일을 여기에 끌어다 높으십시오"
-
-#: data/empty.blp:18
-msgid "_Open…"
-msgstr "열기(_O)…"
-
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
-#: src/window.ts:194 src/window.ts:214
-msgid "File Cannot Be Played"
-msgstr "파일을 재생할 수 없습니다"
-
-#: data/error.blp:18
-msgid "_Try Again…"
-msgstr "다시 시도(_T)…"
-
-#: data/header.blp:11
-msgid "Main Menu"
-msgstr "주 메뉴"
-
-#: data/header.blp:19
-msgid "New Window"
-msgstr "새 창"
-
-#: data/header.blp:24
-msgid "Open…"
-msgstr "열기…"
-
-#: data/header.blp:31
-msgid "Show in _Files"
-msgstr "파일에 표시(_F)"
-
-#: data/header.blp:39
-msgid "_Keyboard Shortcuts"
-msgstr "키보드 바로 가기 키(_K)"
-
-#: data/header.blp:44
-msgid "_About Audio Player"
-msgstr "오디오 재생기 정보(_A)"
-
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "재생 속도 조절"
@@ -125,73 +126,77 @@ msgstr "10초 뒤로 건너뛰기"
 msgid "Skip Forward 10s"
 msgstr "10초 앞으로 건너뛰기"
 
-#: data/gtk/help-overlay.blp:11
+#: data/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "일반"
 
-#: data/gtk/help-overlay.blp:14
+#: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "바로 가기 표시"
 
-#: data/gtk/help-overlay.blp:19
+#: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "새 창"
 
-#: data/gtk/help-overlay.blp:24
+#: data/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "끝내기"
 
-#: data/gtk/help-overlay.blp:30
+#: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "재생기"
 
-#: data/gtk/help-overlay.blp:33
+#: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "파일 열기"
 
-#: data/gtk/help-overlay.blp:38
+#: data/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "일시정지/재생"
 
-#: data/gtk/help-overlay.blp:43
+#: data/shortcuts-dialog.blp:38
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "10초 뒤로"
 
-#: data/gtk/help-overlay.blp:48
+#: data/shortcuts-dialog.blp:43
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "10초 앞으로"
 
-#: data/gtk/help-overlay.blp:54
+#: data/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Playback Rate"
 msgstr "재생 배속"
 
-#: data/gtk/help-overlay.blp:57
+#: data/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Increase Playback Rate"
 msgstr "재생 배속 증가"
 
-#: data/gtk/help-overlay.blp:62
+#: data/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Decrease Playback Rate"
 msgstr "재생 배속 감소"
 
-#: data/gtk/help-overlay.blp:67
+#: data/shortcuts-dialog.blp:62
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "재생 배속 초기화"
 
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "음소거/해제"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr "조성호 <shcho@gnome.org>"
 
@@ -203,7 +208,15 @@ msgstr "끌어다 놓은 파일에 접근할 수 없습니다"
 msgid "An unknown error happened"
 msgstr "알 수 없는 오류가 나타났습니다"
 
-#: src/stream.ts:271
+#: src/player.ts:127
+msgid "Pause"
+msgstr "일시정지"
+
+#: src/player.ts:127
+msgid "Play"
+msgstr "재생"
+
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -211,26 +224,26 @@ msgstr ""
 "파일에서 재생할 수 없는 형식을 사용합니다. 추가 미디어 코덱이 필요할 수도 있"
 "습니다."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr ""
 "파일 정보 가져오기를 시도하던 중 오류가 나타났습니다. 다시 시도하십시오."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "파일이 부적절한 URI를 사용합니다"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "파일 정보 읽기 시간을 초과했습니다. 다시 시도하십시오."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "알 수 없는 파일"
 
-#: src/stream.ts:665
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "선택한 파일에 오디오 정보가 없습니다"
 
@@ -248,43 +261,35 @@ msgstr "최대 음량"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:104
-msgid "Pause"
-msgstr "일시정지"
-
-#: src/player.ts:104
-msgid "Play"
-msgstr "재생"
-
-#: src/window.ts:130
+#: src/window.ts:132
 msgid "Audio files"
 msgstr "오디오 파일"
 
-#: src/window.ts:137
+#: src/window.ts:139
 msgid "Open File"
 msgstr "파일 열기"
 
-#: src/window.ts:176
+#: src/window.ts:178
 msgid "No available audio file found"
 msgstr "가용 오디오 파일이 없습니다"
 
-#: src/window.ts:188
+#: src/window.ts:190
 msgid "Directories Cannot Be Played"
 msgstr "디렉터리를 재생할 수 없습니다"
 
-#: src/window.ts:189
+#: src/window.ts:191
 msgid "Please select a file."
 msgstr "파일을 선택하십시오."
 
-#: src/window.ts:195
+#: src/window.ts:197
 msgid "The selected file is not a regular file."
 msgstr "선택한 파일은 일반 파일이 아닙니다."
 
-#: src/window.ts:215
+#: src/window.ts:217
 msgid "No file was selected"
 msgstr "파일을 선택하지 않았습니다"
