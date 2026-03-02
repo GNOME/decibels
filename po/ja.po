@@ -1,15 +1,15 @@
 # Japanese translation for Decibels.
-# Copyright (C) 2025 Decibels's COPYRIGHT HOLDER
+# Copyright (C) 2025-2026 Decibels's COPYRIGHT HOLDER
 # This file is distributed under the same license as the Decibels package.
-# 小山田 純 <oyamadajun@outlook.jp>, 2025.
+# 小山田 純 <oyamadajun@outlook.jp>, 2025-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
 "issues\n"
-"POT-Creation-Date: 2025-08-10 11:41+0000\n"
-"PO-Revision-Date: 2025-09-05 23:14+0900\n"
+"POT-Creation-Date: 2026-01-25 19:47+0000\n"
+"PO-Revision-Date: 2026-03-02 22:08+0900\n"
 "Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "Language: ja\n"
@@ -17,52 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#: data/org.gnome.Decibels.desktop.in.in:2
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Audio Player"
-msgstr "音声プレイヤー"
-
-#: data/org.gnome.Decibels.desktop.in.in:4
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5
-msgid "Play audio files"
-msgstr "音声ファイルを再生"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:12
-msgid "music;player;media;audio;decibels;"
-msgstr ""
-"music;player;media;audio;decibels;ミュージック;音楽;プレイヤー;メディア;オー"
-"ディオ;音声;デシベルズ;"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
-msgstr ""
-"音声ファイルを再生することに特化した音声プレイヤーです。音楽ライブラリを管理"
-"する必要はなく、簡単に使うことができます。"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
-msgid "Audio Player still offers advanced features such as:"
-msgstr "さらに \"音声プレイヤー\" は以下の機能を備えています:"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "An elegant waveform of the track"
-msgstr "音声の波形を美しく表示"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
-msgid "Adjustable playback speed"
-msgstr "再生速度を変えられます"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
-msgid "Easy seek controls"
-msgstr "再生位置を簡単にコントロール"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
-msgid "Playing multiple files at the same time"
-msgstr "複数のファイルを同時に再生可能"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -112,6 +66,53 @@ msgstr "キーボードショートカット(_K)"
 #: data/header.blp:44
 msgid "_About Audio Player"
 msgstr "音声プレイヤーについて(_A)"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
+msgid "Audio Player"
+msgstr "音声プレイヤー"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "音声ファイルを再生"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr ""
+"music;player;media;audio;decibels;ミュージック;音楽;プレイヤー;メディア;オー"
+"ディオ;音声;デシベルズ;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"音声ファイルを再生することに特化した音声プレイヤーです。音楽ライブラリを管理"
+"する必要はなく、簡単に使うことができます。"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "さらに \"音声プレイヤー\" は以下の機能を備えています:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "音声の波形を美しく表示"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "再生速度を変えられます"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "再生位置を簡単にコントロール"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "複数のファイルを同時に再生可能"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -190,8 +191,12 @@ msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "再生速度をリセットする"
 
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "ミュート/ミュート解除"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr "小山田 純 <oyamadajun@outlook.jp>"
 
@@ -203,7 +208,15 @@ msgstr "ドロップされたファイルにアクセスできません"
 msgid "An unknown error happened"
 msgstr "不明なエラーが起きました"
 
-#: src/stream.ts:271
+#: src/player.ts:127
+msgid "Pause"
+msgstr "一時停止"
+
+#: src/player.ts:127
+msgid "Play"
+msgstr "再生"
+
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -211,25 +224,25 @@ msgstr ""
 "再生できないフォーマットが使用されたファイルです。追加のメディアコーデックが"
 "必要です。"
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr "ファイル情報を取得中にエラーが起きました。もう一度試してください。"
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "ファイルのURIが無効です"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "ファイル情報の読み取りにタイムアウトしました。もう一度試してください。"
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "不明なファイル"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "選択されたファイルは、音声を含んでいません"
 
@@ -247,18 +260,10 @@ msgstr "最大音量"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
-
-#: src/player.ts:120
-msgid "Pause"
-msgstr "一時停止"
-
-#: src/player.ts:120
-msgid "Play"
-msgstr "再生"
 
 #: src/window.ts:132
 msgid "Audio files"
