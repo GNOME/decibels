@@ -1,0 +1,297 @@
+# Polish translation for Decibels.
+# Copyright (C) 2025 Decibels's COPYRIGHT HOLDER
+# This file is distributed under the same license as the Decibels package.
+# Xtremo3 <a.lewicki95@gmail.com>,  2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Decibels main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2026-01-25 19:47+0000\n"
+"PO-Revision-Date: 2026-02-26 13:09+0100\n"
+"Last-Translator: Xtremo3 <a.lewicki95@gmail.com>\n"
+"Language-Team: Polish\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Gtranslator 49.0\n"
+
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Przeciągnij tutaj, aby otworzyć"
+
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Odtwarzaj pliki dźwiękowe"
+
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Przeciągnij pliki dźwiękowe tutaj"
+
+#: data/empty.blp:18
+msgid "_Open…"
+msgstr "_Otwórz…"
+
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
+msgid "File Cannot Be Played"
+msgstr "Nie można odtworzyć pliku"
+
+#: data/error.blp:18
+msgid "_Try Again…"
+msgstr "_Spróbuj ponownie…"
+
+#: data/header.blp:11
+msgid "Main Menu"
+msgstr "Menu główne"
+
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Nowe okno"
+
+#: data/header.blp:24
+msgid "Open…"
+msgstr "Otwórz…"
+
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "Wyświetl w _Menedżerze plików"
+
+#: data/header.blp:39
+msgid "_Keyboard Shortcuts"
+msgstr "_Skróty klawiszowe"
+
+#: data/header.blp:44
+msgid "_About Audio Player"
+msgstr "_O programie"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
+msgid "Audio Player"
+msgstr "Odtwarzacz dźwiękowy"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Odtwarzanie plików dźwiękowych"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "muzyka;odtwarzacz;multimedia;dźwięk;decybele;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Odtwarzacz dźwiękowy, który po prostu odtwarza pliki dźwiękowe. Nie wymaga "
+"zorganizowanej kolekcji muzycznej i nie przeciąża mnóstwem funkcjonalności."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Odtwarzacz dźwiękowy nadal oferuje zaawansowane funkcje, takie jak:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "Elegancki kształt ścieżki dźwiękowej"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Regulowana prędkość odtwarzania"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Łatwe sterowanie"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Odtwarzanie wielu plików jednocześnie"
+
+#: data/player.blp:66
+msgid "Adjust Playback Speed"
+msgstr "Reguluje prędkość odtwarzania"
+
+#: data/player.blp:78
+msgid "Skip Back 10s"
+msgstr "Przewija wstecz 10 sekund"
+
+#: data/player.blp:105
+msgid "Skip Forward 10s"
+msgstr "Przewija w przód 10 sekund"
+
+#: data/shortcuts-dialog.blp:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Ogólne"
+
+#: data/shortcuts-dialog.blp:9
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Wyświetlanie skrótów"
+
+#: data/shortcuts-dialog.blp:14
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Nowe okno"
+
+#: data/shortcuts-dialog.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Zakończenie działania"
+
+#: data/shortcuts-dialog.blp:25
+msgctxt "shortcut window"
+msgid "Player"
+msgstr "Odtwarzacz"
+
+#: data/shortcuts-dialog.blp:28
+msgctxt "shortcut window"
+msgid "Open File"
+msgstr "Otworzenie pliku"
+
+#: data/shortcuts-dialog.blp:33
+msgctxt "shortcut window"
+msgid "Pause/Play"
+msgstr "Wstrzymanie/odtwarzanie"
+
+#: data/shortcuts-dialog.blp:38
+msgctxt "shortcut window"
+msgid "Go Back 10 Seconds"
+msgstr "Przewijanie wstecz o 10 sekund"
+
+#: data/shortcuts-dialog.blp:43
+msgctxt "shortcut window"
+msgid "Go Forward 10 Seconds"
+msgstr "Przewijanie w przód o 10 sekund"
+
+#: data/shortcuts-dialog.blp:49
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Prędkość odtwarzania"
+
+#: data/shortcuts-dialog.blp:52
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Przyspieszanie"
+
+#: data/shortcuts-dialog.blp:57
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Zwalnianie"
+
+#: data/shortcuts-dialog.blp:62
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Przywrócenie"
+
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Wyciszenie/włączenie dźwięku"
+
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/application.ts:76
+msgid "translator-credits"
+msgstr "Adam Lewicki <a.lewicki95@gmail.com>, 2025"
+
+#: src/drag-overlay.ts:70
+msgid "Unable to access dropped files"
+msgstr "Nie można uzyskać dostępu do przeciągniętych plików"
+
+#: src/error.ts:42
+msgid "An unknown error happened"
+msgstr "Wystąpił nieoczekiwany błąd"
+
+#: src/player.ts:127
+msgid "Pause"
+msgstr "Wstrzymuje"
+
+#: src/player.ts:127
+msgid "Play"
+msgstr "Odtwarzanie"
+
+#: src/stream.ts:262
+msgid ""
+"File uses a format that cannot be played. Additional media codecs may be "
+"required."
+msgstr ""
+"Plik używa formatu, którego nie można odtwarzać. Mogą być wymagane dodatkowe "
+"kodeki."
+
+#: src/stream.ts:274
+msgid ""
+"An error happened while trying to get information about the file. Please try "
+"again."
+msgstr ""
+"Wystąpił błąd podczas próby uzyskania informacji o pliku. Proszę spróbować "
+"ponownie."
+
+#: src/stream.ts:285
+msgid "File uses an invalid URI"
+msgstr "Plik używa nieprawidłowego adresu URI"
+
+#: src/stream.ts:296
+msgid "Reading the file’s information timed out. Please try again."
+msgstr ""
+"Przekroczono czas odczytywania informacji o pliku. Proszę spróbować ponownie."
+
+#: src/stream.ts:404
+msgid "Unknown File"
+msgstr "Nieznany plik"
+
+#: src/stream.ts:649
+msgid "The selected file doesn’t contain any audio"
+msgstr "Zaznaczony plik nie zawiera żadnego dźwięku"
+
+#: src/volume-button.ts:57
+msgid "Muted"
+msgstr "Wyciszono"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Maksymalna głośność"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:66
+#, javascript-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%d%%"
+
+#: src/window.ts:132
+msgid "Audio files"
+msgstr "Pliki dźwiękowe"
+
+#: src/window.ts:139
+msgid "Open File"
+msgstr "Otwarcie pliku"
+
+#: src/window.ts:178
+msgid "No available audio file found"
+msgstr "Nie odnaleziono plików dźwiękowych"
+
+#: src/window.ts:190
+msgid "Directories Cannot Be Played"
+msgstr "Nie nożna odtwarzać katalogów"
+
+#: src/window.ts:191
+msgid "Please select a file."
+msgstr "Proszę wybrać plik."
+
+#: src/window.ts:197
+msgid "The selected file is not a regular file."
+msgstr "Wybrany plik nie jest zwykłym plikiem."
+
+#: src/window.ts:217
+msgid "No file was selected"
+msgstr "Nie wybrano pliku"
