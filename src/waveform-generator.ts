@@ -64,22 +64,31 @@ export class APWaveformGenerator extends GObject.Object {
     super();
   }
 
-  restart() {
-    if (this.callback_id && this.bus) {
-      this.bus.disconnect(this.callback_id);
-      this.bus.remove_signal_watch();
-    }
+  reset() {
+    this.restart();
 
-    this.pipeline?.set_state(Gst.State.NULL);
-
-    this.loaded_peaks.length = 0;
     this.peaks.length = 0;
     this.notify("peaks");
   }
 
-  generate_peaks_async(uri: string): void {
+  restart() {
+    if (this.callback_id && this.bus) {
+      this.bus.disconnect(this.callback_id);
+      this.bus.remove_signal_watch();
+
+      this.bus = undefined;
+      this.callback_id = undefined;
+    }
+
+    this.pipeline?.set_state(Gst.State.NULL);
+    this.pipeline = undefined;
+
+    this.loaded_peaks.length = 0;
+  }
+
+  generate_peaks_async(uri: string, interval: number): void {
     this.pipeline = Gst.parse_launch(
-      `uridecodebin name=uridecodebin ! audioconvert ! audio/x-raw,channels=1 ! level name=level interval=${this.INTERVAL} ! fakesink name=faked`,
+      `uridecodebin name=uridecodebin ! audioconvert ! audio/x-raw,channels=1 ! level name=level interval=${Math.trunc(interval)} ! fakesink name=faked`,
     ) as Gst.Bin;
 
     const fakesink = this.pipeline.get_by_name("faked");
@@ -127,6 +136,4 @@ export class APWaveformGenerator extends GObject.Object {
       },
     );
   }
-
-  INTERVAL = 100000000;
 }

@@ -250,7 +250,6 @@ export class APMediaStream extends Gtk.MediaStream {
         case GstPbUtils.DiscovererResult.OK: {
           const uri = info.get_uri();
           this._play.set_uri(uri);
-          this.waveform_generator.generate_peaks_async(uri);
           return;
         }
         case GstPbUtils.DiscovererResult.MISSING_PLUGINS:
@@ -595,8 +594,37 @@ export class APMediaStream extends Gtk.MediaStream {
     }
   }
 
+  private waveform_duration: number = 0;
+
   private duration_changed_cb(): void {
     this.notify("duration");
+
+    const duration = this._play.media_info.get_duration();
+
+    // For headerless audio files, GStreamer may not be able to find out
+    // the audio file's length before having reached its ending.
+    //
+    // For these files, this callback may be called every few seconds during playback
+    // as GStreamer slowly adjusts its best guess at how long the file is.
+    //
+    // Here, we check how close the previous duration estimate was.
+    // If the last guess was very bad, we re-start the waveform generation.
+
+    // Bias of 1ms to prevent division by zero errors and to prevent
+    // small audio files from re-drawing their waveforms all the time.
+    const delta = (this.waveform_duration + 1_000_000) / (duration + 1_000_000);
+
+    if(duration != 0 && (this.waveform_duration == 0 || delta > 2.0 || delta < 0.5)) {
+      this.waveform_duration = duration;
+
+      if(this.waveform_duration != 0) {
+        this.waveform_generator.restart();
+      }
+
+      // Generate 1000 waveform samples
+      this.waveform_duration = duration;
+      this.waveform_generator.generate_peaks_async(this._play.uri, this._play.media_info.get_duration() / 1000);
+    }
   }
 
   private state_changed_cb(
@@ -676,7 +704,8 @@ export class APMediaStream extends Gtk.MediaStream {
     this.discoverer.stop();
     this.discoverer.start();
 
-    this.waveform_generator.restart();
+    this.waveform_duration = 0;
+    this.waveform_generator.reset();
 
     this.stop();
   }
