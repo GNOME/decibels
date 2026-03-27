@@ -213,13 +213,32 @@ export class APWaveformBarChart
 
     let draw_x = x_offset;
     for (let i = 0; i <= needed_bars; i += 1) {
-      // Linear interpolation between the two nearest peaks
+      let interpolated_value;
       const peaks_x = i * scaling_ratio;
-      const peaks_y1 = mipmap[Math.floor(peaks_x)] || 0;
-      const peaks_y2 = mipmap[Math.ceil(peaks_x)] || 0;
-      const lerp_factor = peaks_x % 1;
-      const interpolated_value =
-        peaks_y1 * (1 - lerp_factor) + peaks_y2 * lerp_factor;
+
+      if(needed_bars/2 > mipmap.length) {
+        // Use cubic hermite interpolation if the amount of samples available is very low.
+        let x = Math.trunc(peaks_x);
+        let peaks_dx = peaks_x - x;
+
+        const m0 = mipmap[x - 1] || 0;
+        const m1 = mipmap[x + 0] || 0;
+        const m2 = mipmap[x + 1] || 0;
+        const m3 = mipmap[x + 2] || 0;
+
+        let c0 = m1;
+        let c1 = (1/2) * (m2 - m0);
+        let c2 = m0 - (5/2) * m1 + 2 * m2 - (1/2) * m3;
+        let c3 = (1/2) * (m3 - m0) + (3/2) * (m1 - m2);
+
+        interpolated_value = (((c3 * peaks_dx + c2) * peaks_dx + c1) * peaks_dx + c0) * 0.9;
+      } else {
+        // Linear interpolation between the two nearest peaks
+        const peaks_y1 = mipmap[Math.floor(peaks_x)] || 0;
+        const peaks_y2 = mipmap[Math.ceil(peaks_x)] || 0;
+        const lerp_factor = peaks_x % 1;
+        interpolated_value = peaks_y1 * (1 - lerp_factor) + peaks_y2 * lerp_factor;
+      }
 
       // Draw bar
       const bar_height = 1 + interpolated_value * peak_coefficient;
