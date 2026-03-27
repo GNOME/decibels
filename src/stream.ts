@@ -623,7 +623,7 @@ export class APMediaStream extends Gtk.MediaStream {
 
       // Generate 1000 waveform samples
       this.waveform_duration = duration;
-      this.waveform_generator.generate_peaks_async(this._play.uri, this._play.media_info.get_duration() / 1000);
+      this.waveform_generator.generate_peaks_async(this._play.uri, this._play.media_info.get_duration() / 10000);
     }
   }
 

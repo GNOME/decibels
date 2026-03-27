@@ -184,6 +184,28 @@ export class APWaveformScale extends Gtk.Widget {
     this.queue_draw();
   }
 
+  private prev_surface?: Gdk.Surface;
+  private prev_surface_signal: number = 0;
+
+  private on_scale_change() {
+    this.paintable.bar_padding = 0;
+    this.paintable.bar_width = 1 / (this.get_root()?.get_surface()?.get_scale() || 1);
+    this.queue_draw();
+  }
+
+  vfunc_realize(): void {
+    this.prev_surface?.disconnect(this.prev_surface_signal);
+
+    this.prev_surface = this.get_root()?.get_surface() || undefined;
+    this.prev_surface_signal = (this.prev_surface?.connect("notify::scale", () => {
+      this.on_scale_change();
+    })) || 0;
+
+    this.on_scale_change();
+
+    super.vfunc_realize();
+  }
+
   vfunc_size_allocate(width: number, height: number, _baseline: number): void {
     if (
       height != this.cached_paintable?.get_intrinsic_height() ||

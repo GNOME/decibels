@@ -51,7 +51,7 @@ export class APWaveformBarChart
             GObject.ParamFlags.READWRITE | GObject.ParamFlags.CONSTRUCT,
             0.0,
             100.0,
-            2.0,
+            1/3,
           ),
           bar_padding: GObject.ParamSpec.float(
             "bar-padding",
@@ -60,7 +60,7 @@ export class APWaveformBarChart
             GObject.ParamFlags.READWRITE | GObject.ParamFlags.CONSTRUCT,
             0.0,
             100.0,
-            1.0,
+            0.0,
           ),
           peaks: GObject.param_spec_boxed(
             "peaks",
@@ -183,7 +183,8 @@ export class APWaveformBarChart
     const peak_coefficient = height - 1;
     const rect = new Graphene.Rect();
 
-    const needed_bars = Math.max(1, Math.floor(width / bar_total));
+    const oversample_ratio = 8;
+    const needed_bars = Math.max(1, Math.floor(width / bar_total)) * oversample_ratio;
     const x_offset = Math.floor((width % bar_total) / 2 + bar_padding);
 
     const required_mipmap = Math.floor(
@@ -208,6 +209,9 @@ export class APWaveformBarChart
       peaks_mipmaps.push(new_mipmap);
     }
 
+    const color_alpha = color.copy();
+    color_alpha.alpha = 0.3;
+
     const mipmap = peaks_mipmaps[used_mipmap];
     const scaling_ratio = mipmap.length / needed_bars;
 
@@ -224,8 +228,11 @@ export class APWaveformBarChart
       // Draw bar
       const bar_height = 1 + interpolated_value * peak_coefficient;
       rect.init(draw_x, (height - bar_height) / 2, bar_width, bar_height);
-      snapshot.append_color(color, rect);
-      draw_x += bar_total;
+      snapshot.append_color(color_alpha, rect);
+
+      if(i % oversample_ratio == 0) {
+        draw_x += bar_total;
+      }
     }
   }
 
