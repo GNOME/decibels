@@ -35,7 +35,6 @@
       <ul>
         <li>Fixed the volume slider showing a 50% value initially regardless of the actual volume</li>
         <li>Added application name and -icon metadata to the audio stream</li>
-        <li>Fixed file opening and seeking remotely via MPRIS</li>
         <li>Updated translations in 38 languages</li>
         <li>Fixed errors in the application metadata</li>
       </ul>
