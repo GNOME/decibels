@@ -30,6 +30,16 @@
   </screenshots>
   <content_rating type="oars-1.1" />
   <releases>
+  <release version="49.6" date="2026-04-11">
+    <description translate="no">
+      <ul>
+        <li>Fixed the volume slider showing a 50% value initially regardless of the actual volume</li>
+        <li>Added application name and -icon metadata to the audio stream</li>
+        <li>Updated translations in 38 languages</li>
+        <li>Fixed errors in the application metadata</li>
+      </ul>
+    </description>
+  </release>
   <release version="49.0" date="2025-09-13">
     <description translate="no">
       <ul>
