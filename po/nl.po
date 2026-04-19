@@ -2,66 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.vixalien.decibels package.
 # Heimen Stoffels <vistausss@fastmail.com>, 2024.
-# Nathan Follens <nfollens@gnome.org>, 2024-2025.
+# Nathan Follens <nfollens@gnome.org>, 2024-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-08-10 11:41+0000\n"
-"PO-Revision-Date: 2025-08-20 01:44+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-01-25 19:47+0000\n"
+"PO-Revision-Date: 2026-04-19 19:56+0200\n"
 "Last-Translator: Nathan Follens <nfollens@gnome.org>\n"
 "Language-Team: GNOME-NL https://matrix.to/#/#nl:gnome.org\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.6\n"
-
-#: data/org.gnome.Decibels.desktop.in.in:2
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Audio Player"
-msgstr "Audiospeler"
-
-#: data/org.gnome.Decibels.desktop.in.in:4
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5
-msgid "Play audio files"
-msgstr "Beluister audiobestanden"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:12
-msgid "music;player;media;audio;decibels;"
-msgstr "music;player;media;audio;decibels;muziek;speler;"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
-msgstr ""
-"Een audiospeler die alleen maar audiobestanden afspeelt. Hij heeft geen "
-"georganiseerde muziekbibliotheek nodig en belast u niet met talloze functies."
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
-msgid "Audio Player still offers advanced features such as:"
-msgstr "Audiospeler biedt niettemin geavanceerde functies zoals:"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "An elegant waveform of the track"
-msgstr "Een elegante golfvorm van het nummer"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
-msgid "Adjustable playback speed"
-msgstr "Aanpasbare afspeelsnelheid"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
-msgid "Easy seek controls"
-msgstr "Eenvoudige spoelknoppen"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
-msgid "Playing multiple files at the same time"
-msgstr "Meerdere bestanden tegelijk afspelen"
+"X-Generator: Poedit 3.9\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -111,6 +66,51 @@ msgstr "_Sneltoetsen"
 #: data/header.blp:44
 msgid "_About Audio Player"
 msgstr "_Over Audiospeler"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
+msgid "Audio Player"
+msgstr "Audiospeler"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Beluister audiobestanden"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "music;player;media;audio;decibels;muziek;speler;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Een audiospeler die alleen maar audiobestanden afspeelt. Hij heeft geen "
+"georganiseerde muziekbibliotheek nodig en belast u niet met talloze functies."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Audiospeler biedt niettemin geavanceerde functies zoals:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "Een elegante golfvorm van het nummer"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Aanpasbare afspeelsnelheid"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Eenvoudige spoelknoppen"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Meerdere bestanden tegelijk afspelen"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -189,8 +189,12 @@ msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Afspeelsnelheid herstellen"
 
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Geluid dempen/aanzetten"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr ""
 "Heimen Stoffels <vistausss@fastmail.com>\n"
@@ -205,7 +209,15 @@ msgstr "U hebt geen toegang tot de bestanden"
 msgid "An unknown error happened"
 msgstr "Er is een onbekende fout opgetreden"
 
-#: src/stream.ts:271
+#: src/player.ts:127
+msgid "Pause"
+msgstr "Pauzeren"
+
+#: src/player.ts:127
+msgid "Play"
+msgstr "Afspelen"
+
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -213,7 +225,7 @@ msgstr ""
 "Dit bestandsformaat wordt niet ondersteund. Wellicht zijn er aanvullende "
 "codecs beschikbaar."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -221,21 +233,21 @@ msgstr ""
 "Er is een fout opgetreden tijdens het ophalen van de bestandsinformatie. "
 "Probeer het opnieuw."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "Het bestand heeft een ongeldige URI"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
 "Er is een time-out opgetreden tijdens het ophalen van de bestandsinformatie. "
 "Probeer het opnieuw."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Onbekend bestandstype"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "Het gekozen bestand bevat geen audio"
 
@@ -253,18 +265,10 @@ msgstr "Maximaal volume"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
-
-#: src/player.ts:120
-msgid "Pause"
-msgstr "Pauzeren"
-
-#: src/player.ts:120
-msgid "Play"
-msgstr "Afspelen"
 
 #: src/window.ts:132
 msgid "Audio files"
