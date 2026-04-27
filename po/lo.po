@@ -1,0 +1,282 @@
+# Lao translation for Decibels.
+# Copyright (C) 2025 Decibels's COPYRIGHT HOLDER
+# This file is distributed under the same license as the Decibels package.
+# bone NI <bounkirdni@gmail.com>,  2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Decibels main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2025-09-10 11:49+0000\n"
+"PO-Revision-Date: 2025-09-10 11:49+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Lao <lo@li.org>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+msgid "Audio Player"
+msgstr "ເຄື່ອງຫຼິ້ນສຽງ"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "ຫຼິ້ນໄຟລ໌ສຽງ"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "music;player;media;audio;decibels;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr "ເຄື່ອງຫຼິ້ນສຽງສຳລັບຫຼິ້ນໄຟລ໌ສຽງໂດຍສະເພາະ. ບໍ່ຈຳເປັນຕ້ອງມີການຈັດລະບຽບຄັງເພງ ແລະ ຈະບໍ່ມີຟັງຊັນທີ່ຫຼວງຫຼາຍຈົນເກີນໄປ."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "ເຄື່ອງຫຼິ້ນສຽງຍັງມີຄວາມສາມາດຂັ້ນສູງຕ່າງໆ ເຊັ່ນ:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "ສະແດງຄື້ນສຽງຂອງເພງຢ່າງສວຍງາມ"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "ປັບຄວາມໄວໃນການຫຼິ້ນໄດ້"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "ຄວບຄຸມການເລື່ອນທີ່ງ່າຍດາຍ"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "ຫຼິ້ນຫຼາຍໄຟລ໌ພ້ອມກັນໄດ້"
+
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "ລາກມາ​ວາງ​ໄວ້​ບ່ອນ​ນີ້ເພື່ອ​ເປີດ"
+
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "ຫຼິ້ນໄຟລ໌ສຽງ"
+
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "ລາກ ແລະ ວາງໄຟລ໌ສຽງໃສ່ບ່ອນນີ້"
+
+#: data/empty.blp:18
+msgid "_Open…"
+msgstr "_ເປີດ…"
+
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
+msgid "File Cannot Be Played"
+msgstr "ບໍ່ສາມາດຫຼິ້ນໄຟລ໌ນີ້ໄດ້"
+
+#: data/error.blp:18
+msgid "_Try Again…"
+msgstr "_ລອງໃໝ່…"
+
+#: data/header.blp:11
+msgid "Main Menu"
+msgstr "ເມນູຫຼັກ"
+
+#: data/header.blp:19
+msgid "New Window"
+msgstr "ໜ້າຕ່າງໃໝ່"
+
+#: data/header.blp:24
+msgid "Open…"
+msgstr "ເປີດ…"
+
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "ສະແດງໃນ_ໄຟລ໌"
+
+#: data/header.blp:39
+msgid "_Keyboard Shortcuts"
+msgstr "_ທາງລັດແປ້ນພິມ"
+
+#: data/header.blp:44
+msgid "_About Audio Player"
+msgstr "_ກ່ຽວກັບເຄື່ອງຫຼິ້ນສຽງ"
+
+#: data/player.blp:66
+msgid "Adjust Playback Speed"
+msgstr "ປັບຄວາມໄວການຫຼິ້ນ"
+
+#: data/player.blp:78
+msgid "Skip Back 10s"
+msgstr "ຂ້າມກັບຄືນ 10 ວິນາທີ"
+
+#: data/player.blp:105
+msgid "Skip Forward 10s"
+msgstr "ຂ້າມໄປໜ້າ 10 ວິນາທີ"
+
+#: data/shortcuts-dialog.blp:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "ທົ່ວໄປ"
+
+#: data/shortcuts-dialog.blp:9
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "ສະແດງທາງລັດ"
+
+#: data/shortcuts-dialog.blp:14
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "ໜ້າຕ່າງໃໝ່"
+
+#: data/shortcuts-dialog.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "ອອກ"
+
+#: data/shortcuts-dialog.blp:25
+msgctxt "shortcut window"
+msgid "Player"
+msgstr "ເຄື່ອງຫຼິ້ນ"
+
+#: data/shortcuts-dialog.blp:28
+msgctxt "shortcut window"
+msgid "Open File"
+msgstr "ເປີດໄຟລ໌"
+
+#: data/shortcuts-dialog.blp:33
+msgctxt "shortcut window"
+msgid "Pause/Play"
+msgstr "ຢຸດ/ຫຼິ້ນ"
+
+#: data/shortcuts-dialog.blp:38
+msgctxt "shortcut window"
+msgid "Go Back 10 Seconds"
+msgstr "ກັບຄືນ 10 ວິນາທີ"
+
+#: data/shortcuts-dialog.blp:43
+msgctxt "shortcut window"
+msgid "Go Forward 10 Seconds"
+msgstr "ໄປໜ້າ 10 ວິນາທີ"
+
+#: data/shortcuts-dialog.blp:49
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "ອັດຕາການຫຼິ້ນ"
+
+#: data/shortcuts-dialog.blp:52
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "ເພີ່ມອັດຕາການຫຼິ້ນ"
+
+#: data/shortcuts-dialog.blp:57
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "ຫຼຸດອັດຕາການຫຼິ້ນ"
+
+#: data/shortcuts-dialog.blp:62
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "ຕັ້ງຄ່າອັດຕາການຫຼິ້ນຄືນໃໝ່"
+
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/application.ts:73
+msgid "translator-credits"
+msgstr "translator-credits"
+
+#: src/drag-overlay.ts:70
+msgid "Unable to access dropped files"
+msgstr "ບໍ່ສາມາດເຂົ້າເຖິງໄຟລ໌ທີ່ລາກມາໄດ້"
+
+#: src/error.ts:42
+msgid "An unknown error happened"
+msgstr "ເກີດຂໍ້ຜິດພາດທີ່ບໍ່ຮູ້ຈັກ"
+
+#: src/stream.ts:271
+msgid ""
+"File uses a format that cannot be played. Additional media codecs may be "
+"required."
+msgstr "ໄຟລ໌ນີ້ໃຊ້ຮູບແບບທີ່ບໍ່ສາມາດຫຼິ້ນໄດ້. ອາດຈະຕ້ອງຕິດຕັ້ງໂຄເດັກສື່ເພີ່ມເຕີມ."
+
+#: src/stream.ts:283
+msgid ""
+"An error happened while trying to get information about the file. Please try "
+"again."
+msgstr "ເກີດຂໍ້ຜິດພາດຂະນະພະຍາຍາມເອົາຂໍ້ມູນກ່ຽວກັບໄຟລ໌. ກະລຸນາລອງໃໝ່ອີກຄັ້ງ."
+
+#: src/stream.ts:294
+msgid "File uses an invalid URI"
+msgstr "ໄຟລ໌ໃຊ້ URI ທີ່ບໍ່ຖືກຕ້ອງ"
+
+#: src/stream.ts:305
+msgid "Reading the file’s information timed out. Please try again."
+msgstr "ການອ່ານຂໍ້ມູນໄຟລ໌ໝົດເວລາ. ກະລຸນາລອງໃໝ່ອີກຄັ້ງ."
+
+#: src/stream.ts:421
+msgid "Unknown File"
+msgstr "ບໍ່ຮູ້ຈັກໄຟລ໌"
+
+#: src/stream.ts:667
+msgid "The selected file doesn’t contain any audio"
+msgstr "ໄຟລ໌ທີ່ເລືອກບໍ່ມີຂໍ້ມູນສຽງ"
+
+#: src/volume-button.ts:57
+msgid "Muted"
+msgstr "ປິດສຽງ"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "ລະດັບສຽງສູງສຸດ"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:66
+#, c-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%d %%"
+
+#: src/player.ts:120
+msgid "Pause"
+msgstr "ຢຸດຊົ່ວຄາວ"
+
+#: src/player.ts:120
+msgid "Play"
+msgstr "ຫຼິ້ນ"
+
+#: src/window.ts:132
+msgid "Audio files"
+msgstr "ໄຟລ໌ສຽງ"
+
+#: src/window.ts:139
+msgid "Open File"
+msgstr "ເປີດໄຟລ໌"
+
+#: src/window.ts:178
+msgid "No available audio file found"
+msgstr "ບໍ່ພົບໄຟລ໌ສຽງທີ່ສາມາດໃຊ້ໄດ້"
+
+#: src/window.ts:190
+msgid "Directories Cannot Be Played"
+msgstr "ບໍ່ສາມາດຫຼິ້ນໂຟລເດີໄດ້"
+
+#: src/window.ts:191
+msgid "Please select a file."
+msgstr "ກະລຸນາເລືອກໄຟລ໌."
+
+#: src/window.ts:197
+msgid "The selected file is not a regular file."
+msgstr "ໄຟລ໌ທີ່ເລືອກບໍ່ແມ່ນໄຟລ໌ທຳມະດາ."
+
+#: src/window.ts:217
+msgid "No file was selected"
+msgstr "ບໍ່ມີໄຟລ໌ໃດຖືກເລືອກ"
