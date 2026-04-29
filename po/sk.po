@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
-"POT-Creation-Date: 2026-01-25 19:47+0000\n"
-"PO-Revision-Date: 2026-04-18 11:12+0200\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-04-29 20:52+0200\n"
 "Last-Translator: Nostragodus <nostragodus@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -192,6 +192,7 @@ msgstr "Obnoviť rýchlosť prehrávania"
 msgid "Mute/Unmute"
 msgstr "Stlmiť/zrušiť stlmenie"
 
+# |, no-check-spell
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:76
 msgid "translator-credits"
