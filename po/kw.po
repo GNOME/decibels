@@ -7,10 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-25 16:45+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-05-11 22:18+0100\n"
 "Last-Translator: Flynn Peck <cirilla@tuta.io>\n"
 "Language-Team: kw\n"
 "Language: kw\n"
@@ -24,11 +23,11 @@ msgstr ""
 "X-DL-Domain: po\n"
 "X-DL-State: Translating\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 49.0\n"
+"X-Generator: Gtranslator 50.0\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
-msgstr "Draylya Omma rag Ygeri"
+msgstr "Draylyewgh Omma rag Ygeri"
 
 #: data/empty.blp:10
 msgid "Play Audio Files"
@@ -36,7 +35,7 @@ msgstr "Gwari Restrennow Son"
 
 #: data/empty.blp:11
 msgid "Drag and drop audio files here"
-msgstr "Draylya ha droppya restrennow son omma"
+msgstr "Draylyewgh ha droppyewgh restrennow son omma"
 
 #: data/empty.blp:18
 msgid "_Open…"
@@ -45,7 +44,7 @@ msgstr "_Ygeri…"
 #: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
 #: src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
-msgstr "Restren Na Gallos Gwariys"
+msgstr "Restren Ny Allas Bos Gwarys"
 
 #: data/error.blp:18
 msgid "_Try Again…"
@@ -53,7 +52,7 @@ msgstr "_Assaya Arta…"
 
 #: data/header.blp:11
 msgid "Main Menu"
-msgstr "Rol Chif"
+msgstr "Pennrol"
 
 #: data/header.blp:19
 msgid "New Window"
@@ -69,15 +68,16 @@ msgstr "Diskwedhes yn _Restrennow"
 
 #: data/header.blp:39
 msgid "_Keyboard Shortcuts"
-msgstr "_Kesunyansow Bysowek"
+msgstr "_Kesunyansow Vysowek"
 
 #: data/header.blp:44
 msgid "_About Audio Player"
-msgstr "_A-dro Gwarier Son"
+msgstr "_A-dro dhe Warier Son"
 
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Gwarier Son"
 
@@ -96,16 +96,16 @@ msgid ""
 "An audio player that just plays audio files. It doesn't require an organized "
 "music library and won't overload you with tons of functionality."
 msgstr ""
-"Unn gwarier son may gwari restrennow son hepken. Yth na rekiwrya unn "
-"lyververk ilow ornys ha na a wra gorveghya ty gans lies nasyow."
+"Gwarier son ow kwari restrennow son hepken. Lyverva ornys nyns yw a res ha "
+"na a wra gorveghya dhywgh gans meur a nasyow."
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Audio Player still offers advanced features such as:"
-msgstr "Gwarier Son offra hogen nasyow avonsys kepar ha:"
+msgstr "Gwarier Son a brof hogen nasyow avonsys kepar ha:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "An elegant waveform of the track"
-msgstr "Unn tonnfurv afinys an son"
+msgstr "Tonnfurv afinys a'n son"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Adjustable playback speed"
@@ -113,11 +113,11 @@ msgstr "Tooth senyans desedhadow"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
-msgstr "Botonyow termyn es"
+msgstr "Botonyow dermyn es"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:18
 msgid "Playing multiple files at the same time"
-msgstr "Ow gwari restrennow liesplek restrennow yn kettermyn"
+msgstr "Ow kwari restrennow liesplek yn kettermyn"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
@@ -139,7 +139,7 @@ msgstr "Ollgemmyn"
 #: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Diskwedhes Kesunyansow Bysowek"
+msgstr "Diskwedhes Kesunyansow Vysowek"
 
 #: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
@@ -201,57 +201,57 @@ msgid "Mute/Unmute"
 msgstr "Tewel/Distewel"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr "Flynn"
 
 #: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
-msgstr "Anabel dhe drehedhes restrennow droppys"
+msgstr "Ny yllir drehedhes restrennow droppys"
 
 #: src/error.ts:42
 msgid "An unknown error happened"
-msgstr "Unn error ankoth happys"
+msgstr "Yth esa error ankoth"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Powes"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Gwari"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
 msgstr ""
-"Restren devnydhya an furvas na gallos bos gwariys. Kodeks media keworransel "
-"a res martesen."
+"Restren a dhevnydh furvas na gwariadow. Martesen, kodeks media keworransel a "
+"res."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr ""
-"Unn error happys hag owth assaya kerghes kedhlow a-dro an restren. Mar pleg "
-"assaya arta."
+"Yth esa error hag owth assaya kerghes kedhlow a-dro dhe'n restren. Assayewgh "
+"arta mar pleg."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
-msgstr "Restren devnydhya unn URI anewn"
+msgstr "Restren a dhevnydh URI anewn"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
-msgstr "Ow redya an kedhlow restren yn termyn yn-mes. Mar pleg assaya arta.s"
+msgstr "Ow redya an kedhlow restren yn termyn yn-mes. Assayewgh arta mar pleg."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Restren Ankoth"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
-msgstr "An restren dewisys na komprehendya neb sownd"
+msgstr "An restren dewisys na synsi neb sownd"
 
 #: src/volume-button.ts:57
 msgid "Muted"
@@ -282,20 +282,20 @@ msgstr "Ygeri Restren"
 
 #: src/window.ts:178
 msgid "No available audio file found"
-msgstr "Restren son kavadow kavosys vyth"
+msgstr "Nyns eus restren son kavadow kevys"
 
 #: src/window.ts:190
 msgid "Directories Cannot Be Played"
-msgstr "Restrenvaow Na Gallos Bos Gwariys"
+msgstr "Restrenvaow Na Allas Bos Gwarys"
 
 #: src/window.ts:191
 msgid "Please select a file."
-msgstr "Mar pleg dewis unn restren."
+msgstr "Dewisewgh unn restren mar pleg."
 
 #: src/window.ts:197
 msgid "The selected file is not a regular file."
-msgstr "An restren dewisys na unn restren rewlys."
+msgstr "An restren dewisys nyns yw restren rewlys."
 
 #: src/window.ts:217
 msgid "No file was selected"
-msgstr "Restren vyth dewisys"
+msgstr "Nyns eus restren dewisys"
