@@ -6,63 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-01-12 09:33+0000\n"
-"PO-Revision-Date: 2025-03-23 17:36+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-05-13 21:36+0300\n"
 "Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
 "Language-Team: \n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.5\n"
-
-#: data/org.gnome.Decibels.desktop.in.in:3
-#: data/org.gnome.Decibels.desktop.in.in:4
-#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
-msgid "Audio Player"
-msgstr "Аўдыяпрайгравальнік"
-
-#: data/org.gnome.Decibels.desktop.in.in:5
-#: data/org.gnome.Decibels.metainfo.xml.in.in:5
-msgid "Play audio files"
-msgstr "Прайграванне аўдыяфайлаў"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Decibels.desktop.in.in:13
-msgid "music;player;media;audio;decibels;"
-msgstr ""
-"music;player;media;audio;decibels;музыка;музычны;музыкальны;плэер;"
-"прайгравальнік;аўдыяплэер;аўдыяпрайгравальнік;медыя;аўдыё;аўдыя;дэцыбелы;"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:12
-msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
-msgstr ""
-"Аўдыяпрайгравальнік , які проста прайграе аўдыяфайлы, не патрабуе "
-"ўпарадкаванай бібліятэкі музыкі і не перагружае вас безліччу функцый."
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:13
-msgid "Audio Player still offers advanced features such as:"
-msgstr "Аўдыёпрайгравальнік па-ранейшаму прапануе і пашыраныя функцыі:"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:15
-msgid "An elegant waveform of the track"
-msgstr "Паказ хвалевай формы трэка"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:16
-msgid "Adjustable playback speed"
-msgstr "Змяненне хуткасці прайгравання"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:17
-msgid "Easy seek controls"
-msgstr "Лёгкае кіраванне пошукам"
-
-#: data/org.gnome.Decibels.metainfo.xml.in.in:18
-msgid "Playing multiple files at the same time"
-msgstr "Прайграванне некалькіх файлаў адначасова"
+"X-Generator: Poedit 3.8\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -80,8 +33,7 @@ msgstr "Перацягніце аўдыяфайлы сюды"
 msgid "_Open…"
 msgstr "_Адкрыць…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:124 src/window.ts:175
-#: src/window.ts:194 src/window.ts:214
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177 src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
 msgstr "Немагчыма прайграць файл"
 
@@ -113,6 +65,45 @@ msgstr "_Спалучэнні клавіш"
 msgid "_About Audio Player"
 msgstr "_Аб праграме"
 
+#: data/org.gnome.Decibels.desktop.in.in:2 data/org.gnome.Decibels.desktop.in.in:3 data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
+msgid "Audio Player"
+msgstr "Аўдыяпрайгравальнік"
+
+#: data/org.gnome.Decibels.desktop.in.in:4 data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Прайграванне аўдыяфайлаў"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "music;player;media;audio;decibels;музыка;музычны;музыкальны;плэер;прайгравальнік;аўдыяплэер;аўдыяпрайгравальнік;медыя;аўдыё;аўдыя;дэцыбелы;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized music library and won't overload you with tons of functionality."
+msgstr "Аўдыяпрайгравальнік , які проста прайграе аўдыяфайлы, не патрабуе ўпарадкаванай бібліятэкі музыкі і не перагружае вас безліччу функцый."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Аўдыёпрайгравальнік па-ранейшаму прапануе і пашыраныя функцыі:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "Паказ хвалевай формы трэка"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Змяненне хуткасці прайгравання"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Лёгкае кіраванне пошукам"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Прайграванне некалькіх файлаў адначасова"
+
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
 msgstr "Змяненне хуткасці прайгравання"
@@ -125,73 +116,77 @@ msgstr "Назад на 10 с"
 msgid "Skip Forward 10s"
 msgstr "Наперад на 10 с"
 
-#: data/gtk/help-overlay.blp:11
+#: data/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Агульныя"
 
-#: data/gtk/help-overlay.blp:14
+#: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Паказаць спалучэнні клавіш"
 
-#: data/gtk/help-overlay.blp:19
+#: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
 msgstr "Новае акно"
 
-#: data/gtk/help-overlay.blp:24
+#: data/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Закрыць"
 
-#: data/gtk/help-overlay.blp:30
+#: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
 msgstr "Прайгравальнік"
 
-#: data/gtk/help-overlay.blp:33
+#: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
 msgid "Open File"
 msgstr "Адкрыць файл"
 
-#: data/gtk/help-overlay.blp:38
+#: data/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "Pause/Play"
 msgstr "Паўза/Прайграванне"
 
-#: data/gtk/help-overlay.blp:43
+#: data/shortcuts-dialog.blp:38
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
 msgstr "Назад на 10 секунд"
 
-#: data/gtk/help-overlay.blp:48
+#: data/shortcuts-dialog.blp:43
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
 msgstr "Наперад на 10 секунд"
 
-#: data/gtk/help-overlay.blp:54
+#: data/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Playback Rate"
 msgstr "Хуткасць прайгравання"
 
-#: data/gtk/help-overlay.blp:57
+#: data/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Increase Playback Rate"
 msgstr "Павялічыць хуткасць прайгравання"
 
-#: data/gtk/help-overlay.blp:62
+#: data/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Decrease Playback Rate"
 msgstr "Паменшыць хуткасць прайгравання"
 
-#: data/gtk/help-overlay.blp:67
+#: data/shortcuts-dialog.blp:62
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
 msgstr "Звычайная хуткасць прайгравання"
 
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Укл/Выкл гук"
+
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr "Yahor Haurylenka <k1llo2810@gmail.com> 2023"
 
@@ -203,35 +198,35 @@ msgstr "Немагчыма атрымаць доступ да выбраных �
 msgid "An unknown error happened"
 msgstr "Адбылася невядомая памылка"
 
-#: src/stream.ts:271
-msgid ""
-"File uses a format that cannot be played. Additional media codecs may be "
-"required."
-msgstr ""
-"Файл выкарыстоўвае фармат, які немагчыма прайграць. Магчыма патрабуюцца "
-"дадатковыя кодэкі мультымедыя."
+#: src/player.ts:127
+msgid "Pause"
+msgstr "Паўза"
 
-#: src/stream.ts:283
-msgid ""
-"An error happened while trying to get information about the file. Please try "
-"again."
-msgstr ""
-"Адбылася памылка падчас спробы атрымаць інфармацыю пра файл. Паўтарыце "
-"спробу."
+#: src/player.ts:127
+msgid "Play"
+msgstr "Прайграць"
 
-#: src/stream.ts:294
+#: src/stream.ts:262
+msgid "File uses a format that cannot be played. Additional media codecs may be required."
+msgstr "Файл выкарыстоўвае фармат, які немагчыма прайграць. Магчыма патрабуюцца дадатковыя кодэкі мультымедыя."
+
+#: src/stream.ts:274
+msgid "An error happened while trying to get information about the file. Please try again."
+msgstr "Адбылася памылка падчас спробы атрымаць інфармацыю пра файл. Паўтарыце спробу."
+
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "Файл выкарыстоўвае памылковы URI"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Скончыўся час для чытання інфармацыі пра файл. Паўтарыце спробу."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Невядомы файл"
 
-#: src/stream.ts:665
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "Выбраны файл не ўтрымлівае аўдыяданых"
 
@@ -249,44 +244,36 @@ msgstr "Поўная гучнасць"
 #. * or otherwise translate the "%d" to "%d".
 #.
 #: src/volume-button.ts:66
-#, c-format
+#, javascript-format
 msgctxt "volume percentage"
 msgid "%d %%"
 msgstr "%d %%"
 
-#: src/player.ts:104
-msgid "Pause"
-msgstr "Паўза"
-
-#: src/player.ts:104
-msgid "Play"
-msgstr "Прайграць"
-
-#: src/window.ts:130
+#: src/window.ts:132
 msgid "Audio files"
 msgstr "Аўдыяфайлы"
 
-#: src/window.ts:137
+#: src/window.ts:139
 msgid "Open File"
 msgstr "Адкрыць файл"
 
-#: src/window.ts:176
+#: src/window.ts:178
 msgid "No available audio file found"
 msgstr "Прыдатнага аўдыяфайла не знойдзена"
 
-#: src/window.ts:188
+#: src/window.ts:190
 msgid "Directories Cannot Be Played"
 msgstr "Немагчыма прайграць каталогі"
 
-#: src/window.ts:189
+#: src/window.ts:191
 msgid "Please select a file."
 msgstr "Выберыце файл."
 
-#: src/window.ts:195
+#: src/window.ts:197
 msgid "The selected file is not a regular file."
 msgstr "Выбраны файл не з'яўляецца звычайным файлам."
 
-#: src/window.ts:215
+#: src/window.ts:217
 msgid "No file was selected"
 msgstr "Файл не выбраны"
 
