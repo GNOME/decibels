@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
 "POT-Creation-Date: 2026-04-11 17:13+0000\n"
-"PO-Revision-Date: 2026-05-11 22:18+0100\n"
+"PO-Revision-Date: 2026-05-29 17:38+0100\n"
 "Last-Translator: Flynn Peck <cirilla@tuta.io>\n"
 "Language-Team: kw\n"
 "Language: kw\n"
@@ -44,7 +44,7 @@ msgstr "_Ygeri…"
 #: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
 #: src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
-msgstr "Restren Ny Allas Bos Gwarys"
+msgstr "Restren Ny Allas bos Gwarys"
 
 #: data/error.blp:18
 msgid "_Try Again…"
@@ -68,7 +68,7 @@ msgstr "Diskwedhes yn _Restrennow"
 
 #: data/header.blp:39
 msgid "_Keyboard Shortcuts"
-msgstr "_Kesunyansow Vysowek"
+msgstr "_Kesunyansow Bysowek"
 
 #: data/header.blp:44
 msgid "_About Audio Player"
@@ -96,12 +96,12 @@ msgid ""
 "An audio player that just plays audio files. It doesn't require an organized "
 "music library and won't overload you with tons of functionality."
 msgstr ""
-"Gwarier son ow kwari restrennow son hepken. Lyverva ornys nyns yw a res ha "
-"na a wra gorveghya dhywgh gans meur a nasyow."
+"Gwarier son may gwari restrennow son hepken. Nag a rekiwr lyverva ilow ornys "
+"ha nag a wra gorveghya dhywgh gans meur a nasyow."
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Audio Player still offers advanced features such as:"
-msgstr "Gwarier Son a brof hogen nasyow avonsys kepar ha:"
+msgstr "Hwath, yma dhe Warier Son nasyow avonsys kepar ha:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "An elegant waveform of the track"
@@ -113,7 +113,7 @@ msgstr "Tooth senyans desedhadow"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
-msgstr "Botonyow dermyn es"
+msgstr "Botonyow termyn es"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:18
 msgid "Playing multiple files at the same time"
@@ -139,7 +139,7 @@ msgstr "Ollgemmyn"
 #: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Diskwedhes Kesunyansow Vysowek"
+msgstr "Diskwedhes Kesunyansow Bysowek"
 
 #: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
@@ -211,7 +211,7 @@ msgstr "Ny yllir drehedhes restrennow droppys"
 
 #: src/error.ts:42
 msgid "An unknown error happened"
-msgstr "Yth esa error ankoth"
+msgstr "Yth esa kamm ankoth"
 
 #: src/player.ts:127
 msgid "Pause"
@@ -226,16 +226,16 @@ msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
 msgstr ""
-"Restren a dhevnydh furvas na gwariadow. Martesen, kodeks media keworransel a "
-"res."
+"Restren a dhevnydh furvas anwariadow. Kodeks media keworransel a res "
+"martesen."
 
 #: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr ""
-"Yth esa error hag owth assaya kerghes kedhlow a-dro dhe'n restren. Assayewgh "
-"arta mar pleg."
+"Yth esa kamm hag owth assaya dhe gerghes kedhlow a-dro dhe'n restren. "
+"Assayewgh arta mar pleg."
 
 #: src/stream.ts:285
 msgid "File uses an invalid URI"
@@ -251,7 +251,7 @@ msgstr "Restren Ankoth"
 
 #: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
-msgstr "An restren dewisys na synsi neb sownd"
+msgstr "An restren dhewisys a syns son vyth"
 
 #: src/volume-button.ts:57
 msgid "Muted"
@@ -282,7 +282,7 @@ msgstr "Ygeri Restren"
 
 #: src/window.ts:178
 msgid "No available audio file found"
-msgstr "Nyns eus restren son kavadow kevys"
+msgstr "Restren son kavadow kevys vyth"
 
 #: src/window.ts:190
 msgid "Directories Cannot Be Played"
@@ -290,12 +290,12 @@ msgstr "Restrenvaow Na Allas Bos Gwarys"
 
 #: src/window.ts:191
 msgid "Please select a file."
-msgstr "Dewisewgh unn restren mar pleg."
+msgstr "Dewisewgh restren mar pleg."
 
 #: src/window.ts:197
 msgid "The selected file is not a regular file."
-msgstr "An restren dewisys nyns yw restren rewlys."
+msgstr "An restren dhewisys nag yw restren rewlys."
 
 #: src/window.ts:217
 msgid "No file was selected"
-msgstr "Nyns eus restren dewisys"
+msgstr "Restren vyth o dewisys"
