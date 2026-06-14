@@ -1,0 +1,297 @@
+# Vietnamese translation for Decibels.
+# Copyright (C) 2025 Decibels's COPYRIGHT HOLDER
+# This file is distributed under the same license as the Decibels package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Cas Pascal <casboi86@gmail.com>, 2025-2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Decibels main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
+"issues\n"
+"POT-Creation-Date: 2025-12-24 11:31+0000\n"
+"PO-Revision-Date: 2026-02-03 16:27+0700\n"
+"Last-Translator: Cas Pascal <casboi86@gmail.com>\n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-DL-Lang: vi\n"
+"X-DL-Module: Decibels\n"
+"X-DL-Branch: main\n"
+"X-DL-Domain: po\n"
+"X-DL-State: None\n"
+"X-Generator: Gtranslator 49.0\n"
+
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Thả ở đây để phát"
+
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Phát Tệp Âm thanh"
+
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Kéo và thả các tập tin âm thanh ở đây"
+
+#: data/empty.blp:18
+msgid "_Open…"
+msgstr "_Mở…"
+
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
+msgid "File Cannot Be Played"
+msgstr "Không thể phát tập tin"
+
+#: data/error.blp:18
+msgid "_Try Again…"
+msgstr "_Thử lại…"
+
+#: data/header.blp:11
+msgid "Main Menu"
+msgstr "Trình đơn chính"
+
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Cửa sổ mới"
+
+#: data/header.blp:24
+msgid "Open…"
+msgstr "Mở…"
+
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "Mở trong Trình duyệt Tập tin "
+
+#: data/header.blp:39
+msgid "_Keyboard Shortcuts"
+msgstr "Phím tắt"
+
+#: data/header.blp:44
+msgid "_About Audio Player"
+msgstr "Về Trình phát Âm thanh"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+msgid "Audio Player"
+msgstr "Trình phát Âm thanh"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Phát Tệp Âm thanh"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "music;player;media;audio;decibels;âm thanh;âm;thanh;nhạc;chơi;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Một trình phát âm thanh đơn giản. Không yêu cầu phải sắp xếp kho nhạc của "
+"bạn và đủ tính năng cần thiết để bạn đễ sử dụng."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Trình phát Âm thanh vẫn hỗ trợ những tính năng nâng cao như là:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "Bản xem sóng trực quan của tệp âm thanh"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Tốc độ phát tuỳ chỉnh"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Dễ dàng tua"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Phát nhiều tập tin cùng một lúc"
+
+#: data/player.blp:66
+msgid "Adjust Playback Speed"
+msgstr "Tuỳ chỉnh tốc độ phát"
+
+#: data/player.blp:78
+msgid "Skip Back 10s"
+msgstr "Về 10 giây trước"
+
+#: data/player.blp:105
+msgid "Skip Forward 10s"
+msgstr "Đến 10 giây sau"
+
+#: data/shortcuts-dialog.blp:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Chung"
+
+#: data/shortcuts-dialog.blp:9
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Xem phím tắt"
+
+#: data/shortcuts-dialog.blp:14
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Cửa sổ mới"
+
+#: data/shortcuts-dialog.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Thoát"
+
+#: data/shortcuts-dialog.blp:25
+msgctxt "shortcut window"
+msgid "Player"
+msgstr "Trình phát"
+
+#: data/shortcuts-dialog.blp:28
+msgctxt "shortcut window"
+msgid "Open File"
+msgstr "Mở Tập tin"
+
+#: data/shortcuts-dialog.blp:33
+msgctxt "shortcut window"
+msgid "Pause/Play"
+msgstr "Tạm dừng/Phát"
+
+#: data/shortcuts-dialog.blp:38
+msgctxt "shortcut window"
+msgid "Go Back 10 Seconds"
+msgstr "Về 10 giây trước"
+
+#: data/shortcuts-dialog.blp:43
+msgctxt "shortcut window"
+msgid "Go Forward 10 Seconds"
+msgstr "Đên 10 giây sau"
+
+#: data/shortcuts-dialog.blp:49
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Tốc độ phát"
+
+#: data/shortcuts-dialog.blp:52
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Tăng tốc độ phát"
+
+#: data/shortcuts-dialog.blp:57
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Giảm tốc độ phát"
+
+#: data/shortcuts-dialog.blp:62
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Đặt lại tốc độ phát"
+
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Tắt/Bật Âm thanh"
+
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/application.ts:73
+msgid "translator-credits"
+msgstr "Cas Pascal"
+
+#: src/drag-overlay.ts:70
+msgid "Unable to access dropped files"
+msgstr "Không truy cập được tập tin đã thả"
+
+#: src/error.ts:42
+msgid "An unknown error happened"
+msgstr "Đã xảy ra lỗi không xác định"
+
+#: src/player.ts:120
+msgid "Pause"
+msgstr "Tạm dừng"
+
+#: src/player.ts:120
+msgid "Play"
+msgstr "Phát"
+
+#: src/stream.ts:271
+msgid ""
+"File uses a format that cannot be played. Additional media codecs may be "
+"required."
+msgstr ""
+"Tập tin mang định dạng chưa thể phát được. Có thể phải cài đặt thêm codec."
+
+#: src/stream.ts:283
+msgid ""
+"An error happened while trying to get information about the file. Please try "
+"again."
+msgstr "Đã xảy ra lỗi khi đang truy cập thông tin của tập tin. Hãy thử lại."
+
+#: src/stream.ts:294
+msgid "File uses an invalid URI"
+msgstr "Tập tin chưa URI không hợp lệ"
+
+#: src/stream.ts:305
+msgid "Reading the file’s information timed out. Please try again."
+msgstr "Đã quá thời hạn đọc thông tin tập tin tối đa. Hãy thử lại."
+
+#: src/stream.ts:421
+msgid "Unknown File"
+msgstr "Tệp Không Xác định"
+
+#: src/stream.ts:667
+msgid "The selected file doesn’t contain any audio"
+msgstr "Tập tin đã chọn không chứa âm thanh"
+
+#: src/volume-button.ts:57
+msgid "Muted"
+msgstr "Đã tắt tiếng"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Âm lượng Đầy đủ"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:66
+#, javascript-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%d %%"
+
+#: src/window.ts:132
+msgid "Audio files"
+msgstr "Tệp Âm thanh"
+
+#: src/window.ts:139
+msgid "Open File"
+msgstr "Mở Tập tin"
+
+#: src/window.ts:178
+msgid "No available audio file found"
+msgstr "Không tìm thấy tập tin âm thanh có sẵn"
+
+#: src/window.ts:190
+msgid "Directories Cannot Be Played"
+msgstr "Không thể Phát Thư mục"
+
+#: src/window.ts:191
+msgid "Please select a file."
+msgstr "Hãy chọn một tập tin."
+
+#: src/window.ts:197
+msgid "The selected file is not a regular file."
+msgstr "Tập tin đã chọn không phải là tập tin bình thường."
+
+#: src/window.ts:217
+msgid "No file was selected"
+msgstr "Chưa chọn tập tin"
