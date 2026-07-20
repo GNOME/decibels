@@ -5,7 +5,7 @@ import GObject from "gi://GObject";
 import Gtk from "gi://Gtk?version=4.0";
 
 import { MPRIS } from "./mpris.js";
-import { AddActionEntries, Window } from "./window.js";
+import { Window } from "./window.js";
 import { APMediaStream } from "./stream.js";
 
 export class Application extends Adw.Application {
@@ -33,7 +33,7 @@ export class Application extends Adw.Application {
       this.active_window_changed_cb.bind(this),
     );
 
-    (this.add_action_entries as AddActionEntries)([
+    this.add_action_entries([
       {
         name: "new-window",
         activate: () => {
@@ -127,7 +127,7 @@ export class Application extends Adw.Application {
     this.present_new_window();
   }
 
-  vfunc_open(files: Gio.FilePrototype[]): void {
+  vfunc_open(files: Gio.File[], _hint: string): void {
     const is_single_file = files.length === 1,
       window = this.get_active_window() as Window;
 

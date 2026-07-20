@@ -2,7 +2,7 @@ import Adw from "gi://Adw";
 import GObject from "gi://GObject";
 
 export class APHeaderBar extends Adw.Bin {
-  private _header_bar!: Adw.HeaderBar;
+  declare private readonly _header_bar: Adw.HeaderBar;
 
   static {
     GObject.registerClass(
@@ -83,7 +83,7 @@ export class APHeaderBar extends Adw.Bin {
     window_title.set_subtitle(this.subtitle ?? "");
   }
 
-  constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
+  constructor(params?: Partial<Adw.Bin.ConstructorProps>) {
     super(params);
   }
 }

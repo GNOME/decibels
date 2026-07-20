@@ -2,7 +2,7 @@ import Gio from "gi://Gio";
 import GLib from "gi://GLib";
 import Gtk from "gi://Gtk?version=4.0";
 
-import { APMediaStream } from "./stream";
+import { APMediaStream } from "./stream.js";
 
 // bus_get
 Gio._promisify(Gio, "bus_get", "bus_get_finish");
@@ -219,9 +219,7 @@ export class DBusInterface {
       parameters.push(GLib.Variant.new(signature, value));
     }
 
-    // TODO: the type is incorrect
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const variant = GLib.Variant.new_tuple(parameters as any);
+    const variant = GLib.Variant.new_tuple(parameters);
 
     this.connection.emit_signal(
       null,
@@ -500,7 +498,11 @@ export class MPRIS extends DBusInterface {
       const message = `MPRIS does not handle ${iface}.${prop}`;
       console.warn(message);
       // eslint-disable-next-line @typescript-eslint/only-throw-error
-      throw new GLib.Error(GLib.LOG_DOMAIN, 0, message);
+      throw new GLib.Error({
+        domain: GLib.LOG_DOMAIN,
+        code: 0,
+        message: message,
+      });
     }
   }
 

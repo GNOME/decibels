@@ -15,16 +15,16 @@ GObject.type_ensure(APVolumeButton.$gtype);
 GObject.type_ensure(APWaveformScale.$gtype);
 
 export class APPlayerState extends Adw.Bin {
-  private _labels!: Gtk.Box;
-  private _timestamp_label!: Gtk.Label;
-  private _duration_label!: Gtk.Label;
-  private _volume_button!: APVolumeButton;
-  private _playback_box!: Gtk.Box;
-  private _playback_image!: Gtk.Image;
-  private _playback_button!: Gtk.Button;
-  private _waveform!: APWaveformScale;
+  declare private readonly _labels: Gtk.Box;
+  declare private readonly _timestamp_label: Gtk.Label;
+  declare private readonly _duration_label: Gtk.Label;
+  declare private readonly _volume_button: APVolumeButton;
+  declare private readonly _playback_box: Gtk.Box;
+  declare private readonly _playback_image: Gtk.Image;
+  declare private readonly _playback_button: Gtk.Button;
+  declare private readonly _waveform: APWaveformScale;
 
-  headerbar!: APHeaderBar;
+  declare readonly headerbar: APHeaderBar;
 
   static {
     GObject.registerClass(
@@ -47,7 +47,7 @@ export class APPlayerState extends Adw.Bin {
     );
   }
 
-  constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
+  constructor(params?: Partial<Adw.Bin.ConstructorProps>) {
     super(params);
   }
 
@@ -68,7 +68,6 @@ export class APPlayerState extends Adw.Bin {
       widget.set_direction(Gtk.TextDirection.LTR);
     }
 
-    // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
     window.stream.bind_property_full(
       "duration",
       this._duration_label,
@@ -80,7 +79,6 @@ export class APPlayerState extends Adw.Bin {
       null,
     );
 
-    // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
     window.stream.bind_property_full(
       "timestamp",
       this._timestamp_label,
@@ -105,7 +103,6 @@ export class APPlayerState extends Adw.Bin {
       },
     );
 
-    // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
     window.stream.bind_property_full(
       "playing",
       this._playback_image,
@@ -117,7 +114,6 @@ export class APPlayerState extends Adw.Bin {
       null,
     );
 
-    // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
     window.stream.bind_property_full(
       "playing",
       this._playback_button,
@@ -129,7 +125,6 @@ export class APPlayerState extends Adw.Bin {
       null,
     );
 
-    // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
     window.stream.bind_property_full(
       "timestamp",
       this._waveform,

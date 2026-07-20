@@ -3,19 +3,25 @@
   "version": "0.1.0",
   "description": "Play audio files",
   "main": "src/main.ts",
+  "type": "module",
   "private": true,
   "repository": "https://gitlab.gnome.org/GNOME/decibels/",
   "author": "The GNOME Project (https://gnome.org)",
   "license": "GPL-3.0",
   "dependencies": {
-    "typescript": "^5.7.3"
+    "@girs/adw-1": "^4.1.0",
+    "@girs/gst-1.0": "^4.1.0",
+    "@girs/gstaudio-1.0": "^4.1.0",
+    "@girs/gstpbutils-1.0": "^4.1.0",
+    "@girs/gstplay-1.0": "^4.1.0",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "prettier": "^3.4.2",
-    "typescript-eslint": "^8.19.1"
+    "typescript-eslint": "^8.64.0"
   },
   "scripts": {
     "build": "tsc --strict",

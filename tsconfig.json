@@ -1,32 +1,20 @@
 {
   "compilerOptions": {
-    "target": "es2018",
-    "module": "ES2020",
-    "lib": [
-      "ES2020",
-    ],
+    "target": "es2020",
+    "module": "es2020",
+    "moduleResolution": "bundler",
+
+    "rootDir": "./src",
+    "outDir": "_build/tsc-out",
+
+    "lib": ["es2020"],
+    "types": ["@girs/gjs", "@girs/gjs/dom", "@girs/gio-2.0", "@girs/glib-2.0", "@girs/gtk-4.0", "@girs/adw-1", "@girs/gst-1.0", "@girs/gstplay-1.0", "@girs/gstaudio-1.0", "@girs/gstpbutils-1.0"],
+
     "allowJs": true,
     "checkJs": true,
-    "outDir": "_build/tsc-out",
     "strict": true,
-    "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "*": [
-        "*",
-        "types",
-        "gi-types"
-      ]
-    },
-    "typeRoots": [
-      "gi-types",
-    ],
-    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
   },
-  "include": [
-    "gi-types/gi.d.ts",
-    "types/ambient.d.ts",
-    "src"
-  ],
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

@@ -7,13 +7,12 @@ import GstAudio from "gi://GstAudio";
 import Gio from "gi://Gio";
 import GstPbUtils from "gi://GstPbutils";
 
-import type { AddActionEntries } from "./window.js";
 import { APWaveformGenerator } from "./waveform-generator.js";
 
 if (!Gst.is_initialized()) {
   GLib.setenv("GST_PLAY_USE_PLAYBIN3", "1", false);
 
-  Gst.init(null);
+  Gst.init([]);
 }
 
 type GTypeToType<Y extends GObject.GType> =
@@ -88,18 +87,18 @@ class APPlaySignalAdapter extends GObject.Object {
       return;
     }
 
-    switch (type[1] as GstPlay.PlayMessage) {
+    switch (type[1]) {
       case GstPlay.PlayMessage.URI_LOADED:
         this.emit_message("uri-loaded", [structure.get_string("uri")!]);
         break;
       case GstPlay.PlayMessage.POSITION_UPDATED:
         this.emit_message("position-updated", [
-          GstPlay.play_message_parse_position_updated(message)!,
+          Number(GstPlay.play_message_parse_position_updated(message)!),
         ]);
         break;
       case GstPlay.PlayMessage.DURATION_CHANGED:
         this.emit_message("duration-changed", [
-          GstPlay.play_message_parse_duration_updated(message)!,
+          Number(GstPlay.play_message_parse_duration_updated(message)!),
         ]);
         break;
       case GstPlay.PlayMessage.STATE_CHANGED:
@@ -472,16 +471,9 @@ export class APMediaStream extends Gtk.MediaStream {
     if (!this._play.media_info) return 0;
 
     return (
-      get_safe_duration(this._play.media_info.get_duration()) / Gst.USECOND
+      get_safe_duration(Number(this._play.media_info.get_duration())) /
+      Number(Gst.USECOND)
     );
-  }
-
-  /**
-   * @deprecated This property returns the initial duration only. Please use
-   * `get_duration`.
-   */
-  get duration() {
-    return super.duration;
   }
 
   // property: error
@@ -546,7 +538,7 @@ export class APMediaStream extends Gtk.MediaStream {
 
   vfunc_seek(timestamp: number): void {
     this.update(timestamp);
-    this._play.seek(Math.trunc(timestamp * Gst.USECOND));
+    this._play.seek(Math.trunc(timestamp * Number(Gst.USECOND)));
   }
 
   vfunc_update_audio(muted: boolean, volume: number): void {
@@ -591,7 +583,7 @@ export class APMediaStream extends Gtk.MediaStream {
     }
 
     if (this.prepared) {
-      this.update(position / Gst.USECOND);
+      this.update(position / Number(Gst.USECOND));
     }
   }
 
@@ -638,7 +630,7 @@ export class APMediaStream extends Gtk.MediaStream {
         info.get_number_of_audio_streams() > 0,
         info.get_number_of_video_streams() > 0,
         info.is_seekable(),
-        get_safe_duration(info.get_duration()) / Gst.USECOND,
+        get_safe_duration(Number(info.get_duration())) / Number(Gst.USECOND),
       );
 
       if (info.get_number_of_audio_streams() <= 0) {
@@ -667,7 +659,7 @@ export class APMediaStream extends Gtk.MediaStream {
     }
 
     if (this.prepared) {
-      this.update(timestamp / Gst.USECOND);
+      this.update(timestamp / Number(Gst.USECOND));
     }
   }
 
@@ -713,7 +705,10 @@ export class APMediaStream extends Gtk.MediaStream {
 
   skip_seconds(seconds: number) {
     const duration = this.get_duration();
-    const new_timestamp = Math.max(this.timestamp + seconds * Gst.MSECOND, 0);
+    const new_timestamp = Math.max(
+      this.timestamp + seconds * Number(Gst.MSECOND),
+      0,
+    );
 
     if (duration !== 0 && new_timestamp > duration) {
       this.eos_cb();
@@ -726,7 +721,7 @@ export class APMediaStream extends Gtk.MediaStream {
   get_action_group() {
     const action_group = Gio.SimpleActionGroup.new();
 
-    (action_group.add_action_entries as AddActionEntries)([
+    action_group.add_action_entries([
       {
         name: "play",
         activate: () => {

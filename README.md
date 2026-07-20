@@ -42,7 +42,12 @@ flatpak install --user gnome-nightly org.gnome.Decibels.Devel
 
 ### From source
 
-Open the project in GNOME Builder and click "Build & Run Project".
+The simplest way to run the application from source is to open the project in GNOME Builder and click "Build & Run Project".
+
+The application can be built and installed using flatpak builder:
+```
+$ flatpak-builder --force-clean --install --install-deps-from=flathub ./_flatpak_build ./build-aux/flatpak/org.gnome.Decibels.Devel.json
+```
 
 ## Code of conduct
 
