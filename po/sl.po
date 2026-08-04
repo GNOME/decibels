@@ -7,10 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-04 01:03+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-04 22:48+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <Slovenian>\n"
 "Language: sl\n"
@@ -72,6 +71,7 @@ msgstr "_O programu"
 
 #: data/org.gnome.Decibels.desktop.in.in:2 data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Predvajalnik zvoka"
 
@@ -84,6 +84,10 @@ msgstr "Predvajanje zvočnih datotek"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "player;glasba;predvajalnik;media;medij;zvok;avdio;audio;decibeli;decibels;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -195,7 +199,7 @@ msgid "Mute/Unmute"
 msgstr "Utišaj / vklopi zvok"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr "Martin Srebotnjak <miles@filmsi.net>"
 
@@ -207,15 +211,15 @@ msgstr "Dostop do dodanih datotek ni mogoč"
 msgid "An unknown error happened"
 msgstr "Prišlo je do neznane napake"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Premor"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Predvajaj"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -223,26 +227,26 @@ msgstr ""
 "Zvočnega zapisa datoteke ni mogoče predvajati. Morda je treba namestiti dodatne "
 "zvočne kodeke."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr ""
 "Prišlo je do napake med pridobivanjem podrobnosti o datoteki. Poskusite znova."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "Datoteka uporablja neveljaven naslov URI"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Branje podatkov o datoteki je poteklo. Poskusite znova."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Neznana datoteka"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "V izbrani datoteki ni zvočnega zapisa"
 
