@@ -1,5 +1,5 @@
 # Brazilian portuguese translation for Decibels.
-# Copyright (C) 2025 THE com.vixalien.decibels'S COPYRIGHT HOLDER
+# Copyright (C) 2026 THE com.vixalien.decibels'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.vixalien.decibels package.
 # Tiago Lucas Flach <tiagolucas9830@gmail.com>, 2023.
 # Juliano de Souza Camargo <julianosc@pm.me>, 2024.
@@ -8,18 +8,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-19 17:11-0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-05 20:44-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
-"Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao>\n"
+"Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 49.0\n"
+"X-Generator: Gtranslator 50.0\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-DL-VCS-Web: https://gitlab.gnome.org/GNOME/decibels\n"
+"X-DL-Lang: pt_BR\n"
+"X-DL-Module: Decibels\n"
+"X-DL-Branch: main\n"
+"X-DL-Domain: po\n"
+"X-DL-State: Translating\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -73,6 +78,7 @@ msgstr "_Sobre o Reprodutor de Áudio"
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Reprodutor de áudio"
 
@@ -85,6 +91,10 @@ msgstr "Reproduza arquivos de áudio"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "música;player;mídia;áudio;decibéis;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "O Projeto GNOME"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -197,7 +207,7 @@ msgid "Mute/Unmute"
 msgstr "Desativar/Ativar som"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr ""
 "Tiago Lucas Flach <tiagolucas9830@gmail.com>\n"
@@ -212,15 +222,15 @@ msgstr "Não é possível acessar os arquivos soltos"
 msgid "An unknown error happened"
 msgstr "Ocorreu um erro desconhecido"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Pausar"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Reproduzir"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -228,7 +238,7 @@ msgstr ""
 "O arquivo usa um formato que não pode ser reproduzido. Codecs de mídia "
 "adicionais podem ser necessários."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -236,20 +246,20 @@ msgstr ""
 "Ocorreu um erro ao tentar obter informações sobre o arquivo. Por favor, "
 "tente novamente."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "O arquivo usa um URI inválido"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
 "A leitura das informações do arquivo expirou. Por favor, tente novamente."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Arquivo desconhecido"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "O arquivo selecionado não contém nenhum áudio"
 
