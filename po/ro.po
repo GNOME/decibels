@@ -7,10 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-04 16:52+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-05 10:16+0200\n"
 "Last-Translator: Antonio Marin <gnmer.6qxyg@slmail.me>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -19,7 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Gtranslator 48.0\n"
+"X-Generator: Gtranslator 50.0\n"
+"X-DL-VCS-Web: https://gitlab.gnome.org/GNOME/decibels\n"
+"X-DL-Lang: ro\n"
+"X-DL-Module: Decibels\n"
+"X-DL-Branch: main\n"
+"X-DL-Domain: po\n"
+"X-DL-State: Translating\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -73,6 +78,7 @@ msgstr "Despre Redare _audio"
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Redare audio"
 
@@ -85,6 +91,10 @@ msgstr "Redă fișiere audio"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "music;player;media;audio;decibels;muzică;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "Proiectul GNOME"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -196,7 +206,7 @@ msgid "Mute/Unmute"
 msgstr "Mut/Sunet"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr ""
 "Florentina Mușat <florentina [dot] musat [dot] 28 [at] gmail [dot] com>\n"
@@ -210,15 +220,15 @@ msgstr "Nu se pot accesa fișierele așezate"
 msgid "An unknown error happened"
 msgstr "A apărut o eroare necunoscută"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Pauză"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Redă"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -226,7 +236,7 @@ msgstr ""
 "Fișierul utilizează un format care nu poate fi redat. Pot fi necesare codec-"
 "uri multimedia suplimentare."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -234,19 +244,19 @@ msgstr ""
 "A apărut o eroare la încercarea de a obține informații despre fișier. Se "
 "poate încerca din nou."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "Fișierul utilizează un URI incorect"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Citirea informațiilor fișierului a expirat. Se poate încerca din nou."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Fișier necunoscut"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "Fișierul ales nu conține audio"
 
