@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-07 13:25+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-07 13:25+0000\n"
 "Last-Translator: Asier Saratsua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <eu@li.org>\n"
 "Language: eu\n"
@@ -67,6 +67,7 @@ msgstr "Audio-erreproduzigailuari _buruz"
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Audio-erreproduzigailua"
 
@@ -79,6 +80,10 @@ msgstr "Erreproduzitu audio-fitxategiak"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "musika;erreproduzigailua;multimedia;audioa;decibels"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "GNOME proiektua"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -188,7 +193,7 @@ msgid "Mute/Unmute"
 msgstr "Mututu/Eten mututasuna"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr "Asier Saratsua Garmendia <asiersarasua@ni.eus>"
 
@@ -200,39 +205,39 @@ msgstr "Ezin dira jaregindako fitxategiak atzitu"
 msgid "An unknown error happened"
 msgstr "Errore ezezaguna gertatu da"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Pausatu"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Erreproduzitu"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
 msgstr "Fitxategiak erreproduzitu ezin daitekeen formatua du. Multimedia-kodek gehiago behar dira."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr "Errorea gertatu da fitxategiari buruzko informazioa eskuratzean. Saiatu berriro."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "Fitxategiak baliogabeko URIa darabil"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Fitxategiaren informazioaren irakurketa denborarik gabe geratu da. Saiatu berriro."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Fitxategi ezezaguna"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "Hautatutako fitxategiak ez du audiorik"
 
