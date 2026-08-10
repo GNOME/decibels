@@ -6,10 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-06 19:42+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-10 22:17+0300\n"
 "Last-Translator: Aurimas Černius <aurimas.cernius@mailo.com>\n"
 "Language-Team: Lithuanian <Lithuanian>\n"
 "Language: lt\n"
@@ -18,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -72,6 +71,7 @@ msgstr "_Apie garso grotuvą"
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Garso grotuvas"
 
@@ -84,6 +84,10 @@ msgstr "Groti garso failus"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "muzika;grotuvas;medija;audio;decibelai;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "GNOME projektas"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -195,7 +199,7 @@ msgid "Mute/Unmute"
 msgstr "Nuitildyti/groti"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr "Aurimas Černius <aurimas.cernius@mailo.com>"
 
@@ -207,15 +211,15 @@ msgstr "Nepavyksta pasiekti numestų failų"
 msgid "An unknown error happened"
 msgstr "Kilo nežinoma klaida"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Pristabdyti"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Groti"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -223,25 +227,25 @@ msgstr ""
 "Failas yra formato, kurio negalima groti. Gali reikti papildomų medijos "
 "koduotojų."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr "Kilo klaida bandant gauti informaciją apie failą. Bandykite vėl."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "Failas naudoja netinkamą URI"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Failo informacijos skaitymo laiko pabaiga. Bandykite vėl."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Nežinomas failas"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "Pasirinktame faile nėra jokio garso"
 
