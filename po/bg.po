@@ -1,15 +1,14 @@
 # Bulgarian translation of decibels po-file.
-# Copyright (C) 2024 Decibels's COPYRIGHT HOLDER
+# Copyright (C) 2024, 2025, 2026 twlvnn kraftwerk <kraft_werk@tutanota.com>
 # This file is distributed under the same license as the Decibels package.
 # twlvnn kraftwerk <kraft_werk@tutanota.com>, 2024, 2025, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-22 10:26+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-17 15:43+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
 "Language: bg\n"
@@ -71,6 +70,7 @@ msgstr "_Относно „Програма за музика“"
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Програма за музика"
 
@@ -83,6 +83,10 @@ msgstr "Пускане на звукови файлове"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "музика;медия;звук;аудио;мултимедия;децибели;music;player;media;audio;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "Проектът GNOME"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -195,7 +199,7 @@ msgid "Mute/Unmute"
 msgstr "Заглушаване/отглушаване"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr ""
 "Twlvnn Kraftwerk &lt;<a "
@@ -216,15 +220,15 @@ msgstr "Пуснатите файлове не може да се достъпя
 msgid "An unknown error happened"
 msgstr "Възникна непозната грешка"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Пауза"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Пускане"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -232,26 +236,26 @@ msgstr ""
 "Файлът е с формат, който не се поддържа. Необходими са допълнителни "
 "мултимедийни кодери."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr ""
 "Възникна грешка при получаване на информацията от файла. Опитайте отново."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "Файлът използва неправилен адрес"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Времето за разчитане на информацията на файла изтече. Опитайте отново."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Непознат файл"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "Избраният файл не съдържа звукови данни"
 
