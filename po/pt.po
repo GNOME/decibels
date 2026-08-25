@@ -6,10 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-10 15:35+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-25 16:33+0100\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <hugokarvalho@hotmail.com>\n"
 "Language: pt\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -71,6 +70,7 @@ msgstr "_Acerca do Leitor de áudio"
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Leitor de áudio"
 
@@ -83,6 +83,10 @@ msgstr "Reproduzir ficheiros de áudio"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "música;reprodutor;leitor;ficheiro;multimédia;áudio;decibéis;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "O Projeto GNOME"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -195,7 +199,7 @@ msgid "Mute/Unmute"
 msgstr "Silenciar/Ativar som"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr "Hugo Carvalho <hugokarvalho@hotmail.com>"
 
@@ -207,15 +211,15 @@ msgstr "Impossibilidade de acesso a ficheiros largados"
 msgid "An unknown error happened"
 msgstr "Ocorreu um erro desconhecido"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Pausa"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Reproduzir"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -223,7 +227,7 @@ msgstr ""
 "O ficheiro utiliza um formato que não pode ser reproduzido. Poderão ser "
 "necessários codecs multimédia adicionais."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -231,20 +235,20 @@ msgstr ""
 "Ocorreu um erro ao tentar obter informações sobre o ficheiro. Tente "
 "novamente."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "O ficheiro usa um URI inválido"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
 "O tempo de leitura das informações do ficheiro expirou. Tente novamente."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Ficheiro desconhecido"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "O ficheiro selecionado não contém qualquer áudio"
 
