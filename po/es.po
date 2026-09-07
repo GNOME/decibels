@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: com.vixalien.decibels\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
 "POT-Creation-Date: 2026-04-11 17:13+0000\n"
-"PO-Revision-Date: 2026-09-01 16:23+0200\n"
+"PO-Revision-Date: 2026-09-07 13:15+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish <l10n-es@gnome.org>\n"
 "Language: es\n"
@@ -314,7 +314,7 @@ msgstr "No se seleccionó ningún archivo"
 
 #, fuzzy
 #~ msgid "_About Decibels"
-#~ msgstr "_Acerca de los decibeles"
+#~ msgstr "_Acerca de los decibelios"
 
 #, fuzzy
 #~ msgid "Drop an audio file to play it"
