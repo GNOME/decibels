@@ -1,0 +1,295 @@
+# Nynorsk norwegian translation of Decibels
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Roy-Magne Mo <rmo@sunnmore.net>, 2026. 
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Decibels main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-09-12 23:24+0200\n"
+"Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
+"Language-Team: Norwegian Nynorsk <nn@li.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Slepp her for å opne"
+
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Spel av lydfiler"
+
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Dra og slepp lydfiler her"
+
+#: data/empty.blp:18
+msgid "_Open…"
+msgstr "_Opne …"
+
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
+#: src/window.ts:196 src/window.ts:216
+msgid "File Cannot Be Played"
+msgstr "Fila kan ikkje spelast av"
+
+#: data/error.blp:18
+msgid "_Try Again…"
+msgstr "_Prøv på nytt …"
+
+#: data/header.blp:11
+msgid "Main Menu"
+msgstr "Hovudmeny"
+
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Nytt vindauge"
+
+#: data/header.blp:24
+msgid "Open…"
+msgstr "Opne …"
+
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "Vis i _Filer"
+
+#: data/header.blp:39
+msgid "_Keyboard Shortcuts"
+msgstr "_Tastatursnarvegar"
+
+#: data/header.blp:44
+msgid "_About Audio Player"
+msgstr "_Om Lydspelar"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
+msgid "Audio Player"
+msgstr "Lydspelar"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Spel av lydfiler"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "musikk;spelar;media;lyd;desibel;music;player;audio;decibels;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "GNOME-prosjektet"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Ein lydspelar som berre spelar lydfiler. Han krev ikkje eit organisert "
+"musikkbibliotek og vil ikkje overvelde deg med tonnevis av funksjonar."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr "Lydspelar har likevel avanserte funksjonar som:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "Ein elegant bølgjeform av sporet"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Justerbar avspelingsfart"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Enkle søkjekontrollar"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Avspeling av fleire filer samtidig"
+
+#: data/player.blp:66
+msgid "Adjust Playback Speed"
+msgstr "Juster avspelingsfarten"
+
+#: data/player.blp:78
+msgid "Skip Back 10s"
+msgstr "Hopp 10 s tilbake"
+
+#: data/player.blp:105
+msgid "Skip Forward 10s"
+msgstr "Hopp 10 s framover"
+
+#: data/shortcuts-dialog.blp:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Generelt"
+
+#: data/shortcuts-dialog.blp:9
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Vis snarvegar"
+
+#: data/shortcuts-dialog.blp:14
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Nytt vindauge"
+
+#: data/shortcuts-dialog.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Avslutt"
+
+#: data/shortcuts-dialog.blp:25
+msgctxt "shortcut window"
+msgid "Player"
+msgstr "Spelar"
+
+#: data/shortcuts-dialog.blp:28
+msgctxt "shortcut window"
+msgid "Open File"
+msgstr "Opne fil"
+
+#: data/shortcuts-dialog.blp:33
+msgctxt "shortcut window"
+msgid "Pause/Play"
+msgstr "Pause/Spel av"
+
+#: data/shortcuts-dialog.blp:38
+msgctxt "shortcut window"
+msgid "Go Back 10 Seconds"
+msgstr "Spol 10 sekund tilbake"
+
+#: data/shortcuts-dialog.blp:43
+msgctxt "shortcut window"
+msgid "Go Forward 10 Seconds"
+msgstr "Spol 10 sekund framover"
+
+#: data/shortcuts-dialog.blp:49
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Avspelingsfart"
+
+#: data/shortcuts-dialog.blp:52
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Auk avspelingsfarten"
+
+#: data/shortcuts-dialog.blp:57
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Mink avspelingsfarten"
+
+#: data/shortcuts-dialog.blp:62
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Tilbakestill avspelingsfarten"
+
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Demp/opphev demping"
+
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/application.ts:76
+msgid "translator-credits"
+msgstr "Roy-Magne Mo <rmo@sunnmore.net>"
+
+#: src/drag-overlay.ts:70
+msgid "Unable to access dropped files"
+msgstr "Får ikkje tilgang til dei sleppte filene"
+
+#: src/error.ts:42
+msgid "An unknown error happened"
+msgstr "Ein ukjend feil oppstod"
+
+#: src/player.ts:127
+msgid "Pause"
+msgstr "Pause"
+
+#: src/player.ts:127
+msgid "Play"
+msgstr "Spel"
+
+#: src/stream.ts:262
+msgid ""
+"File uses a format that cannot be played. Additional media codecs may be "
+"required."
+msgstr ""
+"Fila brukar eit format som ikkje kan spelast av. Det kan vere nødvendig med "
+"fleire mediekodekar."
+
+#: src/stream.ts:274
+msgid ""
+"An error happened while trying to get information about the file. Please try "
+"again."
+msgstr ""
+"Det oppstod ein feil under henting av informasjon om fila. Prøv på nytt."
+
+#: src/stream.ts:285
+msgid "File uses an invalid URI"
+msgstr "Fila brukar ein ugyldig URI"
+
+#: src/stream.ts:296
+msgid "Reading the file’s information timed out. Please try again."
+msgstr "Tida for å lese filinformasjonen gjekk ut. Prøv på nytt."
+
+#: src/stream.ts:404
+msgid "Unknown File"
+msgstr "Ukjend fil"
+
+#: src/stream.ts:649
+msgid "The selected file doesn’t contain any audio"
+msgstr "Den valde fila inneheld ingen lyd"
+
+#: src/volume-button.ts:57
+msgid "Muted"
+msgstr "Dempa"
+
+#: src/volume-button.ts:58
+msgid "Full Volume"
+msgstr "Full lydstyrke"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:66
+#, javascript-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%d %%"
+
+#: src/window.ts:132
+msgid "Audio files"
+msgstr "Lydfiler"
+
+#: src/window.ts:139
+msgid "Open File"
+msgstr "Opne fil"
+
+#: src/window.ts:178
+msgid "No available audio file found"
+msgstr "Fann ingen tilgjengeleg lydfil"
+
+#: src/window.ts:190
+msgid "Directories Cannot Be Played"
+msgstr "Mapper kan ikkje spelast av"
+
+#: src/window.ts:191
+msgid "Please select a file."
+msgstr "Vel ei fil."
+
+#: src/window.ts:197
+msgid "The selected file is not a regular file."
+msgstr "Den valde fila er ikkje ei vanleg fil."
+
+#: src/window.ts:217
+msgid "No file was selected"
+msgstr "Inga fil vart vald"
