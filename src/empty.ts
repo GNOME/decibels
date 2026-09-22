@@ -18,6 +18,6 @@ export class APEmptyState extends Adw.Bin {
   constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
     super(params);
 
-    this._statusPage.icon_name = `${pkg.name}-symbolic`;
+    this._statusPage.icon_name = "play-large-symbolic";
   }
 }
