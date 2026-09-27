@@ -4,15 +4,13 @@ import eslint from "@eslint/js";
 import prettier from "eslint-plugin-prettier/recommended";
 import tseslint from "typescript-eslint";
 
-export default tseslint.config(
+export default [
     eslint.configs.recommended,
-    tseslint.configs.recommendedTypeChecked,
+    ...tseslint.configs.recommendedTypeChecked,
     prettier,
     {
         files: ["**/*.ts", "**/*.tsx"],
         ignores: [
-            "types/**/*",
-            "gi-types/**/*",
             "**/.eslintrc.js",
             "**/_build/",
         ],
@@ -34,4 +32,4 @@ export default tseslint.config(
             "prettier/prettier": ["error"],
         },
     },
-);
+];

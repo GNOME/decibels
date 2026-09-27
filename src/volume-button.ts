@@ -10,7 +10,6 @@ export class APVolumeButton extends Adw.Bin {
       {
         GTypeName: "APVolumeButton",
         Template: "resource:///org/gnome/Decibels/volume-button.ui",
-        InternalChildren: ["adjustment", "menu_button", "mute_button"],
         Properties: {
           volume: GObject.param_spec_double(
             "volume",

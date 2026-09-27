@@ -5,9 +5,9 @@ import GObject from "gi://GObject";
 import { APHeaderBar } from "./header.js";
 
 export class APErrorState extends Adw.Bin {
-  private _statusPage!: Adw.StatusPage;
+  declare private readonly _statusPage: Adw.StatusPage;
 
-  headerbar!: APHeaderBar;
+  declare readonly headerbar: APHeaderBar;
 
   static {
     GObject.registerClass(
@@ -21,7 +21,7 @@ export class APErrorState extends Adw.Bin {
     );
   }
 
-  constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
+  constructor(params?: Partial<Adw.Bin.ConstructorProps>) {
     super(params);
   }
 

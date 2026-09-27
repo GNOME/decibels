@@ -103,9 +103,7 @@ export class APWaveformGenerator extends GObject.Object {
           case Gst.MessageType.ELEMENT: {
             const s = message.get_structure();
             if (s && s.has_name("level")) {
-              const peakVal = s.get_value(
-                "rms",
-              ) as unknown as GObject.ValueArray;
+              const peakVal = s.get_value("rms") as GObject.ValueArray;
 
               if (peakVal) {
                 const peak = peakVal.get_nth(0) as number;

@@ -156,7 +156,7 @@ export class APWaveformBarChart
   }
 
   vfunc_get_flags(): Gdk.PaintableFlags {
-    return 0 as Gdk.PaintableFlags;
+    return 0;
   }
 
   vfunc_get_current_image(): Gdk.Paintable {

@@ -22,26 +22,10 @@ GObject.type_ensure(APErrorState.$gtype);
 GObject.type_ensure(APPlayerState.$gtype);
 GObject.type_ensure(APDragOverlay.$gtype);
 
-export type ActionEntry = {
-  name: string;
-  parameter_type?: string;
-  state?: string;
-  activate?: (
-    _source: Gio.SimpleAction,
-    parameter: GLib.Variant | null,
-  ) => void;
-  change_state?: (
-    _source: Gio.SimpleAction,
-    value: GLib.Variant | null,
-  ) => void;
-};
-
-export type AddActionEntries = (entries: ActionEntry[]) => void;
-
 export class Window extends Adw.ApplicationWindow {
-  private _stack!: Gtk.Stack;
-  private _error!: APErrorState;
-  private _player!: APPlayerState;
+  declare private readonly _stack: Gtk.Stack;
+  declare private readonly _error: APErrorState;
+  declare private readonly _player: APPlayerState;
 
   stream: APMediaStream;
 
@@ -73,7 +57,7 @@ export class Window extends Adw.ApplicationWindow {
     );
   }
 
-  constructor(params?: Partial<Adw.ApplicationWindow.ConstructorProperties>) {
+  constructor(params?: Partial<Adw.ApplicationWindow.ConstructorProps>) {
     super(params);
 
     new Gtk.WindowGroup().add_window(this);
@@ -140,7 +124,7 @@ export class Window extends Adw.ApplicationWindow {
       filters,
     });
 
-    (this.add_action_entries as AddActionEntries)([
+    this.add_action_entries([
       {
         name: "open-file",
         activate: () => {
@@ -207,7 +191,8 @@ export class Window extends Adw.ApplicationWindow {
   }
 
   open_file() {
-    (this.file_dialog.open(this, null) as unknown as Promise<Gio.File>)
+    this.file_dialog
+      .open(this, null)
       .then((file) => {
         if (file) {
           void this.load_file(file);

@@ -3,7 +3,7 @@ import Adw from "gi://Adw";
 import Gdk from "gi://Gdk?version=4.0";
 import GObject from "gi://GObject";
 import Gtk from "gi://Gtk?version=4.0";
-import { Window } from "./window";
+import { Window } from "./window.js";
 
 type AddChild = Parameters<Gtk.Widget["vfunc_add_child"]>;
 
@@ -20,11 +20,12 @@ export class APDragOverlay extends Adw.Bin {
     );
   }
 
-  private _overlay!: Gtk.Overlay;
-  private _revealer!: Gtk.Revealer;
-  private _drop_target!: Gtk.DropTarget;
+  declare private readonly _overlay: Gtk.Overlay;
+  declare private readonly _revealer: Gtk.Revealer;
 
-  constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
+  private _drop_target: Gtk.DropTarget;
+
+  constructor(params?: Partial<Adw.Bin.ConstructorProps>) {
     super(params);
 
     this._drop_target = new Gtk.DropTarget({
@@ -48,9 +49,9 @@ export class APDragOverlay extends Adw.Bin {
     this._revealer.reveal_child = reveal;
 
     if (reveal) {
-      this._overlay.child.add_css_class("blurred");
+      this._overlay.child!.add_css_class("blurred");
     } else {
-      this._overlay.child.remove_css_class("blurred");
+      this._overlay.child!.remove_css_class("blurred");
     }
   }
 

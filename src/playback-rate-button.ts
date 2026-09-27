@@ -5,8 +5,8 @@ import GObject from "gi://GObject";
 import { Window } from "./window.js";
 
 export class APPlaybackRateButton extends Adw.Bin {
-  private _adjustment!: Gtk.Adjustment;
-  private _label!: Gtk.Label;
+  declare private readonly _adjustment: Gtk.Adjustment;
+  declare private readonly _label: Gtk.Label;
 
   static {
     GObject.registerClass(
@@ -14,13 +14,12 @@ export class APPlaybackRateButton extends Adw.Bin {
         GTypeName: "APPlaybackRateButton",
         Template: "resource:///org/gnome/Decibels/playback-rate-button.ui",
         InternalChildren: ["adjustment", "label"],
-        Properties: {},
       },
       this,
     );
   }
 
-  constructor(params?: Partial<Adw.Bin.ConstructorProperties>) {
+  constructor(params?: Partial<Adw.Bin.ConstructorProps>) {
     super(params);
   }
 
@@ -36,7 +35,6 @@ export class APPlaybackRateButton extends Adw.Bin {
       GObject.BindingFlags.SYNC_CREATE,
     );
 
-    // @ts-expect-error GObject.BindingTransformFunc return arguments are not correctly typed
     window.stream.bind_property_full(
       "rate",
       this._label,
