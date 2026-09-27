@@ -6,10 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-07 20:33+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-09 09:13+0000\n"
 "Last-Translator: Jordi Mas i Hernàndez <jmas@softcatala.org>\n"
 "Language-Team: Catalan <Catalan>\n"
 "Language: ca\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Minairó 0.1.0\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -71,6 +70,7 @@ msgstr "_Quant al Reproductor d'àudio"
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Reproductor d'àudio"
 
@@ -83,6 +83,10 @@ msgstr "Reprodueix fitxers d'àudio"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "música;reproductor;mèdia;àudio;decibels;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "El projecte GNOME"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -195,7 +199,7 @@ msgid "Mute/Unmute"
 msgstr "Silencia/No silenciis"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr ""
 "Jordi Mas i Hernàndez <jmas@softcatala.org>\n"
@@ -209,15 +213,15 @@ msgstr "No s'ha pogut accedir als fitxers deixats"
 msgid "An unknown error happened"
 msgstr "S'ha produït un error desconegut"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Fes una pausa"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Reprodueix"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
@@ -225,7 +229,7 @@ msgstr ""
 "El fitxer utilitza un format que no es pot reproduir. Es poden requerir "
 "còdecs multimèdia addicionals."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
@@ -233,21 +237,21 @@ msgstr ""
 "S'ha produït un error en intentar obtenir informació sobre el fitxer. Torneu-"
 "ho a provar."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "El fitxer utilitza un URI no vàlid"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr ""
 "La lectura de la informació del fitxer ha excedit el temps d'espera. Torneu-"
 "ho a provar."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Fitxer desconegut"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "El fitxer seleccionat no conté cap àudio"
 

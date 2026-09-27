@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the decibels package.
 #
 # Sabri Ünal <yakushabb@gmail.com>, 2023-2024.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2024-2025.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2024-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: decibels\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-06 19:22+0300\n"
-"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-28 08:00+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -69,8 +69,10 @@ msgstr "_Klavye Kısayolları"
 msgid "_About Audio Player"
 msgstr "Ses Oynatıcı _Hakkında"
 
-#: data/org.gnome.Decibels.desktop.in.in:2 data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Ses Oynatıcı"
 
@@ -84,13 +86,17 @@ msgstr "Ses dosyalarını oynat"
 msgid "music;player;media;audio;decibels;"
 msgstr "music;player;media;audio;müzik;oynatıcı;ortam;medya;ses;müzik;muzik;decibels;"
 
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "GNOME Projesi"
+
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
-"An audio player that just plays audio files. It doesn't require an organized music "
-"library and won't overload you with tons of functionality."
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
 msgstr ""
-"Yalnızca ses dosyalarını oynatan bir ses oynatıcı. Düzenlenmiş müzik kitaplığı "
-"gerektirmez ve sizi tonlarca işlevsellikle doldurmaz."
+"Yalnızca ses dosyalarını oynatan bir ses oynatıcı. Düzenlenmiş müzik "
+"kitaplığı gerektirmez ve sizi tonlarca işlevsellikle doldurmaz."
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Audio Player still offers advanced features such as:"
@@ -194,7 +200,7 @@ msgid "Mute/Unmute"
 msgstr "Sesi Kapat/Aç"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr "Sabri Ünal <yakushabb@gmail.com>"
 
@@ -206,40 +212,44 @@ msgstr "Bırakılan dosyalara erişilemiyor"
 msgid "An unknown error happened"
 msgstr "Bilinmeyen hata oluştu"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Duraklat"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Oynat"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
-"File uses a format that cannot be played. Additional media codecs may be required."
+"File uses a format that cannot be played. Additional media codecs may be "
+"required."
 msgstr ""
-"Dosya oynatılamayan bir biçim kullanıyor. Ek ortam kod çözme bileşenleri gerekli "
-"olabilir."
+"Dosya oynatılamayan bir biçim kullanıyor. Ek ortam kod çözme bileşenleri "
+"gerekli olabilir."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
-"An error happened while trying to get information about the file. Please try again."
+"An error happened while trying to get information about the file. Please try "
+"again."
 msgstr ""
-"Dosya hakkında bilgi alınmaya çalışılırken hata oluştu. Lütfen yeniden deneyin."
+"Dosya hakkında bilgi alınmaya çalışılırken hata oluştu. Lütfen yeniden "
+"deneyin."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "Dosya geçersiz bir URI kullanıyor"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
-msgstr "Dosya bilgilerinin okunması zaman aşımına uğradı. Lütfen yeniden deneyin."
+msgstr ""
+"Dosya bilgilerinin okunması zaman aşımına uğradı. Lütfen yeniden deneyin."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Bilinmeyen Dosya"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "Seçilen dosya ses içermiyor"
 

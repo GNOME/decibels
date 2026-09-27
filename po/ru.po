@@ -6,16 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: decibels\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/issues\n"
-"POT-Creation-Date: 2025-12-24 11:31+0000\n"
-"PO-Revision-Date: 2026-01-05 16:21+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-06 15:01+0300\n"
 "Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -66,8 +66,10 @@ msgstr "_Комбинации клавиш"
 msgid "_About Audio Player"
 msgstr "_О приложении"
 
-#: data/org.gnome.Decibels.desktop.in.in:2 data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
 msgid "Audio Player"
 msgstr "Аудиопроигрыватель"
 
@@ -81,13 +83,18 @@ msgstr "Воспроизведение аудио файлов"
 msgid "music;player;media;audio;decibels;"
 msgstr "music;player;media;audio;decibels;музыка;проигрыватель;медиа;аудио;децибелы;"
 
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "Проект GNOME"
+
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
-"An audio player that just plays audio files. It doesn't require an organized music "
-"library and won't overload you with tons of functionality."
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
 msgstr ""
-"Аудиопроигрыватель, который просто воспроизводит аудиофайлы. Он не требует наличия "
-"организованной музыкальной библиотеки и не перегружает вас множеством функций."
+"Аудиопроигрыватель, который просто воспроизводит аудиофайлы. Он не требует "
+"наличия организованной музыкальной библиотеки и не перегружает вас "
+"множеством функций."
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Audio Player still offers advanced features such as:"
@@ -191,7 +198,7 @@ msgid "Mute/Unmute"
 msgstr "Выключить/включить звук"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
-#: src/application.ts:73
+#: src/application.ts:76
 msgid "translator-credits"
 msgstr "Сергей Ворон <voron@duck.com>"
 
@@ -203,41 +210,43 @@ msgstr "Невозможно получить доступ к удаленным
 msgid "An unknown error happened"
 msgstr "Произошла неизвестная ошибка"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Pause"
 msgstr "Пауза"
 
-#: src/player.ts:120
+#: src/player.ts:127
 msgid "Play"
 msgstr "Воспроизведение"
 
-#: src/stream.ts:271
+#: src/stream.ts:262
 msgid ""
-"File uses a format that cannot be played. Additional media codecs may be required."
+"File uses a format that cannot be played. Additional media codecs may be "
+"required."
 msgstr ""
-"Файл использует формат, который невозможно воспроизвести. Возможно, потребуются "
-"дополнительные медиакодеки."
+"Файл использует формат, который невозможно воспроизвести. Возможно, "
+"потребуются дополнительные медиакодеки."
 
-#: src/stream.ts:283
+#: src/stream.ts:274
 msgid ""
-"An error happened while trying to get information about the file. Please try again."
+"An error happened while trying to get information about the file. Please try "
+"again."
 msgstr ""
-"Произошла ошибка при попытке получить информацию о файле. Пожалуйста, попробуйте "
-"еще раз."
+"Произошла ошибка при попытке получить информацию о файле. Пожалуйста, "
+"попробуйте еще раз."
 
-#: src/stream.ts:294
+#: src/stream.ts:285
 msgid "File uses an invalid URI"
 msgstr "Файл использует недопустимый URI"
 
-#: src/stream.ts:305
+#: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
 msgstr "Чтение информации о файле прервано. Пожалуйста, попробуйте еще раз."
 
-#: src/stream.ts:421
+#: src/stream.ts:404
 msgid "Unknown File"
 msgstr "Неизвестный файл"
 
-#: src/stream.ts:667
+#: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
 msgstr "Выбранный файл не содержит аудио"
 
@@ -316,30 +325,33 @@ msgstr "Не выбран файл"
 #~ msgstr "Переход к началу дорожки после ее окончания"
 
 #~ msgid "Allow dragging the app window from everywhere (except the waveform)"
-#~ msgstr "Разрешить перетаскивание окна приложения отовсюду (кроме волны трека)"
+#~ msgstr ""
+#~ "Разрешить перетаскивание окна приложения отовсюду (кроме волны трека)"
 
 #~ msgid ""
-#~ "Made the playback speed popover look less cluttered by removing the +/- buttons "
-#~ "and mark labels"
+#~ "Made the playback speed popover look less cluttered by removing the +/- "
+#~ "buttons and mark labels"
 #~ msgstr ""
-#~ "Всплывающее окно скорости воспроизведения стало менее загроможденным, удалив "
-#~ "кнопки +/- и метки"
+#~ "Всплывающее окно скорости воспроизведения стало менее загроможденным, "
+#~ "удалив кнопки +/- и метки"
 
 #~ msgid ""
-#~ "Fix an issue that prevented accessing file metadata from within the Flatpak "
-#~ "sandbox"
+#~ "Fix an issue that prevented accessing file metadata from within the "
+#~ "Flatpak sandbox"
 #~ msgstr ""
-#~ "Устранена проблема, из-за которой невозможно было получить доступ к метаданным "
-#~ "файла из песочницы Flatpak"
+#~ "Устранена проблема, из-за которой невозможно было получить доступ к "
+#~ "метаданным файла из песочницы Flatpak"
 
 #~ msgid ""
-#~ "Don't try to play files without audio streams (images and videos without sound)"
+#~ "Don't try to play files without audio streams (images and videos without "
+#~ "sound)"
 #~ msgstr ""
-#~ "Не пытайтесь воспроизвести файлы без аудио потоков (изображения и видео без "
-#~ "звука)"
+#~ "Не пытайтесь воспроизвести файлы без аудио потоков (изображения и видео "
+#~ "без звука)"
 
 #~ msgid "Don't try to process video streams even if they were not rendered"
-#~ msgstr "Не пытайтесь обрабатывать видео потоки, даже если они не были отрендерены"
+#~ msgstr ""
+#~ "Не пытайтесь обрабатывать видео потоки, даже если они не были отрендерены"
 
 #~ msgid "Fixed some issues with the Development build of Decibels"
 #~ msgstr "Исправлены некоторые проблемы со сборкой для разработчиков"
@@ -351,11 +363,11 @@ msgstr "Не выбран файл"
 #~ msgstr "Несколько исправлений ошибок, улучшающих приложение"
 
 #~ msgid ""
-#~ "Differentiate development versions of the app from the stable app by styling "
-#~ "the icon and header differently"
+#~ "Differentiate development versions of the app from the stable app by "
+#~ "styling the icon and header differently"
 #~ msgstr ""
-#~ "Отличайте разрабатываемые версии приложения от стабильной версии, используя "
-#~ "разные стили иконки и заголовка"
+#~ "Отличайте разрабатываемые версии приложения от стабильной версии, "
+#~ "используя разные стили иконки и заголовка"
 
 #~ msgid "Added donation link in application metadata"
 #~ msgstr "Добавлена ссылка на пожертвования в метаданные приложения"
@@ -365,8 +377,8 @@ msgstr "Не выбран файл"
 
 #~ msgid "Fix the About Window showing release notes for an older version"
 #~ msgstr ""
-#~ "Исправлено окно «О программе», показывающее примечания к выпуску для более "
-#~ "старой версии"
+#~ "Исправлено окно «О программе», показывающее примечания к выпуску для "
+#~ "более старой версии"
 
 #~ msgid "Initial Release"
 #~ msgstr "Первоначальный выпуск"

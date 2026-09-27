@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
 "POT-Creation-Date: 2026-04-11 17:13+0000\n"
-"PO-Revision-Date: 2026-07-09 13:58+0200\n"
+"PO-Revision-Date: 2026-09-09 09:24+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <nb@li.org>\n"
 "Language: nb\n"
@@ -84,6 +84,10 @@ msgstr "Spill lydfiler"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "musikk;spiller;media;lyd;decibels;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "GNOME prosjektet"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""

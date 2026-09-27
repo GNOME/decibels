@@ -6,17 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2026-01-25 19:47+0000\n"
-"PO-Revision-Date: 2026-02-17 23:49+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-09 12:34+0200\n"
 "Last-Translator: Fran Dieguez <fran.dieguez@gnome.org>\n"
 "Language-Team: Galician <Galician>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -34,8 +33,8 @@ msgstr "Arrastre e solte os ficheiros de audio aquí"
 msgid "_Open…"
 msgstr "_Abrir…"
 
-#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
-#: src/window.ts:196 src/window.ts:216
+#: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126
+#: src/window.ts:177 src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
 msgstr "O ficheiro non se pode reproducir"
 
@@ -79,19 +78,24 @@ msgstr "Reprodutor de audio"
 msgid "Play audio files"
 msgstr "Reproducir ficheiros de audio"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "música;reprodutor;medios;audio;decibelios;"
 
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "O proxecto GNOME"
+
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
-"An audio player that just plays audio files. It doesn't require an organized "
-"music library and won't overload you with tons of functionality."
+"An audio player that just plays audio files. It doesn't require an "
+"organized music library and won't overload you with tons of functionality."
 msgstr ""
 "Un reprodutor de sonido que solo reproduce ficheiros de audio. Non require "
-"unha biblioteca de música organizada e non estará sobrecargado con toneladas "
-"de funcionalidade."
+"unha biblioteca de música organizada e non estará sobrecargado con "
+"toneladas de funcionalidade."
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Audio Player still offers advanced features such as:"
@@ -194,7 +198,8 @@ msgstr "Restablecer a taxa de reprodución"
 msgid "Mute/Unmute"
 msgstr "Silenciar/Desilenciar"
 
-#. Translators: Replace "translator-credits" with your names, one name per line
+#. Translators: Replace "translator-credits" with your names, one name per
+#. line
 #: src/application.ts:76
 msgid "translator-credits"
 msgstr "Fran Diéguez <frandieguez@gnome.org>, 2025-2026"
@@ -225,11 +230,11 @@ msgstr ""
 
 #: src/stream.ts:274
 msgid ""
-"An error happened while trying to get information about the file. Please try "
-"again."
+"An error happened while trying to get information about the file. Please "
+"try again."
 msgstr ""
-"Produciuse un erro ao intentar obter información sobre o ficheiro. Ténteo de "
-"novo."
+"Produciuse un erro ao intentar obter información sobre o ficheiro. Ténteo "
+"de novo."
 
 #: src/stream.ts:285
 msgid "File uses an invalid URI"
@@ -261,7 +266,6 @@ msgstr "Volume completo"
 #. * as used in the tooltip, eg. "49 %".
 #. * Translate the "%d" to "%Id" if you want to use localised digits,
 #. * or otherwise translate the "%d" to "%d".
-#.
 #: src/volume-button.ts:66
 #, javascript-format
 msgctxt "volume percentage"

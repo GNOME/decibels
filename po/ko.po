@@ -6,11 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2026-01-25 19:47+0000\n"
-"PO-Revision-Date: 2026-02-22 20:58+0900\n"
-"Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-23 16:17+0900\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -85,6 +84,10 @@ msgstr "오디오 파일을 재생합니다"
 msgid "music;player;media;audio;decibels;"
 msgstr ""
 "music;음악;player;재생기;media;미디어;audio;오디오;음향;decibels;데시벨;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "그놈 프로젝트"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""

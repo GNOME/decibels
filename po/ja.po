@@ -2,15 +2,15 @@
 # Copyright (C) 2025-2026 Decibels's COPYRIGHT HOLDER
 # This file is distributed under the same license as the Decibels package.
 # 小山田 純 <oyamadajun@outlook.jp>, 2025-2026.
+# Ryo Nakano <ryonakaknock3@gmail.com>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/decibels/-/"
-"issues\n"
-"POT-Creation-Date: 2026-01-25 19:47+0000\n"
-"PO-Revision-Date: 2026-03-02 22:08+0900\n"
-"Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-30 11:18+0900\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -28,11 +28,11 @@ msgstr "音声ファイルを再生"
 
 #: data/empty.blp:11
 msgid "Drag and drop audio files here"
-msgstr "音声ファイルをドラッグ&ドロップしてください"
+msgstr "音声ファイルをここにドラッグ & ドロップ"
 
 #: data/empty.blp:18
 msgid "_Open…"
-msgstr "開く…(_O)"
+msgstr "開く(_O)…"
 
 #: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
 #: src/window.ts:196 src/window.ts:216
@@ -41,7 +41,7 @@ msgstr "このファイルは再生できません"
 
 #: data/error.blp:18
 msgid "_Try Again…"
-msgstr "もう一度試す…(_T)"
+msgstr "もう一度試す(_T)…"
 
 #: data/header.blp:11
 msgid "Main Menu"
@@ -57,7 +57,7 @@ msgstr "開く…"
 
 #: data/header.blp:31
 msgid "Show in _Files"
-msgstr "\"ファイル\" で音声の保存場所を開く(_F)"
+msgstr "“ファイル”で音声の保存場所を開く(_F)"
 
 #: data/header.blp:39
 msgid "_Keyboard Shortcuts"
@@ -65,7 +65,7 @@ msgstr "キーボードショートカット(_K)"
 
 #: data/header.blp:44
 msgid "_About Audio Player"
-msgstr "音声プレイヤーについて(_A)"
+msgstr "“音声プレイヤー”について(_A)"
 
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
@@ -86,6 +86,10 @@ msgstr ""
 "music;player;media;audio;decibels;ミュージック;音楽;プレイヤー;メディア;オー"
 "ディオ;音声;デシベルズ;"
 
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "The GNOME Project"
+
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
 "An audio player that just plays audio files. It doesn't require an organized "
@@ -96,7 +100,7 @@ msgstr ""
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Audio Player still offers advanced features such as:"
-msgstr "さらに \"音声プレイヤー\" は以下の機能を備えています:"
+msgstr "さらに“音声プレイヤー”は以下の機能を備えています:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "An elegant waveform of the track"
@@ -198,7 +202,9 @@ msgstr "ミュート/ミュート解除"
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:76
 msgid "translator-credits"
-msgstr "小山田 純 <oyamadajun@outlook.jp>"
+msgstr ""
+"小山田 純 <oyamadajun@outlook.jp>\n"
+"Ryo Nakano <ryonakaknock3@gmail.com>"
 
 #: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
@@ -232,7 +238,7 @@ msgstr "ファイル情報を取得中にエラーが起きました。もう一
 
 #: src/stream.ts:285
 msgid "File uses an invalid URI"
-msgstr "ファイルのURIが無効です"
+msgstr "ファイルの URI が無効です"
 
 #: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
@@ -289,7 +295,7 @@ msgstr "ファイルを1つ選択してください。"
 # regular file とは、おそらくこれのこと
 #: src/window.ts:197
 msgid "The selected file is not a regular file."
-msgstr "選択されたファイルは、通常のファイル(regular file)ではありません。"
+msgstr "選択されたファイルは、通常ファイル (regular file) ではありません。"
 
 #: src/window.ts:217
 msgid "No file was selected"

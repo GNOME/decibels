@@ -2,16 +2,16 @@
 # Copyright (C) 2025 Decibels's COPYRIGHT HOLDER
 # This file is distributed under the same license as the Decibels package.
 # Kasper Agentoft Lind <kasperalind@gmail.com>, 2025.
-# Alan Mortensen <alanmortensen.am@gmail.com>, 2026.
+# Alan Mortensen <over.tackiness223@passinbox.com>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
-"POT-Creation-Date: 2026-01-25 19:47+0000\n"
-"PO-Revision-Date: 2026-03-11 17:35+0100\n"
-"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
-"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-24 17:15+0200\n"
+"Last-Translator: Alan Mortensen <over.tackiness223@passinbox.com>\n"
+"Language-Team: Danish <danskgruppen@groups.io>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -89,6 +89,10 @@ msgstr "Afspil lydfiler"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "musik;afspiller;medie;lyd;decibels;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "GNOME-projektet"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -208,7 +212,7 @@ msgstr ""
 "\n"
 "Dansk-gruppen\n"
 "Websted http://dansk-gruppen.dk\n"
-"E-mail <dansk@dansk-gruppen.dk>"
+"E-mail <danskgruppen@groups.io>"
 
 #: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"

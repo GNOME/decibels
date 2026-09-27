@@ -1,275 +1,259 @@
-# Brazilian portuguese translation for Decibels.
-# Copyright (C) 2026 THE com.vixalien.decibels'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.vixalien.decibels package.
-# Tiago Lucas Flach <tiagolucas9830@gmail.com>, 2023.
-# Juliano de Souza Camargo <julianosc@pm.me>, 2024.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2024-2026.
+# Nynorsk norwegian translation of Decibels
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Roy-Magne Mo <rmo@sunnmore.net>, 2026. 
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: com.vixalien.decibels\n"
+"Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
 "POT-Creation-Date: 2026-04-11 17:13+0000\n"
-"PO-Revision-Date: 2026-08-05 20:44-0300\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
-"Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao/>\n"
-"Language: pt_BR\n"
+"PO-Revision-Date: 2026-09-12 23:24+0200\n"
+"Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
+"Language-Team: Norwegian Nynorsk <nn@li.org>\n"
+"Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 50.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-DL-VCS-Web: https://gitlab.gnome.org/GNOME/decibels\n"
-"X-DL-Lang: pt_BR\n"
-"X-DL-Module: Decibels\n"
-"X-DL-Branch: main\n"
-"X-DL-Domain: po\n"
-"X-DL-State: Translating\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
-msgstr "Solte aqui para abrir"
+msgstr "Slepp her for å opne"
 
 #: data/empty.blp:10
 msgid "Play Audio Files"
-msgstr "Reproduzir arquivos de áudio"
+msgstr "Spel av lydfiler"
 
 #: data/empty.blp:11
 msgid "Drag and drop audio files here"
-msgstr "Arraste e solte arquivos de áudio aqui"
+msgstr "Dra og slepp lydfiler her"
 
 #: data/empty.blp:18
 msgid "_Open…"
-msgstr "_Abrir…"
+msgstr "_Opne …"
 
 #: data/error.blp:11 src/drag-overlay.ts:69 src/window.ts:126 src/window.ts:177
 #: src/window.ts:196 src/window.ts:216
 msgid "File Cannot Be Played"
-msgstr "O arquivo não pode ser reproduzido"
+msgstr "Fila kan ikkje spelast av"
 
 #: data/error.blp:18
 msgid "_Try Again…"
-msgstr "_Tentar novamente…"
+msgstr "_Prøv på nytt …"
 
 #: data/header.blp:11
 msgid "Main Menu"
-msgstr "Menu principal"
+msgstr "Hovudmeny"
 
 #: data/header.blp:19
 msgid "New Window"
-msgstr "Nova janela"
+msgstr "Nytt vindauge"
 
 #: data/header.blp:24
 msgid "Open…"
-msgstr "Abrir…"
+msgstr "Opne …"
 
 #: data/header.blp:31
 msgid "Show in _Files"
-msgstr "Mostrar no _Arquivos"
+msgstr "Vis i _Filer"
 
 #: data/header.blp:39
 msgid "_Keyboard Shortcuts"
-msgstr "_Atalhos do teclado"
+msgstr "_Tastatursnarvegar"
 
 #: data/header.blp:44
 msgid "_About Audio Player"
-msgstr "_Sobre o Reprodutor de Áudio"
+msgstr "_Om Lydspelar"
 
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 #: src/application.ts:27
 msgid "Audio Player"
-msgstr "Reprodutor de áudio"
+msgstr "Lydspelar"
 
 #: data/org.gnome.Decibels.desktop.in.in:4
 #: data/org.gnome.Decibels.metainfo.xml.in.in:5
 msgid "Play audio files"
-msgstr "Reproduza arquivos de áudio"
+msgstr "Spel av lydfiler"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
-msgstr "música;player;mídia;áudio;decibéis;"
+msgstr "musikk;spelar;media;lyd;desibel;music;player;audio;decibels;"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:9
 msgid "The GNOME Project"
-msgstr "O Projeto GNOME"
+msgstr "GNOME-prosjektet"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
 "An audio player that just plays audio files. It doesn't require an organized "
 "music library and won't overload you with tons of functionality."
 msgstr ""
-"Um reprodutor de áudio que apenas reproduz arquivos de áudio. Ele não requer "
-"uma biblioteca de música organizada e não vai sobrecarregá-lo com toneladas "
-"de funcionalidade."
+"Ein lydspelar som berre spelar lydfiler. Han krev ikkje eit organisert "
+"musikkbibliotek og vil ikkje overvelde deg med tonnevis av funksjonar."
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Audio Player still offers advanced features such as:"
-msgstr "O Reprodutor de áudio ainda oferece recursos avançados como:"
+msgstr "Lydspelar har likevel avanserte funksjonar som:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "An elegant waveform of the track"
-msgstr "Uma forma de onda elegante da trilha"
+msgstr "Ein elegant bølgjeform av sporet"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:16
 msgid "Adjustable playback speed"
-msgstr "Velocidade de reprodução ajustável"
+msgstr "Justerbar avspelingsfart"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:17
 msgid "Easy seek controls"
-msgstr "Controles de busca fáceis"
+msgstr "Enkle søkjekontrollar"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:18
 msgid "Playing multiple files at the same time"
-msgstr "Reproduzir vários arquivos ao mesmo tempo"
+msgstr "Avspeling av fleire filer samtidig"
 
 #: data/player.blp:66
 msgid "Adjust Playback Speed"
-msgstr "Ajustar a velocidade de reprodução"
+msgstr "Juster avspelingsfarten"
 
 #: data/player.blp:78
 msgid "Skip Back 10s"
-msgstr "Voltar 10s"
+msgstr "Hopp 10 s tilbake"
 
 #: data/player.blp:105
 msgid "Skip Forward 10s"
-msgstr "Avançar 10s"
+msgstr "Hopp 10 s framover"
 
 #: data/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
-msgstr "Geral"
+msgstr "Generelt"
 
 #: data/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Mostra atalhos"
+msgstr "Vis snarvegar"
 
 #: data/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "New Window"
-msgstr "Nova janela"
+msgstr "Nytt vindauge"
 
 #: data/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr "Sai"
+msgstr "Avslutt"
 
 #: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
-msgstr "Reprodutor"
+msgstr "Spelar"
 
 #: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
 msgid "Open File"
-msgstr "Abre arquivo"
+msgstr "Opne fil"
 
 #: data/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "Pause/Play"
-msgstr "Pausa/Reproduz"
+msgstr "Pause/Spel av"
 
 #: data/shortcuts-dialog.blp:38
 msgctxt "shortcut window"
 msgid "Go Back 10 Seconds"
-msgstr "Volta 10 segundos"
+msgstr "Spol 10 sekund tilbake"
 
 #: data/shortcuts-dialog.blp:43
 msgctxt "shortcut window"
 msgid "Go Forward 10 Seconds"
-msgstr "Avança 10 segundos"
+msgstr "Spol 10 sekund framover"
 
 #: data/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Playback Rate"
-msgstr "Taxa de reprodução"
+msgstr "Avspelingsfart"
 
 #: data/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Increase Playback Rate"
-msgstr "Aumenta a taxa de reprodução"
+msgstr "Auk avspelingsfarten"
 
 #: data/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Decrease Playback Rate"
-msgstr "Diminui a taxa de reprodução"
+msgstr "Mink avspelingsfarten"
 
 #: data/shortcuts-dialog.blp:62
 msgctxt "shortcut window"
 msgid "Reset Playback Rate"
-msgstr "Redefinir a taxa de reprodução"
+msgstr "Tilbakestill avspelingsfarten"
 
 #: data/volume-button.blp:28
 msgid "Mute/Unmute"
-msgstr "Desativar/Ativar som"
+msgstr "Demp/opphev demping"
 
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:76
 msgid "translator-credits"
-msgstr ""
-"Tiago Lucas Flach <tiagolucas9830@gmail.com>\n"
-"Leônidas Araújo <leorusvellt@hotmail.com>\n"
-"Juliano de Souza Camargo <julianosc@pm.me>"
+msgstr "Roy-Magne Mo <rmo@sunnmore.net>"
 
 #: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
-msgstr "Não é possível acessar os arquivos soltos"
+msgstr "Får ikkje tilgang til dei sleppte filene"
 
 #: src/error.ts:42
 msgid "An unknown error happened"
-msgstr "Ocorreu um erro desconhecido"
+msgstr "Ein ukjend feil oppstod"
 
 #: src/player.ts:127
 msgid "Pause"
-msgstr "Pausar"
+msgstr "Pause"
 
 #: src/player.ts:127
 msgid "Play"
-msgstr "Reproduzir"
+msgstr "Spel"
 
 #: src/stream.ts:262
 msgid ""
 "File uses a format that cannot be played. Additional media codecs may be "
 "required."
 msgstr ""
-"O arquivo usa um formato que não pode ser reproduzido. Codecs de mídia "
-"adicionais podem ser necessários."
+"Fila brukar eit format som ikkje kan spelast av. Det kan vere nødvendig med "
+"fleire mediekodekar."
 
 #: src/stream.ts:274
 msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr ""
-"Ocorreu um erro ao tentar obter informações sobre o arquivo. Por favor, "
-"tente novamente."
+"Det oppstod ein feil under henting av informasjon om fila. Prøv på nytt."
 
 #: src/stream.ts:285
 msgid "File uses an invalid URI"
-msgstr "O arquivo usa um URI inválido"
+msgstr "Fila brukar ein ugyldig URI"
 
 #: src/stream.ts:296
 msgid "Reading the file’s information timed out. Please try again."
-msgstr ""
-"A leitura das informações do arquivo expirou. Por favor, tente novamente."
+msgstr "Tida for å lese filinformasjonen gjekk ut. Prøv på nytt."
 
 #: src/stream.ts:404
 msgid "Unknown File"
-msgstr "Arquivo desconhecido"
+msgstr "Ukjend fil"
 
 #: src/stream.ts:649
 msgid "The selected file doesn’t contain any audio"
-msgstr "O arquivo selecionado não contém nenhum áudio"
+msgstr "Den valde fila inneheld ingen lyd"
 
 #: src/volume-button.ts:57
 msgid "Muted"
-msgstr "Silenciado"
+msgstr "Dempa"
 
 #: src/volume-button.ts:58
 msgid "Full Volume"
-msgstr "Volume total"
+msgstr "Full lydstyrke"
 
 #. Translators: this is the percentage of the current volume,
 #. * as used in the tooltip, eg. "49 %".
@@ -284,46 +268,28 @@ msgstr "%d %%"
 
 #: src/window.ts:132
 msgid "Audio files"
-msgstr "Arquivos de áudio"
+msgstr "Lydfiler"
 
 #: src/window.ts:139
 msgid "Open File"
-msgstr "Abrir arquivo"
+msgstr "Opne fil"
 
 #: src/window.ts:178
 msgid "No available audio file found"
-msgstr "Nenhum arquivo de áudio disponível encontrado"
+msgstr "Fann ingen tilgjengeleg lydfil"
 
 #: src/window.ts:190
 msgid "Directories Cannot Be Played"
-msgstr "Os diretórios não podem ser reproduzidos"
+msgstr "Mapper kan ikkje spelast av"
 
 #: src/window.ts:191
 msgid "Please select a file."
-msgstr "Por favor, selecione um arquivo."
+msgstr "Vel ei fil."
 
 #: src/window.ts:197
 msgid "The selected file is not a regular file."
-msgstr "O arquivo selecionado não é um arquivo normal."
+msgstr "Den valde fila er ikkje ei vanleg fil."
 
 #: src/window.ts:217
 msgid "No file was selected"
-msgstr "Nenhum arquivo foi selecionado"
-
-#~ msgid "Current features:"
-#~ msgstr "Recursos atuais:"
-
-#~ msgid "Decibels"
-#~ msgstr "Decibéis"
-
-#~ msgid "_About Decibels"
-#~ msgstr "_Sobre o Decibéis"
-
-#~ msgid "Drop an audio file to play it"
-#~ msgstr "Solte um arquivo de áudio para reproduzi-lo"
-
-#~ msgid "Open an Audio File"
-#~ msgstr "Abra um arquivo de áudio"
-
-#~ msgid "The file could not be accessed"
-#~ msgstr "O arquivo não pôde ser acessado"
+msgstr "Inga fil vart vald"

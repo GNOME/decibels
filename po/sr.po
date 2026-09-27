@@ -2,14 +2,14 @@
 # Copyright (C) 2025 Decibels's COPYRIGHT HOLDER
 # This file is distributed under the same license as the Decibels package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# aceydot <aceydot@proton.me>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
-"POT-Creation-Date: 2026-01-25 19:47+0000\n"
-"PO-Revision-Date: 2026-03-17 23:43+0100\n"
-"Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
+"POT-Creation-Date: 2026-04-11 17:13+0000\n"
+"PO-Revision-Date: 2026-08-29 20:11+0200\n"
+"Last-Translator: aceydot <aceydot@proton.me>\n"
 "Language-Team: Serbian <Serbian>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -83,6 +83,10 @@ msgstr "Пуштајте звучне датотеке"
 #: data/org.gnome.Decibels.desktop.in.in:12
 msgid "music;player;media;audio;decibels;"
 msgstr "музика;звук;аудио;медија;децибели;пуштач;music;player;media;audio;decibels;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "Пројекат Гном"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:12
 msgid ""
@@ -199,6 +203,7 @@ msgid "translator-credits"
 msgstr ""
 "Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Марко М. Костић <marko.m.kostic@gmail.com>\n"
+"aceydot <aceydot@proton.me>\n"
 "\n"
 "https://гном.срб — превод на српски језик"
 
