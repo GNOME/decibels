@@ -1,13 +1,17 @@
-.drag-overlay-status-page {
-  background-color: color-mix(in srgb, var(--accent-bg-color), transparent);
-  color: var(--accent-fg-color);
-  padding: 32px;
-}
-
-.blurred {
-  filter: blur(6px);
-}
-
-.drag-overlay {
+/* Remove default adwaita style */
+.drop-widget:drop(active):focus,
+.drop-widget:drop(active) {
   box-shadow: none;
+}
+
+.overlay-status {
+  color: var(--accent-color);
+  background-color: color-mix(in srgb, var(--accent-bg-color) 8%, transparent);
+  border: 2px dashed color-mix(in srgb, currentColor var(--dim-opacity), transparent);
+  border-radius: 2px;
+  margin: 12px;
+}
+
+.overlay-status label {
+  opacity: var(--dim-opacity);
 }

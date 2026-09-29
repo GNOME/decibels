@@ -40,19 +40,13 @@ export class APDragOverlay extends Adw.Bin {
 
     this._drop_target.connect("drop", this._drop_target_drop_cb.bind(this));
 
-    this.add_controller(this._drop_target);
+    this._overlay.add_controller(this._drop_target);
   }
 
   private _notify_current_drop_cb(drop_target: Gtk.DropTarget) {
     const reveal = drop_target.current_drop != null;
 
     this._revealer.reveal_child = reveal;
-
-    if (reveal) {
-      this._overlay.child!.add_css_class("blurred");
-    } else {
-      this._overlay.child!.remove_css_class("blurred");
-    }
   }
 
   private get_window() {

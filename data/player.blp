@@ -6,45 +6,48 @@ template $APPlayerState: Adw.Bin {
     [top]
     $APHeaderBar headerbar {}
 
-    Adw.Clamp {
-      orientation: vertical;
-      maximum-size: 600;
-      tightening-threshold: 300;
-
-      Box {
+    $APDragOverlay {
+      [content]
+      Adw.Clamp {
         orientation: vertical;
+        maximum-size: 600;
+        tightening-threshold: 300;
 
-        $APWaveformScale waveform {
-          position-changed => $waveform_position_changed_cb();
-          vexpand: true;
-          margin-start: 14;
-          margin-end: 14;
+        Box {
+          orientation: vertical;
 
-          EventControllerScroll {
-            flags: both_axes;
-            scroll => $scroll_cb();
-          }
-        }
+          $APWaveformScale waveform {
+            position-changed => $waveform_position_changed_cb();
+            vexpand: true;
+            margin-start: 14;
+            margin-end: 14;
 
-        Box labels {
-          margin-start: 24;
-          margin-end: 24;
-
-          Label timestamp_label {
-            styles [
-              "caption",
-              "numeric",
-            ]
+            EventControllerScroll {
+              flags: both_axes;
+              scroll => $scroll_cb();
+            }
           }
 
-          Label duration_label {
-            hexpand: true;
-            halign: end;
+          Box labels {
+            margin-start: 24;
+            margin-end: 24;
 
-            styles [
-              "caption",
-              "numeric",
-            ]
+            Label timestamp_label {
+              styles [
+                "caption",
+                "numeric",
+              ]
+            }
+
+            Label duration_label {
+              hexpand: true;
+              halign: end;
+
+              styles [
+                "caption",
+                "numeric",
+              ]
+            }
           }
         }
       }

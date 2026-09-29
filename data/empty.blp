@@ -6,25 +6,28 @@ template $APEmptyState: Adw.Bin {
     [top]
     $APHeaderBar {}
 
-    Adw.StatusPage statusPage {
-      title: _("Play Audio Files");
-      description: _("Drag and drop audio files here");
+    $APDragOverlay {
+      [content]
+      Adw.StatusPage statusPage {
+        title: _("Play Audio Files");
+        description: _("Drag and drop audio files here");
 
-      Box {
-        orientation: vertical;
-        spacing: 12;
+        Box {
+          orientation: vertical;
+          spacing: 12;
 
-        Button {
-          label: _("_Open…");
-          use-underline: true;
-          action-name: "win.open-file";
-          can-shrink: true;
-          halign: center;
+          Button {
+            label: _("_Open…");
+            use-underline: true;
+            action-name: "win.open-file";
+            can-shrink: true;
+            halign: center;
 
-          styles [
-            "pill",
-            "suggested-action",
-          ]
+            styles [
+              "pill",
+              "suggested-action",
+            ]
+          }
         }
       }
     }

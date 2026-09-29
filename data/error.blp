@@ -6,25 +6,28 @@ template $APErrorState: Adw.Bin {
     [top]
     $APHeaderBar headerbar {}
 
-    Adw.StatusPage statusPage {
-      icon-name: "no-sound-symbolic";
-      title: _("File Cannot Be Played");
+    $APDragOverlay {
+      [content]
+      Adw.StatusPage statusPage {
+        icon-name: "no-sound-symbolic";
+        title: _("File Cannot Be Played");
 
-      Box {
-        orientation: vertical;
-        spacing: 12;
+        Box {
+          orientation: vertical;
+          spacing: 12;
 
-        Button {
-          label: _("_Try Again…");
-          use-underline: true;
-          action-name: "win.open-file";
-          can-shrink: true;
-          halign: center;
+          Button {
+            label: _("_Try Again…");
+            use-underline: true;
+            action-name: "win.open-file";
+            can-shrink: true;
+            halign: center;
 
-          styles [
-            "pill",
-            "suggested-action",
-          ]
+            styles [
+              "pill",
+              "suggested-action",
+            ]
+          }
         }
       }
     }

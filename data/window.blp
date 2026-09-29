@@ -7,26 +7,23 @@ template $Gjs_Window: Adw.ApplicationWindow {
   height-request: 260;
   title: _("Audio Player");
 
-  content: $APDragOverlay {
-    [content]
-    Stack stack {
-      StackPage {
-        name: "empty";
+  content: Stack stack {
+    StackPage {
+      name: "empty";
 
-        child: $APEmptyState {};
-      }
+      child: $APEmptyState {};
+    }
 
-      StackPage {
-        name: "error";
+    StackPage {
+      name: "error";
 
-        child: $APErrorState error {};
-      }
+      child: $APErrorState error {};
+    }
 
-      StackPage {
-        name: "player";
+    StackPage {
+      name: "player";
 
-        child: $APPlayerState player {};
-      }
+      child: $APPlayerState player {};
     }
   };
 
