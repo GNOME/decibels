@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the Decibels package.
 # Hugo Carvalho <hugokarvalho@hotmail.com>,  2024, 2025, 2026.
 #
+# SPDX-FileCopyrightText: 2026 Cátia Silva <catias89@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
 "POT-Creation-Date: 2026-04-11 17:13+0000\n"
-"PO-Revision-Date: 2026-08-25 16:33+0100\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
-"Language-Team: Portuguese <hugokarvalho@hotmail.com>\n"
+"PO-Revision-Date: 2026-10-04 17:56+0100\n"
+"Last-Translator: Cátia Silva <catias89@gmail.com>\n"
+"Language-Team: Portuguese <li@pt.corg>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: data/drag-overlay.blp:17
 msgid "Drop Here to Open"
@@ -24,7 +25,7 @@ msgstr "Largar aqui para abrir"
 
 #: data/empty.blp:10
 msgid "Play Audio Files"
-msgstr "Reproduzir ficheiros áudio"
+msgstr "Reproduzir ficheiros de áudio"
 
 #: data/empty.blp:11
 msgid "Drag and drop audio files here"
@@ -61,18 +62,18 @@ msgstr "Mostrar no Ficheiros"
 
 #: data/header.blp:39
 msgid "_Keyboard Shortcuts"
-msgstr "_Teclas de atalho"
+msgstr "A_talhos de teclado"
 
 #: data/header.blp:44
 msgid "_About Audio Player"
-msgstr "_Acerca do Leitor de áudio"
+msgstr "_Acerca do Reprodutor de áudio"
 
 #: data/org.gnome.Decibels.desktop.in.in:2
 #: data/org.gnome.Decibels.desktop.in.in:3
 #: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
 #: src/application.ts:27
 msgid "Audio Player"
-msgstr "Leitor de áudio"
+msgstr "Reprodutor de áudio"
 
 #: data/org.gnome.Decibels.desktop.in.in:4
 #: data/org.gnome.Decibels.metainfo.xml.in.in:5
@@ -99,7 +100,8 @@ msgstr ""
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:13
 msgid "Audio Player still offers advanced features such as:"
-msgstr "O Leitor de áudio ainda oferece funcionalidades avançadas, tais como:"
+msgstr ""
+"O Reprodutor de áudio ainda oferece funcionalidades avançadas, tais como:"
 
 #: data/org.gnome.Decibels.metainfo.xml.in.in:15
 msgid "An elegant waveform of the track"
@@ -152,7 +154,7 @@ msgstr "Sair"
 #: data/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Player"
-msgstr "Jogador"
+msgstr "Reprodutor"
 
 #: data/shortcuts-dialog.blp:28
 msgctxt "shortcut window"
@@ -201,11 +203,13 @@ msgstr "Silenciar/Ativar som"
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:76
 msgid "translator-credits"
-msgstr "Hugo Carvalho <hugokarvalho@hotmail.com>"
+msgstr ""
+"Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Cátia Silva <catias89@gmail.com>"
 
 #: src/drag-overlay.ts:70
 msgid "Unable to access dropped files"
-msgstr "Impossibilidade de acesso a ficheiros largados"
+msgstr "Impossível aceder aos ficheiros largados"
 
 #: src/error.ts:42
 msgid "An unknown error happened"
@@ -307,3 +311,4 @@ msgstr "Não foi selecionado nenhum ficheiro"
 
 #~ msgid "_About Decibels"
 #~ msgstr "_Acerca do Decibéis"
+
