@@ -2,21 +2,21 @@
 # Copyright (C) 2025 Decibels's COPYRIGHT HOLDER
 # This file is distributed under the same license as the Decibels package.
 # Andika Triwidada <atriwidada@gnome.org>, 2025, 2026.
+# Herpiko Dwi Aguno <herpiko@gmail.com>, 2026.
 #
-# herpiko <herpiko@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Decibels main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
 "POT-Creation-Date: 2026-07-20 21:08+0000\n"
-"PO-Revision-Date: 2026-11-09 10:50+0000\n"
-"Last-Translator: herpiko <herpiko@gmail.com>\n"
+"PO-Revision-Date: 2026-11-11 07:26+0000\n"
+"Last-Translator: Herpiko Dwi Aguno <herpiko@gmail.com>\n"
 "Language-Team: Indonesian <Indonesian>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pelokalan\n"
+"X-Generator: pelokalan.blankon.id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: data/drag-overlay.blp:17
@@ -202,7 +202,9 @@ msgstr "Bisukan/Bunyikan"
 #. Translators: Replace "translator-credits" with your names, one name per line
 #: src/application.ts:76
 msgid "translator-credits"
-msgstr "Andika Triwidada <andika@gmail.com>, 2025, 2026."
+msgstr ""
+"Andika Triwidada <andika@gmail.com>, 2025, 2026.\n"
+"Herpiko Dwi Aguno <herpiko@gmail.com>, 2026."
 
 #: src/drag-overlay.ts:71
 msgid "Unable to access dropped files"
@@ -233,8 +235,7 @@ msgid ""
 "An error happened while trying to get information about the file. Please try "
 "again."
 msgstr ""
-"Terjadi galat saat mencoba mendapatkan informasi tentang berkas. Silakan "
-"coba lagi."
+"Terjadi galat saat memuat informasi tentang berkas ini. Silakan coba lagi."
 
 #: src/stream.ts:284
 msgid "File uses an invalid URI"
@@ -242,7 +243,7 @@ msgstr "Berkas menggunakan URI yang tidak valid"
 
 #: src/stream.ts:295
 msgid "Reading the file’s information timed out. Please try again."
-msgstr "Membaca informasi berkas habis waktunya. Silakan coba lagi."
+msgstr "Waktu habis saat membaca informasi berkas. Silakan coba lagi."
 
 #: src/stream.ts:403
 msgid "Unknown File"
