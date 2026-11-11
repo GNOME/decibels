@@ -1,0 +1,299 @@
+# Azerbaijani translation for Decibels.
+# Copyright (C) 2026 Decibels's COPYRIGHT HOLDER
+# This file is distributed under the same license as the Decibels package.
+# Nicat Xalid <nicat.m@pm.me>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Decibels main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/decibels/-/issues\n"
+"POT-Creation-Date: 2026-07-20 21:08+0000\n"
+"PO-Revision-Date: 2026-11-11 12:51+0400\n"
+"Last-Translator: \n"
+"Language-Team: Azerbaijani <Azerbaijani>\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.10\n"
+
+#: data/drag-overlay.blp:17
+msgid "Drop Here to Open"
+msgstr "Açmaq üçün bura at"
+
+#: data/empty.blp:10
+msgid "Play Audio Files"
+msgstr "Səs fayllarını oxut"
+
+#: data/empty.blp:11
+msgid "Drag and drop audio files here"
+msgstr "Səs fayllarını sürükləyib bura atın"
+
+#: data/empty.blp:18
+msgid "_Open…"
+msgstr "_Aç…"
+
+#: data/error.blp:11 src/drag-overlay.ts:70 src/window.ts:110 src/window.ts:161
+#: src/window.ts:180 src/window.ts:201
+msgid "File Cannot Be Played"
+msgstr "Fayl oxudula bilmir"
+
+#: data/error.blp:18
+msgid "_Try Again…"
+msgstr "_Bir də cəhd edin…"
+
+#: data/header.blp:11
+msgid "Main Menu"
+msgstr "Əsas menyu"
+
+#: data/header.blp:19
+msgid "New Window"
+msgstr "Yeni pəncərə"
+
+#: data/header.blp:24
+msgid "Open…"
+msgstr "Aç…"
+
+#: data/header.blp:31
+msgid "Show in _Files"
+msgstr "\"_Fayllar\"da göstər"
+
+#: data/header.blp:39
+msgid "_Keyboard Shortcuts"
+msgstr "_Klaviatura qısayolları"
+
+#: data/header.blp:44
+msgid "_About Audio Player"
+msgstr "\"Səs oxudan\" _haqqında"
+
+#: data/org.gnome.Decibels.desktop.in.in:2
+#: data/org.gnome.Decibels.desktop.in.in:3
+#: data/org.gnome.Decibels.metainfo.xml.in.in:4 data/window.blp:8
+#: src/application.ts:27
+msgid "Audio Player"
+msgstr "Səs oxudan"
+
+#: data/org.gnome.Decibels.desktop.in.in:4
+#: data/org.gnome.Decibels.metainfo.xml.in.in:5
+msgid "Play audio files"
+msgstr "Səs fayllarını oxut"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Decibels.desktop.in.in:12
+msgid "music;player;media;audio;decibels;"
+msgstr "musiqi;pleyer;media;audio;desibel;səs;oxudan;"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:9
+msgid "The GNOME Project"
+msgstr "GNOME layihəsi"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:12
+msgid ""
+"An audio player that just plays audio files. It doesn't require an organized "
+"music library and won't overload you with tons of functionality."
+msgstr ""
+"Sadəcə səs faylları oxudan audio pleyer. O, nizamlanmış musiqi kitabxanası "
+"tələb etmir və sizi tonlarla funksionallıqla yükləməyəcək."
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:13
+msgid "Audio Player still offers advanced features such as:"
+msgstr ""
+"\"Səs oxudan\" hələ də aşağıdakılar kimi qabaqcıl özəlliklər təklif edir:"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:15
+msgid "An elegant waveform of the track"
+msgstr "Trekin zərif dalğa forması"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:16
+msgid "Adjustable playback speed"
+msgstr "Nizamlanabilən oxuma sürəti"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:17
+msgid "Easy seek controls"
+msgstr "Asan sarma idarələri"
+
+#: data/org.gnome.Decibels.metainfo.xml.in.in:18
+msgid "Playing multiple files at the same time"
+msgstr "Birdən çox fayl eyni anda oxudulur"
+
+#: data/player.blp:66
+msgid "Adjust Playback Speed"
+msgstr "Oxutma sürətini nizamla"
+
+#: data/player.blp:78
+msgid "Skip Back 10s"
+msgstr "10 saniyə geri ötür"
+
+#: data/player.blp:105
+msgid "Skip Forward 10s"
+msgstr "10 saniyə irəli ötür"
+
+#: data/shortcuts-dialog.blp:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Ümumi"
+
+#: data/shortcuts-dialog.blp:9
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Qısayolları göstər"
+
+#: data/shortcuts-dialog.blp:14
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "Yeni pəncərə"
+
+#: data/shortcuts-dialog.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Çıx"
+
+#: data/shortcuts-dialog.blp:25
+msgctxt "shortcut window"
+msgid "Player"
+msgstr "Oxuducu"
+
+#: data/shortcuts-dialog.blp:28
+msgctxt "shortcut window"
+msgid "Open File"
+msgstr "Fayl aç"
+
+#: data/shortcuts-dialog.blp:33
+msgctxt "shortcut window"
+msgid "Pause/Play"
+msgstr "Fasilə/Oxut"
+
+#: data/shortcuts-dialog.blp:38
+msgctxt "shortcut window"
+msgid "Go Back 10 Seconds"
+msgstr "10 saniyə geri get"
+
+#: data/shortcuts-dialog.blp:43
+msgctxt "shortcut window"
+msgid "Go Forward 10 Seconds"
+msgstr "10 saniyə irəli get"
+
+#: data/shortcuts-dialog.blp:49
+msgctxt "shortcut window"
+msgid "Playback Rate"
+msgstr "Oxutma sürəti"
+
+#: data/shortcuts-dialog.blp:52
+msgctxt "shortcut window"
+msgid "Increase Playback Rate"
+msgstr "Oxutma sürətini artır"
+
+#: data/shortcuts-dialog.blp:57
+msgctxt "shortcut window"
+msgid "Decrease Playback Rate"
+msgstr "Oxutma sürətini azalt"
+
+#: data/shortcuts-dialog.blp:62
+msgctxt "shortcut window"
+msgid "Reset Playback Rate"
+msgstr "Oxutma sürətini sıfırla"
+
+#: data/volume-button.blp:28
+msgid "Mute/Unmute"
+msgstr "Səsi aç/b"
+
+#. Translators: Replace "translator-credits" with your names, one name per line
+#: src/application.ts:76
+msgid "translator-credits"
+msgstr ""
+"translator-credits\n"
+"Nicat Xalid <nicat.m@pm.me>"
+
+#: src/drag-overlay.ts:71
+msgid "Unable to access dropped files"
+msgstr "Buraxılmış fayllara çatmaq olmur"
+
+#: src/error.ts:42
+msgid "An unknown error happened"
+msgstr "Bilinməyən xəta baş verdi"
+
+#: src/player.ts:123
+msgid "Pause"
+msgstr "Faislə"
+
+#: src/player.ts:123
+msgid "Play"
+msgstr "Oxut"
+
+#: src/stream.ts:261
+msgid ""
+"File uses a format that cannot be played. Additional media codecs may be "
+"required."
+msgstr ""
+"Fayl oxudula bilməyən formatdan istifadə edir. Əlavə media kodekləri tələb "
+"oluna bilər."
+
+#: src/stream.ts:273
+msgid ""
+"An error happened while trying to get information about the file. Please try "
+"again."
+msgstr "Fayl haqqında məlumat əldə edərkən xəta baş verdi. Yenidən cəhd edin."
+
+#: src/stream.ts:284
+msgid "File uses an invalid URI"
+msgstr "Fayl etibarsız URI istifadə edir"
+
+#: src/stream.ts:295
+msgid "Reading the file’s information timed out. Please try again."
+msgstr ""
+"Fayl məlumatının oxudulmasının vaxtı bitdi. Zəhmət olmasa, yenidən cəhd edin."
+
+#: src/stream.ts:403
+msgid "Unknown File"
+msgstr "Naməlum fayl"
+
+#: src/stream.ts:641
+msgid "The selected file doesn’t contain any audio"
+msgstr "Seçilmiş faylda səs yoxdur"
+
+#: src/volume-button.ts:56
+msgid "Muted"
+msgstr "Səssiz"
+
+#: src/volume-button.ts:57
+msgid "Full Volume"
+msgstr "Tam həcm"
+
+#. Translators: this is the percentage of the current volume,
+#. * as used in the tooltip, eg. "49 %".
+#. * Translate the "%d" to "%Id" if you want to use localised digits,
+#. * or otherwise translate the "%d" to "%d".
+#.
+#: src/volume-button.ts:65
+#, javascript-format
+msgctxt "volume percentage"
+msgid "%d %%"
+msgstr "%Id %%"
+
+#: src/window.ts:116
+msgid "Audio files"
+msgstr "Səs faylları"
+
+#: src/window.ts:123
+msgid "Open File"
+msgstr "Fayl açƏlçatan audio fayl tapılmadı"
+
+#: src/window.ts:162
+msgid "No available audio file found"
+msgstr "Əlçatan səs faylı tapılmadı"
+
+#: src/window.ts:174
+msgid "Directories Cannot Be Played"
+msgstr "Kataloqlar oxudula bilməz"
+
+#: src/window.ts:175
+msgid "Please select a file."
+msgstr "Zəhmət olmasa, fayl seçin."
+
+#: src/window.ts:181
+msgid "The selected file is not a regular file."
+msgstr "Seçilmiş fayl adi fayl deyil."
+
+#: src/window.ts:202
+msgid "No file was selected"
+msgstr "Fayl seçilməyib"
